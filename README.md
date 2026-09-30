@@ -8,7 +8,6 @@
 
 - 일본어 원본 Disk A–G D88 7개
 - 일본어 원본 KANJI1 ROM 1개
-- 저장소의 `source/graphics/`에 포함된 Disk A 타이틀 3-plane·스크롤 PNG와 Disk B 전투 3-plane PNG
 
 빌더는 `import/`의 원본을 크기·SHA-256으로 Disk A–G 및 KANJI1 ROM에 대응시킨다. 원본 ROM에는 `source/kanji/glyph-assignment-reference.csv`의 558개 글리프를 적용한다. 원본 ROM과 생성 ROM 사이의 변경 16,820바이트는 모두 이 글리프 슬롯에 있다.
 
