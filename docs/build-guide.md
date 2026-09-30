@@ -11,8 +11,6 @@
 
 원본 크기·SHA-256은 [`source-baseline.json`](../source/manual-build/source-baseline.json)에 기록되어 있다. 해당 지문을 가진 원본이 빠졌거나 중복되면 빌드를 중단한다.
 
-빌더는 저장소의 `source/graphics/`에 있는 PNG 평면을 사용해 Disk A의 `夢幻戰士` 로고·스크롤·`ヴァリス` 로고·`II`와 Disk B 전투 CG를 각각 해당 평면 순서와 저장 형식으로 인코딩해 원본 D88에 적용한다. PNG 디코딩에는 Pillow가 필요하며 실행 전에 `python -m pip install -r requirements.txt`를 실행한다.
-
 영역별 패치 JSON은 `disk-{A-G}__{영역}.json` 형식으로 이름을 붙인다. 예를 들어 `disk-A__prologue.json`, `disk-D__act1.json`, `disk-F__error-text.json`처럼 디스크 문자를 대문자로 쓰고 영역 이름은 소문자로 쓴다. `build-scope.json`과 `source-baseline.json`은 모든 디스크에 공통인 설정 파일이다.
 
 ## 실행

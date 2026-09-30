@@ -13,8 +13,6 @@
 
 원본 크기·SHA-256은 [`source-baseline.json`](source/manual-build/source-baseline.json)에 기록되어 있다. 해당 지문을 가진 원본이 빠졌거나 중복되면 빌드를 중단한다.
 
-포함된 PNG 평면이 그래픽의 직접 빌드 입력이다. 빌더가 Disk A 타이틀 자원과 Disk B 전투 CG 바이트를 다시 인코딩하며, Pillow로 PNG를 읽는다.
-
 ## 빌드 실행
 
 저장소 루트에서 실행한다.
@@ -42,7 +40,6 @@ python -m tools.cli
 - `output/`: 빌드 결과 위치
 - `source/manual-build/`: 빌드에 사용하는 확정 raw 패치표
 - [일본어 원문·한국어 번역 참조표](source/text-reference/README.md): 영역별 문안과 출처
-- `source/graphics/`: Disk A 타이틀 4자원과 Disk B 전투 CG의 PNG 평면 입력
 - `source/patches/`: 날짜별 작업표와 교차 확인 자료
 - `source/kanji/`: 글리프와 토큰 조회표
 - `tools/`: D88 처리, 패치 적용, IPS 생성·재적용 확인
