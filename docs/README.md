@@ -9,6 +9,6 @@
 ## 분석과 근거
 
 - [일본어 원문·한국어 번역 참조](../source/text-reference/README.md): 작업 자료의 문안과 출처를 영역별 CSV로 확인
-- [통합 분석](integrated-source-analysis.md): 시간순 작업 경위, 영역별 바이트·제어 흐름, 판본 간 차이
+- [통합 분석](integrated-source-analysis.md): 실행 경로와 영역별 바이트·제어 흐름, 원본과 최종 빌드의 차이
 - [근거 상태](evidence-status.md): 기준 파일 지문과 현재 확인 수준
 - [자료 대응표](source-map.md): 빌드 영역과 작업 자료의 연결
