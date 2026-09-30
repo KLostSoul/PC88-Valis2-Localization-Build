@@ -26,7 +26,7 @@
     "hangul": "Exact current 558-row token CSV lookup; non-Hangul glyphs CP932.",
     "F1": "85 target bytes, no tail padding.",
     "F2": "75 target bytes plus six 00 bytes at 0x000ADB-0x000AE0.",
-    "runtime_verified_for_current_lookup": false
+    "runtime_verified_for_current_lookup": true
   },
   "verified_layout_sites": [
     {

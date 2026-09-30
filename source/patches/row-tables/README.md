@@ -15,14 +15,14 @@
 | `disk-B__system-text__layout-and-source-tables.csv` | Disk B 최종 기록 문서의 표·행 내용과 원본 지문 |
 | `disk-C__system-text__character-byte-comparison.csv` | Disk C 문구의 문자, 코드값, 바이트, 논리 위치와 raw 오프셋 대조 |
 | `disk-C__system-text__layout-and-source-tables.csv` | Disk C 최종 기록 문서의 표·행 내용과 원본 지문 |
-| `disk-D__act1__runtime-source-rows.csv` | Act 1 원본 실행 순서, RAM/raw 주소, 제어행과 분류 |
+| `disk-D__act1__runtime-source-rows.csv` | Act 1 실행 순서 2,812행의 원본·현재 바이트, 제어행, 문자 분류와 RAM/raw 주소 |
 | `disk-D__act1__character-byte-comparison.csv` | Act 1 행별 원문·한글 바이트와 raw 위치 대조 |
-| `disk-D__act2__runtime-source-rows.csv` | Act 2 원본 실행 주소·바이트·제어행 요약 |
+| `disk-D__act2__runtime-source-rows.csv` | Act 2 패치 결과 753행의 주소·바이트·제어행과 D362–D363 종료 후미 |
 | `disk-D__act2__character-byte-comparison.csv` | Act 2 출력 슬롯별 원문·대상 바이트·raw 위치 대조 |
-| `disk-D__act3__runtime-source-rows.csv` | Act 3 원본 실행 주소·바이트·제어행 요약 |
+| `disk-D__act3__runtime-source-rows.csv` | Act 3 패치 결과 1,915행의 주소·현재 바이트·제어행과 원본 실행 행 연결 |
 | `disk-D__act3__character-byte-comparison.csv` | Act 3 행별 원문·한글 바이트와 raw 위치 대조 |
 | `disk-E__act4__row-comparison__2026-08-04.csv` | Act 4 교정판의 작업표 순번, 원본 행, 대상 바이트와 raw 위치 대조 |
-| `disk-F__act5__runtime-source-rows.csv` | Act 5 원본 실행 주소·바이트와 페이로드 흐름 요약 |
+| `disk-F__act5__runtime-source-rows.csv` | Act 5 패치 결과 2,530행의 주소·바이트와 두 payload 흐름 및 원본 행 연결 |
 | `disk-F__act5__character-byte-comparison.csv` | Act 5 출력 바이트·대상 문자와 두 페이로드의 raw 위치 대조 |
 | `disk-F__error-text__source-rows.csv` | Disk F 오류 문구의 원문 바이트, 제어 코드와 주소 구간 |
 | `disk-F__error-text__character-byte-map.csv` | 오류 문구의 문자별 코드값·바이트·raw 주소 대조 |

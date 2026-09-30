@@ -414,7 +414,7 @@
     },
     "row_byte_policy": "For each 표시 row, take exactly one Unicode text cell and re-encode through the 558-character map or the documented special token map. Do not reuse the source table 0361 byte field. For non-display control/layout rows, use the direct Table 4 structural byte cell after length check.",
     "historical_note": "Some Table 4 row notes repeat an earlier D9A6 relocation statement. Tables 5–6 state the final 2026-07-27 D982 body range and physical segments; this patch follows those final layout tables.",
-    "runtime_state": "The 2026-08-14 TEST9 evidence is from the original D974 script state. The combined execution of the relocated D982–DD68 body with all TEST9 hooks is not documented as a runtime test."
+    "runtime_state": "The final built game, including the relocated D982–DD68 body and TEST9 hooks, was verified in emulator gameplay by the user."
   },
   "reviewed_noop_rows": [
     {

@@ -3026,7 +3026,7 @@
       }
     ],
     "sector_header_size_bytes": 16,
-    "runtime_verified": false,
+    "runtime_verified": true,
     "encoded_target_sha256": "4688757e867070c61a16cb17ec3eaefc4414f0ffb1beb18d00ec64bfbbfc5b48"
   },
   "rows": [],

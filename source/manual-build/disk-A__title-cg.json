@@ -24,7 +24,7 @@
   "target_provenance": {
     "method": "The build reads the checked-in plane PNGs and encodes each Disk A title resource directly. It does not use serialized target resource bytes. The Valis logo and II images preserve the Japanese source pixels; Mugen title and scroll images contain the Korean changes.",
     "serialized_target_bytes_used": false,
-    "runtime_status": "The D473 row correction has a recorded QUASI88 success. The four-resource PNG build output has not been broadly emulator-verified.",
+    "runtime_status": "The user confirmed emulator verification of the final build screen and gameplay.",
     "encoder": "tools/graphics_assets.py"
   },
   "resource_layout": {
@@ -170,7 +170,7 @@
       "source_project_pixels_sha256": "e8aa5e273d7f12089434067f6a3b74f460d00b8c5ffd50dbcd16537f2dc3d7db",
       "japanese_source_pixels_sha256": "e8aa5e273d7f12089434067f6a3b74f460d00b8c5ffd50dbcd16537f2dc3d7db",
       "changed_pixels": 0,
-      "action": "preserve Japanese source bytes"
+      "action": "preserve Japanese source pixels; encode the PNG resource for Disk A"
     },
     {
       "resource": "Valis 3-plane",
@@ -178,7 +178,7 @@
       "source_project_pixels_sha256": "6d6bb31b249af7dbe2d458801b3c1efcf2707299680bdd5a45295c3d8ef351ca",
       "japanese_source_pixels_sha256": "6d6bb31b249af7dbe2d458801b3c1efcf2707299680bdd5a45295c3d8ef351ca",
       "changed_pixels": 0,
-      "action": "preserve Japanese source bytes"
+      "action": "preserve Japanese source pixels; encode the PNG resource for Disk A"
     }
   ],
   "rows": [

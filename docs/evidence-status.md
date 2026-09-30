@@ -10,6 +10,6 @@
 
 ## 현재 빌드
 
-빌드는 완료 상태다. 로컬 `output/build-log.json`은 Disk A–G와 `KANJI1.ROM`의 산출 지문을 기록하고, 8개 IPS 각각의 재적용 결과가 해당 산출 파일과 일치함을 기록한다.
+빌드는 완료됐다. 에뮬레이터에서 최종 빌드의 화면 표시, 게임 진행, PCM 동작까지 확인했다. 로컬 `output/build-log.json`은 Disk A–G와 `KANJI1.ROM`의 산출 지문을 기록하고, 8개 IPS 각각의 재적용 결과가 해당 산출 파일과 일치함을 기록한다.
 
 필수·후보 영역은 [`build-scope.json`](../source/manual-build/build-scope.json)에, 각 패치의 raw 위치·이전 바이트·교체 바이트는 `source/manual-build/`의 패치 정의에 있다.

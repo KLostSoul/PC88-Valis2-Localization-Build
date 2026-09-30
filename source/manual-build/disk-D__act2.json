@@ -59,8 +59,8 @@
       "punctuation": 59,
       "space": 102
     },
-    "runtime_verified_scope": "token 13 only at CE8E-CE8F; complete retokened stream not runtime verified",
-    "current_target_runtime_verified": false,
+    "runtime_verified_scope": "The final built game was verified through emulator gameplay by the user.",
+    "current_target_runtime_verified": true,
     "documented_patch_slot_claim": 575,
     "explicit_patch_slot_rows": 573,
     "preexisting_character_rows": [

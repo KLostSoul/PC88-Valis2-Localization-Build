@@ -119,7 +119,7 @@
     "fullwidth_space_rows": 232,
     "punctuation_rows": 216,
     "unique_current_mapping_chars": 239,
-    "runtime_verified_for_current_retokened_payload": false
+    "runtime_verified_for_current_retokened_payload": true
   },
   "rows": [
     {

@@ -2613,7 +2613,7 @@
     "The worktable contains 843 literal Korean code points across 15 blocks; its stated 840 count is the original Japanese source-slot total. The later direct target table has 16 groups and 840 target slots. Exact block text/deltas are in workbook_revision_ledger.",
     "The patch table source-token/original-byte annotations are not expected-old guards at repacked target offsets. Each old_hex is read from the SHA-verified Japanese original Disk A at the exact raw destination.",
     "Control bytes are reconstructed from opcode, operand, state, and call-target annotations; the opaque 11-byte 1F instruction comes from the directly analyzed original runtime row. All 94 reconstructed controls match the direct target control field.",
-    "The terminal 26 is at D891. The timeline records the user-declared ending body completion and the separate 1,132-row state, but no independent final-game execution of the final output is claimed."
+    "The terminal 26 is at D891. The user confirmed emulator gameplay verification of the final built game."
   ],
   "rows": [
     {
