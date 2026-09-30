@@ -17,7 +17,7 @@
 | `disk-C__system-text__layout-and-source-tables.csv` | Disk C 최종 기록 문서의 표·행 내용과 원본 지문 |
 | `disk-D__act1__runtime-source-rows.csv` | Act 1 실행 순서 2,812행의 원본·현재 바이트, 제어행, 문자 분류와 RAM/raw 주소 |
 | `disk-D__act1__character-byte-comparison.csv` | Act 1 행별 원문·한글 바이트와 raw 위치 대조 |
-| `disk-D__act2__runtime-source-rows.csv` | Act 2 패치 결과 753행의 주소·바이트·제어행과 D362–D363 종료 후미 |
+| `disk-D__act2__runtime-source-rows.csv` | Act 2 패치 기준 753행의 주소·바이트·제어행. 최종 산출물의 종료 표시는 D363=26 |
 | `disk-D__act2__character-byte-comparison.csv` | Act 2 출력 슬롯별 원문·대상 바이트·raw 위치 대조 |
 | `disk-D__act3__runtime-source-rows.csv` | Act 3 패치 결과 1,915행의 주소·현재 바이트·제어행과 원본 실행 행 연결 |
 | `disk-D__act3__character-byte-comparison.csv` | Act 3 행별 원문·한글 바이트와 raw 위치 대조 |

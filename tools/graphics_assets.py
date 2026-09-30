@@ -584,6 +584,7 @@ def build_disk_a_resources(disk_data: bytes, table: dict) -> tuple[EncodedResour
     )
     if len(valis) > int(valis_config["maximum_size"], 16):
         raise ValueError("Disk A ヴァリス title exceeds its declared RAM allocation")
+    _check_declared_hash(valis, valis_config, "Disk A Valis title")
 
     specs = (
         ("mugen-title", mugen, _ram_spans(mugen_start, len(mugen), fields), mugen_files, "compressed 352x17 3-plane"),

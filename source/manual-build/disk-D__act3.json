@@ -8,18 +8,6 @@
     "sha256": "bd453f4576705a224a6b1775d2e7d0d2d499efd49075ff0b2b4b0b419549dd6d",
     "size_bytes": 416688
   },
-  "source_docs": [
-    {
-      "path": "Valis2_DiskD_ACT3_HANGUL_PATCH_TABLE_0001-1915_2026-08-01.docx",
-      "sha256": "0d72ed1300e4fff544c99cbf449135afa98840ca43c72558c79b3518ffd8e219",
-      "role": "current direct Act 3 target patch table with explicit raw offsets for every main row"
-    },
-    {
-      "path": "Valis2_DiskD_ACT3_runtime_analysis_0001-1948_2026-08-01_CORRECTED_ROWS0782-0784_RENUMBERED.docx",
-      "sha256": "b1b5f32d167f50c24d851314f3746a7fcab2d07f25712014f02a57fc6bebeab3",
-      "role": "older runtime analysis used only to cross-check original layout; not target bytes"
-    }
-  ],
   "lookup_reference": {
     "file": "source/kanji/glyph-assignment-reference.csv",
     "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
@@ -27,70 +15,57 @@
     "use": "Exact Hangul token lookup; non-Hangul bytes retain direct worktable literal."
   },
   "layout": {
-    "active_ram_range": "D501~E1C6",
-    "active_raw_range": "0x07171~0x07E66",
+    "active_ram_range": "D501~E1DC",
     "capacity_ram_range": "D501~E208",
-    "sector_map": [
-      "D501~D7FF -> 0x07171~0x0746F",
-      "D800~DBFF -> 0x07480~0x0787F",
-      "DC00~DFFF -> 0x07890~0x07C8F",
-      "E000~E208 -> 0x07CA0~0x07EA8"
+    "payload_bytes": 3292,
+    "payload_sha256": "aa069be8a1a7192322cb548d46403e57e06b68b4b8997ea523ac01afeb28a0ea",
+    "sector_safe_raw_segments": [
+      {
+        "ram_start": "0xD501",
+        "ram_end_inclusive": "0xD7FF",
+        "raw_start": "0x07171",
+        "raw_end_inclusive": "0x0746F",
+        "length_bytes": 767,
+        "old_sha256": "ade0d0d13a36d5334d38f4a43c5358faf14e671fefd07e14b8824d64be508ce8",
+        "new_sha256": "58af48bde36b5f35099b95c81c5af3bde95dfe404755b65993af1bd6c7db39c9"
+      },
+      {
+        "ram_start": "0xD800",
+        "ram_end_inclusive": "0xDBFF",
+        "raw_start": "0x07480",
+        "raw_end_inclusive": "0x0787F",
+        "length_bytes": 1024,
+        "old_sha256": "b0e99b3937854959f8aa08d03c1fe3e8998967e1140e5176cd191175036ca0b2",
+        "new_sha256": "c74ce83a2fbfdf71e2eec9356a7ada1941c93c2459a4d8fc11f22cd2ac91ce06"
+      },
+      {
+        "ram_start": "0xDC00",
+        "ram_end_inclusive": "0xDFFF",
+        "raw_start": "0x07890",
+        "raw_end_inclusive": "0x07C8F",
+        "length_bytes": 1024,
+        "old_sha256": "994342cd9a2091a94c998583cefbcf5b209c91a1364d29a6b59157230c2153f9",
+        "new_sha256": "849a68f75c63967b1f237f1332cdb8182e0381a01eadfbd1f9c4ea21f9836af1"
+      },
+      {
+        "ram_start": "0xE000",
+        "ram_end_inclusive": "0xE1DC",
+        "raw_start": "0x07CA0",
+        "raw_end_inclusive": "0x07E7C",
+        "length_bytes": 477,
+        "old_sha256": "1fe034b210c7d636e0fa34cc29d71328e31c0205107bd8d796077cfca7df36b7",
+        "new_sha256": "74cbc8749d85b93775c1f4276f3d9ad3bd8d9a59c9e6d2779abf5180ef63fcdd"
+      }
     ],
-    "excluded_headers": [
-      "0x07470~0x0747F",
-      "0x07880~0x0788F",
-      "0x07C90~0x07C9F"
-    ],
-    "cross_header_source_rows_split": [
-      435,
-      1101
-    ]
+    "terminator": {
+      "ram": "0xE1DC",
+      "raw_offset": "0x07E7C",
+      "hex": "26"
+    },
+    "zero_fill_ram_range": "E1DD~E208",
+    "zero_fill_raw_range": "0x07E7D~0x07EA8",
+    "zero_fill_bytes": 44
   },
-  "row_accounting": {
-    "source_rows": 1915,
-    "main_rows": 1637,
-    "substream_trace_rows_excluded": 278,
-    "main_target_bytes": 3270,
-    "unique_physical_bytes": 3270,
-    "main_rows_with_explicit_raw_offsets": 1637,
-    "source_row_kinds": {
-      "control_or_literal": 145,
-      "hangul": 1052,
-      "punctuation": 157,
-      "space": 283
-    },
-    "current_table_end": "E1C6=26",
-    "current_target_runtime_verified": true,
-    "older_runtime_extent": "E208 from earlier original-runtime analysis; not used as current target end"
-  },
-  "preserved_ranges": [
-    {
-      "ram_range": "E1C7~E208",
-      "raw_range": "0x07E67~0x07EA8",
-      "bytes": 66,
-      "action": "preserve Japanese source bytes; current direct table marks safe slack and specifies no zero fill",
-      "evidence_ref": "Valis2_DiskD_ACT3_HANGUL_PATCH_TABLE_0001-1915_2026-08-01.docx#paragraphs-6-7"
-    }
-  ],
-  "excluded_raw_ranges": [
-    {
-      "range": "0x07470~0x0747F",
-      "reason": "D88 sector header"
-    },
-    {
-      "range": "0x07880~0x0788F",
-      "reason": "D88 sector header"
-    },
-    {
-      "range": "0x07C90~0x07C9F",
-      "reason": "D88 sector header"
-    },
-    {
-      "range": "substream execution rows",
-      "count": 278,
-      "reason": "current table paragraph 20 says execution-trace rows are structural and not written to main D88 data"
-    }
-  ],
   "rows": [
     {
       "id": "d_act3-0001",
@@ -756,5 +731,9 @@
       "evidence_ref": "source/text-reference/disk-D__acts-1-3.csv",
       "status": "confirmed"
     }
+  ],
+  "source_docs": [
+    "source/text-reference/disk-D__acts-1-3.csv",
+    "docs/integrated-source-analysis.md"
   ]
 }

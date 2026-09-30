@@ -7,307 +7,6 @@
     "size_bytes": 415840,
     "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
   },
-  "source_docs": [
-    "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx",
-    "analysis/itemized/11_Valis2Project15_분석.md"
-  ],
-  "layout": {
-    "stream_ram_start": "0xC9C8",
-    "stream_ram_end_inclusive": "0xD2EF",
-    "translated_stream_bytes": 2265,
-    "terminator_ram": "0xD2A0",
-    "zero_fill_ram_start": "0xD2A1",
-    "zero_fill_bytes": 79,
-    "payload_sha256": "885838b93a77382f42c728b77f8e8b631d86d8c1c80eaefbcdff261e820e3bf1",
-    "segments": [
-      {
-        "source_row": "01",
-        "ram_range": "C9C8~CACC",
-        "section": "출연",
-        "translated_text": "[00][00]␠␠␠␠␠■출연■[0D][0D]␠␠␠아소␠␠␠유코[01 02 02]␠␠␠다이몬␠␠메가스[01 02 02]␠␠크리스토발␠바리아[01 02 02]␠␠크리스토발␠바르나[01 02 02]␠␠␠조르다노␠하이젠[01 02 02]␠␠␠기욤␠␠␠가이아스[01 02 02]␠␠␠바르프␠데␠다리스[01 02 02]␠␠␠안게로␠␠자르가[01 02 02]␠␠␠키리시마␠레이코[00]",
-        "payload_start": 0,
-        "payload_end_exclusive": 247,
-        "payload_bytes": 247,
-        "control_notes": "이름 사이 01 02 02 반복 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-2"
-      },
-      {
-        "source_row": "02",
-        "ram_range": "CACD~CAED",
-        "section": "타이틀",
-        "translated_text": "[0D][0D]␠★ＶＡＬＩＳⅡ␠ＳＴＡＦＦ★[00]",
-        "payload_start": 247,
-        "payload_end_exclusive": 280,
-        "payload_bytes": 33,
-        "control_notes": "앞 0D 0D / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-3"
-      },
-      {
-        "source_row": "03",
-        "ram_range": "CAEE~CB27",
-        "section": "게임 디자인",
-        "translated_text": "␠␠␠＜게임␠디자인＞[0D][0D][0D]␠␠ＶＡＬＩＳⅡ␠ＳＴＡＦＦ[00]",
-        "payload_start": 280,
-        "payload_end_exclusive": 334,
-        "payload_bytes": 54,
-        "control_notes": "내부 0D×3 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-4"
-      },
-      {
-        "source_row": "04",
-        "ram_range": "CB28~CB5D",
-        "section": "시나리오/원안",
-        "translated_text": "␠␠＜시나리오／게임원안＞[0D][0D][0D]␠␠␠아카호리␠히로시[00]",
-        "payload_start": 334,
-        "payload_end_exclusive": 386,
-        "payload_bytes": 52,
-        "control_notes": "내부 0D×3 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-5"
-      },
-      {
-        "source_row": "05",
-        "ram_range": "CB5E~CB91",
-        "section": "게임 프로그램",
-        "translated_text": "␠␠␠＜게임프로그램＞[0D][0D][0D]␠␠␠타나아미␠타다시[00]",
-        "payload_start": 386,
-        "payload_end_exclusive": 434,
-        "payload_bytes": 48,
-        "control_notes": "내부 0D×3 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-6"
-      },
-      {
-        "source_row": "06",
-        "ram_range": "CB92~CBC7",
-        "section": "비주얼 프로그램",
-        "translated_text": "␠␠＜비주얼␠프로그램＞[0D][0D][0D]␠␠␠카지␠␠␠야스유키[00]",
-        "payload_start": 434,
-        "payload_end_exclusive": 486,
-        "payload_bytes": 52,
-        "control_notes": "내부 0D×3 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-7"
-      },
-      {
-        "source_row": "07",
-        "ram_range": "CBC8~CBFB",
-        "section": "PC-98 프로그램",
-        "translated_text": "␠␠＜ＰＣ９８프로그램＞[0D][0D][0D]␠␠␠야마모토␠마사야스[00]",
-        "payload_start": 486,
-        "payload_end_exclusive": 538,
-        "payload_bytes": 52,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-8"
-      },
-      {
-        "source_row": "08",
-        "ram_range": "CBFC~CC49",
-        "section": "MSX2 프로그램",
-        "translated_text": "␠␠␠＜ＭＳＸ２프로그램＞[0D][0D][0D]␠␠␠카지␠␠␠야스유키[0D]␠␠␠요시다␠␠히로시[00]",
-        "payload_start": 538,
-        "payload_end_exclusive": 615,
-        "payload_bytes": 77,
-        "control_notes": "중간 0D / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-9"
-      },
-      {
-        "source_row": "09",
-        "ram_range": "CC4A~CC7F",
-        "section": "X68000 프로그램",
-        "translated_text": "␠＜Ｘ６８０００프로그램＞[0D][0D][0D]␠␠␠야마모토␠마사야스[00]",
-        "payload_start": 615,
-        "payload_end_exclusive": 669,
-        "payload_bytes": 54,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-10"
-      },
-      {
-        "source_row": "10",
-        "ram_range": "CC80~CCB4",
-        "section": "배경 그래픽",
-        "translated_text": "␠␠␠＜배경␠그래픽＞[0D][0D][0D]␠␠␠키쿠치␠␠에이지[00]",
-        "payload_start": 669,
-        "payload_end_exclusive": 717,
-        "payload_bytes": 48,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-11"
-      },
-      {
-        "source_row": "11",
-        "ram_range": "CCB5~CD1D",
-        "section": "캐릭터 그래픽",
-        "translated_text": "␠␠＜캐릭터␠그래픽＞[0D][0D][0D]␠␠␠코노␠␠␠슈이치[01 02 02]␠␠␠␠␠ｔｈａｎｋｓ[0D]␠␠␠스와␠␠␠이사오[00]",
-        "payload_start": 717,
-        "payload_end_exclusive": 813,
-        "payload_bytes": 96,
-        "control_notes": "중간 01 02 02 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-12"
-      },
-      {
-        "source_row": "12",
-        "ram_range": "CD1E~CD5C",
-        "section": "콘티/캐릭터 디자인",
-        "translated_text": "＜그림␠콘티／캐릭터␠디자인＞[0D][0D][0D]␠␠␠토코로␠␠토모카즈[00]",
-        "payload_start": 813,
-        "payload_end_exclusive": 871,
-        "payload_bytes": 58,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-13"
-      },
-      {
-        "source_row": "13",
-        "ram_range": "CD5D~CDD9",
-        "section": "비주얼 디자인",
-        "translated_text": "␠␠＜비주얼␠디자인＞[0D][0D]␠␠␠토코로␠␠토모카즈[0D]␠␠␠하시모토␠리츠로[01 02 02]␠␠␠오타␠␠␠히로마사[0D]␠␠␠이와타␠␠타카키[00]",
-        "payload_start": 871,
-        "payload_end_exclusive": 993,
-        "payload_bytes": 122,
-        "control_notes": "중간 01 02 02 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-14"
-      },
-      {
-        "source_row": "14",
-        "ram_range": "CDDA~CE11",
-        "section": "음악 표제",
-        "translated_text": "[0D]␠␠ＡＬＬ␠ＭＵＳＩＣ␠ｂｙ[0D]␠␠␠␠␠★␠유음인␠★[00]",
-        "payload_start": 993,
-        "payload_end_exclusive": 1048,
-        "payload_bytes": 55,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-15"
-      },
-      {
-        "source_row": "15",
-        "ram_range": "CE12~CE72",
-        "section": "작곡/편곡",
-        "translated_text": "␠␠␠␠＜작곡／편곡＞[0D][0D]␠␠␠오가와␠␠시노부[0D]␠␠␠사토␠␠␠텐페이[0D]␠␠␠카지하라␠마사히로[00]",
-        "payload_start": 1048,
-        "payload_end_exclusive": 1143,
-        "payload_bytes": 95,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-16"
-      },
-      {
-        "source_row": "16",
-        "ram_range": "CE73~CEA5",
-        "section": "효과음",
-        "translated_text": "␠␠␠␠␠＜효과음＞[0D][0D][0D]␠␠␠카지하라␠마사히로[00]",
-        "payload_start": 1143,
-        "payload_end_exclusive": 1191,
-        "payload_bytes": 48,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-17"
-      },
-      {
-        "source_row": "17",
-        "ram_range": "CEA6~CEDA",
-        "section": "매니퓰레이트",
-        "translated_text": "␠␠␠␠＜음원␠조정＞[0D][0D][0D]␠␠␠야마모토␠마사야스[00]",
-        "payload_start": 1191,
-        "payload_end_exclusive": 1241,
-        "payload_bytes": 50,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-18"
-      },
-      {
-        "source_row": "18",
-        "ram_range": "CEDB~CF37",
-        "section": "성우",
-        "translated_text": "␠␠␠␠␠＜성우＞[0D][0D][0D]☆유코・・・・시마모토␠스미[01 03 02]☆레이코・・・한타니␠␠키미에[00]",
-        "payload_start": 1241,
-        "payload_end_exclusive": 1324,
-        "payload_bytes": 83,
-        "control_notes": "중간 01 03 02 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-19"
-      },
-      {
-        "source_row": "19",
-        "ram_range": "CF38~D08A",
-        "section": "ASSIST",
-        "translated_text": "[02 0E]␠␠␠␠＜ＡＳＳＩＳＴ＞[0D][0D]␠␠␠오노␠␠␠요이치[0D]␠␠␠나카하라␠준지[01 02 02]␠␠␠타카이␠␠마사히코[0D]␠␠␠시바야마␠유이나[01 02 02]␠␠␠혼마␠␠␠히로시[0D]␠␠␠카쿠무␠␠히토시[01 02 02]␠␠␠카마타␠␠야스히코[0D]␠␠␠히노␠␠␠아키히로[01 02 02]␠␠␠사에구사␠히로유키[0D]␠␠␠이와타␠␠타카키[01 02 02]␠␠␠마나코␠␠토모야스[01 02 02]␠␠␠ｔｈａｎｋｓ[0D]␠␠␠오다기리␠타로[00]",
-        "payload_start": 1324,
-        "payload_end_exclusive": 1665,
-        "payload_bytes": 341,
-        "control_notes": "앞 02 0E / 이름 사이 01 02 02 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-20"
-      },
-      {
-        "source_row": "20",
-        "ram_range": "D08B~D0C5",
-        "section": "패키지 일러스트",
-        "translated_text": "[02 16]␠␠␠＜패키지␠일러스트＞[0D][0D][0D]␠␠␠토코로␠␠토모카즈[00]",
-        "payload_start": 1665,
-        "payload_end_exclusive": 1721,
-        "payload_bytes": 56,
-        "control_notes": "앞 02 16 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-21"
-      },
-      {
-        "source_row": "21",
-        "ram_range": "D0C6~D0F8",
-        "section": "로고 디자인",
-        "translated_text": "␠␠␠␠＜로고␠디자인＞[0D][0D][0D]␠␠␠토리사와␠야스시[00]",
-        "payload_start": 1721,
-        "payload_end_exclusive": 1771,
-        "payload_bytes": 50,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-22"
-      },
-      {
-        "source_row": "22",
-        "ram_range": "D0F9~D221",
-        "section": "PROMOTION",
-        "translated_text": "[02 0E]␠␠␠＜프로모션＞[0D][0D]␠␠␠후쿠시마␠지로[0D]␠␠␠후쿠시마␠카즈유키[01 02 02]␠␠␠후쿠시마␠유지[0D]␠␠␠시부야␠␠요시타카[01 02 02]␠␠␠키노시타␠타카미[0D]␠␠␠코노␠␠␠요시아키[01 02 02]␠␠␠세키노␠␠마유미[0D]␠␠␠미우라␠␠토모코[01 02 02]␠␠␠코하마␠␠유키코[0D]␠␠␠나카가와␠유키코[0D][01 02 02]␠␠␠카자미␠␠시로[00]",
-        "payload_start": 1771,
-        "payload_end_exclusive": 2057,
-        "payload_bytes": 286,
-        "control_notes": "앞 02 0E / 내부 01 02 02 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-23"
-      },
-      {
-        "source_row": "23",
-        "ram_range": "D222~D258",
-        "section": "협력",
-        "translated_text": "␠␠␠␠␠␠협␠␠력[0D][0D][0D]␠␠신일본␠레이저␠소프트（주）[00]",
-        "payload_start": 2057,
-        "payload_end_exclusive": 2113,
-        "payload_bytes": 56,
-        "control_notes": "내부 0D×3 / 끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-24"
-      },
-      {
-        "source_row": "24",
-        "ram_range": "D259~D28F",
-        "section": "special thanks",
-        "translated_text": "␠ｓｐｅｃｉａｌ␠ｔｈａｎｋｓ[0D][0D][0D]␠␠␠후쿠시마␠타카시[00]",
-        "payload_start": 2113,
-        "payload_end_exclusive": 2169,
-        "payload_bytes": 56,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-25"
-      },
-      {
-        "source_row": "25",
-        "ram_range": "D290~D2CB",
-        "section": "제작/저작",
-        "translated_text": "␠␠␠␠␠제작・저작␠[0D][0D][0D]（주）일본␠텔레네트␠␠１９８９．[00]",
-        "payload_start": 2169,
-        "payload_end_exclusive": 2229,
-        "payload_bytes": 60,
-        "control_notes": "끝 00",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-26"
-      },
-      {
-        "source_row": "26",
-        "ram_range": "D2CC~D2EF",
-        "section": "종료",
-        "translated_text": "[0D][0D]␠␠␠␠ＴＨＥ␠ＥＮＤ[01 04 01]␠[01 04 01]␠[00][FF]",
-        "payload_start": 2229,
-        "payload_end_exclusive": 2265,
-        "payload_bytes": 36,
-        "control_notes": "후반 01 04 01 / ␠ / 01 04 01 / ␠ / 00 / D2EF=FF",
-        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-27"
-      }
-    ]
-  },
   "rows": [
     {
       "id": "a_end_credits-0001",
@@ -1142,5 +841,48 @@
       "status": "confirmed"
     }
   ],
-  "component_id": "a_end_credits"
+  "component_id": "a_end_credits",
+  "layout": {
+    "stream_ram_start": "0xC9C8",
+    "stream_ram_end_inclusive": "0xD2EF",
+    "translated_stream_bytes": 2341,
+    "terminator_ram": "0xD2EC",
+    "zero_fill_ram_start": "0xD2ED",
+    "zero_fill_bytes": 3,
+    "payload_sha256": "01e4ac8934d34bd4b3337d6ee821f200575204936d27e0b8e736a9b1b47b498f",
+    "full_stream_sha256": "5fea7d57f39270784f1e823cd822227a6befdb206b3bc217e1f3fc84929397b2",
+    "sector_safe_raw_segments": [
+      {
+        "ram_start": "0xC9C8",
+        "ram_end_inclusive": "0xCBFF",
+        "raw_start": "0x09B98",
+        "raw_end_inclusive": "0x09DCF",
+        "length_bytes": 568,
+        "old_sha256": "ec190bf280fa9e7c747f5b423c0ff3027383640c97bb10fb7cb8506a5a4c77a1",
+        "new_sha256": "e4cfa43f793eafdd5682b2bebf8ba2025e6747feafb4b5f0c02499e81cb95f67"
+      },
+      {
+        "ram_start": "0xCC00",
+        "ram_end_inclusive": "0xCFFF",
+        "raw_start": "0x09DE0",
+        "raw_end_inclusive": "0x0A1DF",
+        "length_bytes": 1024,
+        "old_sha256": "07468025e66b769ddf835c8c85a1ff864bb37b5db0613ac71107c9e9c9a3e785",
+        "new_sha256": "5cb32ef7a6e9816cbba862cdce78ba59d08b79cbc1d112cad28c4aaf7909ade0"
+      },
+      {
+        "ram_start": "0xD000",
+        "ram_end_inclusive": "0xD2EF",
+        "raw_start": "0x0A1F0",
+        "raw_end_inclusive": "0x0A4DF",
+        "length_bytes": 752,
+        "old_sha256": "28e40569bd36581d6a28fa74c7f41bded35d57113333a7b0fc7f6e96ebef610c",
+        "new_sha256": "4ef75df7e3b5e425c74393d57b4256665d32fcd093b59e756cc70196f1a5bef0"
+      }
+    ]
+  },
+  "source_docs": [
+    "source/text-reference/disk-A__text-reference.csv",
+    "docs/integrated-source-analysis.md"
+  ]
 }

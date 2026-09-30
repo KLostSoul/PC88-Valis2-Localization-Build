@@ -8,25 +8,6 @@
     "size_bytes": 415840,
     "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
   },
-  "source_docs": [
-    {
-      "path": "docs/integrated-source-analysis.md#3.7",
-      "role": "Disk A title resource dimensions, encoding layouts, RAM ranges, and raw sector map."
-    },
-    {
-      "path": "source/patches/row-tables/disk-A__title__d473-raw-change.csv",
-      "role": "Reviewed D473-D475 title row correction."
-    }
-  ],
-  "source_hashes": {
-    "japanese_disk_a_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
-  },
-  "target_provenance": {
-    "method": "The build reads the checked-in plane PNGs and encodes each Disk A title resource directly. It does not use serialized target resource bytes. The Valis logo and II images preserve the Japanese source pixels; Mugen title and scroll images contain the Korean changes.",
-    "serialized_target_bytes_used": false,
-    "runtime_status": "The user confirmed emulator verification of the final build screen and gameplay.",
-    "encoder": "tools/graphics_assets.py"
-  },
   "resource_layout": {
     "mugen_title": {
       "ram_range": "1908~1EF7",
@@ -160,34 +141,18 @@
       "planes": "5C/5D/5E",
       "storage": "compressed x-major byte columns, plane order 5C/5D/5E; LSB control bits",
       "maximum_size": "0x1346",
-      "source_pixels_match_japanese": true
+      "source_pixels_match_japanese": false,
+      "encoded_target_bytes": 4366,
+      "encoded_target_sha256": "70438c2e7dc5736f7f9b64fbdef34375d1ba520d68a1d7b0d8d067cce06790ca"
     }
   },
-  "verified_unchanged_images": [
-    {
-      "resource": "II 3-plane",
-      "ram_range": "21B8~334E",
-      "source_project_pixels_sha256": "e8aa5e273d7f12089434067f6a3b74f460d00b8c5ffd50dbcd16537f2dc3d7db",
-      "japanese_source_pixels_sha256": "e8aa5e273d7f12089434067f6a3b74f460d00b8c5ffd50dbcd16537f2dc3d7db",
-      "changed_pixels": 0,
-      "action": "preserve Japanese source pixels; encode the PNG resource for Disk A"
-    },
-    {
-      "resource": "Valis 3-plane",
-      "ram_range": "334F~4694",
-      "source_project_pixels_sha256": "6d6bb31b249af7dbe2d458801b3c1efcf2707299680bdd5a45295c3d8ef351ca",
-      "japanese_source_pixels_sha256": "6d6bb31b249af7dbe2d458801b3c1efcf2707299680bdd5a45295c3d8ef351ca",
-      "changed_pixels": 0,
-      "action": "preserve Japanese source pixels; encode the PNG resource for Disk A"
-    }
-  ],
   "rows": [
     {
       "id": "a-title-valis-row-animation-hook",
       "offset": "0x085F3",
       "old_hex": "CD 19 87",
       "new_hex": "00 00 00",
-      "evidence_ref": "source/patches/row-tables/disk-A__title__d473-raw-change.csv#row-1; Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#D473-D475",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
       "status": "confirmed",
       "ram_range": "D473~D475",
       "note": "Directly recorded center-out row correction; exact original CALL 8719 bytes verified from Japanese Disk A."
@@ -211,5 +176,25 @@
       "5E": "source/graphics/disk-A__valis-title/03.png"
     }
   },
-  "build_mode": "png-graphics-and-reviewed-patch-rows"
+  "build_mode": "png-graphics-and-reviewed-patch-rows",
+  "verified_images": [
+    {
+      "resource": "II 3-plane",
+      "ram_range": "21B8~334E",
+      "source_project_pixels_sha256": "e8aa5e273d7f12089434067f6a3b74f460d00b8c5ffd50dbcd16537f2dc3d7db",
+      "japanese_source_pixels_sha256": "e8aa5e273d7f12089434067f6a3b74f460d00b8c5ffd50dbcd16537f2dc3d7db",
+      "changed_pixels": 0,
+      "action": "preserve Japanese source pixels; encode the PNG resource for Disk A"
+    },
+    {
+      "resource": "Valis 3-plane",
+      "original_packed_sha256": "4815441424cd2106e8200df2e98ee4f93a6415fec3ef7d053fb1bf8a30b0c113",
+      "target_packed_sha256": "9d28d4081466bd0437cbf174f51e05c65ebfb4f2a1838a1ca9623cc3fdff2cdb",
+      "changed_packed_bytes": 6430
+    }
+  ],
+  "source_docs": [
+    "source/text-reference/disk-A__text-reference.csv",
+    "docs/integrated-source-analysis.md"
+  ]
 }

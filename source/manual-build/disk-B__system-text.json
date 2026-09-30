@@ -8,84 +8,36 @@
     "sha256": "6537b681f8c24aa92be608f99dc61ef8da9afa1b6569450dba1dd5d7d00e3919",
     "size_bytes": 415840
   },
-  "source_docs": [
-    {
-      "path": "work-materials/Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx",
-      "sha256": "82dc06a55cfd88c03be01dd0b40dfe3324a4365392aaa0d32240e7afbfc456c4"
-    },
-    {
-      "path": "source/kanji/glyph-assignment-reference.csv",
-      "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
-      "rows": 558,
-      "role": "exact Hangul token lookup only"
-    }
-  ],
-  "encoding_rules": {
-    "translations": "Direct DOCX target cells; slash separators are editorial delimiters.",
-    "spaces": "␠ and displayed ASCII space map to PC-88 fullwidth space 81 40.",
-    "hangul": "Exact current 558-row token CSV lookup; non-Hangul glyphs CP932.",
-    "padding": "DOCX-recorded tails are zero-filled."
-  },
   "verified_unchanged_sites": [
     {
       "offset": "0x002E22",
       "old_hex": "11 62 C7",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row2",
-      "reason": "Pointer remains at documented RAM address."
-    },
-    {
-      "offset": "0x002E69",
-      "old_hex": "11 80 C8",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row4",
-      "reason": "Pointer remains at documented RAM address."
-    },
-    {
-      "offset": "0x002E10",
-      "old_hex": "11 00 C9",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row5",
-      "reason": "Pointer remains at documented RAM address."
-    },
-    {
-      "offset": "0x002E7C",
-      "old_hex": "11 0D C9",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row6",
+      "evidence_ref": "source/text-reference/disk-B__system-text.csv",
       "reason": "Pointer remains at documented RAM address."
     },
     {
       "offset": "0x003691",
       "old_hex": "11 72 CA",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row7",
+      "evidence_ref": "source/text-reference/disk-B__system-text.csv",
       "reason": "Pointer remains at documented RAM address."
     },
     {
       "offset": "0x00C4C8",
       "old_hex": "11 79 CA",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row9",
+      "evidence_ref": "source/text-reference/disk-B__system-text.csv",
       "reason": "Pointer remains at documented RAM address."
     },
     {
       "offset": "0x000A34",
       "old_hex": "32 75 06",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table4/row2",
+      "evidence_ref": "source/text-reference/disk-B__system-text.csv",
       "reason": "Dynamic-slot store is unchanged."
     },
     {
       "offset": "0x000A64",
       "old_hex": "32 90 06",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table4/row4",
+      "evidence_ref": "source/text-reference/disk-B__system-text.csv",
       "reason": "Dynamic-slot store is unchanged."
-    }
-  ],
-  "excluded_ranges": [
-    {
-      "range": "0x003430-0x00343F",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row2",
-      "reason": "D88 sector header; not written."
-    },
-    {
-      "range": "0x036C90-0x036C98",
-      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table2/row7",
-      "reason": "がいたぜ[00] exists but use is unresolved; not translated."
     }
   ],
   "rows": [
@@ -721,5 +673,29 @@
       "evidence_ref": "source/text-reference/disk-B__system-text.csv",
       "status": "confirmed"
     }
+  ],
+  "verified_changed_sites": [
+    {
+      "offset": "0x002E69",
+      "old_hex": "11 80 C8",
+      "new_hex": "11 72 C8",
+      "evidence_ref": "source/patches/row-tables/disk-B__system-text__layout-and-source-tables.csv"
+    },
+    {
+      "offset": "0x002E10",
+      "old_hex": "11 00 C9",
+      "new_hex": "11 F2 C8",
+      "evidence_ref": "source/patches/row-tables/disk-B__system-text__layout-and-source-tables.csv"
+    },
+    {
+      "offset": "0x002E7C",
+      "old_hex": "11 0D C9",
+      "new_hex": "11 FD C8",
+      "evidence_ref": "source/patches/row-tables/disk-B__system-text__layout-and-source-tables.csv"
+    }
+  ],
+  "source_docs": [
+    "source/text-reference/disk-B__system-text.csv",
+    "docs/integrated-source-analysis.md"
   ]
 }

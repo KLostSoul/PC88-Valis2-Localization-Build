@@ -5,10 +5,6 @@
     "sha256": "d933a387f6afe847345482070cd1e23ca4158f6d49144a99ef9ebbdb864c56f7",
     "size_bytes": 415840
   },
-  "source_docs": [
-    "Prize Notification/Valis2_DiskG_Prize_Notification_Translation_Worksheet_2026-08-09.docx",
-    "Prize Notification/Valis2_DiskG_Prize_Notification_Analysis_SPACE_MARKED_v3_2026-08-09.docx"
-  ],
   "lookup_reference": {
     "file": "source/kanji/glyph-assignment-reference.csv",
     "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
@@ -424,5 +420,9 @@
       "evidence_ref": "source/text-reference/disk-G__music-prize-warning.csv",
       "status": "confirmed"
     }
+  ],
+  "source_docs": [
+    "source/text-reference/disk-G__music-prize-warning.csv",
+    "docs/integrated-source-analysis.md"
   ]
 }

@@ -8,22 +8,6 @@
     "sha256": "8569ee720c0df24293066fc3589c1a204edc102ef57abc3a6529c16ec8a4041b",
     "size_bytes": 415840
   },
-  "source_docs": [
-    {
-      "path": "work-materials/Act 5/Valis2_DiskF_ACT5_HANGUL_PATCH_TABLE_ANALYSIS_FORMAT_COLORFIX_ACTUAL_2026-08-06.docx",
-      "sha256": "02bcca601e1c2e288698b242a5e1426e19cc282f65bc533390fd9207179b79d5"
-    },
-    {
-      "path": "work-materials/Act 5/Valis2_DiskF_ACT5_runtime_analysis_0001-2547_DCB6_COMPLETE_2026-08-05_V11_COMPACT.docx",
-      "sha256": "44d9ca8954ca5b118ef3cd37f9b4418ba4d3ca18124526d16cf8d6f7149a86a5"
-    },
-    {
-      "path": "source/kanji/glyph-assignment-reference.csv",
-      "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
-      "rows": 558,
-      "role": "exact Hangul token lookup only"
-    }
-  ],
   "payloads": [
     {
       "id": "p1",
@@ -31,96 +15,80 @@
       "capacity_bytes": 2079,
       "meaningful_bytes": 2073,
       "last_written_cpu": "E3A5",
+      "payload_sha256": "a21d414b39123c9c7837eecc11e84c4ea22226c8d37faf525f459362704cede6",
       "raw_used_spans": [
         {
-          "start": "0x00237D",
-          "end": "0x0023EF",
-          "bytes": 115
+          "ram_start": "0xDB8D",
+          "ram_end_inclusive": "0xDBFF",
+          "raw_start": "0x0237D",
+          "raw_end_inclusive": "0x023EF",
+          "length_bytes": 115,
+          "old_sha256": "9b3590c18535be1a2c64e26ecf557548ef3548ac392525f64082b57f7e7b33ff",
+          "new_sha256": "017eb1c682115073883cde5dc60630b9b0daabd5534f61fad1642150c0777f6e"
         },
         {
-          "start": "0x002400",
-          "end": "0x0027FF",
-          "bytes": 1024
+          "ram_start": "0xDC00",
+          "ram_end_inclusive": "0xDFFF",
+          "raw_start": "0x02400",
+          "raw_end_inclusive": "0x027FF",
+          "length_bytes": 1024,
+          "old_sha256": "9571ceec118bf04ba07e27cf32917315e51ac2f2f73af037f5e20ab250226e97",
+          "new_sha256": "019cb43eed9a5ccd6f4df3a2e1b1b5dce55fdb76e4dcee8ed21e568bb6e3ac69"
         },
         {
-          "start": "0x002810",
-          "end": "0x002BB5",
-          "bytes": 934
+          "ram_start": "0xE000",
+          "ram_end_inclusive": "0xE3A5",
+          "raw_start": "0x02810",
+          "raw_end_inclusive": "0x02BB5",
+          "length_bytes": 934,
+          "old_sha256": "75518d7e8e54dece6f228fd2785aa37b16d0cf58d393a226acb10c43830d9fc7",
+          "new_sha256": "ba102de6a804cb6b0de11ed4169faed30d16e0a43b394f9541aa3a825cb336c2"
         }
       ],
-      "preserved_slack_raw_range": "0x002BB6-0x002BBB",
-      "source_formula_ref": "Valis2_DiskF_ACT5_runtime_analysis_0001-2547_DCB6_COMPLETE_2026-08-05_V11_COMPACT.docx#paragraphs25-27,32"
+      "zero_fill_raw_range": "0x002BB6-0x002BBB",
+      "zero_fill_bytes": 6
     },
     {
       "id": "p2",
       "cpu_range": "D762-DCB6",
       "capacity_bytes": 1365,
-      "meaningful_bytes": 1337,
-      "last_written_cpu": "DC9A",
+      "meaningful_bytes": 1341,
+      "last_written_cpu": "DC9E",
+      "payload_sha256": "b3192d3048be02a97cd4440a999c4d843f17a98efc6a391b652f253a2048ac30",
       "raw_used_spans": [
         {
-          "start": "0x003FC2",
-          "end": "0x00405F",
-          "bytes": 158
+          "ram_start": "0xD762",
+          "ram_end_inclusive": "0xD7FF",
+          "raw_start": "0x03FC2",
+          "raw_end_inclusive": "0x0405F",
+          "length_bytes": 158,
+          "old_sha256": "59ad3951febd0ee87ce868db56d21072d3243048c654727dfe0ff1e173f1136f",
+          "new_sha256": "44a6011fd92c003cd0cab2e9de6600d43eb8ff9bfe40c7e032f870ff9594b1f6"
         },
         {
-          "start": "0x004070",
-          "end": "0x00446F",
-          "bytes": 1024
+          "ram_start": "0xD800",
+          "ram_end_inclusive": "0xDBFF",
+          "raw_start": "0x04070",
+          "raw_end_inclusive": "0x0446F",
+          "length_bytes": 1024,
+          "old_sha256": "2b10e05b250fbc32f384e8a4095b521132df80cc4151ccaba087cccf48b660e0",
+          "new_sha256": "b3f73266163537aa7287fd0aa3a75078381fe24d21136bdaf9d1801cc1ca1638"
         },
         {
-          "start": "0x004480",
-          "end": "0x00451A",
-          "bytes": 155
+          "ram_start": "0xDC00",
+          "ram_end_inclusive": "0xDC9E",
+          "raw_start": "0x04480",
+          "raw_end_inclusive": "0x0451E",
+          "length_bytes": 159,
+          "old_sha256": "8c0aa56312647ffd89e676984cdc0adbe05c7875727a0f9b8638d7d4cf69887e",
+          "new_sha256": "7e2d0c1f6b8abb3f3aff0daaceadb5d8b4f58b6b82345653eae79306fb3a8e92"
         }
       ],
-      "preserved_slack_raw_range": "0x00451B-0x004536",
-      "source_formula_ref": "Valis2_DiskF_ACT5_runtime_analysis_0001-2547_DCB6_COMPLETE_2026-08-05_V11_COMPACT.docx#paragraphs28-30,33"
+      "terminator_hex": "26",
+      "zero_fill_raw_range": "0x00451F-0x004536",
+      "zero_fill_bytes": 24
     }
   ],
-  "excluded_raw_ranges": [
-    {
-      "range": "0x0023F0-0x0023FF",
-      "reason": "D88 sector header; direct layout paragraph 31."
-    },
-    {
-      "range": "0x002800-0x00280F",
-      "reason": "D88 sector header; direct layout paragraph 31."
-    },
-    {
-      "range": "0x004060-0x00406F",
-      "reason": "D88 sector header; direct layout paragraph 31."
-    },
-    {
-      "range": "0x004470-0x00447F",
-      "reason": "D88 sector header; direct layout paragraph 31."
-    }
-  ],
-  "preserved_slack": [
-    {
-      "range": "0x002BB6-0x002BBB",
-      "bytes": 6,
-      "reason": "After 2073 meaningful bytes within 2079 capacity; direct table ends E3A5; no zero-fill specified."
-    },
-    {
-      "range": "0x00451B-0x004536",
-      "bytes": 28,
-      "reason": "After 1337 meaningful bytes within 1365 capacity; direct table ends DC9A; no zero-fill specified."
-    }
-  ],
-  "row_accounting": {
-    "direct_main_rows": 1701,
-    "substream_trace_rows_excluded": 829,
-    "payload_main_rows": {
-      "p1": 1044,
-      "p2": 657
-    },
-    "retokened_hangul_rows": 909,
-    "fullwidth_space_rows": 232,
-    "punctuation_rows": 216,
-    "unique_current_mapping_chars": 239,
-    "runtime_verified_for_current_retokened_payload": true
-  },
   "rows": [
     {
       "id": "f_act5-0001",
@@ -794,5 +762,9 @@
       "evidence_ref": "source/text-reference/disk-F__act5.csv",
       "status": "confirmed"
     }
+  ],
+  "source_docs": [
+    "source/text-reference/disk-F__act5.csv",
+    "docs/integrated-source-analysis.md"
   ]
 }

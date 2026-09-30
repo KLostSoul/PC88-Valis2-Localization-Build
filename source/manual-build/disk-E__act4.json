@@ -5,11 +5,6 @@
     "sha256": "905c9b0dbc402bb6134b63a67f3615ab0adf79a191ff87cdf365903138cefede",
     "size_bytes": 416688
   },
-  "source_docs": [
-    "Act 4/Valis2_DiskE_ACT4_HANGUL_PATCH_TABLE_DOC_MANIFEST_CROSSCHECK_2026-08-04.docx",
-    "Act 4/Valis2_DiskE_ACT4_runtime_analysis_0001-2483_2026-08-02_DUMP_VERIFIED_CLEANED.docx",
-    "Act 4/Valis2_DiskE_ACT4_japanese_text_translation_workbook_FULLWIDTH_SPACE_MARK_CORRECTED_2026-08-02.docx"
-  ],
   "lookup_reference": {
     "file": "source/kanji/glyph-assignment-reference.csv",
     "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
@@ -23,19 +18,52 @@
   "component_id": "e_act4",
   "complete": true,
   "validation": {
-    "direct_text_slots": 1674,
-    "original_main_entries": 2002,
-    "source_text_entries": 1676,
-    "source_control_entries": 326,
-    "control_bytes": 562,
-    "target_text_control_gaps": 139,
-    "gaps_exactly_filled": 139,
-    "text_old_bytes_match_baseline": true,
-    "source_control_old_bytes_match_baseline": true,
-    "target_payload_ram_range": "D844~E789",
-    "target_payload_bytes": 3910,
-    "documented_zero_fill": "E78A~E78D",
-    "raw_rows_split_at_d88_payload_boundaries": true
+    "target_payload_ram_range": "D844~E78D",
+    "target_payload_bytes": 3914,
+    "payload_sha256": "e610cdb8f690a7c3b3d2ff799c7595e9ec27148539bb7381d78a26a7b23c3805",
+    "sector_safe_raw_segments": [
+      {
+        "ram_start": "0xD844",
+        "ram_end_inclusive": "0xDBFF",
+        "raw_start": "0x04404",
+        "raw_end_inclusive": "0x047BF",
+        "length_bytes": 956,
+        "old_sha256": "8dc17dadfe17ec2722dfc657e15a0a9cbf609e5375c37e785cde218b29fedb50",
+        "new_sha256": "2c1083eaa9c2d73376b2c218e292c48b0b9b5a9409ffa34fd7503121d7c9706a"
+      },
+      {
+        "ram_start": "0xDC00",
+        "ram_end_inclusive": "0xDFFF",
+        "raw_start": "0x047D0",
+        "raw_end_inclusive": "0x04BCF",
+        "length_bytes": 1024,
+        "old_sha256": "64605df023949b9a3fa7ed59c33ee329c5a9e7624f7edc1896c6583cafaa85c7",
+        "new_sha256": "d84b212fe0f1953eb7e390ed1f4e483affcb88ec661969936c7b211dff3b2b65"
+      },
+      {
+        "ram_start": "0xE000",
+        "ram_end_inclusive": "0xE3FF",
+        "raw_start": "0x04BE0",
+        "raw_end_inclusive": "0x04FDF",
+        "length_bytes": 1024,
+        "old_sha256": "2a26661975b45f3fb86712a177fb2cf961e8b619a85070c64d30fcfd864ed7c9",
+        "new_sha256": "2ca328891cc26b99b76dfc2b115391fd46dda4108d05060e141696a3b4545ff8"
+      },
+      {
+        "ram_start": "0xE400",
+        "ram_end_inclusive": "0xE78D",
+        "raw_start": "0x04FF0",
+        "raw_end_inclusive": "0x0537D",
+        "length_bytes": 910,
+        "old_sha256": "8b21c019a372a8b8e5a82c8c4aa4c2d1234360ff6bcba946e54d32410c2c202b",
+        "new_sha256": "e08b95776eaa993788aa7a50b68e0cf65f4914b02755567dd0ff26ab8bd5334d"
+      }
+    ],
+    "terminator": {
+      "ram": "0xE78D",
+      "raw_offset": "0x0537D",
+      "hex": "26"
+    }
   },
   "rows": [
     {
@@ -622,5 +650,9 @@
       "evidence_ref": "source/text-reference/disk-E__act4.csv",
       "status": "confirmed"
     }
+  ],
+  "source_docs": [
+    "source/text-reference/disk-E__act4.csv",
+    "docs/integrated-source-analysis.md"
   ]
 }

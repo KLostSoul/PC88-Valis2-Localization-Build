@@ -8,18 +8,6 @@
     "sha256": "bd453f4576705a224a6b1775d2e7d0d2d499efd49075ff0b2b4b0b419549dd6d",
     "size_bytes": 416688
   },
-  "source_docs": [
-    {
-      "path": "Valis2_DiskD_Event1_FINAL_PATCH_ROWS_2812_KANJI0361_2026-07-14.csv",
-      "sha256": "ee7eb14681c7cb763814ed3ca680b33f9dad03f1496af0ec75b0849109cef04e",
-      "role": "direct CSV ledger with explicit raw offsets, original bytes and target bytes"
-    },
-    {
-      "path": "Valis2_DiskD_Event1_KOR_PatchTable_0001-2812_EVENT1_COMPLETE_DEPLOYMENT_SPEC_KANJI0361_2026-07-14.docx",
-      "sha256": "53b0c36754c05b238cd6a0136fb6f04a381582040d629473b33cb4d5d8917900",
-      "role": "deployment layout, end marker and preserved gap"
-    }
-  ],
   "lookup_reference": {
     "file": "source/kanji/glyph-assignment-reference.csv",
     "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
@@ -37,31 +25,6 @@
       2526
     ]
   },
-  "row_accounting": {
-    "source_rows": 2812,
-    "main_source_rows": 2454,
-    "substream_source_rows": 358,
-    "source_bytes_sum": 6046,
-    "unique_physical_bytes": 5285,
-    "duplicate_offsets_coalesced_identical": 183,
-    "additional_source_references_retained": 761,
-    "source_row_kinds": {
-      "control": 546,
-      "hangul": 1693,
-      "space": 437,
-      "punctuation": 136
-    },
-    "retokened_hangul_rows": 1693,
-    "current_target_runtime_verified": true
-  },
-  "preserved_ranges": [
-    {
-      "ram_range": "E609~E615",
-      "bytes": 13,
-      "action": "preserve Japanese source bytes",
-      "evidence_ref": "Valis2_DiskD_Event1_KOR_PatchTable_0001-2812_EVENT1_COMPLETE_DEPLOYMENT_SPEC_KANJI0361_2026-07-14.docx#table-12"
-    }
-  ],
   "rows": [
     {
       "id": "d_act1-0001",
@@ -679,5 +642,9 @@
       "evidence_ref": "source/text-reference/disk-D__acts-1-3.csv",
       "status": "confirmed"
     }
+  ],
+  "source_docs": [
+    "source/text-reference/disk-D__acts-1-3.csv",
+    "docs/integrated-source-analysis.md"
   ]
 }

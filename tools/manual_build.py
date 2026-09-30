@@ -11,6 +11,7 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -218,30 +219,111 @@ def generate_kanji_rom(
     target_rom = bytearray(original_rom)
     checked = 0
     tokens: set[str] = set()
+    chars: set[str] = set()
+    unicode_values: set[int] = set()
     offsets: set[int] = set()
+    slots: list[tuple[int, int, str]] = []
     with KANJI_MAP_PATH.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
-        needed = {"char", "token_hex", "rom_file_offset_hex", "glyph_bytes_hex"}
+        needed = {
+            "index", "char", "unicode", "token_hex", "jis_code_hex",
+            "kanji_access_hex", "rom_file_offset_hex", "rom_end_exclusive_hex",
+            "glyph_bytes_hex",
+        }
         if not needed.issubset(set(reader.fieldnames or [])):
             raise BuildError("Glyph reference is missing required literal fields")
         for row in reader:
+            row_number = checked + 1
+            char = row.get("char", "")
+            label = f"glyph row {row_number} ({char!r})"
             try:
-                offset = int(row["rom_file_offset_hex"], 16)
+                if row.get("index") != str(row_number):
+                    raise ValueError("index is not the consecutive 1..558 row number")
+                if not isinstance(char, str) or len(char) != 1:
+                    raise ValueError("char must contain exactly one Unicode character")
+                unicode_text = row["unicode"]
+                if not isinstance(unicode_text, str) or not unicode_text.startswith("U+"):
+                    raise ValueError("unicode must use U+XXXX notation")
+                unicode_digits = unicode_text[2:]
+                if not unicode_digits or any(
+                    character not in "0123456789abcdefABCDEF" for character in unicode_digits
+                ):
+                    raise ValueError("unicode contains invalid hexadecimal digits")
+                unicode_value = int(unicode_digits, 16)
+                if unicode_value > 0x10FFFF or 0xD800 <= unicode_value <= 0xDFFF:
+                    raise ValueError("unicode is not a Unicode scalar value")
+                if ord(char) != unicode_value:
+                    raise ValueError("char does not match the declared Unicode value")
+
+                token_parts = row["token_hex"].split()
+                if len(token_parts) != 2 or any(
+                    len(part) != 2 or any(c not in "0123456789abcdefABCDEF" for c in part)
+                    for part in token_parts
+                ):
+                    raise ValueError("token_hex must contain exactly two hexadecimal bytes")
+                token_bytes = bytes(int(part, 16) for part in token_parts)
+                token = token_bytes.hex()
+                jis_text = row["jis_code_hex"]
+                if len(jis_text) != 4 or any(
+                    character not in "0123456789abcdefABCDEF" for character in jis_text
+                ):
+                    raise ValueError("jis_code_hex must contain exactly four hexadecimal digits")
+                jis_code = int(jis_text, 16)
+                if shift_jis_to_jis(token_bytes) != jis_code:
+                    raise ValueError("token_hex does not convert to jis_code_hex")
+
+                access_text = row["kanji_access_hex"]
+                if len(access_text) != 4 or any(
+                    character not in "0123456789abcdefABCDEF" for character in access_text
+                ):
+                    raise ValueError("kanji_access_hex must contain exactly four hexadecimal digits")
+                access = int(access_text, 16)
+                expected_access = jis_to_kanji_access(jis_code)
+                if access != expected_access:
+                    raise ValueError(
+                        f"kanji_access_hex is 0x{access:04X}, expected 0x{expected_access:04X}"
+                    )
+
+                offset_text = row["rom_file_offset_hex"]
+                end_text = row["rom_end_exclusive_hex"]
+                offset = parse_prefixed_hex(offset_text, "rom_file_offset_hex")
+                end_exclusive = parse_prefixed_hex(end_text, "rom_end_exclusive_hex")
                 glyph = bytes.fromhex(row["glyph_bytes_hex"])
-                token = bytes.fromhex(row["token_hex"]).hex()
             except (TypeError, ValueError) as exc:
-                raise BuildError(f"Invalid glyph reference row for {row.get('char')!r}") from exc
-            if len(glyph) != 32 or offset < 0 or offset + 32 > len(target_rom):
-                raise BuildError(f"Invalid 16x16 glyph record for {row.get('char')!r}")
-            if token in tokens or offset in offsets:
-                raise BuildError(f"Duplicate glyph token or ROM offset for {row.get('char')!r}")
+                raise BuildError(f"Invalid glyph reference {label}: {exc}") from exc
+            if len(glyph) != 32:
+                raise BuildError(f"{label}: glyph_bytes_hex must encode exactly 32 bytes")
+            if offset != access * 2:
+                raise BuildError(f"{label}: ROM offset does not equal KANJI access value × 2")
+            if end_exclusive != offset + 32:
+                raise BuildError(f"{label}: ROM end must be exactly 32 bytes after its start")
+            if offset & 0x1F or offset < 0 or end_exclusive > len(target_rom):
+                raise BuildError(f"{label}: glyph slot is unaligned or outside KANJI1.ROM")
+            if token in tokens or char in chars or unicode_value in unicode_values or offset in offsets:
+                raise BuildError(f"{label}: duplicate token, character, Unicode value, or ROM offset")
             target_rom[offset:offset + 32] = glyph
             tokens.add(token)
+            chars.add(char)
+            unicode_values.add(unicode_value)
             offsets.add(offset)
+            slots.append((offset, offset + 32, char))
             checked += 1
     if checked != 558:
         raise BuildError(f"Expected 558 explicit glyph records, found {checked}")
+    slots.sort()
+    for previous, current in zip(slots, slots[1:]):
+        if current[0] < previous[1]:
+            raise BuildError(
+                f"Overlapping 32-byte glyph slots for {previous[2]!r} and {current[2]!r}"
+            )
     generated = bytes(target_rom)
+    unchanged_start = 0
+    for start, end, char in slots:
+        if original_rom[unchanged_start:start] != generated[unchanged_start:start]:
+            raise BuildError(f"KANJI1 bytes outside the 558 assigned slots changed before {char!r}")
+        unchanged_start = end
+    if original_rom[unchanged_start:] != generated[unchanged_start:]:
+        raise BuildError("KANJI1 bytes outside the 558 assigned glyph slots changed")
     generated_hash = sha256(generated)
     if (
         len(generated) != int(target_identity["size_bytes"])
@@ -259,8 +341,57 @@ def generate_kanji_rom(
         "generated_sha256": generated_hash,
         "glyph_rows_checked": checked,
         "glyph_tokens_checked": len(tokens),
+        "glyph_character_mappings_checked": len(chars),
+        "glyph_unicode_mappings_checked": len(unicode_values),
         "glyph_rom_offsets_checked": len(offsets),
+        "glyph_slots_nonoverlapping": True,
+        "unchanged_bytes_outside_glyph_slots": True,
     }
+
+
+def shift_jis_to_jis(token: bytes) -> int:
+    """Convert one standard two-byte Shift-JIS token to its JIS row/cell code."""
+
+    if len(token) != 2:
+        raise ValueError("Shift-JIS token must contain exactly two bytes")
+    lead, trail = token
+    if 0x81 <= lead <= 0x9F:
+        lead_base = 0x81
+    elif 0xE0 <= lead <= 0xEF:
+        lead_base = 0xC1
+    else:
+        raise ValueError(f"invalid Shift-JIS lead byte 0x{lead:02X}")
+    if not (0x40 <= trail <= 0x7E or 0x80 <= trail <= 0xFC):
+        raise ValueError(f"invalid Shift-JIS trail byte 0x{trail:02X}")
+
+    row = ((lead - lead_base) * 2) + 0x21
+    if trail >= 0x9F:
+        row += 1
+        cell = trail - 0x7E
+    else:
+        adjusted_trail = trail - 1 if trail > 0x7F else trail
+        cell = adjusted_trail - 0x1F
+    if not (0x21 <= row <= 0x7E and 0x21 <= cell <= 0x7E):
+        raise ValueError(f"Shift-JIS token {token.hex(' ').upper()} is outside JIS row/cell bounds")
+    return (row << 8) | cell
+
+
+def jis_to_kanji_access(jis_code: int) -> int:
+    """Apply the 0AEE JIS-to-KANJI-ROM access address bit rearrangement."""
+
+    row, cell = (jis_code >> 8) & 0xFF, jis_code & 0xFF
+    if not (0x21 <= row <= 0x7E and 0x21 <= cell <= 0x7E):
+        raise ValueError(f"JIS row/cell 0x{jis_code:04X} is outside the double-byte range")
+    return (((jis_code >> 8) & 0x1F) << 9) | ((jis_code & 0x60) << 9) | ((jis_code & 0x1F) << 4)
+
+
+def parse_prefixed_hex(value: Any, field: str) -> int:
+    if not isinstance(value, str) or len(value) < 3 or value[:2].lower() != "0x":
+        raise ValueError(f"{field} must use 0x-prefixed hexadecimal notation")
+    digits = value[2:]
+    if any(character not in "0123456789abcdefABCDEF" for character in digits):
+        raise ValueError(f"{field} contains invalid hexadecimal digits")
+    return int(digits, 16)
 
 
 def ensure_output_not_inside_inputs(
@@ -270,6 +401,31 @@ def ensure_output_not_inside_inputs(
     for source in (original_dir.resolve(), kanji_original_rom.resolve()):
         if resolved == source or source in resolved.parents:
             raise BuildError(f"Output directory must not be inside an input path: {source}")
+
+
+def ensure_output_files_do_not_overlap_inputs(
+    output_dir: Path, input_paths: list[Path]
+) -> None:
+    """Reject every planned artifact path that aliases an identified source file."""
+
+    outputs = [
+        *(output_dir / "d88" / f"Valis2_KOR_Disk_{disk}.d88" for disk in "ABCDEFG"),
+        *(output_dir / "ips" / f"Valis2_KOR_Disk_{disk}.ips" for disk in "ABCDEFG"),
+        output_dir / "kanji" / "KANJI1.ROM",
+        output_dir / "ips" / "KANJI1.ips",
+        output_dir / "build-log.json",
+    ]
+    input_by_normalized_path = {
+        os.path.normcase(str(path.expanduser().resolve())): path for path in input_paths
+    }
+    for output_path in outputs:
+        normalized_output = os.path.normcase(str(output_path.resolve()))
+        source_path = input_by_normalized_path.get(normalized_output)
+        if source_path is not None:
+            raise BuildError(
+                f"Build output would overwrite an identified original input: "
+                f"{output_path} == {source_path}"
+            )
 
 
 def discover_inputs(
@@ -344,6 +500,9 @@ def build(
         original_dir, baseline, kanji_original_identity, kanji_original_rom
     )
     ensure_output_not_inside_inputs(output_dir, original_dir, kanji_original_rom)
+    ensure_output_files_do_not_overlap_inputs(
+        output_dir, [*disk_paths.values(), kanji_original_rom]
+    )
     kanji_original_data = kanji_original_rom.read_bytes()
     if (
         len(kanji_original_data) != int(kanji_original_identity["size_bytes"])
@@ -399,7 +558,10 @@ def build(
                     asset,
                     source_data,
                     component=title_table["component"],
-                    evidence_ref=f"{evidence}; docs/integrated-source-analysis.md#37",
+                    evidence_ref=(
+                        f"{evidence}; "
+                        "docs/integrated-source-analysis.md#타이틀-cg와-스크롤"
+                    ),
                 ))
             disk_graphics.extend(resource_report(assets, sha256))
 
@@ -414,7 +576,10 @@ def build(
                 asset,
                 source_data,
                 component=battle_table["component"],
-                evidence_ref=f"{evidence}; docs/integrated-source-analysis.md#37",
+                evidence_ref=(
+                    f"{evidence}; "
+                    "docs/integrated-source-analysis.md#disk-b-전투-cg"
+                ),
             ))
             disk_graphics.extend(resource_report((asset,), sha256))
 
@@ -455,6 +620,8 @@ def build(
 
     # All seven source images and every declared write are checked before any
     # D88 output reaches disk.
+    log_path = output_dir / "build-log.json"
+    log_path.unlink(missing_ok=True)
     for image, output_path, ips_path, ips_data in prepared.values():
         image.save(output_path)
         ips_path.parent.mkdir(parents=True, exist_ok=True)
@@ -494,7 +661,6 @@ def build(
         "kanji1": kanji_report,
         "status": "complete",
     }
-    log_path = output_dir / "build-log.json"
     log_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return result
 

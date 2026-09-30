@@ -8,24 +8,6 @@
     "sha256": "396f79df59d3263b801126943d03f0c63b232a52a6256a0994254d83031fabda",
     "size_bytes": 415840
   },
-  "source_docs": [
-    {
-      "path": "work-materials/Valis2_DiskC_FINAL_PATCH_RECORD_COMPACT_2026-08-11.docx",
-      "sha256": "c5ab3d52e10c75f810d20f3296fe0bb332ac49c9c6f1c9c698c7358235fa5a80"
-    },
-    {
-      "path": "source/kanji/glyph-assignment-reference.csv",
-      "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
-      "rows": 558,
-      "role": "exact Hangul token lookup only"
-    }
-  ],
-  "encoding_rules": {
-    "translations": "Direct DOCX target cells; slash separators are editorial delimiters.",
-    "spaces": "␠ and displayed ASCII space map to PC-88 fullwidth space 81 40.",
-    "hangul": "Exact current 558-row token CSV lookup; non-Hangul glyphs CP932.",
-    "padding": "DOCX-recorded tails are zero-filled."
-  },
   "rows": [
     {
       "id": "c_system_text-0001",
@@ -179,5 +161,9 @@
       "evidence_ref": "source/text-reference/disk-C__system-text.csv",
       "status": "confirmed"
     }
+  ],
+  "source_docs": [
+    "source/text-reference/disk-C__system-text.csv",
+    "docs/integrated-source-analysis.md"
   ]
 }
