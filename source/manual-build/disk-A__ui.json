@@ -17,59 +17,188 @@
   },
   "rows": [
     {
-      "id": "1-02",
-      "offset": "0x16C5",
-      "old_hex": "83 41 83 69 83 8D 83 4F 81 40 83 82 83 6A 83 5E 81 5B",
-      "new_hex": "8A 5A 88 EA 89 99 88 CF 81 40 89 BC 89 4D 8B 4F 81 40",
-      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-3",
-      "status": "confirmed",
-      "ram_range": "C305~C316",
-      "source_translation": "아날로그␠모니터␠",
-      "layout_note": "18 / OK, ␠패딩 1칸"
+      "id": "a_ui-0001",
+      "offset": "0x016C5",
+      "old_hex": "83 41 83 69 83 8D 83 4F",
+      "new_hex": "8A 5A 88 EA 89 99 88 CF",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
     },
     {
-      "id": "1-03",
-      "offset": "0x16D8",
-      "old_hex": "83 66 83 57 83 5E 83 8B 81 40 83 82 83 6A 83 5E 81 5B",
-      "new_hex": "89 72 8A D4 8B 50 81 40 89 BC 89 4D 8B 4F 81 40 81 40",
-      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-4",
-      "status": "confirmed",
-      "ram_range": "C318~C329",
-      "source_translation": "디지털␠모니터␠␠",
-      "layout_note": "18 / OK, ␠패딩 2칸"
+      "id": "a_ui-0002",
+      "offset": "0x016CF",
+      "old_hex": "83 82 83 6A 83 5E 81 5B 0D 83 66 83 57 83 5E 83 8B 81 40 83 82 83 6A 83 5E 81 5B",
+      "new_hex": "89 BC 89 4D 8B 4F 0D 89 72 8A D4 8B 50 81 40 89 BC 89 4D 8B 4F 00 00 00 00 00 00",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
     },
     {
-      "id": "1-06",
-      "offset": "0x1715",
-      "old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DE 81 40 81 40",
-      "new_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A A6 8A 9F 81 40 81 40",
-      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-7",
-      "status": "confirmed",
-      "ram_range": "C355~C36C",
-      "source_translation": "ＰＣＭ데이터를␠읽음␠␠[0D]",
-      "layout_note": "24-byte text span; fullwidth PCM follows the direct target-byte field; two fullwidth-space pads; [0D] marker is outside this span."
+      "id": "a_ui-0003",
+      "offset": "0x0171B",
+      "old_hex": "81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DE 81 40 81 40 0D",
+      "new_hex": "89 5D 8A A2 8B 4F 89 A2 81 40 8A A6 8A 9F 0D 82 6F 82 62",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
     },
     {
-      "id": "1-07",
-      "offset": "0x172E",
-      "old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DC 82 C8 82 A2",
-      "new_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A 5C 81 40 8A A6 8A 9F",
-      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-8",
-      "status": "confirmed",
-      "ram_range": "C36E~C385",
-      "source_translation": "ＰＣＭ데이터를␠안␠읽음[00]",
-      "layout_note": "24-byte byte-fit text span; no padding; [00] marker is outside this span."
+      "id": "a_ui-0004",
+      "offset": "0x0172F",
+      "old_hex": "6F 82 62 82 6C 81 40 83 66",
+      "new_hex": "6C 89 5D 8A A2 8B 4F 89 A2",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
     },
     {
-      "id": "3-02",
+      "id": "a_ui-0005",
+      "offset": "0x01739",
+      "old_hex": "5B 83 5E 82 F0 93 C7 82 DC 82 C8 82 A2",
+      "new_hex": "40 8A 5C 81 40 8A A6 8A 9F 00 00 00 00",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0006",
       "offset": "0x01CAA",
       "old_hex": "93 C7 82 DD 8D 9E 82 DD 92 86",
-      "new_hex": "89 99 89 73 81 40 8A CC 81 40",
-      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-23; Valis2_Editor_v2.12/data/manifests/a_ui.json (SHA-256 870b094bfc00ce5d1619f37960385c01f905fed89abfe60cf013a08a6063c41a; structure only: raw start, 10-byte span, RAM C8CA-C8D3, terminator C8D4)",
-      "status": "confirmed",
-      "ram_range": "C8CA~C8D3",
-      "source_translation": "로딩 중",
-      "layout_note": "10-byte span. Re-encoded direct Korean text with a 2-byte interword space and one 2-byte trailing pad, matching the direct worktable target-byte cell and “패딩 1칸” note. The Korean literal cell writes a leading ␠ instead; the spacing-position conflict is recorded in resolved_source_conflicts. [00] at C8D4 is outside the patch span and remains unchanged."
+      "new_hex": "89 99 89 73 81 40 8A CC 00 00",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0007",
+      "offset": "0x03A81",
+      "old_hex": "BE",
+      "new_hex": "BC",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0008",
+      "offset": "0x03A9A",
+      "old_hex": "B3",
+      "new_hex": "B1",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0009",
+      "offset": "0x03AD5",
+      "old_hex": "81 40 82 F0 8A 6D 94 46 82 B5 82 C4",
+      "new_hex": "89 A2 81 40 8B 8C 8A A4 8B 72 88 BB",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0010",
+      "offset": "0x03AF0",
+      "old_hex": "81 40 82 F0 81 40",
+      "new_hex": "89 A2 81 40 82 63",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0011",
+      "offset": "0x03AF7",
+      "old_hex": "63",
+      "new_hex": "71",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0012",
+      "offset": "0x03AF9",
+      "old_hex": "71",
+      "new_hex": "68",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0013",
+      "offset": "0x03AFB",
+      "old_hex": "68",
+      "new_hex": "75",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0014",
+      "offset": "0x03AFD",
+      "old_hex": "75 82 64 81 40 82 50 0D 82 C9 93 FC 82 EA 82 C4 00",
+      "new_hex": "64 81 40 82 50 0D 8A 72 81 40 88 F7 88 BB 00 82 71",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0015",
+      "offset": "0x03B0F",
+      "old_hex": "71",
+      "new_hex": "64",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0016",
+      "offset": "0x03B11",
+      "old_hex": "64",
+      "new_hex": "73",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0017",
+      "offset": "0x03B13",
+      "old_hex": "73",
+      "new_hex": "74",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0018",
+      "offset": "0x03B15",
+      "old_hex": "74",
+      "new_hex": "71",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0019",
+      "offset": "0x03B17",
+      "old_hex": "71 82 6D 81 40",
+      "new_hex": "6D 81 40 82 6A",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0020",
+      "offset": "0x03B1D",
+      "old_hex": "6A",
+      "new_hex": "64",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0021",
+      "offset": "0x03B1F",
+      "old_hex": "64 82 78 82 F0 0D",
+      "new_hex": "78 89 A2 0D 89 49",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0022",
+      "offset": "0x03B26",
+      "old_hex": "9F 82 B5 82 C4",
+      "new_hex": "8C 81 40 8A C8",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ui-0023",
+      "offset": "0x03B2C",
+      "old_hex": "BA 82 B3 82 A2 81 42",
+      "new_hex": "F8 8A 8A 81 42 00 00",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
     }
   ],
   "resolved_source_conflicts": [
@@ -216,18 +345,6 @@
       "status": "preserve_original",
       "reason": "Three zero bytes are a terminator/padding boundary, not translated text; absent from final selected_item_ids.",
       "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-24; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
-    }
-  ],
-  "delegated_rows": [
-    {
-      "ids": [
-        "2-01",
-        "2-02",
-        "2-03"
-      ],
-      "component_id": "a_shared_errors",
-      "reason": "These are part of the accepted 8 selected UI rows but are built by the separate shared-errors component.",
-      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-rows-19-21; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
     }
   ]
 }

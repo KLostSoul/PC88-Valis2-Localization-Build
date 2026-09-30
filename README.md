@@ -9,7 +9,7 @@
 - 일본어 원본 Disk A–G D88 7개
 - 일본어 원본 KANJI1 ROM 1개
 
-빌더는 `import/`의 원본을 크기·SHA-256으로 Disk A–G 및 KANJI1 ROM에 대응시킨다. 원본 ROM에는 `source/kanji/glyph-assignment-reference.csv`의 558개 글리프를 적용한다. 원본 ROM과 생성 ROM 사이의 변경 16,820바이트는 모두 이 글리프 슬롯에 있다.
+빌더는 `import/`의 원본을 크기·SHA-256으로 Disk A–G 및 KANJI1 ROM에 대응시킨다. KANJI1에는 `source/kanji/glyph-assignment-reference.csv`의 최종 558개 한글 글리프만 적용한다. ROM의 나머지 바이트는 원본값을 유지한다.
 
 원본 크기·SHA-256은 [`source-baseline.json`](source/manual-build/source-baseline.json)에 기록되어 있다. 해당 지문을 가진 원본이 빠졌거나 중복되면 빌드를 중단한다.
 
@@ -40,7 +40,7 @@ python -m tools.cli
 - `output/`: 빌드 결과 위치
 - `source/manual-build/`: 빌드에 사용하는 확정 raw 패치표
 - [일본어 원문·한국어 번역 참조표](source/text-reference/README.md): 영역별 문안과 출처
-- `source/patches/`: 날짜별 작업표와 교차 확인 자료
+- `source/patches/`: 영역별 분석·교차 확인 자료
 - `source/kanji/`: 글리프와 토큰 조회표
 - `tools/`: D88 처리, 패치 적용, IPS 생성·재적용 확인
 

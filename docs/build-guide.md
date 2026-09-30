@@ -7,7 +7,7 @@
 - 일본어 원본 Disk A–G D88 7개
 - 원본 KANJI1 ROM 1개
 
-빌더는 `import/`의 원본을 크기·SHA-256으로 Disk A–G 및 KANJI1 ROM에 대응시킨다. 원본 ROM에는 `source/kanji/glyph-assignment-reference.csv`의 558개 글리프를 적용한다. 원본 대비 변경 16,820바이트는 모두 해당 글리프 슬롯 안에 있다.
+빌더는 `import/`의 원본을 크기·SHA-256으로 Disk A–G 및 KANJI1 ROM에 대응시킨다. KANJI1에는 최종 글리프표의 558개 한글 글리프만 적용하고, 그 밖의 원본 ROM 바이트는 유지한다.
 
 원본 크기·SHA-256은 [`source-baseline.json`](../source/manual-build/source-baseline.json)에 기록되어 있다. 해당 지문을 가진 원본이 빠졌거나 중복되면 빌드를 중단한다.
 

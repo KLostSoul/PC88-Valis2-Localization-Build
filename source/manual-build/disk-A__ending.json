@@ -2617,54 +2617,547 @@
   ],
   "rows": [
     {
-      "id": "ending-main-segment-01",
-      "offset": "0x0AF69",
-      "old_hex": "2D FF 0C 01 0E 16 20 24 88 05 16 86 3A 9E 00 06 0C 2B 00 01 4D 00 03 00 88 16 6E DA 1E 16 A4 01 00 11 14 01 3B 00 41 83 4F 83 49 83 49 83 49 83 49 83 49 81 49 81 49 81 49 81 45 81 45 81 45 82 C8 82 BA 82 BE 81 48 81 40 82 C8 82 BA 82 BE 81 49 81 48 81 40 8E 63 94 45 89 A4 82 C6 8C C4 82 CE 82 EA 81 41 82 A0 82 E7 82 E4 82 E9 83 94 83 46 83 4A 83 93 83 65 83 42 82 CC 90 ED 8E 6D 82 C9 8B B0 82 EA 82 E7 82 EA 82 BD 82 B1 82 CC 83 81 83 4B 83 58 82 AA 81 41 82 C8 82 C9 82 E4 82 A6 8E 80 82 C8 82 CB 82 CE 82 C8 82 E7 82 CA 82 CC 82 BE 81 49 81 48 81 40 82 C8 82 C9 82 E4 82 A6 81 41 82 B1 82 F1 82 C8 90 6C 8A D4 82 CC 8F AC 96 BA 82 C9 82 E6 82 C1 82 C4 81 41 91 92 82 E7 82 EA 82 CB 82 CE 82 C8 82 E7 82 CA 82 CC 82 BE 81 49 81 48 81 40 83 94 83 46 83 4A 83 93 83 65 83 42 82 F0 88 EA 96 E9 82 C9 82 B5 82 C4 8E 78 94 7A 82 B5 82 BD 82 B1 82 CC 83 81 83 4B 83 58 82 CC 97 CD 82 AA 81 41 8F AC 96 BA 82 CC 82 A9 82 DA 82 BB 82 A2 8E 88 91 CC 82 C9 97 F2 82 C1 82 C4 82 A2 82 E9 82 C6 82 A2 82 A4 82 CC 82 A9 81 49 81 40 82 A8 82 A8 81 41 90 4D 82 B6 82 E7 82 EA 82 F1 81 49 81 40 90 4D 82 B6 82 E7 82 EA 82 F1 82 B1 82 C6 82 BE 81 49 61 16 55 DA 41 83 81 83 4B 83 58 81 42 88 A4 82 B7 82 E9 82 B1 82 C6 82 F0 92 6D 82 E7 82 C8 82 A2 82 A8 82 DC 82 A6 82 C9 82 CD 81 41 90 E2 91 CE 82 C9 95 AA 82 E7 82 C8 82 A2 81 42 83 8F 83 5E 83 56 82 AA 82 A8 82 DC 82 A6 82 C9 8F 9F 82 C4 82 BD 81 41 82 BB 82 CC 97 CD 82 CC 94 E9 96 A7 82 F0 81 49 61 16 28 DA 41 97 CD 82 CC 94 E9 96 A7 81 45 81 45 81 45 81 49 81 48 61 16 55 DA 41 82 BB 82 CC 97 CD 82 B1 82 BB 81 41 81 83 83 94 83 40 83 8A 83 58 81 84 81 49 81 40 81 83 83 94 83 40 83 8A 83 58 81 84 82 A0 82 E9 8C C0 82 E8 81 41 83 94 83 46 83 4A 83 93 83 65 83 42 82 AA 89 68 82 A6 82 E9 82 B1 82 C6 82 CD 82 C8 82 A2 82 ED 81 49 61 16 28 DA 01 01 06 0F 42 43 81 45 81 45 81 45 81 45 81 83 83 94 83 40 83 8A 83 58 81 84 81 45 81 45 81 45 81 48 81 40 88 A4 82 B7 82 E9 97 CD 81 45 81 45 81 45 81 48 81 40 82 BE 82 AA 90 6C 8A D4 82 C9 82 CD 81 41 88 A4 82 CC 82 DD 82 C8 82 E7 82 B8 91 9E 82 B5 82 DD 82 C6 82 A2 82 A4 82 E0 82 CC 82 E0 82",
-      "new_hex": "2D FF 0C 01 0E 16 20 24 88 05 16 86 3A 9E 00 06 0C 2B 00 01 4D 00 03 00 88 16 6E DA 1E 16 A4 01 00 11 14 01 3B 00 41 8B 42 8A 7D 8A 7D 8A 7D 8A 7D 81 49 81 49 81 40 81 45 81 45 81 45 81 40 8A 87 88 F0 81 48 81 40 8A 87 81 49 81 48 81 40 8A AF 8A A4 8A 86 8A A2 89 81 81 40 89 E3 89 A4 89 B8 81 40 89 D9 8A F8 8B 5B 8A A1 81 40 89 BC 89 6F 81 40 8A B7 89 EB 89 71 8A 72 88 B1 81 40 89 68 89 94 8A 91 8A A1 81 40 89 57 89 EF 8A A2 8A 71 89 5A 88 ED 88 9F 81 40 8A 87 81 40 8A C9 8A 6A 8A 66 89 AC 81 40 8B 72 89 4B 81 40 88 B0 8A A2 88 F0 81 49 81 48 8A 87 81 40 8A A2 89 8D 81 40 8A A4 88 A1 81 40 88 BA 8A D9 81 40 89 74 8A 97 8A A1 81 40 8A 42 8A 72 81 40 8A 58 89 8C 8A BD 8A 66 81 40 8B 72 89 4B 81 40 88 B0 8A A2 88 F0 81 49 81 48 81 40 89 D9 8A F8 8B 5B 89 A2 8B 72 89 9E 89 D1 81 40 89 AC 8A 72 81 40 8A BA 89 DC 8B 74 81 40 88 ED 88 9F 81 40 8A B5 81 40 88 9F 88 F1 8B 6C 81 40 88 BA 8A D9 8A 65 89 DB 89 50 81 40 89 C1 8B 72 89 50 89 4B 81 40 88 B0 8A A2 88 F0 81 49 81 40 8B 42 8A 5A 81 41 8A A4 8A BA 8B 75 81 40 8A 45 81 40 8A 6F 89 50 81 49 81 40 88 B7 8A FC 81 40 8A A4 8A BA 8B 75 81 40 8A 45 81 40 8A 6F 89 52 81 40 89 AD 8A A2 89 50 81 49 81 49 61 16 55 DA 41 89 B7 88 9F 8A 4A 81 41 89 EB 89 87 8B 72 89 4B 81 40 89 D7 8A BF 8A DF 81 40 89 BC 89 A0 89 4B 81 40 88 F3 89 4B 81 40 8A B8 89 57 81 40 8A 5F 81 40 8A 45 81 40 8A 6F 8A 6A 81 42 88 ED 88 9F 81 40 88 F5 81 40 8A A2 88 D7 81 40 8A 45 81 40 8A AB 89 4B 81 40 8B 98 8A A1 81 40 89 E6 89 CB 8A 9E 81 49 61 16 28 DA 41 8B 98 8A A1 81 40 89 E6 89 CB 81 45 81 45 81 45 81 49 81 48 61 16 55 DA 41 88 CF 81 40 8B 98 8A 9D 81 40 81 83 89 CC 89 A4 8A 4A 81 84 8A 66 81 49 81 40 81 83 89 CC 89 A4 8A 4A 81 84 88 9F 81 40 8A C1 8A B4 8B 72 89 4B 81 40 8B 74 81 41 89 D9 8A F8 8B 5B 88 9F 81 40 89 D5 8A 7B 8B 75 81 40 88 EA 8A 9D 81 40 8A B8 89 57 81 40 8A 7D 8A D4 81 40 8A 5E 8A 5A 81 49 81 49 61 16 28 DA 01 01 06 0F 42 43 81 45 81 45 81 45 81 40 81 83 89 CC 89 A4 8A 4A 81 84 81 45 81 45 81 45 81 48 81 40 89 EB 89 87 8B 72 89 4B 8B 98 81 45 81 45 81 45 81 48 81 40 8B 72 8A D4 89 AC 81 40 8A A4 88 A1 8A 72 88 B1 81",
-      "expected_old_sha256": "d862e69d3c6f6264871901d0691aa29c8536b3e78a60d34d292b3fcbd8189f91",
-      "replacement_sha256": "5386ce8d701324537476e8cfd11da33c0c591de00daa65b52c4af7f5eb0ea76a",
-      "ram_range": "0xD149~0xD3FF",
-      "d88_sector_chrn": [
-        4,
-        0,
-        4,
-        3
-      ],
-      "evidence_ref": "Ending/Valis2_DiskA_ENDING_KOREAN_PATCH_TABLE_0001-1132_2026-08-08.docx#table-1/rows-2-1133; Ending/Valis2_DiskA_ENDING_runtime_analysis_D149-D891_COMPLETE_ACT5_COLOR_FORMAT_2026-08-07.docx#table-1/rows-2-1133",
+      "id": "a_ending-0001",
+      "offset": "0x0AF90",
+      "old_hex": "83 4F 83 49 83 49 83 49 83 49 83",
+      "new_hex": "8B 42 8A 7D 8A 7D 8A 7D 8A 7D 81",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
       "status": "confirmed"
     },
     {
-      "id": "ending-main-segment-02",
+      "id": "a_ending-0002",
+      "offset": "0x0AF9F",
+      "old_hex": "49",
+      "new_hex": "40",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0003",
+      "offset": "0x0AFA1",
+      "old_hex": "49",
+      "new_hex": "45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0004",
+      "offset": "0x0AFA7",
+      "old_hex": "45 82 C8 82 BA 82 BE",
+      "new_hex": "40 8A 87 88 F0 81 48",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0005",
+      "offset": "0x0AFAF",
+      "old_hex": "48 81 40 82 C8 82 BA 82 BE 81 49 81 48 81 40 8E 63 94 45 89 A4 82 C6 8C C4 82 CE 82 EA 81 41 82 A0 82 E7 82 E4 82 E9 83 94 83 46 83 4A 83 93 83 65 83 42 82 CC 90 ED 8E 6D 82 C9 8B B0 82 EA 82 E7 82 EA 82 BD 82 B1 82 CC 83 81 83 4B 83 58 82 AA",
+      "new_hex": "40 8A 87 81 49 81 48 81 40 8A AF 8A A4 8A 86 8A A2 89 81 81 40 89 E3 89 A4 89 B8 81 40 89 D9 8A F8 8B 5B 8A A1 81 40 89 BC 89 6F 81 40 8A B7 89 EB 89 71 8A 72 88 B1 81 40 89 68 89 94 8A 91 8A A1 81 40 89 57 89 EF 8A A2 8A 71 89 5A 88 ED 88 9F",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0006",
+      "offset": "0x0B001",
+      "old_hex": "41 82 C8 82 C9 82 E4 82 A6 8E 80 82 C8 82 CB 82 CE 82 C8 82 E7 82 CA 82 CC 82 BE",
+      "new_hex": "40 8A 87 81 40 8A C9 8A 6A 8A 66 89 AC 81 40 8B 72 89 4B 81 40 88 B0 8A A2 88 F0",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0007",
+      "offset": "0x0B020",
+      "old_hex": "81 40 82 C8 82 C9 82 E4 82 A6 81 41 82 B1 82 F1 82 C8 90 6C 8A D4 82 CC 8F AC 96 BA 82 C9 82 E6 82 C1 82 C4 81 41 91 92 82 E7 82 EA 82 CB 82 CE 82 C8 82 E7 82 CA 82 CC 82 BE",
+      "new_hex": "8A 87 81 40 8A A2 89 8D 81 40 8A A4 88 A1 81 40 88 BA 8A D9 81 40 89 74 8A 97 8A A1 81 40 8A 42 8A 72 81 40 8A 58 89 8C 8A BD 8A 66 81 40 8B 72 89 4B 81 40 88 B0 8A A2 88 F0",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0008",
+      "offset": "0x0B060",
+      "old_hex": "83 94 83 46 83 4A 83 93 83 65 83 42 82 F0 88 EA 96 E9 82 C9 82 B5 82 C4 8E 78 94 7A 82 B5 82 BD 82 B1 82 CC 83 81 83 4B 83 58 82 CC 97 CD 82 AA 81 41 8F AC 96 BA 82 CC 82 A9 82 DA 82 BB 82 A2 8E 88 91 CC 82 C9 97 F2 82 C1 82 C4 82 A2 82 E9 82 C6 82 A2 82 A4 82 CC 82 A9 81 49",
+      "new_hex": "89 D9 8A F8 8B 5B 89 A2 8B 72 89 9E 89 D1 81 40 89 AC 8A 72 81 40 8A BA 89 DC 8B 74 81 40 88 ED 88 9F 81 40 8A B5 81 40 88 9F 88 F1 8B 6C 81 40 88 BA 8A D9 8A 65 89 DB 89 50 81 40 89 C1 8B 72 89 50 89 4B 81 40 88 B0 8A A2 88 F0 81 49 81 40 8B 42 8A 5A 81 41 8A A4 8A BA 8B 75",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0009",
+      "offset": "0x0B0BE",
+      "old_hex": "82 A8 82 A8 81 41 90 4D 82 B6 82 E7 82 EA 82 F1",
+      "new_hex": "8A 45 81 40 8A 6F 89 50 81 49 81 40 88 B7 8A FC",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0010",
+      "offset": "0x0B0CF",
+      "old_hex": "49 81 40 90 4D 82 B6 82 E7 82 EA 82 F1 82 B1 82 C6 82 BE 81 49 61 16 55 DA 41 83",
+      "new_hex": "40 8A A4 8A BA 8B 75 81 40 8A 45 81 40 8A 6F 89 52 81 40 89 AD 8A A2 89 50 81 49",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0011",
+      "offset": "0x0B0EB",
+      "old_hex": "83 4B 83 58 81 42 88 A4 82 B7 82 E9 82 B1 82 C6 82 F0 92 6D 82 E7 82 C8 82 A2 82 A8 82 DC 82 A6 82 C9 82 CD 81 41 90 E2 91 CE 82 C9 95 AA 82 E7 82 C8 82 A2 81 42 83 8F 83 5E 83 56 82 AA 82 A8 82 DC 82 A6 82 C9 8F 9F 82 C4 82 BD 81 41 82 BB 82 CC 97 CD 82 CC 94 E9 96 A7 82 F0 81 49 61 16 28 DA 41 97 CD 82 CC 94 E9 96 A7 81 45 81 45 81 45 81 49",
+      "new_hex": "49 61 16 55 DA 41 89 B7 88 9F 8A 4A 81 41 89 EB 89 87 8B 72 89 4B 81 40 89 D7 8A BF 8A DF 81 40 89 BC 89 A0 89 4B 81 40 88 F3 89 4B 81 40 8A B8 89 57 81 40 8A 5F 81 40 8A 45 81 40 8A 6F 8A 6A 81 42 88 ED 88 9F 81 40 88 F5 81 40 8A A2 88 D7 81 40 8A 45 81 40 8A AB 89 4B 81 40 8B 98 8A A1 81 40 89 E6 89 CB 8A 9E 81 49 61 16 28 DA 41 89 E6 89 CB",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0012",
+      "offset": "0x0B15F",
+      "old_hex": "48 61 16 55 DA 41 82 BB 82 CC 97 CD 82 B1 82 BB",
+      "new_hex": "45 81 45 81 45 81 49 81 48 61 16 55 DA 41 88 CF",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0013",
+      "offset": "0x0B170",
+      "old_hex": "41 81 83 83 94 83",
+      "new_hex": "40 8B 98 8A 9D 81",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0014",
+      "offset": "0x0B177",
+      "old_hex": "83 8A 83 58 81 84 81 49",
+      "new_hex": "81 83 89 CC 89 A4 8A 4A",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0015",
+      "offset": "0x0B180",
+      "old_hex": "40 81 83 83 94 83",
+      "new_hex": "84 8A 66 81 49 81",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0016",
+      "offset": "0x0B187",
+      "old_hex": "83 8A 83 58 81 84 82 A0 82 E9 8C C0 82 E8 81 41 83 94 83 46 83 4A 83 93 83 65 83 42 82 AA 89 68 82 A6 82 E9 82 B1 82 C6 82 CD 82 C8 82 A2 82 ED 81 49 61 16 28 DA 01 01 06 0F 42 43 81 45",
+      "new_hex": "81 83 89 CC 89 A4 8A 4A 81 84 88 9F 81 40 8A C1 8A B4 8B 72 89 4B 81 40 8B 74 81 41 89 D9 8A F8 8B 5B 88 9F 81 40 89 D5 8A 7B 8B 75 81 40 88 EA 8A 9D 81 40 8A B8 89 57 81 40 8A 7D 8A D4",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0017",
+      "offset": "0x0B1C6",
+      "old_hex": "45 81 45 81 45",
+      "new_hex": "40 8A 5E 8A 5A",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0018",
+      "offset": "0x0B1CC",
+      "old_hex": "83 83 94 83 40 83 8A 83 58 81 84 81 45",
+      "new_hex": "49 81 49 61 16 28 DA 01 01 06 0F 42 43",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0019",
+      "offset": "0x0B1DE",
+      "old_hex": "48",
+      "new_hex": "45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0020",
+      "offset": "0x0B1E1",
+      "old_hex": "88 A4 82 B7 82 E9 97 CD",
+      "new_hex": "81 83 89 CC 89 A4 8A 4A",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0021",
+      "offset": "0x0B1EA",
+      "old_hex": "45",
+      "new_hex": "84",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0022",
+      "offset": "0x0B1F0",
+      "old_hex": "48",
+      "new_hex": "45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0023",
+      "offset": "0x0B1F2",
+      "old_hex": "40 82 BE 82 AA 90 6C 8A D4 82 C9 82 CD",
+      "new_hex": "48 81 40 89 EB 89 87 8B 72 89 4B 8B 98",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0024",
+      "offset": "0x0B200",
+      "old_hex": "41 88 A4 82 CC 82 DD 82 C8 82 E7 82 B8 91 9E 82 B5 82 DD 82 C6 82 A2 82 A4 82 E0 82 CC 82 E0 82",
+      "new_hex": "45 81 45 81 45 81 48 81 40 8B 72 8A D4 89 AC 81 40 8A A4 88 A1 8A 72 88 B1 81 40 8A D3 8A 7D 89",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0025",
       "offset": "0x0B230",
-      "old_hex": "A0 82 E9 82 CD 82 B8 81 45 81 45 81 45 82 C8 82 E7 82 CE 81 41 90 6C 8A D4 82 AA 82 B1 82 CC 90 A2 82 C9 82 A0 82 E9 8C C0 82 E8 81 41 83 94 83 46 83 4A 83 93 83 65 83 42 82 E0 82 DC 82 BD 81 41 96 C5 82 D1 82 E9 82 B1 82 C6 82 CD 82 A0 82 E9 82 DC 82 A2 81 45 81 45 81 45 81 42 97 44 8E 71 81 41 83 94 83 40 83 8A 83 58 82 CC 90 ED 8E 6D 82 E6 81 41 91 9E 82 B5 82 DD 82 CC 91 9D 91 E5 82 B7 82 E9 90 A2 82 F0 91 D2 82 C1 82 C4 81 41 82 B1 82 CC 83 81 83 4B 83 58 81 41 95 4B 82 B8 82 E6 82 DD 82 AA 82 A6 82 E8 81 41 1E 40 A4 82 A8 82 DC 82 A6 82 C9 95 9C 8F 51 82 B5 82 E6 82 A4 82 BC 81 49 81 40 96 59 82 EA 82 E9 82 C8 81 49 81 49 62 63 1E 23 CC 06 0C 01 03 22 41 81 40 81 40 81 40 16 0A DA 41 83 81 83 4B 83 58 81 45 81 45 81 45 42 61 1F 02 46 00 02 04 46 00 02 00 88 16 DA D9 1E 16 A4 01 02 11 19 03 81 45 81 45 81 45 97 44 8E 71 81 41 97 44 8E 71 81 45 81 45 81 45 19 07 25 2B 83 94 83 40 83 8A 83 41 97 6C 81 49 81 40 82 B2 96 B3 8E 96 82 BE 82 C1 82 BD 82 CC 82 C5 82 B7 82 CB 81 49 16 C0 D9 41 82 E6 82 AD 90 ED 82 A2 94 B2 82 A2 82 C4 82 AD 82 EA 82 DC 82 B5 82 BD 81 42 97 44 8E 71 81 41 82 B1 82 EA 82 A9 82 E7 82 E0 83 94 83 40 83 8A 83 58 82 CC 90 ED 8E 6D 82 C6 82 B5 82 C4 81 45 81 45 81 45 95 BD 98 61 82 CC 82 BD 82 DF 82 C9 81 45 81 45 81 45 90 ED 82 C1 82 C4 81 45 81 45 81 45 89 BA 82 B3 82 A2 81 45 81 45 81 45 97 8A 82 DD 81 45 81 45 81 45 82 DC 82 B5 82 BD 81 45 81 45 81 45 82 E6 81 45 81 45 81 45 61 1E E4 D8 16 EB D9 41 83 94 83 40 83 8A 83 41 97 6C 81 49 81 49 81 40 83 94 83 40 83 8A 83 41 97 6C 81 49 81 49 61 62 16 60 D9 41 97 44 8E 71 81 42 95 EA 82 CD 81 41 82 A2 82 A6 89 A4 8F 97 82 CD 82 A8 82 A9 82 AD 82 EA 82 C9 82 C8 82 E8 82 DC 82 B5 82 BD 42 81 42 82 ED 82 BD 82 B5 82 BD 82 BF 82 CD 81 41 82 B1 82 F1 82 C8 82 C9 91 66 93 47 82 C8 89 A4 8F 97 82 F0 8E 9D 82 C4 82 BD 82 B1 82 C6 82 F0 42 8C D6 82 E8 82 C9 8E 76 82 A2 82 DC 82 B7 81 42 82 BB 82 B5 82 C4 97 44 8E 71 81 41 82 A0 82 C8 82 BD 82 CC 82 E6 82 A4 82 C8 82 B7 82 CE 82 E7 82 B5 82 A2 42 90 ED 8E 6D 82 C9 82 DF 82 AE 82 E8 89 EF 82 A6 82 BD 82 B1 82 C6 82 F0 81 41 42 90 53 82 A9 82 E7 8A B4 8E D3 82 B5 82 C4 82 A2 82 DC 82 B7 81 42 61 16 A2 D9 41 42 81 45 81 45 81 45 83 94 83 40 83 8A 83 41 97 6C 81 45 81 45 81 45 81 42 61 62 16 84 D9 41 97 44 8E 71 81 41 82 ED 82 BD 82 B5 83 94 83 40 83 8B 83 69 82 CD 81 41 95 EA 82 CC 82 A0 82 C6 82 F0 8C 70 82 A2 82 C5 81 41 83 94 83 40 83 6A 83 65 83 42 82 CC 90 56 82 B5 82 A2 89 A4 8F 97 82 C6 82 C8 82 E9 82 C5 82 B5 82 E5 82 A4 42 81 42 82 C7 82 A4 82 A9 82 B1 82 EA 82 A9 82 E7 82 E0 81 41 82 A2 82 C1 82 B5 82 E5 82 C9 42 90 ED 82 C1 82 C4 89 BA 82 B3 82 A2 82 CB 81 42 61 16 A2 D9 41 42 81 45 81 45 81 45 82 CD 82 A2 81 45 81 45 81 45 83 94 83 40 83 8B 83 69 97 6C 81 42 61 62 16 84 D9 16 3F D9 41 83 86 81 5B 83 52 81 49 81 40 82 E6 82 AD 82 E2 82 C1 82 BD 82 ED 82 CB 42 81 42 82 BB 82 EA 82 C5 82 B1 82 BB 83 8F 83 5E 83 56 82 CC 90 65 97 46 82 E6 81 42 82 B1 82 EA 82 A9 82 E7 82 E0 42 82 AA 82 F1 82 CE 82 E9 82 CC 82 E6 81 42 83 8F 83 5E 83 56 82 CD 82 A2 82 C2 82 C5 82 E0 82 A0 82 C8 82 BD 82 F0 42 8C A9 8E",
-      "new_hex": "40 8A D3 8A 7D 89 81 89 4B 81 40 88 B0 89 5E 81 40 8A C1 8A B4 8B 74 89 50 81 45 81 45 81 45 81 40 88 CF 89 92 89 50 89 B9 81 40 8A A4 88 A1 8A A2 81 40 8A C1 8A B4 8B 72 89 4B 81 40 8B 74 81 41 89 D9 8A F8 8B 5B 81 40 89 7A 8B 74 81 40 89 BA 89 B0 8B 72 8A D4 81 40 8A 5E 8A 9E 81 40 88 B0 8A A2 89 50 81 45 81 45 81 45 81 42 89 CC 89 A4 8A 4A 8A A1 81 40 8A B7 89 EB 81 40 8A 99 8A FC 8A 74 81 41 89 F8 89 EF 8A A2 81 40 89 50 8A 4F 81 40 8A D3 8A 7D 89 99 81 40 88 9F 89 6E 81 40 8A DF 8A 7D 89 A0 89 4B 81 40 88 EA 81 41 8A A2 81 40 89 B7 88 9F 8A 4A 88 9F 89 CE 89 6D 8A 4F 81 40 89 64 89 ED 8A 5A 88 E8 1E 40 A4 81 40 88 F3 8A 72 88 B1 81 40 89 DC 8A 45 8B 79 8A C8 89 AA 81 49 81 40 8A AC 8A D4 81 40 89 AA 89 81 81 49 81 49 62 63 1E 23 CC 06 0C 01 03 22 41 81 40 81 40 81 40 16 0A DA 41 89 B7 88 9F 8A 4A 81 45 81 45 81 45 42 61 1F 02 46 00 02 04 46 00 02 00 88 16 DA D9 1E 16 A4 01 02 11 19 03 81 45 81 45 81 45 8A 99 8A FC 81 41 8A 99 8A FC 81 45 81 45 81 45 19 07 25 2B 89 CC 89 A4 8A 5A 89 4F 81 49 81 40 89 C2 89 EB 8B 72 89 FC 88 C9 8A 8A 81 49 16 C0 D9 41 8A BA 89 AD 81 40 88 E6 88 DA 8A D4 81 40 8A B0 81 40 8A 55 8A 93 8A C8 89 FC 8A 4D 89 4D 89 50 81 42 8A 99 8A FC 81 41 8A 64 8A 9B 89 99 89 5E 81 40 89 CC 89 A4 8A 4A 8A A1 81 40 8A B7 89 EB 89 99 89 F2 81 45 81 45 81 45 81 40 8B 64 8B 8B 89 A2 81 40 8A 97 8B 79 81 45 81 45 81 45 81 40 8A 55 8A 93 81 45 81 45 81 45 8A C8 89 F8 8A 8A 81 45 81 45 81 45 81 40 89 E1 8B 49 81 45 81 45 81 45 8B 77 89 4D 81 45 81 45 81 45 89 50 81 45 81 45 81 45 61 1E E4 D8 16 EB D9 41 89 CC 89 A4 8A 5A 89 4F 81 49 81 49 81 40 89 CC 89 A4 8A 5A 89 4F 81 49 81 49 61 62 16 60 D9 41 8A 99 8A FC 81 42 8A 6A 89 B3 89 4F 8A 9D 81 41 8A 5A 89 4D 81 40 8A 74 8A 86 89 4F 8A 9D 81 40 89 5F 8A 5A 88 9F 89 FC 8A 4D 89 4D 89 50 42 81 42 8A B5 8B 96 89 4B 81 40 8A A2 8B 56 89 9A 81 40 8B 92 89 9F 8B 74 81 40 8A 74 8A 86 89 4F 8A 9E 81 40 89 F6 88 B3 89 F2 42 81 40 8A AD 89 87 8A 4A 89 90 8A 4D 89 4D 89 50 81 42 88 CF 89 A4 88 BB 81 40 8A 99 8A FC 81 41 89 56 8A 50 81 40 88 A7 8A 9D 81 40 8B 92 89 9F 8B 74 42 81 40 8A B7 89 EB 89 A2 81 40 89 AC 88 EA 81 40 8A 45 81 40 8A AB 8A 9F 8A 72 81 40 42 88 A4 89 EB 8B 72 88 BB 81 40 8A AB 8A 4D 89 4D 89 50 81 42 61 16 A2 D9 41 42 81 45 81 45 81 45 81 40 89 CC 89 A4 8A 5A 89 4F 81 45 81 45 81 45 81 42 61 62 16 84 D9 41 8A 99 8A FC 81 41 8A B5 81 40 89 CC 89 A0 88 E8 89 4B 81 40 8A 6A 89 B3 89 4F 8A A1 81 40 89 6B 89 A2 81 40 8A A2 8A 6A 81 40 89 CC 89 4D 8B 5B 8A A1 81 40 89 F0 81 40 8A 74 8A 86 8A A2 81 40 89 67 89 4D 89 50 42 81 42 89 E1 89 72 81 40 8A 64 8A 9B 89 99 89 5E 81 40 8B 76 88 DF 42 81 40 8A 55 8A 93 8A C8 89 F8 8A 8A 81 42 61 16 A2 D9 41 42 81 45 81 45 81 45 81 40 88 F8 81 45 81 45 81 45 81 40 89 CC 89 A0 88 E8 89 4F 81 42 61 62 16 84 D9 16 3F D9 41 8A 99 8A FC 81 49 81 40 8B 79 88 EF 88 C7 88 E8 42 81 42 8A 75 8A 4F 81 40 88 ED 81 40 8B 72 88 E8 89 EA 8A A4 8A F5 88 C7 89 50 8A 93 81 42 8A 64 8A 9B 89 99 89 5E 42 81 40 8B 98 88 ED 8A 66 81 40 8B 79 81 42 88 E9 81 40 8B 78 89 EF 81 40 88 F8 81 40 88 B9 8A 72 89 F2 42 81 40 8A D4 8A FB 89 DB 88 BB 81",
-      "expected_old_sha256": "1b47fd9a5c2f0384a7de1fec0b129ebf99d9f0bcfd3b91562e3593cdefeb452e",
-      "replacement_sha256": "fac2f81af8b4418f957585691867b5bb74b409411b8c05e336fc61dbdfaca610",
-      "ram_range": "0xD400~0xD7FF",
-      "d88_sector_chrn": [
-        4,
-        0,
-        5,
-        3
-      ],
-      "evidence_ref": "Ending/Valis2_DiskA_ENDING_KOREAN_PATCH_TABLE_0001-1132_2026-08-08.docx#table-1/rows-2-1133; Ending/Valis2_DiskA_ENDING_runtime_analysis_D149-D891_COMPLETE_ACT5_COLOR_FORMAT_2026-08-07.docx#table-1/rows-2-1133",
+      "old_hex": "A0 82 E9 82 CD 82 B8 81 45 81 45",
+      "new_hex": "81 89 4B 81 40 88 A4 8A BA 89 5E",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
       "status": "confirmed"
     },
     {
-      "id": "ending-main-segment-03",
+      "id": "a_ending-0026",
+      "offset": "0x0B23C",
+      "old_hex": "45 82 C8 82 E7 82 CE 81 41 90 6C 8A D4 82 AA 82 B1 82 CC 90 A2 82 C9 82 A0 82 E9 8C C0 82 E8",
+      "new_hex": "40 8A C1 8A B4 8B 74 89 50 81 45 81 45 81 45 81 40 88 CF 89 92 89 50 89 B9 8A A4 88 A1 8A A2",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0027",
+      "offset": "0x0B25C",
+      "old_hex": "41 83 94 83 46 83 4A 83 93 83 65 83 42 82 E0 82 DC 82 BD 81 41 96 C5 82 D1 82 E9 82 B1 82 C6 82 CD 82 A0 82 E9 82 DC 82 A2 81 45",
+      "new_hex": "40 8A C1 8A B4 8B 72 89 4B 81 40 8B 74 81 41 89 D9 8A F8 8B 5B 81 40 89 7A 8B 74 81 40 89 BA 89 B0 8B 72 8A D4 81 40 8A 5E 8A 9E",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0028",
+      "offset": "0x0B288",
+      "old_hex": "45 81 45 81 42 97 44 8E 71",
+      "new_hex": "40 88 B0 8A A2 89 50 81 45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0029",
+      "offset": "0x0B292",
+      "old_hex": "41 83 94 83 40 83 8A 83 58 82 CC 90 ED 8E 6D 82 E6 81 41 91 9E 82 B5 82 DD 82 CC 91 9D 91 E5 82 B7 82 E9 90 A2 82 F0 91 D2 82 C1 82 C4 81 41 82 B1 82 CC 83 81 83 4B 83 58 81 41 95 4B 82 B8 82 E6 82 DD 82 AA 82 A6 82 E8",
+      "new_hex": "45 81 45 81 42 89 CC 89 A4 8A 4A 8A A1 81 40 8A B7 89 EB 81 40 8A 99 8A FC 8A 74 81 41 89 F8 89 EF 8A A2 81 40 89 50 8A 4F 81 40 8A D3 8A 7D 89 99 81 40 88 9F 89 6E 81 40 8A DF 8A 7D 89 A0 89 4B 81 40 88 EA 81 41 8A A2",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0030",
+      "offset": "0x0B2DC",
+      "old_hex": "41 1E 40 A4 82 A8 82 DC 82 A6 82 C9 95 9C 8F 51 82 B5 82 E6 82 A4 82 BC 81 49 81 40 96 59 82 EA 82 E9 82 C8",
+      "new_hex": "40 89 B7 88 9F 8A 4A 88 9F 89 CE 89 6D 8A 4F 81 40 89 64 89 ED 8A 5A 88 E8 1E 40 A4 81 40 88 F3 8A 72 88 B1",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0031",
+      "offset": "0x0B301",
+      "old_hex": "49 81 49 62 63 1E 23 CC 06 0C 01 03 22 41 81 40 81 40 81 40 16 0A DA 41 83",
+      "new_hex": "40 89 DC 8A 45 8B 79 8A C8 89 AA 81 49 81 40 8A AC 8A D4 81 40 89 AA 89 81",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0032",
+      "offset": "0x0B31B",
+      "old_hex": "83 4B 83 58 81 45 81 45 81 45 42 61 1F 02 46 00 02 04 46 00 02 00 88 16 DA D9 1E 16 A4 01 02 11 19 03",
+      "new_hex": "49 81 49 62 63 1E 23 CC 06 0C 01 03 22 41 81 40 81 40 81 40 16 0A DA 41 89 B7 88 9F 8A 4A 81 45 81 45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0033",
+      "offset": "0x0B33F",
+      "old_hex": "81 45 81 45 97 44 8E 71 81 41 97 44 8E 71 81 45 81 45 81 45 19 07 25 2B 83 94 83 40 83 8A 83 41 97 6C",
+      "new_hex": "42 61 1F 02 46 00 02 04 46 00 02 00 88 16 DA D9 1E 16 A4 01 02 11 19 03 81 45 81 45 81 45 8A 99 8A FC",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0034",
+      "offset": "0x0B362",
+      "old_hex": "49 81 40 82 B2 96 B3 8E 96 82 BE 82 C1 82 BD 82",
+      "new_hex": "41 8A 99 8A FC 81 45 81 45 81 45 19 07 25 2B 89",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0035",
+      "offset": "0x0B373",
+      "old_hex": "82 C5 82 B7 82 CB",
+      "new_hex": "89 A4 8A 5A 89 4F",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0036",
+      "offset": "0x0B37B",
+      "old_hex": "16 C0 D9 41 82 E6 82 AD 90 ED 82 A2 94 B2 82 A2 82 C4 82 AD 82 EA 82 DC 82 B5 82 BD 81 42 97 44 8E 71 81 41 82 B1 82 EA 82 A9 82 E7 82 E0 83 94 83 40 83 8A 83 58 82 CC 90 ED 8E 6D 82 C6 82 B5 82 C4 81 45",
+      "new_hex": "81 40 89 C2 89 EB 8B 72 89 FC 88 C9 8A 8A 81 49 16 C0 D9 41 8A BA 89 AD 81 40 88 E6 88 DA 8A D4 81 40 8A B0 81 40 8A 55 8A 93 8A C8 89 FC 8A 4D 89 4D 89 50 81 42 8A 99 8A FC 81 41 8A 64 8A 9B 89 99 89 5E",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0037",
+      "offset": "0x0B3C0",
+      "old_hex": "45 81 45 95 BD 98 61 82 CC 82 BD 82 DF 82 C9 81 45 81 45",
+      "new_hex": "40 89 CC 89 A4 8A 4A 8A A1 81 40 8A B7 89 EB 89 99 89 F2",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0038",
+      "offset": "0x0B3D5",
+      "old_hex": "90 ED 82 C1 82 C4 81 45 81 45 81 45 89 BA 82 B3 82 A2",
+      "new_hex": "81 45 81 45 81 40 8B 64 8B 8B 89 A2 81 40 8A 97 8B 79",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0039",
+      "offset": "0x0B3ED",
+      "old_hex": "97 8A 82 DD 81 45",
+      "new_hex": "81 40 8A 55 8A 93",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0040",
+      "offset": "0x0B3F7",
+      "old_hex": "82 DC 82 B5 82 BD 81 45",
+      "new_hex": "81 45 8A C8 89 F8 8A 8A",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0041",
+      "offset": "0x0B403",
+      "old_hex": "82 E6",
+      "new_hex": "81 45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0042",
+      "offset": "0x0B406",
+      "old_hex": "45 81 45 81 45 61 1E E4 D8 16 EB D9 41 83 94 83 40 83 8A 83 41 97 6C",
+      "new_hex": "40 89 E1 8B 49 81 45 81 45 81 45 8B 77 89 4D 81 45 81 45 81 45 89 50",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0043",
+      "offset": "0x0B41E",
+      "old_hex": "49",
+      "new_hex": "45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0044",
+      "offset": "0x0B420",
+      "old_hex": "49",
+      "new_hex": "45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0045",
+      "offset": "0x0B422",
+      "old_hex": "40 83 94 83 40 83 8A 83",
+      "new_hex": "45 61 1E E4 D8 16 EB D9",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0046",
+      "offset": "0x0B42B",
+      "old_hex": "97 6C 81 49 81 49 61 62 16 60 D9 41 97 44 8E 71 81 42 95 EA 82 CD",
+      "new_hex": "89 CC 89 A4 8A 5A 89 4F 81 49 81 49 81 40 89 CC 89 A4 8A 5A 89 4F",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0047",
+      "offset": "0x0B442",
+      "old_hex": "41 82 A2 82 A6 89 A4 8F 97 82 CD 82 A8 82 A9 82 AD 82 EA 82 C9 82 C8 82 E8 82 DC 82 B5 82 BD 42 81 42 82 ED 82 BD 82 B5 82 BD 82 BF 82 CD 81 41 82 B1 82 F1 82 C8 82 C9 91 66 93 47 82 C8",
+      "new_hex": "49 81 49 61 62 16 60 D9 41 8A 99 8A FC 81 42 8A 6A 89 B3 89 4F 8A 9D 81 41 8A 5A 89 4D 81 40 8A 74 8A 86 89 4F 8A 9D 81 40 89 5F 8A 5A 88 9F 89 FC 8A 4D 89 4D 89 50 42 81 42 8A B5 8B 96",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0048",
+      "offset": "0x0B481",
+      "old_hex": "A4 8F 97 82 F0 8E 9D 82 C4 82 BD 82 B1 82 C6 82 F0 42 8C D6 82 E8 82 C9 8E 76 82 A2 82 DC 82 B7 81 42 82 BB 82 B5 82 C4 97 44 8E 71 81 41 82 A0 82 C8 82 BD 82 CC 82 E6 82",
+      "new_hex": "4B 81 40 8A A2 8B 56 89 9A 81 40 8B 92 89 9F 8B 74 81 40 8A 74 8A 86 89 4F 8A 9E 81 40 89 F6 88 B3 89 F2 42 81 40 8A AD 89 87 8A 4A 89 90 8A 4D 89 4D 89 50 81 42 88 CF 89",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0049",
+      "offset": "0x0B4BB",
+      "old_hex": "82 C8 82 B7 82 CE 82 E7 82 B5 82 A2 42 90 ED 8E 6D 82 C9 82 DF 82 AE 82 E8 89 EF 82 A6 82 BD 82 B1 82 C6 82 F0",
+      "new_hex": "88 BB 81 40 8A 99 8A FC 81 41 89 56 8A 50 81 40 88 A7 8A 9D 81 40 8B 92 89 9F 8B 74 42 81 40 8A B7 89 EB 89 A2",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0050",
+      "offset": "0x0B4E1",
+      "old_hex": "41 42 90 53 82 A9 82 E7 8A B4 8E D3 82 B5 82 C4 82 A2 82 DC 82 B7 81 42 61 16 A2 D9 41 42 81 45 81 45 81 45 83 94 83 40 83 8A 83 41 97 6C",
+      "new_hex": "40 89 AC 88 EA 81 40 8A 45 81 40 8A AB 8A 9F 8A 72 81 40 42 88 A4 89 EB 8B 72 88 BB 81 40 8A AB 8A 4D 89 4D 89 50 81 42 61 16 A2 D9 41 42",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0051",
+      "offset": "0x0B516",
+      "old_hex": "42 61 62 16 84 D9 41 97 44 8E 71",
+      "new_hex": "40 89 CC 89 A4 8A 5A 89 4F 81 45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0052",
+      "offset": "0x0B522",
+      "old_hex": "41 82 ED 82 BD 82 B5 83 94 83 40 83 8B 83 69 82 CD 81 41 95 EA 82",
+      "new_hex": "45 81 45 81 42 61 62 16 84 D9 41 8A 99 8A FC 81 41 8A B5 81 40 89",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0053",
+      "offset": "0x0B539",
+      "old_hex": "82",
+      "new_hex": "89",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0054",
+      "offset": "0x0B53B",
+      "old_hex": "82 C6 82 F0 8C 70 82 A2 82 C5 81 41 83 94 83",
+      "new_hex": "88 E8 89 4B 81 40 8A 6A 89 B3 89 4F 8A A1 81",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0055",
+      "offset": "0x0B54B",
+      "old_hex": "83 6A 83 65 83 42 82 CC 90 56 82 B5 82 A2",
+      "new_hex": "89 6B 89 A2 81 40 8A A2 8A 6A 81 40 89 CC",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0056",
+      "offset": "0x0B55A",
+      "old_hex": "A4 8F 97 82 C6 82 C8 82 E9 82 C5 82 B5 82 E5 82 A4 42 81 42 82 C7 82 A4 82 A9 82 B1 82 EA 82 A9 82 E7 82 E0 81 41 82 A2 82 C1 82 B5 82 E5 82 C9",
+      "new_hex": "4D 8B 5B 8A A1 81 40 89 F0 81 40 8A 74 8A 86 8A A2 81 40 89 67 89 4D 89 50 42 81 42 89 E1 89 72 81 40 8A 64 8A 9B 89 99 89 5E 81 40 8B 76 88 DF",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0057",
+      "offset": "0x0B58B",
+      "old_hex": "90 ED 82 C1 82 C4 89 BA 82 B3 82 A2 82 CB 81 42 61 16 A2 D9 41 42",
+      "new_hex": "81 40 8A 55 8A 93 8A C8 89 F8 8A 8A 81 42 61 16 A2 D9 41 42 81 45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0058",
+      "offset": "0x0B5A6",
+      "old_hex": "45 82 CD 82 A2",
+      "new_hex": "40 88 F8 81 45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0059",
+      "offset": "0x0B5B0",
+      "old_hex": "45 83 94 83 40 83 8B 83 69 97 6C 81 42 61 62 16 84 D9 16 3F D9 41 83 86",
+      "new_hex": "40 89 CC 89 A0 88 E8 89 4F 81 42 61 62 16 84 D9 16 3F D9 41 8A 99 8A FC",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0060",
+      "offset": "0x0B5C9",
+      "old_hex": "5B 83 52 81 49 81 40 82 E6 82 AD 82 E2 82 C1 82 BD 82 ED 82 CB 42",
+      "new_hex": "49 81 40 8B 79 88 EF 88 C7 88 E8 42 81 42 8A 75 8A 4F 81 40 88 ED",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0061",
+      "offset": "0x0B5E0",
+      "old_hex": "42 82 BB 82 EA 82 C5 82 B1 82 BB 83 8F 83 5E 83 56 82 CC 90 65 97 46 82 E6 81 42 82 B1 82 EA 82 A9 82 E7 82 E0 42 82 AA 82 F1 82 CE 82 E9 82 CC 82 E6",
+      "new_hex": "40 8B 72 88 E8 89 EA 8A A4 8A F5 88 C7 89 50 8A 93 81 42 8A 64 8A 9B 89 99 89 5E 42 81 40 8B 98 88 ED 8A 66 81 40 8B 79 81 42 88 E9 81 40 8B 78 89 EF",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0062",
+      "offset": "0x0B613",
+      "old_hex": "42 83 8F 83 5E 83 56 82 CD 82 A2 82 C2 82 C5 82 E0 82 A0 82 C8 82 BD 82 F0 42 8C A9 8E",
+      "new_hex": "40 88 F8 81 40 88 B9 8A 72 89 F2 42 81 40 8A D4 8A FB 89 DB 88 BB 81 40 8A AB 8A 9E 88",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0063",
       "offset": "0x0B640",
-      "old_hex": "E7 82 C1 82 C4 82 A2 82 E9 82 ED 81 42 61 16 1D D9 01 04 41 97 ED 8E 71 81 41 82 A0 82 E8 82 AA 82 C6 82 A4 42 81 49 81 40 82 B1 82 B1 82 DC 82 C5 90 ED 82 A6 82 BD 82 CC 82 CD 82 A0 82 C8 82 BD 82 CC 82 A8 89 41 82 E6 81 42 97 ED 8E 71 42 81 41 82 A0 82 E8 82 AA 82 C6 82 A4 81 41 83 7A 83 93 83 67 82 C9 1E DE D8 82 A0 82 E8 82 AA 82 C6 82 A4 81 45 81 45 81 45 83 7A 83 93 83 67 82 C9 42 1E 40 A4 81 45 81 45 81 45 81 42 61 1E 23 CC 26",
-      "new_hex": "40 8A AB 8A 9E 88 B1 81 42 61 16 1D D9 01 04 41 89 93 8A A2 8A FC 81 41 88 BB 89 AA 8A 93 42 81 49 81 40 8A 74 88 D5 88 DA 8A D4 81 40 8A 81 81 40 8A 45 81 40 8A AB 8A 71 89 5A 81 40 88 AC 81 40 89 BC 89 68 81 40 88 F8 81 40 89 59 89 E2 8A A2 8A 66 81 42 89 93 8A A2 8A FC 42 81 41 88 BB 89 AA 8A 93 81 41 88 F3 89 C2 81 40 1E DE D8 88 BB 89 AA 8A 93 81 45 81 45 81 45 81 40 8A BA 89 AD 42 1E 40 A4 81 45 81 45 81 45 81 42 61 1E 23 CC 26",
-      "expected_old_sha256": "76515e488c914ae64a0f2634ebe3cd3d25524a92ff443d1b5f6f24cd426563a6",
-      "replacement_sha256": "19237d70a7229cda0621a3ccf2865294776f8372f79e6ad25981238a6f496d08",
-      "ram_range": "0xD800~0xD891",
-      "d88_sector_chrn": [
-        4,
-        1,
-        1,
-        3
-      ],
-      "evidence_ref": "Ending/Valis2_DiskA_ENDING_KOREAN_PATCH_TABLE_0001-1132_2026-08-08.docx#table-1/rows-2-1133; Ending/Valis2_DiskA_ENDING_runtime_analysis_D149-D891_COMPLETE_ACT5_COLOR_FORMAT_2026-08-07.docx#table-1/rows-2-1133",
+      "old_hex": "E7 82 C1 82 C4 82 A2 82 E9 82 ED 81 42 61 16 1D D9 01 04 41 97 ED 8E 71 81 41 82 A0 82 E8 82 AA 82 C6 82 A4 42",
+      "new_hex": "B1 81 42 61 16 1D D9 01 04 41 89 93 8A A2 8A FC 81 41 88 BB 89 AA 8A 93 42 81 49 81 40 8A 74 88 D5 88 DA 8A D4",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0064",
+      "offset": "0x0B666",
+      "old_hex": "49 81 40 82 B1 82 B1 82 DC 82 C5 90 ED 82 A6 82 BD 82 CC 82 CD 82 A0 82 C8 82 BD 82 CC 82 A8",
+      "new_hex": "40 8A 81 81 40 8A 45 81 40 8A AB 8A 71 89 5A 81 40 88 AC 81 40 89 BC 89 68 81 40 88 F8 81 40",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0065",
+      "offset": "0x0B686",
+      "old_hex": "41 82 E6 81 42 97 ED 8E 71 42 81 41 82 A0 82 E8 82 AA 82 C6 82 A4 81 41 83 7A 83 93 83 67 82 C9",
+      "new_hex": "59 89 E2 8A A2 8A 66 81 42 89 93 8A A2 8A FC 42 81 41 88 BB 89 AA 8A 93 81 41 88 F3 89 C2 81 40",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0066",
+      "offset": "0x0B6A9",
+      "old_hex": "82 A0 82 E8 82 AA 82 C6 82 A4",
+      "new_hex": "88 BB 89 AA 8A 93 81 45 81 45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0067",
+      "offset": "0x0B6B6",
+      "old_hex": "45 81 45 83 7A 83 93 83 67 82 C9 42 1E 40 A4",
+      "new_hex": "40 8A BA 89 AD 42 1E 40 A4 81 45 81 45 81 45",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
+      "status": "confirmed"
+    },
+    {
+      "id": "a_ending-0068",
+      "offset": "0x0B6C6",
+      "old_hex": "45 81 45 81 45 81 42 61 1E 23 CC 26",
+      "new_hex": "42 61 1E 23 CC 26 00 00 00 00 00 00",
+      "evidence_ref": "source/text-reference/disk-A__text-reference.csv",
       "status": "confirmed"
     }
   ]

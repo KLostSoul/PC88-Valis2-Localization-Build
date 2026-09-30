@@ -11,9 +11,9 @@
 | B | 시스템 문구·전투 CG | Disk B 최종 raw 패치 기록, CG 자원 분석, `source/graphics/disk-B__battle-cg/` PNG 평면 |
 | C | 시스템 문구·고정 store | Disk C 최종 raw 패치 기록과 동적 store 기록 |
 | D | Act 1–3 | Act별 런타임 덤프, 순번/번역/토큰/주소 패치표 |
-| E | Act 4 | 8월 4일 교정 작업표, 원시 덤프와 raw 위치 대조 |
+| E | Act 4 | 교정 작업표, 원시 덤프와 raw 위치 대조 |
 | F | Act 5·디스크 오류 문구 | Act 5 실행 로그·payload 표, 오류 안내 번역/토큰 작업표 |
 | G | Prize·Music·경고 | Prize 번역표, Music 텍스트/포인터 분석, 경고 주소·제어 기록 |
-| 공통 | KANJI 글리프 | 최종 `hangul.csv`와 동일한 558행 글리프 배정표, 원본 KANJI1 ROM |
+| 공통 | KANJI 글리프 | [최종 558행 글리프 배정표](../source/kanji/glyph-assignment-reference.csv), 원본 KANJI1 ROM |
 
 기존 `source/patches/` 표는 직접 자료의 특정 날짜 상태·토큰 대조·후속 판본을 보존한다. 텍스트와 기계 코드 패치는 `source/manual-build/`의 raw 오프셋·old/new byte·근거를 사용하고, Disk A/B 그래픽은 `source/graphics/`의 PNG 평면을 인코딩해 만든다. 그래픽의 RAM 시작 주소, 평면 순서, 저장 형식과 raw 섹터 범위는 해당 manual-build JSON에 명시한다.

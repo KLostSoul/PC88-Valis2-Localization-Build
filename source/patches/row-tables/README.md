@@ -6,7 +6,7 @@
 
 | 파일 | 내용 |
 |---|---|
-| `disk-A__prologue__historical-patch__2026-06-19.csv` | 6월 19일 프롤로그 패치의 원본·교체 바이트 기록. 8월 TEST9에 의해 대체된 과거 판본이며 현재 빌드 입력으로 사용하지 않음 |
+| `disk-A__prologue__historical-patch__2026-06-19.csv` | TEST9 이전 프롤로그 패치 판본의 원본·교체 바이트. 현재 빌드는 TEST9 패치 정의를 사용 |
 | `disk-A__prologue__test9-ram-payloads.csv` | TEST9의 RAM 루틴·payload, 길이와 확인된 raw 대응 |
 | `disk-A__prologue__test9-raw-changes.csv` | TEST9에서 확인된 D88 raw 주소와 이전·교체 바이트 |
 | `disk-A__title__d473-raw-change.csv` | Disk A 타이틀 중앙 행 보정의 RAM/raw 위치와 이전·교체 바이트 |

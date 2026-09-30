@@ -1,7 +1,7 @@
 {
   "schema": "valis2.manual_patch_set.v1",
   "disk": "A",
-  "component": "ui_current_editor_target_state_reconciled_with_direct_2026-07-27_worktable",
+  "component": "ui_historical_editor_target_state_reconciled_with_direct_2026-07-27_worktable",
   "baseline": {
     "size_bytes": 415840,
     "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
@@ -11,7 +11,7 @@
     "manifest_sha256": "870b094bfc00ce5d1619f37960385c01f905fed89abfe60cf013a08a6063c41a",
     "schema": "valis2.diska.ui.fixed_slot_manifest",
     "schema_version": "1.3-all-6-start-pointers",
-    "status": "editor_saved_as_current_baseline",
+    "status": "historical_editor_snapshot",
     "model_module_path": "reference-data/modules/valis2_diska_ui_core.py",
     "model_module_sha256": "a9ed591db2f2ac8441ee7c10f278f3f39b993ada47be4ac83e87a3e1b93f5eef",
     "map_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",

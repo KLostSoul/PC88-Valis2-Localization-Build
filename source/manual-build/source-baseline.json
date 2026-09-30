@@ -1,6 +1,6 @@
 {
   "schema": "valis2.manual_build_source_baseline.v1",
-  "description": "Japanese source disk and original KANJI1.ROM identities, plus the Korean KANJI1.ROM identity generated from the final 558-row hangul.csv glyph table.",
+  "description": "Japanese source disk and original KANJI1.ROM identities, plus the Korean KANJI1.ROM generated from the final 558-row glyph table.",
   "kanji1_source": {
     "size_bytes": 131072,
     "sha256": "7608040cffb1951e5cc567abb63f75b5746777a1ba96196c1b75606b793bb4bb"

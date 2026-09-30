@@ -1,5 +1,10 @@
 MIT License
 
+This license applies only to the build code in `tools/`. It does not apply to
+the documentation, translations, analysis materials, patch data, graphics, or
+original game material in this repository. Those materials remain subject to
+their respective rights holders.
+
 Copyright (c) 2026 LostSoul
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

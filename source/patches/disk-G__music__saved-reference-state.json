@@ -1,7 +1,7 @@
 {
   "schema": "valis2.manual_patch_set.v1",
   "disk": "G",
-  "component": "music_mode_current_editor_target_state_reconciled_with_direct_worktable",
+  "component": "music_mode_historical_editor_target_state_reconciled_with_direct_worktable",
   "baseline": {
     "size_bytes": 415840,
     "sha256": "d933a387f6afe847345482070cd1e23ca4158f6d49144a99ef9ebbdb864c56f7"
@@ -12,6 +12,7 @@
     "schema": "valis2.diskg.music_mode.editor_project",
     "schema_version": "1.85",
     "generated_at": "2026-09-04T12:44:19+00:00",
+    "status": "historical_editor_snapshot",
     "model_module_path": "reference-data/modules/valis2_music_mode.py",
     "model_module_sha256": "8efef2570d41ee8a1bc8cae9320f462a34e19f47ade10fb6e363526294e3a16e",
     "map_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
