@@ -40,11 +40,11 @@ python -m tools.cli
 - `docs/`: [문서 안내](docs/README.md), [통합 분석](docs/integrated-source-analysis.md), 빌드·근거 안내
 - `import/`: 원본 D88 7개와 원본 KANJI1 ROM 입력 위치
 - `output/`: 빌드 결과 위치
-- `source/manual-build/`: 빌드에 사용하는 확정 raw 패치표
+- `source/`: [자료 폴더 안내](source/README.md)와 빌드·참조 자료
 - [일본어 원문·한국어 번역 참조표](source/text-reference/README.md): 영역별 문안과 출처
 - `source/patches/`: 영역별 분석·교차 확인 자료
 - `source/kanji/`: 글리프와 토큰 조회표
-- `tools/`: D88 처리, 패치 적용, IPS 생성·재적용 확인
+- `tools/`: [도구 안내](tools/README.md), D88 처리, 패치 적용, IPS 생성·재적용 확인
 
 
 ## 라이선스와 원작 권리
