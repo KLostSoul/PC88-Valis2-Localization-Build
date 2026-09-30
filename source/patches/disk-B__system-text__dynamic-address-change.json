@@ -1,0 +1,21 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "B",
+  "component": "dynamic_store_address",
+  "source_docs": [
+    {
+      "path": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx",
+      "sha256": "82dc06a55cfd88c03be01dd0b40dfe3324a4365392aaa0d32240e7afbfc456c4"
+    }
+  ],
+  "rows": [
+    {
+      "id": "B-dynamic-store-raw-0A6A",
+      "offset": "0x00A6A",
+      "old_hex": "32 A4 06",
+      "new_hex": "32 A2 06",
+      "evidence": "Final patch record, raw write table: 0x0A6A 32 A4 06 -> 32 A2 06; dynamic store moves 06A4 to 06A2.",
+      "status": "confirmed"
+    }
+  ]
+}

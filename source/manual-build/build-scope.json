@@ -1,0 +1,79 @@
+{
+  "schema": "valis2.manual_build_scope.v1",
+  "components": [
+    {
+      "id": "a_title_cg",
+      "disk": "A"
+    },
+    {
+      "id": "a_ui",
+      "disk": "A"
+    },
+    {
+      "id": "a_prologue",
+      "disk": "A"
+    },
+    {
+      "id": "a_shared_errors",
+      "disk": "A"
+    },
+    {
+      "id": "a_ending",
+      "disk": "A"
+    },
+    {
+      "id": "a_end_credits",
+      "disk": "A"
+    },
+    {
+      "id": "b_system_text",
+      "disk": "B"
+    },
+    {
+      "id": "b_battle_cg",
+      "disk": "B"
+    },
+    {
+      "id": "c_system_text",
+      "disk": "C"
+    },
+    {
+      "id": "d_act1",
+      "disk": "D"
+    },
+    {
+      "id": "d_act2",
+      "disk": "D"
+    },
+    {
+      "id": "d_act3",
+      "disk": "D"
+    },
+    {
+      "id": "e_act4",
+      "disk": "E"
+    },
+    {
+      "id": "f_act5",
+      "disk": "F"
+    },
+    {
+      "id": "f_disk_error",
+      "disk": "F"
+    },
+    {
+      "id": "g_prize",
+      "disk": "G"
+    },
+    {
+      "id": "g_music",
+      "disk": "G"
+    },
+    {
+      "id": "g_warning",
+      "disk": "G"
+    }
+  ],
+  "require_all_components": true,
+  "candidate_components": []
+}

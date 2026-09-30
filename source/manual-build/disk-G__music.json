@@ -1,0 +1,3197 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "G",
+  "baseline": {
+    "sha256": "d933a387f6afe847345482070cd1e23ca4158f6d49144a99ef9ebbdb864c56f7",
+    "size_bytes": 415840
+  },
+  "source_docs": [
+    "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx"
+  ],
+  "lookup_reference": {
+    "file": "source/kanji/glyph-assignment-reference.csv",
+    "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+    "rom_asset": {
+      "file": "KANJI1.ROM",
+      "sha256": "e5646601d83fc2685340a183fa50d3c4fca8daf449acefc35544ef790e775aab"
+    },
+    "use": "Exact token lookup for explicit Hangul source characters; other direct worktable glyph bytes or CP932 are separately encoded."
+  },
+  "component": "Music titles, composer names and directly documented code edits",
+  "component_id": "g_music",
+  "complete": true,
+  "validation": {
+    "title_count": 33,
+    "title_payload_bytes": 804,
+    "title_range": "C7FC~CB1F",
+    "composer_name_bytes": 47,
+    "composer_range": "CB20~CB4E",
+    "zero_fill": "CB4F~CB50",
+    "title_pointer_formula": "0xC7FC + cumulative prior (1-byte composer index + encoded title + 00 terminator)",
+    "pointer_records": "raw 0x2E6C + 0x0C * index (little-endian target entry RAM)",
+    "raw_rows_split_at_d88_payload_boundaries": true,
+    "target_entries": [
+      {
+        "index": 1,
+        "ram_start": 51196,
+        "pointer": 51196,
+        "length": 16,
+        "composer_index": 1,
+        "source_row": 2
+      },
+      {
+        "index": 2,
+        "ram_start": 51212,
+        "pointer": 51212,
+        "length": 28,
+        "composer_index": 1,
+        "source_row": 3
+      },
+      {
+        "index": 3,
+        "ram_start": 51240,
+        "pointer": 51240,
+        "length": 34,
+        "composer_index": 0,
+        "source_row": 4
+      },
+      {
+        "index": 4,
+        "ram_start": 51274,
+        "pointer": 51274,
+        "length": 14,
+        "composer_index": 1,
+        "source_row": 5
+      },
+      {
+        "index": 5,
+        "ram_start": 51288,
+        "pointer": 51288,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 6
+      },
+      {
+        "index": 6,
+        "ram_start": 51310,
+        "pointer": 51310,
+        "length": 26,
+        "composer_index": 1,
+        "source_row": 7
+      },
+      {
+        "index": 7,
+        "ram_start": 51336,
+        "pointer": 51336,
+        "length": 14,
+        "composer_index": 0,
+        "source_row": 8
+      },
+      {
+        "index": 8,
+        "ram_start": 51350,
+        "pointer": 51350,
+        "length": 30,
+        "composer_index": 0,
+        "source_row": 9
+      },
+      {
+        "index": 9,
+        "ram_start": 51380,
+        "pointer": 51380,
+        "length": 8,
+        "composer_index": 0,
+        "source_row": 10
+      },
+      {
+        "index": 10,
+        "ram_start": 51388,
+        "pointer": 51388,
+        "length": 8,
+        "composer_index": 1,
+        "source_row": 11
+      },
+      {
+        "index": 11,
+        "ram_start": 51396,
+        "pointer": 51396,
+        "length": 8,
+        "composer_index": 1,
+        "source_row": 12
+      },
+      {
+        "index": 12,
+        "ram_start": 51404,
+        "pointer": 51404,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 13
+      },
+      {
+        "index": 13,
+        "ram_start": 51426,
+        "pointer": 51426,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 14
+      },
+      {
+        "index": 14,
+        "ram_start": 51448,
+        "pointer": 51448,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 15
+      },
+      {
+        "index": 15,
+        "ram_start": 51470,
+        "pointer": 51470,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 16
+      },
+      {
+        "index": 16,
+        "ram_start": 51492,
+        "pointer": 51492,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 17
+      },
+      {
+        "index": 17,
+        "ram_start": 51514,
+        "pointer": 51514,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 18
+      },
+      {
+        "index": 18,
+        "ram_start": 51536,
+        "pointer": 51536,
+        "length": 12,
+        "composer_index": 0,
+        "source_row": 19
+      },
+      {
+        "index": 19,
+        "ram_start": 51548,
+        "pointer": 51548,
+        "length": 40,
+        "composer_index": 2,
+        "source_row": 20
+      },
+      {
+        "index": 20,
+        "ram_start": 51588,
+        "pointer": 51588,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 21
+      },
+      {
+        "index": 21,
+        "ram_start": 51610,
+        "pointer": 51610,
+        "length": 22,
+        "composer_index": 0,
+        "source_row": 22
+      },
+      {
+        "index": 22,
+        "ram_start": 51632,
+        "pointer": 51632,
+        "length": 46,
+        "composer_index": 1,
+        "source_row": 23
+      },
+      {
+        "index": 23,
+        "ram_start": 51678,
+        "pointer": 51678,
+        "length": 38,
+        "composer_index": 0,
+        "source_row": 24
+      },
+      {
+        "index": 24,
+        "ram_start": 51716,
+        "pointer": 51716,
+        "length": 42,
+        "composer_index": 1,
+        "source_row": 25
+      },
+      {
+        "index": 25,
+        "ram_start": 51758,
+        "pointer": 51758,
+        "length": 44,
+        "composer_index": 1,
+        "source_row": 26
+      },
+      {
+        "index": 26,
+        "ram_start": 51802,
+        "pointer": 51802,
+        "length": 32,
+        "composer_index": 2,
+        "source_row": 27
+      },
+      {
+        "index": 27,
+        "ram_start": 51834,
+        "pointer": 51834,
+        "length": 30,
+        "composer_index": 2,
+        "source_row": 28
+      },
+      {
+        "index": 28,
+        "ram_start": 51864,
+        "pointer": 51864,
+        "length": 42,
+        "composer_index": 2,
+        "source_row": 29
+      },
+      {
+        "index": 29,
+        "ram_start": 51906,
+        "pointer": 51906,
+        "length": 32,
+        "composer_index": 2,
+        "source_row": 30
+      },
+      {
+        "index": 30,
+        "ram_start": 51938,
+        "pointer": 51938,
+        "length": 12,
+        "composer_index": 2,
+        "source_row": 31
+      },
+      {
+        "index": 31,
+        "ram_start": 51950,
+        "pointer": 51950,
+        "length": 12,
+        "composer_index": 0,
+        "source_row": 32
+      },
+      {
+        "index": 32,
+        "ram_start": 51962,
+        "pointer": 51962,
+        "length": 16,
+        "composer_index": 1,
+        "source_row": 33
+      },
+      {
+        "index": 33,
+        "ram_start": 51978,
+        "pointer": 51978,
+        "length": 22,
+        "composer_index": 1,
+        "source_row": 34
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "GM-T01-P01-1",
+      "offset": "0x0301C",
+      "old_hex": "01 8C F5 82",
+      "new_hex": "01 89 E7 8A",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-2",
+      "status": "confirmed",
+      "target_ram_range": "C7FC~C7FF",
+      "source_row": 2,
+      "target_text": "빛속의␠레이코",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "빛",
+          "bytes": "89 E7",
+          "lookup_row": "261"
+        },
+        {
+          "char": "속",
+          "bytes": "8A 41",
+          "lookup_row": "284"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "레",
+          "bytes": "89 93",
+          "lookup_row": "177"
+        },
+        {
+          "char": "이",
+          "bytes": "8A A2",
+          "lookup_row": "380"
+        },
+        {
+          "char": "코",
+          "bytes": "8A FC",
+          "lookup_row": "470"
+        }
+      ]
+    },
+    {
+      "id": "GM-T01-P02-1",
+      "offset": "0x03030",
+      "old_hex": "CC 92 86 82 CC 97 ED 8E 71 00 01 82",
+      "new_hex": "41 8A A1 81 40 89 93 8A A2 8A FC 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-2",
+      "status": "confirmed",
+      "target_ram_range": "C800~C80B",
+      "source_row": 2,
+      "target_text": "빛속의␠레이코",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "빛",
+          "bytes": "89 E7",
+          "lookup_row": "261"
+        },
+        {
+          "char": "속",
+          "bytes": "8A 41",
+          "lookup_row": "284"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "레",
+          "bytes": "89 93",
+          "lookup_row": "177"
+        },
+        {
+          "char": "이",
+          "bytes": "8A A2",
+          "lookup_row": "380"
+        },
+        {
+          "char": "코",
+          "bytes": "8A FC",
+          "lookup_row": "470"
+        }
+      ]
+    },
+    {
+      "id": "GM-T02-P01-1",
+      "offset": "0x0303C",
+      "old_hex": "75 82 89 82 92 82 87 82 89 82 8E 81 40 82 62 82 92 82 89 82 93 82 89 82 93 00 00 82",
+      "new_hex": "01 82 75 82 89 82 92 82 87 82 89 82 8E 81 40 82 62 82 92 82 89 82 93 82 89 82 93 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-3",
+      "status": "confirmed",
+      "target_ram_range": "C80C~C827",
+      "source_row": 3,
+      "target_text": "Ｖｉｒｇｉｎ␠Ｃｒｉｓｉｓ",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "Ｖ",
+          "bytes": "82 75",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "ｇ",
+          "bytes": "82 87",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｎ",
+          "bytes": "82 8E",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｓ",
+          "bytes": "82 93",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｓ",
+          "bytes": "82 93",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T03-P01-1",
+      "offset": "0x03058",
+      "old_hex": "72 82 60 82 62 82 71 82 64 82 63 81 40 82 72 82 60 82 62 82 71 82 68 82 65 82 68 82 62 82 64 00 01 83",
+      "new_hex": "00 82 72 82 60 82 62 82 71 82 64 82 63 81 40 82 72 82 60 82 62 82 71 82 68 82 65 82 68 82 62 82 64 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-4",
+      "status": "confirmed",
+      "target_ram_range": "C828~C849",
+      "source_row": 4,
+      "target_text": "ＳＡＣＲＥＤ␠ＳＡＣＲＩＦＩＣＥ",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｓ",
+          "bytes": "82 72",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｒ",
+          "bytes": "82 71",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｄ",
+          "bytes": "82 63",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｓ",
+          "bytes": "82 72",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｒ",
+          "bytes": "82 71",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｉ",
+          "bytes": "82 68",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｆ",
+          "bytes": "82 65",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｉ",
+          "bytes": "82 68",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T04-P01-1",
+      "offset": "0x0307A",
+      "old_hex": "70 81 5B 83 8B 83 82 83 93 83 67 82 76 82",
+      "new_hex": "01 8B 61 89 BE 8B 59 81 40 8A 98 8B 42 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-5",
+      "status": "confirmed",
+      "target_ram_range": "C84A~C857",
+      "source_row": 5,
+      "target_text": "펄몬트␠윙크",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "펄",
+          "bytes": "8B 61",
+          "lookup_row": "504"
+        },
+        {
+          "char": "몬",
+          "bytes": "89 BE",
+          "lookup_row": "220"
+        },
+        {
+          "char": "트",
+          "bytes": "8B 59",
+          "lookup_row": "496"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "윙",
+          "bytes": "8A 98",
+          "lookup_row": "370"
+        },
+        {
+          "char": "크",
+          "bytes": "8B 42",
+          "lookup_row": "473"
+        }
+      ]
+    },
+    {
+      "id": "GM-T05-P01-1",
+      "offset": "0x03088",
+      "old_hex": "89 82 8E 82 8B 00 00 82 6F 82 68 82 6D 82 62 82 67 81 40 82 79 82",
+      "new_hex": "00 82 6F 82 68 82 6D 82 62 82 67 81 40 82 79 82 6E 82 6D 82 64 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-6",
+      "status": "confirmed",
+      "target_ram_range": "C858~C86D",
+      "source_row": 6,
+      "target_text": "ＰＩＮＣＨ␠ＺＯＮＥ",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｐ",
+          "bytes": "82 6F",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｉ",
+          "bytes": "82 68",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｈ",
+          "bytes": "82 67",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｚ",
+          "bytes": "82 79",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｏ",
+          "bytes": "82 6E",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T06-P01-1",
+      "offset": "0x0309E",
+      "old_hex": "6E 82 6D 82 64 00 01 82 78 82 95 82 8B 82 8F 81 40 82 6C 82 99 81 40 82 6B 82",
+      "new_hex": "01 82 78 82 95 82 8B 82 8F 81 40 82 6C 82 99 81 40 82 6B 82 8F 82 96 82 85 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-7",
+      "status": "confirmed",
+      "target_ram_range": "C86E~C887",
+      "source_row": 7,
+      "target_text": "Ｙｕｋｏ␠Ｍｙ␠Ｌｏｖｅ",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "Ｙ",
+          "bytes": "82 78",
+          "lookup_row": null
+        },
+        {
+          "char": "ｕ",
+          "bytes": "82 95",
+          "lookup_row": null
+        },
+        {
+          "char": "ｋ",
+          "bytes": "82 8B",
+          "lookup_row": null
+        },
+        {
+          "char": "ｏ",
+          "bytes": "82 8F",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｍ",
+          "bytes": "82 6C",
+          "lookup_row": null
+        },
+        {
+          "char": "ｙ",
+          "bytes": "82 99",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｌ",
+          "bytes": "82 6B",
+          "lookup_row": null
+        },
+        {
+          "char": "ｏ",
+          "bytes": "82 8F",
+          "lookup_row": null
+        },
+        {
+          "char": "ｖ",
+          "bytes": "82 96",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T07-P01-1",
+      "offset": "0x030B8",
+      "old_hex": "8F 82 96 82 85 00 00 8E F4 82 A2 82 CC 8F",
+      "new_hex": "00 8A B5 8A C8 8A A1 81 40 8A 46 89 98 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-8",
+      "status": "confirmed",
+      "target_ram_range": "C888~C895",
+      "source_row": 8,
+      "target_text": "저주의␠순례",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "저",
+          "bytes": "8A B5",
+          "lookup_row": "399"
+        },
+        {
+          "char": "주",
+          "bytes": "8A C8",
+          "lookup_row": "418"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "순",
+          "bytes": "8A 46",
+          "lookup_row": "289"
+        },
+        {
+          "char": "례",
+          "bytes": "89 98",
+          "lookup_row": "182"
+        }
+      ]
+    },
+    {
+      "id": "GM-T08-P01-1",
+      "offset": "0x030C6",
+      "old_hex": "84 97 E7 00 00 82 64 82 6D 82 63 82 6B 82 64 82 72 82 72 81 40 82 61 82 60 82 73 82 73 82",
+      "new_hex": "00 82 64 82 6D 82 63 82 6B 82 64 82 72 82 72 81 40 82 61 82 60 82 73 82 73 82 6B 82 64 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-9",
+      "status": "confirmed",
+      "target_ram_range": "C896~C8B3",
+      "source_row": 9,
+      "target_text": "ＥＮＤＬＥＳＳ␠ＢＡＴＴＬＥ",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｄ",
+          "bytes": "82 63",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｌ",
+          "bytes": "82 6B",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｓ",
+          "bytes": "82 72",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｓ",
+          "bytes": "82 72",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｂ",
+          "bytes": "82 61",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｌ",
+          "bytes": "82 6B",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T09-P01-1",
+      "offset": "0x030E4",
+      "old_hex": "6B 82 64 00 00 82 6F 82",
+      "new_hex": "00 8B 5D 89 CE 89 4A 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-10",
+      "status": "confirmed",
+      "target_ram_range": "C8B4~C8BB",
+      "source_row": 10,
+      "target_text": "파반느",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "파",
+          "bytes": "8B 5D",
+          "lookup_row": "500"
+        },
+        {
+          "char": "반",
+          "bytes": "89 CE",
+          "lookup_row": "236"
+        },
+        {
+          "char": "느",
+          "bytes": "89 4A",
+          "lookup_row": "105"
+        }
+      ]
+    },
+    {
+      "id": "GM-T10-P01-1",
+      "offset": "0x030EC",
+      "old_hex": "81 82 96 82 81 82 8E 82",
+      "new_hex": "01 89 CC 89 A4 8A 5A 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-11",
+      "status": "confirmed",
+      "target_ram_range": "C8BC~C8C3",
+      "source_row": 11,
+      "target_text": "바리아",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "바",
+          "bytes": "89 CC",
+          "lookup_row": "234"
+        },
+        {
+          "char": "리",
+          "bytes": "89 A4",
+          "lookup_row": "194"
+        },
+        {
+          "char": "아",
+          "bytes": "8A 5A",
+          "lookup_row": "309"
+        }
+      ]
+    },
+    {
+      "id": "GM-T11-P01-1",
+      "offset": "0x030F4",
+      "old_hex": "85 00 01 82 75 82 60 82",
+      "new_hex": "01 89 CC 89 4D 8B 5B 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-12",
+      "status": "confirmed",
+      "target_ram_range": "C8C4~C8CB",
+      "source_row": 12,
+      "target_text": "바니티",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "바",
+          "bytes": "89 CC",
+          "lookup_row": "234"
+        },
+        {
+          "char": "니",
+          "bytes": "89 4D",
+          "lookup_row": "108"
+        },
+        {
+          "char": "티",
+          "bytes": "8B 5B",
+          "lookup_row": "498"
+        }
+      ]
+    },
+    {
+      "id": "GM-T12-P01-1",
+      "offset": "0x030FC",
+      "old_hex": "6B 82 68 82 60 00 01 82 75 82 60 82 6D 82 68 82 73 82 78 00 00 82",
+      "new_hex": "00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 50 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-13",
+      "status": "confirmed",
+      "target_ram_range": "C8CC~C8E1",
+      "source_row": 13,
+      "target_text": "ＶＡＣＡＮＴＹ．Ｔ１",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｖ",
+          "bytes": "82 75",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｙ",
+          "bytes": "82 78",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "１",
+          "bytes": "82 50",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T13-P01-1",
+      "offset": "0x03112",
+      "old_hex": "75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 50 00 00 82",
+      "new_hex": "00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 51 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-14",
+      "status": "confirmed",
+      "target_ram_range": "C8E2~C8F7",
+      "source_row": 14,
+      "target_text": "ＶＡＣＡＮＴＹ．Ｔ２",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｖ",
+          "bytes": "82 75",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｙ",
+          "bytes": "82 78",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "２",
+          "bytes": "82 51",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T14-P01-1",
+      "offset": "0x03128",
+      "old_hex": "75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 51 00 00 82",
+      "new_hex": "00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 52 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-15",
+      "status": "confirmed",
+      "target_ram_range": "C8F8~C90D",
+      "source_row": 15,
+      "target_text": "ＶＡＣＡＮＴＹ．Ｔ３",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｖ",
+          "bytes": "82 75",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｙ",
+          "bytes": "82 78",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "３",
+          "bytes": "82 52",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T15-P01-1",
+      "offset": "0x0313E",
+      "old_hex": "75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 52 00 00 82",
+      "new_hex": "00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 53 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-16",
+      "status": "confirmed",
+      "target_ram_range": "C90E~C923",
+      "source_row": 16,
+      "target_text": "ＶＡＣＡＮＴＹ．Ｔ４",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｖ",
+          "bytes": "82 75",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｙ",
+          "bytes": "82 78",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "４",
+          "bytes": "82 53",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T16-P01-1",
+      "offset": "0x03154",
+      "old_hex": "75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 53 00 00 82",
+      "new_hex": "00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 54 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-17",
+      "status": "confirmed",
+      "target_ram_range": "C924~C939",
+      "source_row": 17,
+      "target_text": "ＶＡＣＡＮＴＹ．Ｔ５",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｖ",
+          "bytes": "82 75",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｙ",
+          "bytes": "82 78",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "５",
+          "bytes": "82 54",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T17-P01-1",
+      "offset": "0x0316A",
+      "old_hex": "75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 54 00 00 82",
+      "new_hex": "00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 55 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-18",
+      "status": "confirmed",
+      "target_ram_range": "C93A~C94F",
+      "source_row": 18,
+      "target_text": "ＶＡＣＡＮＴＹ．Ｔ６",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｖ",
+          "bytes": "82 75",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｙ",
+          "bytes": "82 78",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "６",
+          "bytes": "82 55",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T18-P01-1",
+      "offset": "0x03180",
+      "old_hex": "75 82 60 82 62 82 60 82 6D 82 73 82",
+      "new_hex": "00 8A 99 8A FC 81 44 81 44 81 44 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-19",
+      "status": "confirmed",
+      "target_ram_range": "C950~C95B",
+      "source_row": 19,
+      "target_text": "유코．．．",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "유",
+          "bytes": "8A 99",
+          "lookup_row": "371"
+        },
+        {
+          "char": "코",
+          "bytes": "8A FC",
+          "lookup_row": "470"
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T19-P01-1",
+      "offset": "0x0318C",
+      "old_hex": "78 81 44 82 73 82 55 00 00 82 78 82 95 82 95 82 8B 82 8F 81 44 81 44 81 44 00 02 82 72 82 85 82 8E 82 94 82 89 82 8D 82",
+      "new_hex": "02 82 72 82 85 82 8E 82 94 82 89 82 8D 82 85 82 8E 82 94 82 81 82 8C 81 40 82 72 82 8F 82 8C 82 84 82 89 82 85 82 92 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-20",
+      "status": "confirmed",
+      "target_ram_range": "C95C~C983",
+      "source_row": 20,
+      "target_text": "Ｓｅｎｔｉｍｅｎｔａｌ␠Ｓｏｌｄｉｅｒ",
+      "composer_index": "02",
+      "encoding_trace": [
+        {
+          "char": "Ｓ",
+          "bytes": "82 72",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｎ",
+          "bytes": "82 8E",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｍ",
+          "bytes": "82 8D",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｎ",
+          "bytes": "82 8E",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｌ",
+          "bytes": "82 8C",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｓ",
+          "bytes": "82 72",
+          "lookup_row": null
+        },
+        {
+          "char": "ｏ",
+          "bytes": "82 8F",
+          "lookup_row": null
+        },
+        {
+          "char": "ｌ",
+          "bytes": "82 8C",
+          "lookup_row": null
+        },
+        {
+          "char": "ｄ",
+          "bytes": "82 84",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T20-P01-1",
+      "offset": "0x031B4",
+      "old_hex": "85 82 8E 82 94 82 81 82 8C 81 40 82 72 82 8F 82 8C 82 84 82 89 82",
+      "new_hex": "00 82 6F 82 92 82 85 82 84 82 89 82 83 82 94 82 89 82 8F 82 8E 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-21",
+      "status": "confirmed",
+      "target_ram_range": "C984~C999",
+      "source_row": 21,
+      "target_text": "Ｐｒｅｄｉｃｔｉｏｎ",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｐ",
+          "bytes": "82 6F",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｄ",
+          "bytes": "82 84",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｃ",
+          "bytes": "82 83",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｏ",
+          "bytes": "82 8F",
+          "lookup_row": null
+        },
+        {
+          "char": "ｎ",
+          "bytes": "82 8E",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T21-P01-1",
+      "offset": "0x031CA",
+      "old_hex": "85 82 92 00 00 82 6F 82 92 82 85 82 84 82 89 82 83 82 94 82 89 82",
+      "new_hex": "00 82 6C 82 89 82 92 82 81 82 87 82 85 8A A1 81 40 89 F7 8A C5 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-22",
+      "status": "confirmed",
+      "target_ram_range": "C99A~C9AF",
+      "source_row": 22,
+      "target_text": "Ｍｉｒａｇｅ의␠성좌",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｍ",
+          "bytes": "82 6C",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｇ",
+          "bytes": "82 87",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "성",
+          "bytes": "89 F7",
+          "lookup_row": "277"
+        },
+        {
+          "char": "좌",
+          "bytes": "8A C5",
+          "lookup_row": "415"
+        }
+      ]
+    },
+    {
+      "id": "GM-T22-P01-1",
+      "offset": "0x031E0",
+      "old_hex": "8F 82 8E 00 00 82 6C 82 89 82 92 82 81 82 87 82 85 82 CC 90 AF 8D C0 00 01 82 71 82 8F 82 83 82 8B 81 66 82 8E 81 40 82 71 82 8F 82 8C 82",
+      "new_hex": "01 82 71 82 8F 82 83 82 8B 81 66 82 8E 81 40 82 71 82 8F 82 8C 82 8C 81 40 82 62 82 68 82 6D 82 63 82 64 82 71 82 64 82 6B 82 6B 82 60 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-23",
+      "status": "confirmed",
+      "target_ram_range": "C9B0~C9DD",
+      "source_row": 23,
+      "target_text": "Ｒｏｃｋ’ｎ␠Ｒｏｌｌ␠ＣＩＮＤＥＲＥＬＬＡ",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "Ｒ",
+          "bytes": "82 71",
+          "lookup_row": null
+        },
+        {
+          "char": "ｏ",
+          "bytes": "82 8F",
+          "lookup_row": null
+        },
+        {
+          "char": "ｃ",
+          "bytes": "82 83",
+          "lookup_row": null
+        },
+        {
+          "char": "ｋ",
+          "bytes": "82 8B",
+          "lookup_row": null
+        },
+        {
+          "char": "’",
+          "bytes": "81 66",
+          "lookup_row": null
+        },
+        {
+          "char": "ｎ",
+          "bytes": "82 8E",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｒ",
+          "bytes": "82 71",
+          "lookup_row": null
+        },
+        {
+          "char": "ｏ",
+          "bytes": "82 8F",
+          "lookup_row": null
+        },
+        {
+          "char": "ｌ",
+          "bytes": "82 8C",
+          "lookup_row": null
+        },
+        {
+          "char": "ｌ",
+          "bytes": "82 8C",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｃ",
+          "bytes": "82 62",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｉ",
+          "bytes": "82 68",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｎ",
+          "bytes": "82 6D",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｄ",
+          "bytes": "82 63",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｒ",
+          "bytes": "82 71",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｌ",
+          "bytes": "82 6B",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｌ",
+          "bytes": "82 6B",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T23-P01-1",
+      "offset": "0x0320E",
+      "old_hex": "8C 81 40 82 62 82 68 82 6D 82 63 82 64 82 71 82 64 82 6B 82 6B 82 60 00 00 94 DF 82 B5 82 DD 82 CC 82 76 82 88 82",
+      "new_hex": "00 8A 4C 8B 6E 8A A1 81 40 8B 8B 8A A2 8B 59 89 5D 8A A2 81 44 81 44 81 44 81 40 8A 99 8A FC 81 40 8A 81 89 A8 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-24",
+      "status": "confirmed",
+      "target_ram_range": "C9DE~CA03",
+      "source_row": 24,
+      "target_text": "슬픔의␠화이트데이．．．␠유코␠올림",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "슬",
+          "bytes": "8A 4C",
+          "lookup_row": "295"
+        },
+        {
+          "char": "픔",
+          "bytes": "8B 6E",
+          "lookup_row": "517"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "화",
+          "bytes": "8B 8B",
+          "lookup_row": "545"
+        },
+        {
+          "char": "이",
+          "bytes": "8A A2",
+          "lookup_row": "380"
+        },
+        {
+          "char": "트",
+          "bytes": "8B 59",
+          "lookup_row": "496"
+        },
+        {
+          "char": "데",
+          "bytes": "89 5D",
+          "lookup_row": "124"
+        },
+        {
+          "char": "이",
+          "bytes": "8A A2",
+          "lookup_row": "380"
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "．",
+          "bytes": "81 44",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "유",
+          "bytes": "8A 99",
+          "lookup_row": "371"
+        },
+        {
+          "char": "코",
+          "bytes": "8A FC",
+          "lookup_row": "470"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "올",
+          "bytes": "8A 81",
+          "lookup_row": "347"
+        },
+        {
+          "char": "림",
+          "bytes": "89 A8",
+          "lookup_row": "198"
+        }
+      ]
+    },
+    {
+      "id": "GM-T24-P01-1",
+      "offset": "0x03234",
+      "old_hex": "89 82 94 82 85 82 63 82 81 82 99 81 44 81 44 81 44 97 44 8E 71 82 E6 82 E8 00 01 82 76 82 88 82 89 82 94 82 85 81 40 82 6C 82",
+      "new_hex": "01 82 76 82 88 82 89 82 94 82 85 81 40 82 6C 82 85 82 93 82 93 82 81 82 87 82 85 81 60 89 93 8A A2 8A FC 81 40 8B 51 89 AA 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-25",
+      "status": "confirmed",
+      "target_ram_range": "CA04~CA2D",
+      "source_row": 25,
+      "target_text": "Ｗｈｉｔｅ␠Ｍｅｓｓａｇｅ～레이코␠테마",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "Ｗ",
+          "bytes": "82 76",
+          "lookup_row": null
+        },
+        {
+          "char": "ｈ",
+          "bytes": "82 88",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｍ",
+          "bytes": "82 6C",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｓ",
+          "bytes": "82 93",
+          "lookup_row": null
+        },
+        {
+          "char": "ｓ",
+          "bytes": "82 93",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｇ",
+          "bytes": "82 87",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "～",
+          "bytes": "81 60",
+          "lookup_row": null
+        },
+        {
+          "char": "레",
+          "bytes": "89 93",
+          "lookup_row": "177"
+        },
+        {
+          "char": "이",
+          "bytes": "8A A2",
+          "lookup_row": "380"
+        },
+        {
+          "char": "코",
+          "bytes": "8A FC",
+          "lookup_row": "470"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "테",
+          "bytes": "8B 51",
+          "lookup_row": "488"
+        },
+        {
+          "char": "마",
+          "bytes": "89 AA",
+          "lookup_row": "200"
+        }
+      ]
+    },
+    {
+      "id": "GM-T25-P01-1",
+      "offset": "0x0325E",
+      "old_hex": "85 82 93 82 93 82 81 82 87 82 85 81 60 97 ED 8E 71 82 CC 83 65 81 5B 83 7D 00 01 82 76 82 88 82 89 82 94 82 85 81 40 82 6C 82 85 82",
+      "new_hex": "01 82 76 82 88 82 89 82 94 82 85 81 40 82 6C 82 85 82 93 82 93 82 81 82 87 82 85 81 60 89 93 8A A2 8A FC 8A A1 81 40 89 EB 89 87 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-26",
+      "status": "confirmed",
+      "target_ram_range": "CA2E~CA59",
+      "source_row": 26,
+      "target_text": "Ｗｈｉｔｅ␠Ｍｅｓｓａｇｅ～레이코의␠사랑",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "Ｗ",
+          "bytes": "82 76",
+          "lookup_row": null
+        },
+        {
+          "char": "ｈ",
+          "bytes": "82 88",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｍ",
+          "bytes": "82 6C",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｓ",
+          "bytes": "82 93",
+          "lookup_row": null
+        },
+        {
+          "char": "ｓ",
+          "bytes": "82 93",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｇ",
+          "bytes": "82 87",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "～",
+          "bytes": "81 60",
+          "lookup_row": null
+        },
+        {
+          "char": "레",
+          "bytes": "89 93",
+          "lookup_row": "177"
+        },
+        {
+          "char": "이",
+          "bytes": "8A A2",
+          "lookup_row": "380"
+        },
+        {
+          "char": "코",
+          "bytes": "8A FC",
+          "lookup_row": "470"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "사",
+          "bytes": "89 EB",
+          "lookup_row": "265"
+        },
+        {
+          "char": "랑",
+          "bytes": "89 87",
+          "lookup_row": "165"
+        }
+      ]
+    },
+    {
+      "id": "GM-T26-P01-1",
+      "offset": "0x0328A",
+      "old_hex": "93 82 93 82 81 82 87 82 85 81 60 97 ED 8E 71 82 CC 88 A4 00 02 97 DC 82 CC 8E 71 8E E7 89 53 81",
+      "new_hex": "02 89 48 89 C4 8A A1 81 40 8A AD 8A B3 88 9F 81 60 82 61 82 85 82 86 82 8F 82 92 82 85 81 60 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-27",
+      "status": "confirmed",
+      "target_ram_range": "CA5A~CA79",
+      "source_row": 27,
+      "target_text": "눈물의␠자장가～Ｂｅｆｏｒｅ～",
+      "composer_index": "02",
+      "encoding_trace": [
+        {
+          "char": "눈",
+          "bytes": "89 48",
+          "lookup_row": "103"
+        },
+        {
+          "char": "물",
+          "bytes": "89 C4",
+          "lookup_row": "226"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "자",
+          "bytes": "8A AD",
+          "lookup_row": "391"
+        },
+        {
+          "char": "장",
+          "bytes": "8A B3",
+          "lookup_row": "397"
+        },
+        {
+          "char": "가",
+          "bytes": "88 9F",
+          "lookup_row": "1"
+        },
+        {
+          "char": "～",
+          "bytes": "81 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｂ",
+          "bytes": "82 61",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｆ",
+          "bytes": "82 86",
+          "lookup_row": null
+        },
+        {
+          "char": "ｏ",
+          "bytes": "82 8F",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "～",
+          "bytes": "81 60",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T27-P01-1",
+      "offset": "0x032AA",
+      "old_hex": "40 81 60 82 61 82 85 82 86 82 8F 82 92 82 85 81 60 00 02 97 DC 82 CC 8E 71 8E E7 89 53 81",
+      "new_hex": "02 89 48 89 C4 8A A1 81 40 8A AD 8A B3 88 9F 81 60 82 60 82 86 82 94 82 85 82 92 81 60 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-28",
+      "status": "confirmed",
+      "target_ram_range": "CA7A~CA97",
+      "source_row": 28,
+      "target_text": "눈물의␠자장가～Ａｆｔｅｒ～",
+      "composer_index": "02",
+      "encoding_trace": [
+        {
+          "char": "눈",
+          "bytes": "89 48",
+          "lookup_row": "103"
+        },
+        {
+          "char": "물",
+          "bytes": "89 C4",
+          "lookup_row": "226"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "자",
+          "bytes": "8A AD",
+          "lookup_row": "391"
+        },
+        {
+          "char": "장",
+          "bytes": "8A B3",
+          "lookup_row": "397"
+        },
+        {
+          "char": "가",
+          "bytes": "88 9F",
+          "lookup_row": "1"
+        },
+        {
+          "char": "～",
+          "bytes": "81 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "ｆ",
+          "bytes": "82 86",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "～",
+          "bytes": "81 60",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T28-P01-1",
+      "offset": "0x032C8",
+      "old_hex": "40 81 60 82 60 82 86 82 94 82 85 82 92 81 60 00 02 82 60 82 87 82 81 82 89 82 8E 82 93 82 94 81 40 82 61 82 8C 82 81 82 83 82",
+      "new_hex": "02 82 60 82 87 82 81 82 89 82 8E 82 93 82 94 81 40 82 61 82 8C 82 81 82 83 82 8B 81 40 82 72 82 88 82 81 82 84 82 8F 82 97 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-29",
+      "status": "confirmed",
+      "target_ram_range": "CA98~CAC1",
+      "source_row": 29,
+      "target_text": "Ａｇａｉｎｓｔ␠Ｂｌａｃｋ␠Ｓｈａｄｏｗ",
+      "composer_index": "02",
+      "encoding_trace": [
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "ｇ",
+          "bytes": "82 87",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｎ",
+          "bytes": "82 8E",
+          "lookup_row": null
+        },
+        {
+          "char": "ｓ",
+          "bytes": "82 93",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｂ",
+          "bytes": "82 61",
+          "lookup_row": null
+        },
+        {
+          "char": "ｌ",
+          "bytes": "82 8C",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｃ",
+          "bytes": "82 83",
+          "lookup_row": null
+        },
+        {
+          "char": "ｋ",
+          "bytes": "82 8B",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｓ",
+          "bytes": "82 72",
+          "lookup_row": null
+        },
+        {
+          "char": "ｈ",
+          "bytes": "82 88",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｄ",
+          "bytes": "82 84",
+          "lookup_row": null
+        },
+        {
+          "char": "ｏ",
+          "bytes": "82 8F",
+          "lookup_row": null
+        },
+        {
+          "char": "ｗ",
+          "bytes": "82 97",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T29-P01-1",
+      "offset": "0x032F2",
+      "old_hex": "8B 81 40 82 72 82 88 82 81 82 84 82 8F 82 97 00 02 82 73 82 85 82 81 82 92 82 93 81 40 82 89 82",
+      "new_hex": "02 82 73 82 85 82 81 82 92 82 93 81 40 82 89 82 8E 81 40 82 61 82 81 82 94 82 94 82 8C 82 85 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-30",
+      "status": "confirmed",
+      "target_ram_range": "CAC2~CAE1",
+      "source_row": 30,
+      "target_text": "Ｔｅａｒｓ␠ｉｎ␠Ｂａｔｔｌｅ",
+      "composer_index": "02",
+      "encoding_trace": [
+        {
+          "char": "Ｔ",
+          "bytes": "82 73",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "ｓ",
+          "bytes": "82 93",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "ｉ",
+          "bytes": "82 89",
+          "lookup_row": null
+        },
+        {
+          "char": "ｎ",
+          "bytes": "82 8E",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｂ",
+          "bytes": "82 61",
+          "lookup_row": null
+        },
+        {
+          "char": "ａ",
+          "bytes": "82 81",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "ｔ",
+          "bytes": "82 94",
+          "lookup_row": null
+        },
+        {
+          "char": "ｌ",
+          "bytes": "82 8C",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T30-P01-1",
+      "offset": "0x03312",
+      "old_hex": "8E 81 40 82 61 82 81 82 94 82 94 82",
+      "new_hex": "02 89 AA 8A A1 81 40 8B 5D 89 61 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-31",
+      "status": "confirmed",
+      "target_ram_range": "CAE2~CAED",
+      "source_row": 31,
+      "target_text": "마의␠파동",
+      "composer_index": "02",
+      "encoding_trace": [
+        {
+          "char": "마",
+          "bytes": "89 AA",
+          "lookup_row": "200"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "파",
+          "bytes": "8B 5D",
+          "lookup_row": "500"
+        },
+        {
+          "char": "동",
+          "bytes": "89 61",
+          "lookup_row": "128"
+        }
+      ]
+    },
+    {
+      "id": "GM-T31-P01-1",
+      "offset": "0x0331E",
+      "old_hex": "8C 82 85 00 02 96 82 82 CC 94 67 93",
+      "new_hex": "00 82 6C 82 64 82 66 82 60 82 72 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-32",
+      "status": "confirmed",
+      "target_ram_range": "CAEE~CAF9",
+      "source_row": 32,
+      "target_text": "ＭＥＧＡＳ",
+      "composer_index": "00",
+      "encoding_trace": [
+        {
+          "char": "Ｍ",
+          "bytes": "82 6C",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｇ",
+          "bytes": "82 66",
+          "lookup_row": null
+        },
+        {
+          "char": "Ａ",
+          "bytes": "82 60",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｓ",
+          "bytes": "82 72",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-T32-P01-1",
+      "offset": "0x0332A",
+      "old_hex": "AE 00 00 82 6C 82 64 82 66 82 60 82 72 00 01 8C",
+      "new_hex": "01 89 53 89 D1 8A A1 81 40 8A 7D 89 A0 88 BF 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-33",
+      "status": "confirmed",
+      "target_ram_range": "CAFA~CB09",
+      "source_row": 33,
+      "target_text": "달밤의␠오르골",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "달",
+          "bytes": "89 53",
+          "lookup_row": "114"
+        },
+        {
+          "char": "밤",
+          "bytes": "89 D1",
+          "lookup_row": "239"
+        },
+        {
+          "char": "의",
+          "bytes": "8A A1",
+          "lookup_row": "379"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "오",
+          "bytes": "8A 7D",
+          "lookup_row": "344"
+        },
+        {
+          "char": "르",
+          "bytes": "89 A0",
+          "lookup_row": "190"
+        },
+        {
+          "char": "골",
+          "bytes": "88 BF",
+          "lookup_row": "33"
+        }
+      ]
+    },
+    {
+      "id": "GM-T33-P01-1",
+      "offset": "0x0333A",
+      "old_hex": "8E 96 E9 82 CC 83 49 83 8B 83 53 81 5B 83 8B 00 01 82 64 82 96 82",
+      "new_hex": "01 82 64 82 96 82 85 82 92 81 40 82 66 82 92 82 85 82 85 82 8E 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-34",
+      "status": "confirmed",
+      "target_ram_range": "CB0A~CB1F",
+      "source_row": 34,
+      "target_text": "Ｅｖｅｒ␠Ｇｒｅｅｎ",
+      "composer_index": "01",
+      "encoding_trace": [
+        {
+          "char": "Ｅ",
+          "bytes": "82 64",
+          "lookup_row": null
+        },
+        {
+          "char": "ｖ",
+          "bytes": "82 96",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "Ｇ",
+          "bytes": "82 66",
+          "lookup_row": null
+        },
+        {
+          "char": "ｒ",
+          "bytes": "82 92",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｅ",
+          "bytes": "82 85",
+          "lookup_row": null
+        },
+        {
+          "char": "ｎ",
+          "bytes": "82 8E",
+          "lookup_row": null
+        }
+      ]
+    },
+    {
+      "id": "GM-P01-1",
+      "offset": "0x02E6C",
+      "old_hex": "FC C7",
+      "new_hex": "FC C7",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-2",
+      "status": "confirmed",
+      "target_record_ram": "C64C",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P02-1",
+      "offset": "0x02E78",
+      "old_hex": "0A C8",
+      "new_hex": "0C C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-3",
+      "status": "confirmed",
+      "target_record_ram": "C658",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P03-1",
+      "offset": "0x02E84",
+      "old_hex": "26 C8",
+      "new_hex": "28 C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-4",
+      "status": "confirmed",
+      "target_record_ram": "C664",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P04-1",
+      "offset": "0x02E90",
+      "old_hex": "48 C8",
+      "new_hex": "4A C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-5",
+      "status": "confirmed",
+      "target_record_ram": "C670",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P05-1",
+      "offset": "0x02E9C",
+      "old_hex": "5E C8",
+      "new_hex": "58 C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-6",
+      "status": "confirmed",
+      "target_record_ram": "C67C",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P06-1",
+      "offset": "0x02EA8",
+      "old_hex": "74 C8",
+      "new_hex": "6E C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-7",
+      "status": "confirmed",
+      "target_record_ram": "C688",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P07-1",
+      "offset": "0x02EB4",
+      "old_hex": "8E C8",
+      "new_hex": "88 C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-8",
+      "status": "confirmed",
+      "target_record_ram": "C694",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P08-1",
+      "offset": "0x02EC0",
+      "old_hex": "9A C8",
+      "new_hex": "96 C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-9",
+      "status": "confirmed",
+      "target_record_ram": "C6A0",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P09-1",
+      "offset": "0x02ECC",
+      "old_hex": "B8 C8",
+      "new_hex": "B4 C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-10",
+      "status": "confirmed",
+      "target_record_ram": "C6AC",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P10-1",
+      "offset": "0x02ED8",
+      "old_hex": "C6 C8",
+      "new_hex": "BC C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-11",
+      "status": "confirmed",
+      "target_record_ram": "C6B8",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P11-1",
+      "offset": "0x02EE4",
+      "old_hex": "D2 C8",
+      "new_hex": "C4 C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-12",
+      "status": "confirmed",
+      "target_record_ram": "C6C4",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P12-1",
+      "offset": "0x02EF0",
+      "old_hex": "E0 C8",
+      "new_hex": "CC C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-13",
+      "status": "confirmed",
+      "target_record_ram": "C6D0",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P13-1",
+      "offset": "0x02EFC",
+      "old_hex": "F6 C8",
+      "new_hex": "E2 C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-14",
+      "status": "confirmed",
+      "target_record_ram": "C6DC",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P14-1",
+      "offset": "0x02F08",
+      "old_hex": "0C C9",
+      "new_hex": "F8 C8",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-15",
+      "status": "confirmed",
+      "target_record_ram": "C6E8",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P15-1",
+      "offset": "0x02F14",
+      "old_hex": "22 C9",
+      "new_hex": "0E C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-16",
+      "status": "confirmed",
+      "target_record_ram": "C6F4",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P16-1",
+      "offset": "0x02F20",
+      "old_hex": "38 C9",
+      "new_hex": "24 C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-17",
+      "status": "confirmed",
+      "target_record_ram": "C700",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P17-1",
+      "offset": "0x02F2C",
+      "old_hex": "4E C9",
+      "new_hex": "3A C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-18",
+      "status": "confirmed",
+      "target_record_ram": "C70C",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P18-1",
+      "offset": "0x02F38",
+      "old_hex": "64 C9",
+      "new_hex": "50 C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-19",
+      "status": "confirmed",
+      "target_record_ram": "C718",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P19-1",
+      "offset": "0x02F44",
+      "old_hex": "76 C9",
+      "new_hex": "5C C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-20",
+      "status": "confirmed",
+      "target_record_ram": "C724",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P20-1",
+      "offset": "0x02F50",
+      "old_hex": "9E C9",
+      "new_hex": "84 C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-21",
+      "status": "confirmed",
+      "target_record_ram": "C730",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P21-1",
+      "offset": "0x02F5C",
+      "old_hex": "B4 C9",
+      "new_hex": "9A C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-22",
+      "status": "confirmed",
+      "target_record_ram": "C73C",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P22-1",
+      "offset": "0x02F68",
+      "old_hex": "C8 C9",
+      "new_hex": "B0 C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-23",
+      "status": "confirmed",
+      "target_record_ram": "C748",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P23-1",
+      "offset": "0x02F74",
+      "old_hex": "F6 C9",
+      "new_hex": "DE C9",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-24",
+      "status": "confirmed",
+      "target_record_ram": "C754",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P24-1",
+      "offset": "0x02F80",
+      "old_hex": "1E CA",
+      "new_hex": "04 CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-25",
+      "status": "confirmed",
+      "target_record_ram": "C760",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P25-1",
+      "offset": "0x02F8C",
+      "old_hex": "48 CA",
+      "new_hex": "2E CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-26",
+      "status": "confirmed",
+      "target_record_ram": "C76C",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P26-1",
+      "offset": "0x02F98",
+      "old_hex": "6E CA",
+      "new_hex": "5A CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-27",
+      "status": "confirmed",
+      "target_record_ram": "C778",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P27-1",
+      "offset": "0x02FA4",
+      "old_hex": "8C CA",
+      "new_hex": "7A CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-28",
+      "status": "confirmed",
+      "target_record_ram": "C784",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P28-1",
+      "offset": "0x02FB0",
+      "old_hex": "A8 CA",
+      "new_hex": "98 CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-29",
+      "status": "confirmed",
+      "target_record_ram": "C790",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P29-1",
+      "offset": "0x02FBC",
+      "old_hex": "D2 CA",
+      "new_hex": "C2 CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-30",
+      "status": "confirmed",
+      "target_record_ram": "C79C",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P30-1",
+      "offset": "0x02FC8",
+      "old_hex": "F2 CA",
+      "new_hex": "E2 CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-31",
+      "status": "confirmed",
+      "target_record_ram": "C7A8",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P31-1",
+      "offset": "0x02FD4",
+      "old_hex": "FC CA",
+      "new_hex": "EE CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-32",
+      "status": "confirmed",
+      "target_record_ram": "C7B4",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P32-1",
+      "offset": "0x02FE0",
+      "old_hex": "08 CB",
+      "new_hex": "FA CA",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-33",
+      "status": "confirmed",
+      "target_record_ram": "C7C0",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-P33-1",
+      "offset": "0x02FEC",
+      "old_hex": "1A CB",
+      "new_hex": "0A CB",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-2-row-2;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-8-row-34",
+      "status": "confirmed",
+      "target_record_ram": "C7CC",
+      "pointer_formula": "0xC7FC + sum(previous explicit entry lengths)"
+    },
+    {
+      "id": "GM-CN00-1",
+      "offset": "0x03350",
+      "old_hex": "85 82 92 81 40 82 66 82 92 82 85 82 85 82 8E",
+      "new_hex": "8A 7D 88 9F 8A 83 81 40 8A 4F 89 40 89 E1 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-9-row-3",
+      "status": "confirmed",
+      "target_ram_range": "CB20~CB2E",
+      "target_text": "오가와␠시노부",
+      "encoding_trace": [
+        {
+          "char": "오",
+          "bytes": "8A 7D",
+          "lookup_row": "344"
+        },
+        {
+          "char": "가",
+          "bytes": "88 9F",
+          "lookup_row": "1"
+        },
+        {
+          "char": "와",
+          "bytes": "8A 83",
+          "lookup_row": "349"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "시",
+          "bytes": "8A 4F",
+          "lookup_row": "298"
+        },
+        {
+          "char": "노",
+          "bytes": "89 40",
+          "lookup_row": "95"
+        },
+        {
+          "char": "부",
+          "bytes": "89 E1",
+          "lookup_row": "255"
+        }
+      ]
+    },
+    {
+      "id": "GM-CP00-1",
+      "offset": "0x02FFA",
+      "old_hex": "30 CB",
+      "new_hex": "20 CB",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-9-row-3;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#paragraph-125",
+      "status": "confirmed",
+      "target_pointer_ram": "C7DA",
+      "pointer_value": "CB20",
+      "pointer_basis": "target base CB20 plus cumulative prior translated name bytes and 00 terminators"
+    },
+    {
+      "id": "GM-CN01-1",
+      "offset": "0x0335F",
+      "old_hex": "00 8F AC 90 EC 81 40 8E 6A 90 B6 00 8D",
+      "new_hex": "89 EB 8B 56 81 40 8B 52 8B 62 8A A2 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-9-row-4",
+      "status": "confirmed",
+      "target_ram_range": "CB2F~CB3B",
+      "target_text": "사토␠텐페이",
+      "encoding_trace": [
+        {
+          "char": "사",
+          "bytes": "89 EB",
+          "lookup_row": "265"
+        },
+        {
+          "char": "토",
+          "bytes": "8B 56",
+          "lookup_row": "493"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "텐",
+          "bytes": "8B 52",
+          "lookup_row": "489"
+        },
+        {
+          "char": "페",
+          "bytes": "8B 62",
+          "lookup_row": "505"
+        },
+        {
+          "char": "이",
+          "bytes": "8A A2",
+          "lookup_row": "380"
+        }
+      ]
+    },
+    {
+      "id": "GM-CP01-1",
+      "offset": "0x02FFC",
+      "old_hex": "3B CB",
+      "new_hex": "2F CB",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-9-row-4;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#paragraph-125",
+      "status": "confirmed",
+      "target_pointer_ram": "C7DC",
+      "pointer_value": "CB2F",
+      "pointer_basis": "target base CB20 plus cumulative prior translated name bytes and 00 terminators"
+    },
+    {
+      "id": "GM-CN02-1",
+      "offset": "0x0336C",
+      "old_hex": "B2 93 A1 81 40 93 56 95 BD 00 8A 81 8C B4 81 40 90 B3 97",
+      "new_hex": "8A F7 8A D4 8B 72 89 81 81 40 89 AA 89 EB 8B 97 89 99 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-9-row-5",
+      "status": "confirmed",
+      "target_ram_range": "CB3C~CB4E",
+      "target_text": "카지하라␠마사히로",
+      "encoding_trace": [
+        {
+          "char": "카",
+          "bytes": "8A F7",
+          "lookup_row": "465"
+        },
+        {
+          "char": "지",
+          "bytes": "8A D4",
+          "lookup_row": "430"
+        },
+        {
+          "char": "하",
+          "bytes": "8B 72",
+          "lookup_row": "521"
+        },
+        {
+          "char": "라",
+          "bytes": "89 81",
+          "lookup_row": "159"
+        },
+        {
+          "char": "␠",
+          "bytes": "81 40",
+          "lookup_row": null
+        },
+        {
+          "char": "마",
+          "bytes": "89 AA",
+          "lookup_row": "200"
+        },
+        {
+          "char": "사",
+          "bytes": "89 EB",
+          "lookup_row": "265"
+        },
+        {
+          "char": "히",
+          "bytes": "8B 97",
+          "lookup_row": "557"
+        },
+        {
+          "char": "로",
+          "bytes": "89 99",
+          "lookup_row": "183"
+        }
+      ]
+    },
+    {
+      "id": "GM-CP02-1",
+      "offset": "0x02FFE",
+      "old_hex": "46 CB",
+      "new_hex": "3C CB",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#table-9-row-5;Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#paragraph-125",
+      "status": "confirmed",
+      "target_pointer_ram": "C7DE",
+      "pointer_value": "CB3C",
+      "pointer_basis": "target base CB20 plus cumulative prior translated name bytes and 00 terminators"
+    },
+    {
+      "id": "GM-ZERO-1",
+      "offset": "0x0337F",
+      "old_hex": "54 00",
+      "new_hex": "00 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#paragraph-110",
+      "status": "confirmed",
+      "target_ram_range": "CB4F~CB50",
+      "reason": "two-byte zero fill after 47-byte composer-name payload"
+    },
+    {
+      "id": "GM-CODE01-1",
+      "offset": "0x02928",
+      "old_hex": "CD 1D C4",
+      "new_hex": "00 00 00",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#paragraph-103",
+      "status": "confirmed",
+      "old_instruction": "CD 1D C4",
+      "ram_source_address": "C118"
+    },
+    {
+      "id": "GM-CODE02-1",
+      "offset": "0x0293F",
+      "old_hex": "11 1A D4",
+      "new_hex": "11 14 D4",
+      "evidence_ref": "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx#paragraph-103",
+      "status": "confirmed",
+      "old_instruction": "11 1A D4",
+      "ram_source_address": "C12F"
+    }
+  ]
+}

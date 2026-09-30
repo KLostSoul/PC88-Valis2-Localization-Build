@@ -1,0 +1,215 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "A",
+  "component_id": "a_title_cg",
+  "component": "Disk A title-screen 3-plane image, title scroll raster, and directly recorded center-out row correction",
+  "complete": true,
+  "baseline": {
+    "size_bytes": 415840,
+    "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
+  },
+  "source_docs": [
+    {
+      "path": "docs/integrated-source-analysis.md#3.7",
+      "role": "Disk A title resource dimensions, encoding layouts, RAM ranges, and raw sector map."
+    },
+    {
+      "path": "source/patches/row-tables/disk-A__title__d473-raw-change.csv",
+      "role": "Reviewed D473-D475 title row correction."
+    }
+  ],
+  "source_hashes": {
+    "japanese_disk_a_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
+  },
+  "target_provenance": {
+    "method": "The build reads the checked-in plane PNGs and encodes each Disk A title resource directly. It does not use serialized target resource bytes. The Valis logo and II images preserve the Japanese source pixels; Mugen title and scroll images contain the Korean changes.",
+    "serialized_target_bytes_used": false,
+    "runtime_status": "The D473 row correction has a recorded QUASI88 success. The four-resource PNG build output has not been broadly emulator-verified.",
+    "encoder": "tools/graphics_assets.py"
+  },
+  "resource_layout": {
+    "mugen_title": {
+      "ram_range": "1908~1EF7",
+      "dimensions": "352x17",
+      "planes": "5C/5D/5E",
+      "storage": "x-major byte columns; plane order 5C/5D/5E; LSB control bits",
+      "encoded_target_bytes": 1385,
+      "allocated_bytes": 1520,
+      "target_header_hex": "2C 11 13 11 07 96 04 EF",
+      "encoded_target_sha256": "a99f72a1a224a007fddee6971d5869bde19c58bc85f0797f41516114b0870375",
+      "source_project_pixels_sha256": "dc6e3d7d21a0892f7b857b45126d532c5fea09d4cf1be2dbe7acccf8ad223261",
+      "baseline_decoded_pixels_sha256": "bb56a4cb9c9881330e77fc189210af603da3ae71d987bcc713c5569a79dc6769",
+      "round_trip_matches_project_pixels": true,
+      "payload_spans": [
+        {
+          "chr": "T28/S01",
+          "raw_offset": "0x032BF8",
+          "bytes": 1016,
+          "ram_start": "1908"
+        },
+        {
+          "chr": "T28/S02",
+          "raw_offset": "0x033000",
+          "bytes": 369,
+          "ram_start": "1D00"
+        }
+      ],
+      "ram_start": "0x1908",
+      "maximum_size": "0x05F0"
+    },
+    "mugen_scroll": {
+      "ram_range": "1EF8~21B7",
+      "dimensions": "352x16",
+      "planes": "1bpp",
+      "storage": "row-major bytes; MSB-left",
+      "encoded_target_bytes": 704,
+      "encoded_target_sha256": "422a179bbd1d55e52c95c669db8a44b0bad9cf56e5310bc557797609172f377e",
+      "source_project_pixels_sha256": "2a89948a109f1e1a1030ed61f2538504105a745943495da8541596a6d658550a",
+      "payload_spans": [
+        {
+          "chr": "T28/S02",
+          "raw_offset": "0x0331F8",
+          "bytes": 520,
+          "ram_start": "1EF8"
+        },
+        {
+          "chr": "T28/S03",
+          "raw_offset": "0x033410",
+          "bytes": 184,
+          "ram_start": "2100"
+        }
+      ],
+      "ram_start": "0x1EF8"
+    },
+    "disk_a_data_fields": [
+      {
+        "ram_start": "0x1900",
+        "raw_start": "0x032BF0",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x1D00",
+        "raw_start": "0x033000",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x2100",
+        "raw_start": "0x033410",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x2500",
+        "raw_start": "0x033820",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x2900",
+        "raw_start": "0x033C30",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x2D00",
+        "raw_start": "0x034040",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x3100",
+        "raw_start": "0x034450",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x3500",
+        "raw_start": "0x034860",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x3900",
+        "raw_start": "0x034C70",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x3D00",
+        "raw_start": "0x035080",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x4100",
+        "raw_start": "0x035490",
+        "bytes": 1024
+      },
+      {
+        "ram_start": "0x4500",
+        "raw_start": "0x0358A0",
+        "bytes": 1024
+      }
+    ],
+    "roman_ii": {
+      "ram_start": "0x21B8",
+      "ram_end_inclusive": "0x334E",
+      "dimensions": "152x79",
+      "planes": "5C/5D/5E",
+      "storage": "row-major bytes, plane interleave 5C then 5D then 5E",
+      "maximum_size": "0x1197",
+      "source_pixels_match_japanese": true,
+      "encoded_target_sha256": "111f86c8d87ce0c7014656729264588eff78985169ea982f17dfaf9cb636e296"
+    },
+    "valis_title": {
+      "ram_start": "0x334F",
+      "ram_end_inclusive": "0x4694",
+      "dimensions": "376x91",
+      "planes": "5C/5D/5E",
+      "storage": "compressed x-major byte columns, plane order 5C/5D/5E; LSB control bits",
+      "maximum_size": "0x1346",
+      "source_pixels_match_japanese": true
+    }
+  },
+  "verified_unchanged_images": [
+    {
+      "resource": "II 3-plane",
+      "ram_range": "21B8~334E",
+      "source_project_pixels_sha256": "e8aa5e273d7f12089434067f6a3b74f460d00b8c5ffd50dbcd16537f2dc3d7db",
+      "japanese_source_pixels_sha256": "e8aa5e273d7f12089434067f6a3b74f460d00b8c5ffd50dbcd16537f2dc3d7db",
+      "changed_pixels": 0,
+      "action": "preserve Japanese source bytes"
+    },
+    {
+      "resource": "Valis 3-plane",
+      "ram_range": "334F~4694",
+      "source_project_pixels_sha256": "6d6bb31b249af7dbe2d458801b3c1efcf2707299680bdd5a45295c3d8ef351ca",
+      "japanese_source_pixels_sha256": "6d6bb31b249af7dbe2d458801b3c1efcf2707299680bdd5a45295c3d8ef351ca",
+      "changed_pixels": 0,
+      "action": "preserve Japanese source bytes"
+    }
+  ],
+  "rows": [
+    {
+      "id": "a-title-valis-row-animation-hook",
+      "offset": "0x085F3",
+      "old_hex": "CD 19 87",
+      "new_hex": "00 00 00",
+      "evidence_ref": "source/patches/row-tables/disk-A__title__d473-raw-change.csv#row-1; Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#D473-D475",
+      "status": "confirmed",
+      "ram_range": "D473~D475",
+      "note": "Directly recorded center-out row correction; exact original CALL 8719 bytes verified from Japanese Disk A."
+    }
+  ],
+  "asset_inputs": {
+    "mugen_title_planes": {
+      "5C": "source/graphics/disk-A__mugen-title/02.png",
+      "5D": "source/graphics/disk-A__mugen-title/003.png",
+      "5E": "source/graphics/disk-A__mugen-title/04.png"
+    },
+    "mugen_scroll": "source/graphics/disk-A__mugen-title/01.png",
+    "roman_ii_planes": {
+      "5C": "source/graphics/disk-A__roman-ii/01.png",
+      "5D": "source/graphics/disk-A__roman-ii/02.png",
+      "5E": "source/graphics/disk-A__roman-ii/03.png"
+    },
+    "valis_title_planes": {
+      "5C": "source/graphics/disk-A__valis-title/01.png",
+      "5D": "source/graphics/disk-A__valis-title/02.png",
+      "5E": "source/graphics/disk-A__valis-title/03.png"
+    }
+  },
+  "build_mode": "png-graphics-and-reviewed-patch-rows"
+}

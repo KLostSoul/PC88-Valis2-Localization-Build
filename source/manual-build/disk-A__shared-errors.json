@@ -1,0 +1,61 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "A",
+  "component": "low_address_error_and_input_messages",
+  "component_id": "a_shared_errors",
+  "baseline": {
+    "size_bytes": 415840,
+    "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
+  },
+  "source_docs": [
+    "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx"
+  ],
+  "lookup_reference": {
+    "file": "source/kanji/glyph-assignment-reference.csv",
+    "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+    "use": "Hangul character-to-token lookup only; no serialized output bytes"
+  },
+  "rows": [
+    {
+      "id": "2-01",
+      "offset": "0x03AAF",
+      "old_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 8A 6D 94 46 82 B5 82 C4 81 41 00",
+      "new_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 89 A2 81 40 8B 8C 8A A4 8B 72 88 BB 81 41 00",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-19; Valis2_Editor_v2.12/data/manifests/a_ui.json (SHA-256 870b094bfc00ce5d1619f37960385c01f905fed89abfe60cf013a08a6063c41a; structure only: raw start, fixed 53-byte span, two CR controls, dynamic disk-character slot, seven-slot tail, terminator)",
+      "status": "confirmed",
+      "ram_range": "065F~0692(+00)",
+      "source_translation": "＊ＤＩＳＫ␠ＥＲＲＯＲ＊[0D][0D]ＤＩＳＫ␠Ａ를　␠확인하고、[00]",
+      "layout_note": "53-byte direct raw span; 0D 0D and 00 retained. The source Korean cell contains both U+3000 and ␠ between 를 and 확인, but its explicit target-byte cell has one fullwidth-space slot there; the independently re-encoded target follows that one-space form. Seven 2-byte tail slots fit exactly. Disk A byte 0x03AD4 is retained from baseline."
+    },
+    {
+      "id": "2-02",
+      "offset": "0x3AE4",
+      "old_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 82 C9 93 FC 82 EA 82 C4 00",
+      "new_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 89 A2 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 8A 72 81 40 88 F7 88 BB 00",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-20",
+      "status": "confirmed",
+      "ram_range": "0693~06BD(+00)",
+      "source_translation": "ＤＩＳＫ␠Ａ␠를␠ＤＲＩＶＥ␠１[0D]에␠넣고[00]",
+      "layout_note": "42-byte range includes the direct 0D line control and 00 terminator."
+    },
+    {
+      "id": "2-03",
+      "offset": "0x3B0E",
+      "old_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+      "new_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 89 A2 0D 89 49 89 8C 81 40 8A C8 89 F8 8A 8A 81 42 00",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-21",
+      "status": "confirmed",
+      "ram_range": "06BE~06E3(+00)",
+      "source_translation": "ＲＥＴＵＲＮ␠ＫＥＹ를[0D]눌러␠주세요。[00]",
+      "layout_note": "38-byte range includes the direct 0D line control and 00 terminator."
+    }
+  ],
+  "complete": true,
+  "resolved_source_conflicts": [
+    {
+      "id": "2-01",
+      "direct_conflict": "The Korean translation cell displays an ideographic space plus a ␠ marker between 를 and 확인, which would exceed the 53-byte span if treated as two encoded slots.",
+      "resolution": "The direct worktable explicit target-byte cell contains one 81 40 slot, and the 7-slot tail structure confirms exactly one space. Re-encoded from the direct Korean characters and current glyph map; the reference contributes structure only."
+    }
+  ]
+}

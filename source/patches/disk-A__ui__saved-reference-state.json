@@ -1,0 +1,248 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "A",
+  "component": "ui_current_editor_target_state_reconciled_with_direct_2026-07-27_worktable",
+  "baseline": {
+    "size_bytes": 415840,
+    "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
+  },
+  "target_state": {
+    "manifest_path": "reference-data/data/manifests/a_ui.json",
+    "manifest_sha256": "870b094bfc00ce5d1619f37960385c01f905fed89abfe60cf013a08a6063c41a",
+    "schema": "valis2.diska.ui.fixed_slot_manifest",
+    "schema_version": "1.3-all-6-start-pointers",
+    "status": "editor_saved_as_current_baseline",
+    "model_module_path": "reference-data/modules/valis2_diska_ui_core.py",
+    "model_module_sha256": "a9ed591db2f2ac8441ee7c10f278f3f39b993ada47be4ac83e87a3e1b93f5eef",
+    "map_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+    "kanji_rom_sha256": "90f5bd468db8758950c60646c77538956f8b52008e1919c8bb73ee8a05d08242",
+    "selected_item_ids": [
+      "1-02",
+      "1-03",
+      "1-06",
+      "1-07",
+      "2-01",
+      "2-02",
+      "2-03",
+      "3-02"
+    ]
+  },
+  "direct_source": "Prologue\\Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+  "direct_comparisons": [
+    {
+      "item_id": "1-02",
+      "direct_target_text": "아날로그␠모니터␠",
+      "editor_segment_state": {
+        "text": "아날로그 모니터"
+      },
+      "direct_target_hex_matches_editor_manifest_baseline_hex": true,
+      "direct_target_hex": "89 60 82 D0 88 C5 82 BD 81 40 88 DF 82 E4 89 D1 81 40",
+      "editor_manifest_baseline_hex": "89 60 82 D0 88 C5 82 BD 81 40 88 DF 82 E4 89 D1 81 40",
+      "source_target_text_vs_editor_segment_content_match_after_space_normalization": true,
+      "note": "Direct target hex is the older token assignment; current Editor model re-encodes its segment text with the current map."
+    },
+    {
+      "item_id": "1-03",
+      "direct_target_text": "디지털␠모니터␠␠",
+      "editor_segment_state": {
+        "text": "디지털 모니터"
+      },
+      "direct_target_hex_matches_editor_manifest_baseline_hex": true,
+      "direct_target_hex": "88 AB 89 B3 89 D2 81 40 88 DF 82 E4 89 D1 81 40 81 40",
+      "editor_manifest_baseline_hex": "88 AB 89 B3 89 D2 81 40 88 DF 82 E4 89 D1 81 40 81 40",
+      "source_target_text_vs_editor_segment_content_match_after_space_normalization": true,
+      "note": "Direct target hex is the older token assignment; current Editor model re-encodes its segment text with the current map."
+    },
+    {
+      "item_id": "1-06",
+      "direct_target_text": "PCM데이터를␠읽음␠␠[0D]",
+      "editor_segment_state": {
+        "text": "PCM데이터를 읽음"
+      },
+      "direct_target_hex_matches_editor_manifest_baseline_hex": true,
+      "direct_target_hex": "82 6F 82 62 82 6C 82 F0 89 8D 89 D1 88 CA 81 40 89 90 89 8B 81 40 81 40",
+      "editor_manifest_baseline_hex": "82 6F 82 62 82 6C 82 F0 89 8D 89 D1 88 CA 81 40 89 90 89 8B 81 40 81 40",
+      "source_target_text_vs_editor_segment_content_match_after_space_normalization": true,
+      "note": "Direct target hex is the older token assignment; current Editor model re-encodes its segment text with the current map."
+    },
+    {
+      "item_id": "1-07",
+      "direct_target_text": "ＰＣＭ데이터를␠안␠읽음[00]",
+      "editor_segment_state": {
+        "text": "PCM데이터를 안 읽음"
+      },
+      "direct_target_hex_matches_editor_manifest_baseline_hex": true,
+      "direct_target_hex": "82 6F 82 62 82 6C 82 F0 89 8D 89 D1 88 CA 81 40 89 62 81 40 89 90 89 8B",
+      "editor_manifest_baseline_hex": "82 6F 82 62 82 6C 82 F0 89 8D 89 D1 88 CA 81 40 89 62 81 40 89 90 89 8B",
+      "source_target_text_vs_editor_segment_content_match_after_space_normalization": false,
+      "note": "Direct target hex is the older token assignment; current Editor model re-encodes its segment text with the current map."
+    },
+    {
+      "item_id": "2-01",
+      "direct_target_text": "＊ＤＩＳＫ␠ＥＲＲＯＲ＊[0D][0D]ＤＩＳＫ␠Ａ를　␠확인하고、[00]",
+      "editor_segment_state": {
+        "line1": "*DISK ERROR*",
+        "line2_prefix": "DISK ",
+        "line2_tail": "를 확인하고、"
+      },
+      "direct_target_hex_matches_editor_manifest_baseline_hex": true,
+      "direct_target_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 88 CA 81 40 89 F2 89 8E 89 E2 82 B1 81 41 00",
+      "editor_manifest_baseline_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 88 CA 81 40 89 F2 89 8E 89 E2 82 B1 81 41 00",
+      "source_target_text_vs_editor_segment_content_match_after_space_normalization": false,
+      "note": "Direct target hex is the older token assignment; current Editor model re-encodes its segment text with the current map."
+    },
+    {
+      "item_id": "2-02",
+      "direct_target_text": "ＤＩＳＫ␠Ａ␠를␠ＤＲＩＶＥ␠１[0D]에␠넣고[00]",
+      "editor_segment_state": {
+        "before_disk": "DISK ",
+        "between_slots": "를 DRIVE ",
+        "line2": "에 넣고"
+      },
+      "direct_target_hex_matches_editor_manifest_baseline_hex": true,
+      "direct_target_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 88 CA 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 89 70 81 40 82 D8 82 B1 00",
+      "editor_manifest_baseline_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 88 CA 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 89 70 81 40 82 D8 82 B1 00",
+      "source_target_text_vs_editor_segment_content_match_after_space_normalization": false,
+      "note": "Direct target hex is the older token assignment; current Editor model re-encodes its segment text with the current map."
+    },
+    {
+      "item_id": "2-03",
+      "direct_target_text": "ＲＥＴＵＲＮ␠ＫＥＹ를[0D]눌러␠주세요。[00]",
+      "editor_segment_state": {
+        "line1": "RETURN KEY를",
+        "line2": "눌러 주세요。"
+      },
+      "direct_target_hex_matches_editor_manifest_baseline_hex": true,
+      "direct_target_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 88 CA 0D 82 E1 88 BB 81 40 89 AA 89 4E 89 80 81 42 00",
+      "editor_manifest_baseline_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 88 CA 0D 82 E1 88 BB 81 40 89 AA 89 4E 89 80 81 42 00",
+      "source_target_text_vs_editor_segment_content_match_after_space_normalization": false,
+      "note": "Direct target hex is the older token assignment; current Editor model re-encodes its segment text with the current map."
+    },
+    {
+      "item_id": "3-02",
+      "direct_target_text": "␠로딩␠중",
+      "editor_segment_state": {
+        "text": "로딩 중"
+      },
+      "direct_target_hex_matches_editor_manifest_baseline_hex": true,
+      "direct_target_hex": "88 C5 88 AC 81 40 89 AE 81 40",
+      "editor_manifest_baseline_hex": "88 C5 88 AC 81 40 89 AE 81 40",
+      "source_target_text_vs_editor_segment_content_match_after_space_normalization": true,
+      "note": "Direct target hex is the older token assignment; current Editor model re-encodes its segment text with the current map."
+    }
+  ],
+  "editor_model_validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "editor_model_changed_file_bytes": 154,
+  "rows": [
+    {
+      "label": "C300 모니터 선택 2행",
+      "offset": "0x016C5",
+      "length": 38,
+      "old_hex": "83 41 83 69 83 8D 83 4F 81 40 83 82 83 6A 83 5E 81 5B 0D 83 66 83 57 83 5E 83 8B 81 40 83 82 83 6A 83 5E 81 5B 00",
+      "new_hex": "8A 5A 88 EA 89 99 88 CF 81 40 89 BC 89 4D 8B 4F 0D 89 72 8A D4 8B 50 81 40 89 BC 89 4D 8B 4F 00 00 00 00 00 00 00",
+      "changed_bytes": 35
+    },
+    {
+      "label": "A1",
+      "offset": "0x015DE",
+      "length": 2,
+      "old_hex": "05 C3",
+      "new_hex": "05 C3",
+      "changed_bytes": 0
+    },
+    {
+      "label": "C300 PCM 선택 2행",
+      "offset": "0x01715",
+      "length": 50,
+      "old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DE 81 40 81 40 0D 82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DC 82 C8 82 A2 00",
+      "new_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A A6 8A 9F 0D 82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A 5C 81 40 8A A6 8A 9F 00 00 00 00 00",
+      "changed_bytes": 41
+    },
+    {
+      "label": "A2",
+      "offset": "0x01646",
+      "length": 2,
+      "old_hex": "55 C3",
+      "new_hex": "55 C3",
+      "changed_bytes": 0
+    },
+    {
+      "label": "저주소 안내 3문자열 공용 할당",
+      "offset": "0x03AAF",
+      "length": 133,
+      "old_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 8A 6D 94 46 82 B5 82 C4 81 41 00 82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 82 C9 93 FC 82 EA 82 C4 00 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+      "new_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 89 A2 81 40 8B 8C 8A A4 8B 72 88 BB 81 41 00 82 63 82 68 82 72 82 6A 81 40 82 60 89 A2 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 8A 72 81 40 88 F7 88 BB 00 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 89 A2 0D 89 49 89 8C 81 40 8A C8 89 F8 8A 8A 81 42 00 00 00",
+      "changed_bytes": 66
+    },
+    {
+      "label": "A3",
+      "offset": "0x03A6A",
+      "length": 2,
+      "old_hex": "5F 06",
+      "new_hex": "5F 06",
+      "changed_bytes": 0
+    },
+    {
+      "label": "A3",
+      "offset": "0x03AA0",
+      "length": 2,
+      "old_hex": "94 06",
+      "new_hex": "94 06",
+      "changed_bytes": 0
+    },
+    {
+      "label": "A3",
+      "offset": "0x03A81",
+      "length": 2,
+      "old_hex": "BE 06",
+      "new_hex": "BC 06",
+      "changed_bytes": 1
+    },
+    {
+      "label": "로딩 상태 1문자열",
+      "offset": "0x01CAA",
+      "length": 11,
+      "old_hex": "93 C7 82 DD 8D 9E 82 DD 92 86 00",
+      "new_hex": "89 99 89 73 81 40 8A CC 00 00 00",
+      "changed_bytes": 10
+    },
+    {
+      "label": "A4",
+      "offset": "0x01C1F",
+      "length": 2,
+      "old_hex": "CA C8",
+      "new_hex": "CA C8",
+      "changed_bytes": 0
+    },
+    {
+      "label": null,
+      "offset": "0x03A64",
+      "length": 2,
+      "old_hex": "84 06",
+      "new_hex": "84 06",
+      "changed_bytes": 0
+    },
+    {
+      "label": null,
+      "offset": "0x03A94",
+      "length": 2,
+      "old_hex": "9F 06",
+      "new_hex": "9F 06",
+      "changed_bytes": 0
+    },
+    {
+      "label": null,
+      "offset": "0x03A9A",
+      "length": 2,
+      "old_hex": "B3 06",
+      "new_hex": "B1 06",
+      "changed_bytes": 1
+    }
+  ],
+  "result_d88_sha256": "c684acff7f9dcbd7f4ffdef66136bec6b3c13ce343c168ffe829af88fc3f00fd",
+  "scope": "Patch-source ledger only; no Editor application files or source D88 files are copied into release output."
+}

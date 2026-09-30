@@ -1,0 +1,433 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "G",
+  "component": "music_mode_current_editor_target_state_reconciled_with_direct_worktable",
+  "baseline": {
+    "size_bytes": 415840,
+    "sha256": "d933a387f6afe847345482070cd1e23ca4158f6d49144a99ef9ebbdb864c56f7"
+  },
+  "target_state": {
+    "manifest_path": "reference-data/data/manifests/g_music.json",
+    "manifest_sha256": "f8ae423faabea0724ffee7d4306d0d6f291e91e8ad20253c6d641a08513b107f",
+    "schema": "valis2.diskg.music_mode.editor_project",
+    "schema_version": "1.85",
+    "generated_at": "2026-09-04T12:44:19+00:00",
+    "model_module_path": "reference-data/modules/valis2_music_mode.py",
+    "model_module_sha256": "8efef2570d41ee8a1bc8cae9320f462a34e19f47ade10fb6e363526294e3a16e",
+    "map_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+    "kanji_rom_sha256": "90f5bd468db8758950c60646c77538956f8b52008e1919c8bb73ee8a05d08242"
+  },
+  "direct_sources": [
+    "Music/Valis2_MusicMode_Analysis_2026-08-10_DISK_WARNING_PATCH_RUNTIME_SUCCESS.docx",
+    "source/patches/row-tables/disk-G__music__text-and-address-table.csv",
+    "source/patches/row-tables/disk-G__warning-text__source-and-translation.csv"
+  ],
+  "direct_editor_text_comparison": {
+    "matched_records": 49,
+    "total_records": 49,
+    "mismatches": []
+  },
+  "editor_model_validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "editor_model_changed_file_bytes": 833,
+  "rows": [
+    {
+      "label": "1번 제목 포인터",
+      "offset": "0x02E6C",
+      "length": 2,
+      "old_hex": "FC C7",
+      "new_hex": "FC C7",
+      "changed_bytes": 0
+    },
+    {
+      "label": "2번 제목 포인터",
+      "offset": "0x02E78",
+      "length": 2,
+      "old_hex": "0A C8",
+      "new_hex": "0C C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "3번 제목 포인터",
+      "offset": "0x02E84",
+      "length": 2,
+      "old_hex": "26 C8",
+      "new_hex": "28 C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "4번 제목 포인터",
+      "offset": "0x02E90",
+      "length": 2,
+      "old_hex": "48 C8",
+      "new_hex": "4A C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "5번 제목 포인터",
+      "offset": "0x02E9C",
+      "length": 2,
+      "old_hex": "5E C8",
+      "new_hex": "58 C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "6번 제목 포인터",
+      "offset": "0x02EA8",
+      "length": 2,
+      "old_hex": "74 C8",
+      "new_hex": "6E C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "7번 제목 포인터",
+      "offset": "0x02EB4",
+      "length": 2,
+      "old_hex": "8E C8",
+      "new_hex": "88 C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "8번 제목 포인터",
+      "offset": "0x02EC0",
+      "length": 2,
+      "old_hex": "9A C8",
+      "new_hex": "96 C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "9번 제목 포인터",
+      "offset": "0x02ECC",
+      "length": 2,
+      "old_hex": "B8 C8",
+      "new_hex": "B4 C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "10번 제목 포인터",
+      "offset": "0x02ED8",
+      "length": 2,
+      "old_hex": "C6 C8",
+      "new_hex": "BC C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "11번 제목 포인터",
+      "offset": "0x02EE4",
+      "length": 2,
+      "old_hex": "D2 C8",
+      "new_hex": "C4 C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "12번 제목 포인터",
+      "offset": "0x02EF0",
+      "length": 2,
+      "old_hex": "E0 C8",
+      "new_hex": "CC C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "13번 제목 포인터",
+      "offset": "0x02EFC",
+      "length": 2,
+      "old_hex": "F6 C8",
+      "new_hex": "E2 C8",
+      "changed_bytes": 1
+    },
+    {
+      "label": "14번 제목 포인터",
+      "offset": "0x02F08",
+      "length": 2,
+      "old_hex": "0C C9",
+      "new_hex": "F8 C8",
+      "changed_bytes": 2
+    },
+    {
+      "label": "15번 제목 포인터",
+      "offset": "0x02F14",
+      "length": 2,
+      "old_hex": "22 C9",
+      "new_hex": "0E C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "16번 제목 포인터",
+      "offset": "0x02F20",
+      "length": 2,
+      "old_hex": "38 C9",
+      "new_hex": "24 C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "17번 제목 포인터",
+      "offset": "0x02F2C",
+      "length": 2,
+      "old_hex": "4E C9",
+      "new_hex": "3A C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "18번 제목 포인터",
+      "offset": "0x02F38",
+      "length": 2,
+      "old_hex": "64 C9",
+      "new_hex": "50 C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "19번 제목 포인터",
+      "offset": "0x02F44",
+      "length": 2,
+      "old_hex": "76 C9",
+      "new_hex": "5C C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "20번 제목 포인터",
+      "offset": "0x02F50",
+      "length": 2,
+      "old_hex": "9E C9",
+      "new_hex": "84 C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "21번 제목 포인터",
+      "offset": "0x02F5C",
+      "length": 2,
+      "old_hex": "B4 C9",
+      "new_hex": "9A C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "22번 제목 포인터",
+      "offset": "0x02F68",
+      "length": 2,
+      "old_hex": "C8 C9",
+      "new_hex": "B0 C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "23번 제목 포인터",
+      "offset": "0x02F74",
+      "length": 2,
+      "old_hex": "F6 C9",
+      "new_hex": "DE C9",
+      "changed_bytes": 1
+    },
+    {
+      "label": "24번 제목 포인터",
+      "offset": "0x02F80",
+      "length": 2,
+      "old_hex": "1E CA",
+      "new_hex": "04 CA",
+      "changed_bytes": 1
+    },
+    {
+      "label": "25번 제목 포인터",
+      "offset": "0x02F8C",
+      "length": 2,
+      "old_hex": "48 CA",
+      "new_hex": "2E CA",
+      "changed_bytes": 1
+    },
+    {
+      "label": "26번 제목 포인터",
+      "offset": "0x02F98",
+      "length": 2,
+      "old_hex": "6E CA",
+      "new_hex": "5A CA",
+      "changed_bytes": 1
+    },
+    {
+      "label": "27번 제목 포인터",
+      "offset": "0x02FA4",
+      "length": 2,
+      "old_hex": "8C CA",
+      "new_hex": "7A CA",
+      "changed_bytes": 1
+    },
+    {
+      "label": "28번 제목 포인터",
+      "offset": "0x02FB0",
+      "length": 2,
+      "old_hex": "A8 CA",
+      "new_hex": "98 CA",
+      "changed_bytes": 1
+    },
+    {
+      "label": "29번 제목 포인터",
+      "offset": "0x02FBC",
+      "length": 2,
+      "old_hex": "D2 CA",
+      "new_hex": "C2 CA",
+      "changed_bytes": 1
+    },
+    {
+      "label": "30번 제목 포인터",
+      "offset": "0x02FC8",
+      "length": 2,
+      "old_hex": "F2 CA",
+      "new_hex": "E2 CA",
+      "changed_bytes": 1
+    },
+    {
+      "label": "31번 제목 포인터",
+      "offset": "0x02FD4",
+      "length": 2,
+      "old_hex": "FC CA",
+      "new_hex": "EE CA",
+      "changed_bytes": 1
+    },
+    {
+      "label": "32번 제목 포인터",
+      "offset": "0x02FE0",
+      "length": 2,
+      "old_hex": "08 CB",
+      "new_hex": "FA CA",
+      "changed_bytes": 2
+    },
+    {
+      "label": "33번 제목 포인터",
+      "offset": "0x02FEC",
+      "length": 2,
+      "old_hex": "1A CB",
+      "new_hex": "0A CB",
+      "changed_bytes": 1
+    },
+    {
+      "label": "작곡자 00 포인터",
+      "offset": "0x02FFA",
+      "length": 2,
+      "old_hex": "30 CB",
+      "new_hex": "20 CB",
+      "changed_bytes": 1
+    },
+    {
+      "label": "작곡자 01 포인터",
+      "offset": "0x02FFC",
+      "length": 2,
+      "old_hex": "3B CB",
+      "new_hex": "2F CB",
+      "changed_bytes": 1
+    },
+    {
+      "label": "작곡자 02 포인터",
+      "offset": "0x02FFE",
+      "length": 2,
+      "old_hex": "46 CB",
+      "new_hex": "3C CB",
+      "changed_bytes": 1
+    },
+    {
+      "label": "C7FC~C7FF 텍스트",
+      "offset": "0x0301C",
+      "length": 4,
+      "old_hex": "01 8C F5 82",
+      "new_hex": "01 89 E7 8A",
+      "changed_bytes": 3
+    },
+    {
+      "label": "C800~CB50 텍스트",
+      "offset": "0x03030",
+      "length": 849,
+      "old_hex": "CC 92 86 82 CC 97 ED 8E 71 00 01 82 75 82 89 82 92 82 87 82 89 82 8E 81 40 82 62 82 92 82 89 82 93 82 89 82 93 00 00 82 72 82 60 82 62 82 71 82 64 82 63 81 40 82 72 82 60 82 62 82 71 82 68 82 65 82 68 82 62 82 64 00 01 83 70 81 5B 83 8B 83 82 83 93 83 67 82 76 82 89 82 8E 82 8B 00 00 82 6F 82 68 82 6D 82 62 82 67 81 40 82 79 82 6E 82 6D 82 64 00 01 82 78 82 95 82 8B 82 8F 81 40 82 6C 82 99 81 40 82 6B 82 8F 82 96 82 85 00 00 8E F4 82 A2 82 CC 8F 84 97 E7 00 00 82 64 82 6D 82 63 82 6B 82 64 82 72 82 72 81 40 82 61 82 60 82 73 82 73 82 6B 82 64 00 00 82 6F 82 81 82 96 82 81 82 8E 82 85 00 01 82 75 82 60 82 6B 82 68 82 60 00 01 82 75 82 60 82 6D 82 68 82 73 82 78 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 50 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 51 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 52 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 53 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 54 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 55 00 00 82 78 82 95 82 95 82 8B 82 8F 81 44 81 44 81 44 00 02 82 72 82 85 82 8E 82 94 82 89 82 8D 82 85 82 8E 82 94 82 81 82 8C 81 40 82 72 82 8F 82 8C 82 84 82 89 82 85 82 92 00 00 82 6F 82 92 82 85 82 84 82 89 82 83 82 94 82 89 82 8F 82 8E 00 00 82 6C 82 89 82 92 82 81 82 87 82 85 82 CC 90 AF 8D C0 00 01 82 71 82 8F 82 83 82 8B 81 66 82 8E 81 40 82 71 82 8F 82 8C 82 8C 81 40 82 62 82 68 82 6D 82 63 82 64 82 71 82 64 82 6B 82 6B 82 60 00 00 94 DF 82 B5 82 DD 82 CC 82 76 82 88 82 89 82 94 82 85 82 63 82 81 82 99 81 44 81 44 81 44 97 44 8E 71 82 E6 82 E8 00 01 82 76 82 88 82 89 82 94 82 85 81 40 82 6C 82 85 82 93 82 93 82 81 82 87 82 85 81 60 97 ED 8E 71 82 CC 83 65 81 5B 83 7D 00 01 82 76 82 88 82 89 82 94 82 85 81 40 82 6C 82 85 82 93 82 93 82 81 82 87 82 85 81 60 97 ED 8E 71 82 CC 88 A4 00 02 97 DC 82 CC 8E 71 8E E7 89 53 81 40 81 60 82 61 82 85 82 86 82 8F 82 92 82 85 81 60 00 02 97 DC 82 CC 8E 71 8E E7 89 53 81 40 81 60 82 60 82 86 82 94 82 85 82 92 81 60 00 02 82 60 82 87 82 81 82 89 82 8E 82 93 82 94 81 40 82 61 82 8C 82 81 82 83 82 8B 81 40 82 72 82 88 82 81 82 84 82 8F 82 97 00 02 82 73 82 85 82 81 82 92 82 93 81 40 82 89 82 8E 81 40 82 61 82 81 82 94 82 94 82 8C 82 85 00 02 96 82 82 CC 94 67 93 AE 00 00 82 6C 82 64 82 66 82 60 82 72 00 01 8C 8E 96 E9 82 CC 83 49 83 8B 83 53 81 5B 83 8B 00 01 82 64 82 96 82 85 82 92 81 40 82 66 82 92 82 85 82 85 82 8E 00 8F AC 90 EC 81 40 8E 6A 90 B6 00 8D B2 93 A1 81 40 93 56 95 BD 00 8A 81 8C B4 81 40 90 B3 97 54 00",
+      "new_hex": "41 8A A1 81 40 89 93 8A A2 8A FC 00 01 82 75 82 89 82 92 82 87 82 89 82 8E 81 40 82 62 82 92 82 89 82 93 82 89 82 93 00 00 82 72 82 60 82 62 82 71 82 64 82 63 81 40 82 72 82 60 82 62 82 71 82 68 82 65 82 68 82 62 82 64 00 01 8B 61 89 BE 8B 59 81 40 8A 98 8B 42 00 00 82 6F 82 68 82 6D 82 62 82 67 81 40 82 79 82 6E 82 6D 82 64 00 01 82 78 82 95 82 8B 82 8F 81 40 82 6C 82 99 81 40 82 6B 82 8F 82 96 82 85 00 00 8A B5 8A C8 8A A1 81 40 8A 46 89 98 00 00 82 64 82 6D 82 63 82 6B 82 64 82 72 82 72 81 40 82 61 82 60 82 73 82 73 82 6B 82 64 00 00 8B 5D 89 CE 89 4A 00 01 89 CC 89 A4 8A 5A 00 01 89 CC 89 4D 8B 5B 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 50 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 51 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 52 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 53 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 54 00 00 82 75 82 60 82 62 82 60 82 6D 82 73 82 78 81 44 82 73 82 55 00 00 8A 99 8A FC 81 44 81 44 81 44 00 02 82 72 82 85 82 8E 82 94 82 89 82 8D 82 85 82 8E 82 94 82 81 82 8C 81 40 82 72 82 8F 82 8C 82 84 82 89 82 85 82 92 00 00 82 6F 82 92 82 85 82 84 82 89 82 83 82 94 82 89 82 8F 82 8E 00 00 82 6C 82 89 82 92 82 81 82 87 82 85 8A A1 81 40 89 F7 8A C5 00 01 82 71 82 8F 82 83 82 8B 81 66 82 8E 81 40 82 71 82 8F 82 8C 82 8C 81 40 82 62 82 68 82 6D 82 63 82 64 82 71 82 64 82 6B 82 6B 82 60 00 00 8A 4C 8B 6E 8A A1 81 40 8B 8B 8A A2 8B 59 89 5D 8A A2 81 44 81 44 81 44 81 40 8A 99 8A FC 81 40 8A 81 89 A8 00 01 82 76 82 88 82 89 82 94 82 85 81 40 82 6C 82 85 82 93 82 93 82 81 82 87 82 85 81 60 89 93 8A A2 8A FC 81 40 8B 51 89 AA 00 01 82 76 82 88 82 89 82 94 82 85 81 40 82 6C 82 85 82 93 82 93 82 81 82 87 82 85 81 60 89 93 8A A2 8A FC 8A A1 81 40 89 EB 89 87 00 02 89 48 89 C4 8A A1 81 40 8A AD 8A B3 88 9F 81 60 82 61 82 85 82 86 82 8F 82 92 82 85 81 60 00 02 89 48 89 C4 8A A1 81 40 8A AD 8A B3 88 9F 81 60 82 60 82 86 82 94 82 85 82 92 81 60 00 02 82 60 82 87 82 81 82 89 82 8E 82 93 82 94 81 40 82 61 82 8C 82 81 82 83 82 8B 81 40 82 72 82 88 82 81 82 84 82 8F 82 97 00 02 82 73 82 85 82 81 82 92 82 93 81 40 82 89 82 8E 81 40 82 61 82 81 82 94 82 94 82 8C 82 85 00 02 89 AA 8A A1 81 40 8B 5D 89 61 00 00 82 6C 82 64 82 66 82 60 82 72 00 01 89 53 89 D1 8A A1 81 40 8A 7D 89 A0 88 BF 00 01 82 64 82 96 82 85 82 92 81 40 82 66 82 92 82 85 82 85 82 8E 00 8A 7D 88 9F 8A 83 81 40 8A 4F 89 40 89 E1 00 89 EB 8B 56 81 40 8B 52 8B 62 8A A2 00 8A F7 8A D4 8B 72 89 81 81 40 89 AA 89 EB 8B 97 89 99 00 00 00",
+      "changed_bytes": 658
+    },
+    {
+      "label": "C118 作曲 호출 제거",
+      "offset": "0x02928",
+      "length": 3,
+      "old_hex": "CD 1D C4",
+      "new_hex": "00 00 00",
+      "changed_bytes": 3
+    },
+    {
+      "label": "C12F 작곡자 D414 이동",
+      "offset": "0x0293F",
+      "length": 3,
+      "old_hex": "11 1A D4",
+      "new_hex": "11 14 D4",
+      "changed_bytes": 1
+    },
+    {
+      "label": "0/0/8 DISK 경고문",
+      "offset": "0x00A8F",
+      "length": 133,
+      "old_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 8A 6D 94 46 82 B5 82 C4 81 41 00 82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 82 C9 93 FC 82 EA 82 C4 00 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+      "new_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 89 A2 81 40 8B 8C 8A A4 8B 72 88 BB 81 41 00 82 63 82 68 82 72 82 6A 81 40 82 60 89 A2 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 8A 72 81 40 88 F7 88 BB 00 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 89 A2 0D 89 49 89 8C 8A C8 89 F8 8A 8A 81 42 00 00 00 00 00",
+      "changed_bytes": 67
+    },
+    {
+      "label": "39/0/5 DISK 경고문",
+      "offset": "0x64026",
+      "length": 166,
+      "old_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 82 F0 8A 6D 94 46 82 B5 82 C4 81 41 0D 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00 82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 51 0D 82 C9 93 FC 82 EA 82 C4 81 40 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+      "new_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 89 A2 81 40 8B 8C 8A A4 8B 72 88 BB 81 41 0D 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 89 A2 0D 89 49 89 8C 8A C8 89 F8 8A 8A 81 42 00 82 63 82 68 82 72 82 6A 81 40 82 60 81 40 89 A2 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 51 0D 8A 72 81 40 88 F7 88 BB 81 40 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 49 89 8C 8A C8 89 F8 8A 8A 81 42 00 00 00",
+      "changed_bytes": 62
+    },
+    {
+      "label": "0/0/8 경고문 시작 포인터",
+      "offset": "0x00A4A",
+      "length": 2,
+      "old_hex": "5F 06",
+      "new_hex": "5F 06",
+      "changed_bytes": 0
+    },
+    {
+      "label": "0/0/8 RETURN 문구 주소",
+      "offset": "0x00A61",
+      "length": 2,
+      "old_hex": "BE 06",
+      "new_hex": "BC 06",
+      "changed_bytes": 1
+    },
+    {
+      "label": "0/0/8 DISK 동적 슬롯 주소",
+      "offset": "0x00A74",
+      "length": 2,
+      "old_hex": "9F 06",
+      "new_hex": "9F 06",
+      "changed_bytes": 0
+    },
+    {
+      "label": "0/0/8 DRIVE 동적 슬롯 주소",
+      "offset": "0x00A7A",
+      "length": 2,
+      "old_hex": "B3 06",
+      "new_hex": "B1 06",
+      "changed_bytes": 1
+    },
+    {
+      "label": "0/0/8 두 번째 문구 주소",
+      "offset": "0x00A80",
+      "length": 2,
+      "old_hex": "94 06",
+      "new_hex": "94 06",
+      "changed_bytes": 0
+    },
+    {
+      "label": "39/0/5 DISK 동적 슬롯 주소",
+      "offset": "0x64011",
+      "length": 2,
+      "old_hex": "73 06",
+      "new_hex": "73 06",
+      "changed_bytes": 0
+    },
+    {
+      "label": "39/0/5 5행 직접 진입 주소",
+      "offset": "0x64017",
+      "length": 2,
+      "old_hex": "68 06",
+      "new_hex": "68 06",
+      "changed_bytes": 0
+    }
+  ],
+  "result_d88_sha256": "b777ad794732f935333ff1af9482563643f1841640f401607078a81c460af84d",
+  "scope": "This is only a patch-source ledger. No Editor application files or original D88 files are copied into the release output.",
+  "direct_runtime_note": "The direct 2026-08-10 record reports successful QUASI88 application of the music text and both warning blocks. Current Editor model bytes are the final target state; direct worktables supply content/layout evidence and differences are preserved above."
+}

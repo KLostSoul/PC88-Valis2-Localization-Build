@@ -1,0 +1,3017 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "B",
+  "component_id": "b_system_text",
+  "component": "Disk B system text, warnings, menu text, pointers and dynamic stores",
+  "complete": true,
+  "baseline": {
+    "sha256": "6537b681f8c24aa92be608f99dc61ef8da9afa1b6569450dba1dd5d7d00e3919",
+    "size_bytes": 415840
+  },
+  "source_docs": [
+    {
+      "path": "work-materials/Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx",
+      "sha256": "82dc06a55cfd88c03be01dd0b40dfe3324a4365392aaa0d32240e7afbfc456c4"
+    },
+    {
+      "path": "source/kanji/glyph-assignment-reference.csv",
+      "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+      "rows": 558,
+      "role": "exact Hangul token lookup only"
+    }
+  ],
+  "encoding_rules": {
+    "translations": "Direct DOCX target cells; slash separators are editorial delimiters.",
+    "spaces": "␠ and displayed ASCII space map to PC-88 fullwidth space 81 40.",
+    "hangul": "Exact current 558-row token CSV lookup; non-Hangul glyphs CP932.",
+    "padding": "DOCX-recorded tails are zero-filled."
+  },
+  "verified_unchanged_sites": [
+    {
+      "offset": "0x002E22",
+      "old_hex": "11 62 C7",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row2",
+      "reason": "Pointer remains at documented RAM address."
+    },
+    {
+      "offset": "0x002E69",
+      "old_hex": "11 80 C8",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row4",
+      "reason": "Pointer remains at documented RAM address."
+    },
+    {
+      "offset": "0x002E10",
+      "old_hex": "11 00 C9",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row5",
+      "reason": "Pointer remains at documented RAM address."
+    },
+    {
+      "offset": "0x002E7C",
+      "old_hex": "11 0D C9",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row6",
+      "reason": "Pointer remains at documented RAM address."
+    },
+    {
+      "offset": "0x003691",
+      "old_hex": "11 72 CA",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row7",
+      "reason": "Pointer remains at documented RAM address."
+    },
+    {
+      "offset": "0x00C4C8",
+      "old_hex": "11 79 CA",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row9",
+      "reason": "Pointer remains at documented RAM address."
+    },
+    {
+      "offset": "0x000A34",
+      "old_hex": "32 75 06",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table4/row2",
+      "reason": "Dynamic-slot store is unchanged."
+    },
+    {
+      "offset": "0x000A64",
+      "old_hex": "32 90 06",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table4/row4",
+      "reason": "Dynamic-slot store is unchanged."
+    }
+  ],
+  "excluded_ranges": [
+    {
+      "range": "0x003430-0x00343F",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row2",
+      "reason": "D88 sector header; not written."
+    },
+    {
+      "range": "0x036C90-0x036C98",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table2/row7",
+      "reason": "がいたぜ[00] exists but use is unresolved; not translated."
+    }
+  ],
+  "rows": [
+    {
+      "id": "b-ui-w1",
+      "offset": "0x000A80",
+      "old_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 8A 6D 94 46 82 B5 82 C4 81 41 00",
+      "new_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 81 40 82 60 89 A2 81 40 8B 8C 8A A4 8B 72 88 BB 81 41 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table3/row2",
+      "status": "confirmed",
+      "source_text": "＊ＤＩＳＫ␠ＥＲＲＯＲ＊[0D][0D] / ＤＩＳＫ␠Ａ␠を確認して、[00]",
+      "target_text": "＊ＤＩＳＫ␠ＥＲＲＯＲ＊[0D][0D] / ＤＩＳＫ␠Ａ를␠확인하고、[00]",
+      "target_text_bytes": 53,
+      "trailing_zero_bytes": 0,
+      "hangul_lookup_refs": [
+        {
+          "char": "고",
+          "csv_row": 30,
+          "index": 29,
+          "token_hex": "88 BB"
+        },
+        {
+          "char": "를",
+          "csv_row": 193,
+          "index": 192,
+          "token_hex": "89 A2"
+        },
+        {
+          "char": "인",
+          "csv_row": 383,
+          "index": 382,
+          "token_hex": "8A A4"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "확",
+          "csv_row": 547,
+          "index": 546,
+          "token_hex": "8B 8C"
+        }
+      ]
+    },
+    {
+      "id": "b-ui-w2",
+      "offset": "0x000AB5",
+      "old_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 82 C9 93 FC 82 EA 82 C4 00",
+      "new_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 89 A2 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 8A 72 81 40 88 F7 88 BB 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table3/row3",
+      "status": "confirmed",
+      "source_text": "ＤＩＳＫ␠Ａ␠を␠ＤＲＩＶＥ␠１[0D] / に入れて[00]",
+      "target_text": "ＤＩＳＫ␠Ａ를␠ＤＲＩＶＥ␠１[0D] / 에␠넣고[00]",
+      "target_text_bytes": 40,
+      "trailing_zero_bytes": 2,
+      "hangul_lookup_refs": [
+        {
+          "char": "고",
+          "csv_row": 30,
+          "index": 29,
+          "token_hex": "88 BB"
+        },
+        {
+          "char": "넣",
+          "csv_row": 90,
+          "index": 89,
+          "token_hex": "88 F7"
+        },
+        {
+          "char": "를",
+          "csv_row": 193,
+          "index": 192,
+          "token_hex": "89 A2"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        }
+      ]
+    },
+    {
+      "id": "b-ui-w3",
+      "offset": "0x000ADF",
+      "old_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+      "new_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 89 A2 0D 89 49 89 8C 8A C8 89 F8 8A 8A 81 42 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table3/row4",
+      "status": "confirmed",
+      "source_text": "ＲＥＴＵＲＮ␠ＫＥＹを[0D] / 押して下さい。[00]",
+      "target_text": "ＲＥＴＵＲＮ␠ＫＥＹ를[0D] / 눌러주세요。[00]",
+      "target_text_bytes": 36,
+      "trailing_zero_bytes": 2,
+      "hangul_lookup_refs": [
+        {
+          "char": "눌",
+          "csv_row": 105,
+          "index": 104,
+          "token_hex": "89 49"
+        },
+        {
+          "char": "러",
+          "csv_row": 171,
+          "index": 170,
+          "token_hex": "89 8C"
+        },
+        {
+          "char": "를",
+          "csv_row": 193,
+          "index": 192,
+          "token_hex": "89 A2"
+        },
+        {
+          "char": "세",
+          "csv_row": 279,
+          "index": 278,
+          "token_hex": "89 F8"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "주",
+          "csv_row": 419,
+          "index": 418,
+          "token_hex": "8A C8"
+        }
+      ]
+    },
+    {
+      "id": "b-ui-s1-본체",
+      "offset": "0x0514E0",
+      "old_hex": "83 66 83 42 83 58 83 4E 82 C9 83 5A 81 5B 83 75 82 B5 82 DC 82 B7 82 A9 00",
+      "new_hex": "89 72 8A 4A 8B 42 8A 72 81 40 8A B5 8A B3 8B 77 89 4D 88 DA 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table3/row5",
+      "status": "confirmed",
+      "source_text": "ディスクにセーブしますか[00]",
+      "target_text": "디스크에␠저장합니까[00]",
+      "target_text_bytes": 21,
+      "trailing_zero_bytes": 4,
+      "hangul_lookup_refs": [
+        {
+          "char": "까",
+          "csv_row": 61,
+          "index": 60,
+          "token_hex": "88 DA"
+        },
+        {
+          "char": "니",
+          "csv_row": 109,
+          "index": 108,
+          "token_hex": "89 4D"
+        },
+        {
+          "char": "디",
+          "csv_row": 146,
+          "index": 145,
+          "token_hex": "89 72"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        },
+        {
+          "char": "장",
+          "csv_row": 398,
+          "index": 397,
+          "token_hex": "8A B3"
+        },
+        {
+          "char": "저",
+          "csv_row": 400,
+          "index": 399,
+          "token_hex": "8A B5"
+        },
+        {
+          "char": "크",
+          "csv_row": 474,
+          "index": 473,
+          "token_hex": "8B 42"
+        },
+        {
+          "char": "합",
+          "csv_row": 527,
+          "index": 526,
+          "token_hex": "8B 77"
+        }
+      ]
+    },
+    {
+      "id": "b-ui-s2",
+      "offset": "0x0514F9",
+      "old_hex": "83 5A 81 5B 83 75 82 B7 82 E9 0D 83 5A 81 5B 83 75 82 B5 82 C8 82 A2 00",
+      "new_hex": "8A B5 8A B3 8B 74 89 50 0D 8A B5 8A B3 81 40 8A 5C 81 40 8B 74 89 50 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table3/row6",
+      "status": "confirmed",
+      "source_text": "セーブする[0D] / セーブしない[00]",
+      "target_text": "저장한다[0D] / 저장␠안␠한다[00]",
+      "target_text_bytes": 24,
+      "trailing_zero_bytes": 0,
+      "hangul_lookup_refs": [
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "안",
+          "csv_row": 312,
+          "index": 311,
+          "token_hex": "8A 5C"
+        },
+        {
+          "char": "장",
+          "csv_row": 398,
+          "index": 397,
+          "token_hex": "8A B3"
+        },
+        {
+          "char": "저",
+          "csv_row": 400,
+          "index": 399,
+          "token_hex": "8A B5"
+        },
+        {
+          "char": "한",
+          "csv_row": 524,
+          "index": 523,
+          "token_hex": "8B 74"
+        }
+      ]
+    },
+    {
+      "id": "b-ui-m1-m2",
+      "offset": "0x051511",
+      "old_hex": "83 43 83 6A 83 56 83 83 83 8B 83 58 83 5E 81 5B 83 67 0D 81 40 83 8D 81 5B 83 68 83 58 83 5E 81 5B 83 67 00",
+      "new_hex": "8A E7 8A 9F 8B 72 88 D5 0D 89 E3 89 8C 8A 7D 88 D5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table3/row7",
+      "status": "confirmed",
+      "source_text": "イニシャルスタート[0D] / ␠ロードスタート[00]",
+      "target_text": "처음하기[0D] / 불러오기[00]",
+      "target_text_bytes": 18,
+      "trailing_zero_bytes": 18,
+      "hangul_lookup_refs": [
+        {
+          "char": "기",
+          "csv_row": 56,
+          "index": 55,
+          "token_hex": "88 D5"
+        },
+        {
+          "char": "러",
+          "csv_row": 171,
+          "index": 170,
+          "token_hex": "89 8C"
+        },
+        {
+          "char": "불",
+          "csv_row": 258,
+          "index": 257,
+          "token_hex": "89 E3"
+        },
+        {
+          "char": "오",
+          "csv_row": 345,
+          "index": 344,
+          "token_hex": "8A 7D"
+        },
+        {
+          "char": "음",
+          "csv_row": 378,
+          "index": 377,
+          "token_hex": "8A 9F"
+        },
+        {
+          "char": "처",
+          "csv_row": 450,
+          "index": 449,
+          "token_hex": "8A E7"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        }
+      ]
+    },
+    {
+      "id": "b-ui-s1-중복본",
+      "offset": "0x05166D",
+      "old_hex": "83 66 83 42 83 58 83 4E 82 C9 83 5A 81 5B 83 75 82 B5 82 DC 82 B7 82 A9 00",
+      "new_hex": "89 72 8A 4A 8B 42 8A 72 81 40 8A B5 8A B3 8B 77 89 4D 88 DA 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table3/row8",
+      "status": "confirmed",
+      "source_text": "ディスクにセーブしますか[00]",
+      "target_text": "디스크에␠저장합니까[00]",
+      "target_text_bytes": 21,
+      "trailing_zero_bytes": 4,
+      "hangul_lookup_refs": [
+        {
+          "char": "까",
+          "csv_row": 61,
+          "index": 60,
+          "token_hex": "88 DA"
+        },
+        {
+          "char": "니",
+          "csv_row": 109,
+          "index": 108,
+          "token_hex": "89 4D"
+        },
+        {
+          "char": "디",
+          "csv_row": 146,
+          "index": 145,
+          "token_hex": "89 72"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        },
+        {
+          "char": "장",
+          "csv_row": 398,
+          "index": 397,
+          "token_hex": "8A B3"
+        },
+        {
+          "char": "저",
+          "csv_row": 400,
+          "index": 399,
+          "token_hex": "8A B5"
+        },
+        {
+          "char": "크",
+          "csv_row": 474,
+          "index": 473,
+          "token_hex": "8B 42"
+        },
+        {
+          "char": "합",
+          "csv_row": 527,
+          "index": 526,
+          "token_hex": "8B 77"
+        }
+      ]
+    },
+    {
+      "id": "b-ui-w4",
+      "offset": "0x051686",
+      "old_hex": "83 52 83 73 81 5B 82 B5 82 BD 0D 82 BB 82 F1 82 C8 8A 6F 82 A6 82 CD 82 C8 82 A2 00",
+      "new_hex": "89 DC 89 EB 8B 7A 89 50 0D 88 D5 89 9A 8A A2 81 40 8A 6F 89 50 00 00 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table3/row9",
+      "status": "confirmed",
+      "source_text": "コピーした[0D] / そんな覚えはない[00]",
+      "target_text": "복사했다[0D] / 기록이␠없다[00]",
+      "target_text_bytes": 22,
+      "trailing_zero_bytes": 6,
+      "hangul_lookup_refs": [
+        {
+          "char": "기",
+          "csv_row": 56,
+          "index": 55,
+          "token_hex": "88 D5"
+        },
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "록",
+          "csv_row": 185,
+          "index": 184,
+          "token_hex": "89 9A"
+        },
+        {
+          "char": "복",
+          "csv_row": 251,
+          "index": 250,
+          "token_hex": "89 DC"
+        },
+        {
+          "char": "사",
+          "csv_row": 266,
+          "index": 265,
+          "token_hex": "89 EB"
+        },
+        {
+          "char": "없",
+          "csv_row": 331,
+          "index": 330,
+          "token_hex": "8A 6F"
+        },
+        {
+          "char": "이",
+          "csv_row": 381,
+          "index": 380,
+          "token_hex": "8A A2"
+        },
+        {
+          "char": "했",
+          "csv_row": 530,
+          "index": 529,
+          "token_hex": "8B 7A"
+        }
+      ]
+    },
+    {
+      "id": "b-story-r1-r3-a-1",
+      "offset": "0x003392",
+      "old_hex": "83 81 83 4B 83 58 81 75 82 DC 82 F1 82 DC 82 C6 83 8F 83 69 82 C9 82 CD 82 DC 82 C1 82 BD 82 C8 81 42 0D 81 40 81 40 81 40 82 B1 82 EA 82 CD 82 A8 82 DC 82 A6 82 CC 83 70 83 8F 81 5B 82 F0 95 95 82 B6 8D 9E 82 DF 82 E9 0D 81 40 81 40 81 40 83 76 83 8D 83 65 83 4E 83 67 82 BE 81 42 81 40 90 67 82 C9 95 74 82 AF 82 BD 82 E7 93 F1 93 78 82 C6 0D 81 40 81 40 81 40 82 CD 82 B8 82 B7 82 B1 82 C6 82 CD 82 C5 82 AB 82 F1 81 42 0D 81 40 81 40 81 40 82 B1 82 EA 82 C5 82 A8 82 DC",
+      "new_hex": "89 B7 88 9F 8A 4A 81 75 89 DB 88 D5 81 40 8A C4 88 B1 81 40 89 5C 8A 72 81 40 88 AD 89 94 89 71 8A 71 88 C9 81 42 0D 81 40 81 40 81 40 88 CF 88 B0 8A 9D 81 40 88 F8 81 40 8B 98 8A 9E 81 40 89 DF 8A A4 8B 75 0D 81 40 81 40 81 40 88 A5 8A 82 8A A2 89 50 81 42 89 C0 8A 72 81 40 88 AD 8A F4 89 B9 81 40 89 68 81 40 89 D5 0D 81 40 81 40 81 40 89 50 8A 4F 81 40 89 D8 8A 9E 81 40 8A 45 81 40 8A 6F 89 50 81 42 0D 81 40 81 40 81 40 8A A2 88 B0 8A 9B 89 99 81 40 88 F3 89 5E 81 40",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row2;table6/R1-1,R1-2,R1-3,R1-4,R1-5,R3-1,R3-2,R3-3",
+      "status": "confirmed",
+      "source_text_ids": [
+        "R1-1",
+        "R1-2",
+        "R1-3",
+        "R1-4",
+        "R1-5",
+        "R3-1",
+        "R3-2",
+        "R3-3"
+      ],
+      "physical_copy": "A",
+      "target_text_bytes": 270,
+      "trailing_zero_bytes": 16,
+      "hangul_lookup_refs": [
+        {
+          "char": "가",
+          "csv_row": 2,
+          "index": 1,
+          "token_hex": "88 9F"
+        },
+        {
+          "char": "갑",
+          "csv_row": 8,
+          "index": 7,
+          "token_hex": "88 A5"
+        },
+        {
+          "char": "걸",
+          "csv_row": 16,
+          "index": 15,
+          "token_hex": "88 AD"
+        },
+        {
+          "char": "것",
+          "csv_row": 19,
+          "index": 18,
+          "token_hex": "88 B0"
+        },
+        {
+          "char": "게",
+          "csv_row": 20,
+          "index": 19,
+          "token_hex": "88 B1"
+        },
+        {
+          "char": "구",
+          "csv_row": 42,
+          "index": 41,
+          "token_hex": "88 C7"
+        },
+        {
+          "char": "군",
+          "csv_row": 44,
+          "index": 43,
+          "token_hex": "88 C9"
+        },
+        {
+          "char": "그",
+          "csv_row": 50,
+          "index": 49,
+          "token_hex": "88 CF"
+        },
+        {
+          "char": "기",
+          "csv_row": 56,
+          "index": 55,
+          "token_hex": "88 D5"
+        },
+        {
+          "char": "꼭",
+          "csv_row": 68,
+          "index": 67,
+          "token_hex": "88 E1"
+        },
+        {
+          "char": "끝",
+          "csv_row": 73,
+          "index": 72,
+          "token_hex": "88 E6"
+        },
+        {
+          "char": "너",
+          "csv_row": 86,
+          "index": 85,
+          "token_hex": "88 F3"
+        },
+        {
+          "char": "네",
+          "csv_row": 91,
+          "index": 90,
+          "token_hex": "88 F8"
+        },
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "덫",
+          "csv_row": 124,
+          "index": 123,
+          "token_hex": "89 5C"
+        },
+        {
+          "char": "도",
+          "csv_row": 126,
+          "index": 125,
+          "token_hex": "89 5E"
+        },
+        {
+          "char": "돼",
+          "csv_row": 130,
+          "index": 129,
+          "token_hex": "89 62"
+        },
+        {
+          "char": "두",
+          "csv_row": 136,
+          "index": 135,
+          "token_hex": "89 68"
+        },
+        {
+          "char": "들",
+          "csv_row": 145,
+          "index": 144,
+          "token_hex": "89 71"
+        },
+        {
+          "char": "려",
+          "csv_row": 179,
+          "index": 178,
+          "token_hex": "89 94"
+        },
+        {
+          "char": "로",
+          "csv_row": 184,
+          "index": 183,
+          "token_hex": "89 99"
+        },
+        {
+          "char": "리",
+          "csv_row": 195,
+          "index": 194,
+          "token_hex": "89 A4"
+        },
+        {
+          "char": "메",
+          "csv_row": 214,
+          "index": 213,
+          "token_hex": "89 B7"
+        },
+        {
+          "char": "면",
+          "csv_row": 216,
+          "index": 215,
+          "token_hex": "89 B9"
+        },
+        {
+          "char": "몸",
+          "csv_row": 223,
+          "index": 222,
+          "token_hex": "89 C0"
+        },
+        {
+          "char": "바",
+          "csv_row": 235,
+          "index": 234,
+          "token_hex": "89 CC"
+        },
+        {
+          "char": "번",
+          "csv_row": 244,
+          "index": 243,
+          "token_hex": "89 D5"
+        },
+        {
+          "char": "벗",
+          "csv_row": 247,
+          "index": 246,
+          "token_hex": "89 D8"
+        },
+        {
+          "char": "보",
+          "csv_row": 250,
+          "index": 249,
+          "token_hex": "89 DB"
+        },
+        {
+          "char": "봉",
+          "csv_row": 254,
+          "index": 253,
+          "token_hex": "89 DF"
+        },
+        {
+          "char": "세",
+          "csv_row": 279,
+          "index": 278,
+          "token_hex": "89 F8"
+        },
+        {
+          "char": "수",
+          "csv_row": 289,
+          "index": 288,
+          "token_hex": "8A 45"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "시",
+          "csv_row": 299,
+          "index": 298,
+          "token_hex": "8A 4F"
+        },
+        {
+          "char": "아",
+          "csv_row": 310,
+          "index": 309,
+          "token_hex": "8A 5A"
+        },
+        {
+          "char": "안",
+          "csv_row": 312,
+          "index": 311,
+          "token_hex": "8A 5C"
+        },
+        {
+          "char": "없",
+          "csv_row": 331,
+          "index": 330,
+          "token_hex": "8A 6F"
+        },
+        {
+          "char": "었",
+          "csv_row": 333,
+          "index": 332,
+          "token_hex": "8A 71"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        },
+        {
+          "char": "옷",
+          "csv_row": 349,
+          "index": 348,
+          "token_hex": "8A 82"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "유",
+          "csv_row": 372,
+          "index": 371,
+          "token_hex": "8A 99"
+        },
+        {
+          "char": "으",
+          "csv_row": 374,
+          "index": 373,
+          "token_hex": "8A 9B"
+        },
+        {
+          "char": "은",
+          "csv_row": 376,
+          "index": 375,
+          "token_hex": "8A 9D"
+        },
+        {
+          "char": "을",
+          "csv_row": 377,
+          "index": 376,
+          "token_hex": "8A 9E"
+        },
+        {
+          "char": "이",
+          "csv_row": 381,
+          "index": 380,
+          "token_hex": "8A A2"
+        },
+        {
+          "char": "인",
+          "csv_row": 383,
+          "index": 382,
+          "token_hex": "8A A4"
+        },
+        {
+          "char": "제",
+          "csv_row": 406,
+          "index": 405,
+          "token_hex": "8A BB"
+        },
+        {
+          "char": "좋",
+          "csv_row": 415,
+          "index": 414,
+          "token_hex": "8A C4"
+        },
+        {
+          "char": "줄",
+          "csv_row": 422,
+          "index": 421,
+          "token_hex": "8A CB"
+        },
+        {
+          "char": "찾",
+          "csv_row": 447,
+          "index": 446,
+          "token_hex": "8A E4"
+        },
+        {
+          "char": "치",
+          "csv_row": 463,
+          "index": 462,
+          "token_hex": "8A F4"
+        },
+        {
+          "char": "코",
+          "csv_row": 471,
+          "index": 470,
+          "token_hex": "8A FC"
+        },
+        {
+          "char": "템",
+          "csv_row": 492,
+          "index": 491,
+          "token_hex": "8B 54"
+        },
+        {
+          "char": "포",
+          "csv_row": 509,
+          "index": 508,
+          "token_hex": "8B 65"
+        },
+        {
+          "char": "프",
+          "csv_row": 515,
+          "index": 514,
+          "token_hex": "8B 6B"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "할",
+          "csv_row": 525,
+          "index": 524,
+          "token_hex": "8B 75"
+        },
+        {
+          "char": "해",
+          "csv_row": 529,
+          "index": 528,
+          "token_hex": "8B 79"
+        },
+        {
+          "char": "헬",
+          "csv_row": 536,
+          "index": 535,
+          "token_hex": "8B 81"
+        },
+        {
+          "char": "힘",
+          "csv_row": 559,
+          "index": 558,
+          "token_hex": "8B 98"
+        }
+      ]
+    },
+    {
+      "id": "b-story-r1-r3-a-2",
+      "offset": "0x003440",
+      "old_hex": "82 A6 82 E0 82 A8 82 B5 82 DC 82 A2 82 BE 81 49 81 76 00 83 94 83 40 83 8A 83 41 81 75 97 44 8E 71 81 49 81 40 82 A0 82 AB 82 E7 82 DF 82 C4 82 CD 82 BE 82 DF 81 49 0D 81 40 81 40 81 40 8E 84 82 AA 95 4B 82 B8 8F 95 82 AF 82 C4 82 A0 82 B0 82 DC 82 B7 81 49 0D 81 40 81 40 81 40 83 77 83 8B 83 76 81 45 83 41 83 43 83 65 83 80 82 F0 82 DD 82 C2 82 AF 82 C8 82 B3 82 A2 81 49 81 76 00",
+      "new_hex": "88 E6 8A A2 89 50 81 49 81 76 00 89 CC 89 A4 8A 5A 81 75 8A 99 8A FC 81 49 81 40 8B 65 88 D5 8B 72 89 B9 81 40 8A 5C 81 40 89 62 8A 8A 81 49 0D 81 40 81 40 81 40 8A BB 88 9F 81 40 88 E1 81 40 88 C7 8B 79 8A CB 88 B1 8A 8A 81 49 0D 81 40 81 40 81 40 8B 81 8B 6B 81 40 8A 5A 8A A2 8B 54 8A 9E 81 40 8A E4 8A 9B 89 F8 8A 8A 81 49 81 76 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row2;table6/R1-1,R1-2,R1-3,R1-4,R1-5,R3-1,R3-2,R3-3",
+      "status": "confirmed",
+      "source_text_ids": [
+        "R1-1",
+        "R1-2",
+        "R1-3",
+        "R1-4",
+        "R1-5",
+        "R3-1",
+        "R3-2",
+        "R3-3"
+      ],
+      "physical_copy": "A",
+      "target_text_bytes": 270,
+      "trailing_zero_bytes": 16,
+      "hangul_lookup_refs": [
+        {
+          "char": "가",
+          "csv_row": 2,
+          "index": 1,
+          "token_hex": "88 9F"
+        },
+        {
+          "char": "갑",
+          "csv_row": 8,
+          "index": 7,
+          "token_hex": "88 A5"
+        },
+        {
+          "char": "걸",
+          "csv_row": 16,
+          "index": 15,
+          "token_hex": "88 AD"
+        },
+        {
+          "char": "것",
+          "csv_row": 19,
+          "index": 18,
+          "token_hex": "88 B0"
+        },
+        {
+          "char": "게",
+          "csv_row": 20,
+          "index": 19,
+          "token_hex": "88 B1"
+        },
+        {
+          "char": "구",
+          "csv_row": 42,
+          "index": 41,
+          "token_hex": "88 C7"
+        },
+        {
+          "char": "군",
+          "csv_row": 44,
+          "index": 43,
+          "token_hex": "88 C9"
+        },
+        {
+          "char": "그",
+          "csv_row": 50,
+          "index": 49,
+          "token_hex": "88 CF"
+        },
+        {
+          "char": "기",
+          "csv_row": 56,
+          "index": 55,
+          "token_hex": "88 D5"
+        },
+        {
+          "char": "꼭",
+          "csv_row": 68,
+          "index": 67,
+          "token_hex": "88 E1"
+        },
+        {
+          "char": "끝",
+          "csv_row": 73,
+          "index": 72,
+          "token_hex": "88 E6"
+        },
+        {
+          "char": "너",
+          "csv_row": 86,
+          "index": 85,
+          "token_hex": "88 F3"
+        },
+        {
+          "char": "네",
+          "csv_row": 91,
+          "index": 90,
+          "token_hex": "88 F8"
+        },
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "덫",
+          "csv_row": 124,
+          "index": 123,
+          "token_hex": "89 5C"
+        },
+        {
+          "char": "도",
+          "csv_row": 126,
+          "index": 125,
+          "token_hex": "89 5E"
+        },
+        {
+          "char": "돼",
+          "csv_row": 130,
+          "index": 129,
+          "token_hex": "89 62"
+        },
+        {
+          "char": "두",
+          "csv_row": 136,
+          "index": 135,
+          "token_hex": "89 68"
+        },
+        {
+          "char": "들",
+          "csv_row": 145,
+          "index": 144,
+          "token_hex": "89 71"
+        },
+        {
+          "char": "려",
+          "csv_row": 179,
+          "index": 178,
+          "token_hex": "89 94"
+        },
+        {
+          "char": "로",
+          "csv_row": 184,
+          "index": 183,
+          "token_hex": "89 99"
+        },
+        {
+          "char": "리",
+          "csv_row": 195,
+          "index": 194,
+          "token_hex": "89 A4"
+        },
+        {
+          "char": "메",
+          "csv_row": 214,
+          "index": 213,
+          "token_hex": "89 B7"
+        },
+        {
+          "char": "면",
+          "csv_row": 216,
+          "index": 215,
+          "token_hex": "89 B9"
+        },
+        {
+          "char": "몸",
+          "csv_row": 223,
+          "index": 222,
+          "token_hex": "89 C0"
+        },
+        {
+          "char": "바",
+          "csv_row": 235,
+          "index": 234,
+          "token_hex": "89 CC"
+        },
+        {
+          "char": "번",
+          "csv_row": 244,
+          "index": 243,
+          "token_hex": "89 D5"
+        },
+        {
+          "char": "벗",
+          "csv_row": 247,
+          "index": 246,
+          "token_hex": "89 D8"
+        },
+        {
+          "char": "보",
+          "csv_row": 250,
+          "index": 249,
+          "token_hex": "89 DB"
+        },
+        {
+          "char": "봉",
+          "csv_row": 254,
+          "index": 253,
+          "token_hex": "89 DF"
+        },
+        {
+          "char": "세",
+          "csv_row": 279,
+          "index": 278,
+          "token_hex": "89 F8"
+        },
+        {
+          "char": "수",
+          "csv_row": 289,
+          "index": 288,
+          "token_hex": "8A 45"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "시",
+          "csv_row": 299,
+          "index": 298,
+          "token_hex": "8A 4F"
+        },
+        {
+          "char": "아",
+          "csv_row": 310,
+          "index": 309,
+          "token_hex": "8A 5A"
+        },
+        {
+          "char": "안",
+          "csv_row": 312,
+          "index": 311,
+          "token_hex": "8A 5C"
+        },
+        {
+          "char": "없",
+          "csv_row": 331,
+          "index": 330,
+          "token_hex": "8A 6F"
+        },
+        {
+          "char": "었",
+          "csv_row": 333,
+          "index": 332,
+          "token_hex": "8A 71"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        },
+        {
+          "char": "옷",
+          "csv_row": 349,
+          "index": 348,
+          "token_hex": "8A 82"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "유",
+          "csv_row": 372,
+          "index": 371,
+          "token_hex": "8A 99"
+        },
+        {
+          "char": "으",
+          "csv_row": 374,
+          "index": 373,
+          "token_hex": "8A 9B"
+        },
+        {
+          "char": "은",
+          "csv_row": 376,
+          "index": 375,
+          "token_hex": "8A 9D"
+        },
+        {
+          "char": "을",
+          "csv_row": 377,
+          "index": 376,
+          "token_hex": "8A 9E"
+        },
+        {
+          "char": "이",
+          "csv_row": 381,
+          "index": 380,
+          "token_hex": "8A A2"
+        },
+        {
+          "char": "인",
+          "csv_row": 383,
+          "index": 382,
+          "token_hex": "8A A4"
+        },
+        {
+          "char": "제",
+          "csv_row": 406,
+          "index": 405,
+          "token_hex": "8A BB"
+        },
+        {
+          "char": "좋",
+          "csv_row": 415,
+          "index": 414,
+          "token_hex": "8A C4"
+        },
+        {
+          "char": "줄",
+          "csv_row": 422,
+          "index": 421,
+          "token_hex": "8A CB"
+        },
+        {
+          "char": "찾",
+          "csv_row": 447,
+          "index": 446,
+          "token_hex": "8A E4"
+        },
+        {
+          "char": "치",
+          "csv_row": 463,
+          "index": 462,
+          "token_hex": "8A F4"
+        },
+        {
+          "char": "코",
+          "csv_row": 471,
+          "index": 470,
+          "token_hex": "8A FC"
+        },
+        {
+          "char": "템",
+          "csv_row": 492,
+          "index": 491,
+          "token_hex": "8B 54"
+        },
+        {
+          "char": "포",
+          "csv_row": 509,
+          "index": 508,
+          "token_hex": "8B 65"
+        },
+        {
+          "char": "프",
+          "csv_row": 515,
+          "index": 514,
+          "token_hex": "8B 6B"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "할",
+          "csv_row": 525,
+          "index": 524,
+          "token_hex": "8B 75"
+        },
+        {
+          "char": "해",
+          "csv_row": 529,
+          "index": 528,
+          "token_hex": "8B 79"
+        },
+        {
+          "char": "헬",
+          "csv_row": 536,
+          "index": 535,
+          "token_hex": "8B 81"
+        },
+        {
+          "char": "힘",
+          "csv_row": 559,
+          "index": 558,
+          "token_hex": "8B 98"
+        }
+      ]
+    },
+    {
+      "id": "b-story-r1-r3-b-1",
+      "offset": "0x00B920",
+      "old_hex": "83 81 83 4B 83 58 81 75 82 DC 82 F1 82 DC 82 C6 83 8F 83 69 82 C9 82 CD 82 DC 82 C1 82 BD 82 C8 81 42 0D 81 40 81 40 81 40 82 B1 82 EA 82 CD 82 A8 82 DC 82 A6 82 CC 83 70 83 8F 81 5B 82 F0 95 95 82 B6 8D 9E 82 DF 82 E9 0D 81 40 81 40 81 40 83 76 83 8D 83 65 83 4E 83 67 82 BE 81 42 81 40 90 67 82 C9 95 74 82 AF 82 BD 82 E7 93 F1 93 78 82 C6 0D 81 40 81 40 81 40 82 CD 82 B8 82 B7 82 B1 82 C6 82 CD 82 C5 82 AB 82 F1 81 42 0D 81 40 81 40 81 40 82 B1 82 EA 82 C5 82 A8 82 DC 82 A6 82 E0 82 A8 82 B5 82 DC 82 A2 82 BE 81 49 81 76 00 83 94 83 40 83 8A 83 41 81 75 97 44 8E 71 81 49 81 40 82 A0 82 AB 82 E7 82 DF 82 C4 82 CD 82 BE 82 DF 81 49 0D 81 40 81 40 81 40 8E 84 82 AA 95 4B 82 B8 8F 95 82 AF 82 C4 82 A0 82 B0 82 DC 82 B7 81 49 0D 81 40 81 40 81 40 83 77 83 8B 83 76 81 45 83 41 83 43 83 65 83 80 82 F0 82 DD 82 C2 82 AF 82 C8 82 B3 82 A2 81 49 81 76 00",
+      "new_hex": "89 B7 88 9F 8A 4A 81 75 89 DB 88 D5 81 40 8A C4 88 B1 81 40 89 5C 8A 72 81 40 88 AD 89 94 89 71 8A 71 88 C9 81 42 0D 81 40 81 40 81 40 88 CF 88 B0 8A 9D 81 40 88 F8 81 40 8B 98 8A 9E 81 40 89 DF 8A A4 8B 75 0D 81 40 81 40 81 40 88 A5 8A 82 8A A2 89 50 81 42 89 C0 8A 72 81 40 88 AD 8A F4 89 B9 81 40 89 68 81 40 89 D5 0D 81 40 81 40 81 40 89 50 8A 4F 81 40 89 D8 8A 9E 81 40 8A 45 81 40 8A 6F 89 50 81 42 0D 81 40 81 40 81 40 8A A2 88 B0 8A 9B 89 99 81 40 88 F3 89 5E 81 40 88 E6 8A A2 89 50 81 49 81 76 00 89 CC 89 A4 8A 5A 81 75 8A 99 8A FC 81 49 81 40 8B 65 88 D5 8B 72 89 B9 81 40 8A 5C 81 40 89 62 8A 8A 81 49 0D 81 40 81 40 81 40 8A BB 88 9F 81 40 88 E1 81 40 88 C7 8B 79 8A CB 88 B1 8A 8A 81 49 0D 81 40 81 40 81 40 8B 81 8B 6B 81 40 8A 5A 8A A2 8B 54 8A 9E 81 40 8A E4 8A 9B 89 F8 8A 8A 81 49 81 76 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row3;table6/R1-1,R1-2,R1-3,R1-4,R1-5,R3-1,R3-2,R3-3",
+      "status": "confirmed",
+      "source_text_ids": [
+        "R1-1",
+        "R1-2",
+        "R1-3",
+        "R1-4",
+        "R1-5",
+        "R3-1",
+        "R3-2",
+        "R3-3"
+      ],
+      "physical_copy": "B",
+      "target_text_bytes": 270,
+      "trailing_zero_bytes": 16,
+      "hangul_lookup_refs": [
+        {
+          "char": "가",
+          "csv_row": 2,
+          "index": 1,
+          "token_hex": "88 9F"
+        },
+        {
+          "char": "갑",
+          "csv_row": 8,
+          "index": 7,
+          "token_hex": "88 A5"
+        },
+        {
+          "char": "걸",
+          "csv_row": 16,
+          "index": 15,
+          "token_hex": "88 AD"
+        },
+        {
+          "char": "것",
+          "csv_row": 19,
+          "index": 18,
+          "token_hex": "88 B0"
+        },
+        {
+          "char": "게",
+          "csv_row": 20,
+          "index": 19,
+          "token_hex": "88 B1"
+        },
+        {
+          "char": "구",
+          "csv_row": 42,
+          "index": 41,
+          "token_hex": "88 C7"
+        },
+        {
+          "char": "군",
+          "csv_row": 44,
+          "index": 43,
+          "token_hex": "88 C9"
+        },
+        {
+          "char": "그",
+          "csv_row": 50,
+          "index": 49,
+          "token_hex": "88 CF"
+        },
+        {
+          "char": "기",
+          "csv_row": 56,
+          "index": 55,
+          "token_hex": "88 D5"
+        },
+        {
+          "char": "꼭",
+          "csv_row": 68,
+          "index": 67,
+          "token_hex": "88 E1"
+        },
+        {
+          "char": "끝",
+          "csv_row": 73,
+          "index": 72,
+          "token_hex": "88 E6"
+        },
+        {
+          "char": "너",
+          "csv_row": 86,
+          "index": 85,
+          "token_hex": "88 F3"
+        },
+        {
+          "char": "네",
+          "csv_row": 91,
+          "index": 90,
+          "token_hex": "88 F8"
+        },
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "덫",
+          "csv_row": 124,
+          "index": 123,
+          "token_hex": "89 5C"
+        },
+        {
+          "char": "도",
+          "csv_row": 126,
+          "index": 125,
+          "token_hex": "89 5E"
+        },
+        {
+          "char": "돼",
+          "csv_row": 130,
+          "index": 129,
+          "token_hex": "89 62"
+        },
+        {
+          "char": "두",
+          "csv_row": 136,
+          "index": 135,
+          "token_hex": "89 68"
+        },
+        {
+          "char": "들",
+          "csv_row": 145,
+          "index": 144,
+          "token_hex": "89 71"
+        },
+        {
+          "char": "려",
+          "csv_row": 179,
+          "index": 178,
+          "token_hex": "89 94"
+        },
+        {
+          "char": "로",
+          "csv_row": 184,
+          "index": 183,
+          "token_hex": "89 99"
+        },
+        {
+          "char": "리",
+          "csv_row": 195,
+          "index": 194,
+          "token_hex": "89 A4"
+        },
+        {
+          "char": "메",
+          "csv_row": 214,
+          "index": 213,
+          "token_hex": "89 B7"
+        },
+        {
+          "char": "면",
+          "csv_row": 216,
+          "index": 215,
+          "token_hex": "89 B9"
+        },
+        {
+          "char": "몸",
+          "csv_row": 223,
+          "index": 222,
+          "token_hex": "89 C0"
+        },
+        {
+          "char": "바",
+          "csv_row": 235,
+          "index": 234,
+          "token_hex": "89 CC"
+        },
+        {
+          "char": "번",
+          "csv_row": 244,
+          "index": 243,
+          "token_hex": "89 D5"
+        },
+        {
+          "char": "벗",
+          "csv_row": 247,
+          "index": 246,
+          "token_hex": "89 D8"
+        },
+        {
+          "char": "보",
+          "csv_row": 250,
+          "index": 249,
+          "token_hex": "89 DB"
+        },
+        {
+          "char": "봉",
+          "csv_row": 254,
+          "index": 253,
+          "token_hex": "89 DF"
+        },
+        {
+          "char": "세",
+          "csv_row": 279,
+          "index": 278,
+          "token_hex": "89 F8"
+        },
+        {
+          "char": "수",
+          "csv_row": 289,
+          "index": 288,
+          "token_hex": "8A 45"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "시",
+          "csv_row": 299,
+          "index": 298,
+          "token_hex": "8A 4F"
+        },
+        {
+          "char": "아",
+          "csv_row": 310,
+          "index": 309,
+          "token_hex": "8A 5A"
+        },
+        {
+          "char": "안",
+          "csv_row": 312,
+          "index": 311,
+          "token_hex": "8A 5C"
+        },
+        {
+          "char": "없",
+          "csv_row": 331,
+          "index": 330,
+          "token_hex": "8A 6F"
+        },
+        {
+          "char": "었",
+          "csv_row": 333,
+          "index": 332,
+          "token_hex": "8A 71"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        },
+        {
+          "char": "옷",
+          "csv_row": 349,
+          "index": 348,
+          "token_hex": "8A 82"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "유",
+          "csv_row": 372,
+          "index": 371,
+          "token_hex": "8A 99"
+        },
+        {
+          "char": "으",
+          "csv_row": 374,
+          "index": 373,
+          "token_hex": "8A 9B"
+        },
+        {
+          "char": "은",
+          "csv_row": 376,
+          "index": 375,
+          "token_hex": "8A 9D"
+        },
+        {
+          "char": "을",
+          "csv_row": 377,
+          "index": 376,
+          "token_hex": "8A 9E"
+        },
+        {
+          "char": "이",
+          "csv_row": 381,
+          "index": 380,
+          "token_hex": "8A A2"
+        },
+        {
+          "char": "인",
+          "csv_row": 383,
+          "index": 382,
+          "token_hex": "8A A4"
+        },
+        {
+          "char": "제",
+          "csv_row": 406,
+          "index": 405,
+          "token_hex": "8A BB"
+        },
+        {
+          "char": "좋",
+          "csv_row": 415,
+          "index": 414,
+          "token_hex": "8A C4"
+        },
+        {
+          "char": "줄",
+          "csv_row": 422,
+          "index": 421,
+          "token_hex": "8A CB"
+        },
+        {
+          "char": "찾",
+          "csv_row": 447,
+          "index": 446,
+          "token_hex": "8A E4"
+        },
+        {
+          "char": "치",
+          "csv_row": 463,
+          "index": 462,
+          "token_hex": "8A F4"
+        },
+        {
+          "char": "코",
+          "csv_row": 471,
+          "index": 470,
+          "token_hex": "8A FC"
+        },
+        {
+          "char": "템",
+          "csv_row": 492,
+          "index": 491,
+          "token_hex": "8B 54"
+        },
+        {
+          "char": "포",
+          "csv_row": 509,
+          "index": 508,
+          "token_hex": "8B 65"
+        },
+        {
+          "char": "프",
+          "csv_row": 515,
+          "index": 514,
+          "token_hex": "8B 6B"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "할",
+          "csv_row": 525,
+          "index": 524,
+          "token_hex": "8B 75"
+        },
+        {
+          "char": "해",
+          "csv_row": 529,
+          "index": 528,
+          "token_hex": "8B 79"
+        },
+        {
+          "char": "헬",
+          "csv_row": 536,
+          "index": 535,
+          "token_hex": "8B 81"
+        },
+        {
+          "char": "힘",
+          "csv_row": 559,
+          "index": 558,
+          "token_hex": "8B 98"
+        }
+      ]
+    },
+    {
+      "id": "b-story-r2-x1-x2-a-1",
+      "offset": "0x0034C0",
+      "old_hex": "83 94 83 40 83 8A 83 41 81 75 83 81 83 4B 83 58 81 49 0D 81 40 81 40 81 40 82 A0 82 C8 82 BD 82 CC 82 BD 82 AD 82 E7 82 DD 82 CD 92 CA 97 70 82 B5 82 DC 82 B9 82 F1 81 42 0D 81 40 81 40 81 40 8E 84 82 AA 8E F6 82 AF 82 BD 83 77 83 8B 83 76 81 45 83 41 83 43 83 65 83 80 82 F0 97 44 8E 71 82 CD 0D 81 40 81 40 81 40 82 B7 82 C5 82 C9 8E 9D 82 C1 82 C4 82 A2 82 DC 82 B7 81 42 81 76 00 82 CD 82 B8 82 EA 82 C8 82 A2 81 49 00 82 67 82 6F 82 AA 91 AB 82 E8 82 C8 82 A2 81 49 00",
+      "new_hex": "89 CC 89 A4 8A 5A 81 75 89 B7 88 9F 8A 4A 81 49 0D 81 40 81 40 81 40 89 56 8A 50 8A A1 81 40 88 BA 89 8B 8A 9D 81 40 8B 57 8B 72 8A D4 81 40 8A 5E 8A 5A 8A 8A 81 42 0D 81 40 81 40 81 40 8A BB 88 9F 81 40 8A CA 89 E6 8B 74 81 40 8B 81 8B 6B 81 40 8A 5A 8A A2 8B 54 8A 9E 0D 81 40 81 40 81 40 8A 99 8A FC 88 9F 81 40 88 9F 8A D4 88 BB 81 40 8A AB 8A 9B 89 4D 88 DA 8A 8A 81 42 81 76 00 89 C1 81 40 89 D8 89 4B 89 50 81 49 00 8A EB 89 95 8A A2 81 40 8A 6F 89 50 81 49 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row4;table6/R2-1,R2-2,R2-3,R2-4,X1,X2",
+      "status": "confirmed",
+      "source_text_ids": [
+        "R2-1",
+        "R2-2",
+        "R2-3",
+        "R2-4",
+        "X1",
+        "X2"
+      ],
+      "physical_copy": "A",
+      "target_text_bytes": 156,
+      "trailing_zero_bytes": 2,
+      "hangul_lookup_refs": [
+        {
+          "char": "가",
+          "csv_row": 2,
+          "index": 1,
+          "token_hex": "88 9F"
+        },
+        {
+          "char": "계",
+          "csv_row": 29,
+          "index": 28,
+          "token_hex": "88 BA"
+        },
+        {
+          "char": "고",
+          "csv_row": 30,
+          "index": 29,
+          "token_hex": "88 BB"
+        },
+        {
+          "char": "까",
+          "csv_row": 61,
+          "index": 60,
+          "token_hex": "88 DA"
+        },
+        {
+          "char": "는",
+          "csv_row": 107,
+          "index": 106,
+          "token_hex": "89 4B"
+        },
+        {
+          "char": "니",
+          "csv_row": 109,
+          "index": 108,
+          "token_hex": "89 4D"
+        },
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "당",
+          "csv_row": 118,
+          "index": 117,
+          "token_hex": "89 56"
+        },
+        {
+          "char": "략",
+          "csv_row": 170,
+          "index": 169,
+          "token_hex": "89 8B"
+        },
+        {
+          "char": "력",
+          "csv_row": 180,
+          "index": 179,
+          "token_hex": "89 95"
+        },
+        {
+          "char": "리",
+          "csv_row": 195,
+          "index": 194,
+          "token_hex": "89 A4"
+        },
+        {
+          "char": "메",
+          "csv_row": 214,
+          "index": 213,
+          "token_hex": "89 B7"
+        },
+        {
+          "char": "못",
+          "csv_row": 224,
+          "index": 223,
+          "token_hex": "89 C1"
+        },
+        {
+          "char": "바",
+          "csv_row": 235,
+          "index": 234,
+          "token_hex": "89 CC"
+        },
+        {
+          "char": "벗",
+          "csv_row": 247,
+          "index": 246,
+          "token_hex": "89 D8"
+        },
+        {
+          "char": "비",
+          "csv_row": 261,
+          "index": 260,
+          "token_hex": "89 E6"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "신",
+          "csv_row": 300,
+          "index": 299,
+          "token_hex": "8A 50"
+        },
+        {
+          "char": "아",
+          "csv_row": 310,
+          "index": 309,
+          "token_hex": "8A 5A"
+        },
+        {
+          "char": "않",
+          "csv_row": 314,
+          "index": 313,
+          "token_hex": "8A 5E"
+        },
+        {
+          "char": "없",
+          "csv_row": 331,
+          "index": 330,
+          "token_hex": "8A 6F"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "유",
+          "csv_row": 372,
+          "index": 371,
+          "token_hex": "8A 99"
+        },
+        {
+          "char": "으",
+          "csv_row": 374,
+          "index": 373,
+          "token_hex": "8A 9B"
+        },
+        {
+          "char": "은",
+          "csv_row": 376,
+          "index": 375,
+          "token_hex": "8A 9D"
+        },
+        {
+          "char": "을",
+          "csv_row": 377,
+          "index": 376,
+          "token_hex": "8A 9E"
+        },
+        {
+          "char": "의",
+          "csv_row": 380,
+          "index": 379,
+          "token_hex": "8A A1"
+        },
+        {
+          "char": "이",
+          "csv_row": 381,
+          "index": 380,
+          "token_hex": "8A A2"
+        },
+        {
+          "char": "있",
+          "csv_row": 390,
+          "index": 389,
+          "token_hex": "8A AB"
+        },
+        {
+          "char": "제",
+          "csv_row": 406,
+          "index": 405,
+          "token_hex": "8A BB"
+        },
+        {
+          "char": "준",
+          "csv_row": 421,
+          "index": 420,
+          "token_hex": "8A CA"
+        },
+        {
+          "char": "지",
+          "csv_row": 431,
+          "index": 430,
+          "token_hex": "8A D4"
+        },
+        {
+          "char": "체",
+          "csv_row": 454,
+          "index": 453,
+          "token_hex": "8A EB"
+        },
+        {
+          "char": "코",
+          "csv_row": 471,
+          "index": 470,
+          "token_hex": "8A FC"
+        },
+        {
+          "char": "템",
+          "csv_row": 492,
+          "index": 491,
+          "token_hex": "8B 54"
+        },
+        {
+          "char": "통",
+          "csv_row": 495,
+          "index": 494,
+          "token_hex": "8B 57"
+        },
+        {
+          "char": "프",
+          "csv_row": 515,
+          "index": 514,
+          "token_hex": "8B 6B"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "한",
+          "csv_row": 524,
+          "index": 523,
+          "token_hex": "8B 74"
+        },
+        {
+          "char": "헬",
+          "csv_row": 536,
+          "index": 535,
+          "token_hex": "8B 81"
+        }
+      ]
+    },
+    {
+      "id": "b-story-r2-x1-x2-b-1",
+      "offset": "0x00C2F7",
+      "old_hex": "83 94 83 40 83 8A 83 41 81 75 83 81 83 4B 83 58 81 49 0D 81 40 81 40 81 40 82 A0 82 C8 82 BD 82 CC 82 BD 82 AD 82 E7 82 DD 82 CD 92 CA 97 70 82 B5 82 DC 82 B9 82 F1 81 42 0D 81 40 81 40 81 40 8E 84 82 AA 8E F6 82 AF 82 BD 83 77 83 8B 83 76 81 45 83 41 83 43 83 65 83 80 82 F0 97 44 8E 71 82 CD 0D 81 40 81 40 81 40 82 B7 82 C5 82 C9 8E 9D 82 C1 82 C4 82 A2 82 DC 82 B7 81 42 81 76 00 82 CD 82 B8 82 EA 82 C8 82 A2 81 49 00 82 67 82 6F 82 AA 91 AB 82 E8 82 C8 82 A2 81 49 00",
+      "new_hex": "89 CC 89 A4 8A 5A 81 75 89 B7 88 9F 8A 4A 81 49 0D 81 40 81 40 81 40 89 56 8A 50 8A A1 81 40 88 BA 89 8B 8A 9D 81 40 8B 57 8B 72 8A D4 81 40 8A 5E 8A 5A 8A 8A 81 42 0D 81 40 81 40 81 40 8A BB 88 9F 81 40 8A CA 89 E6 8B 74 81 40 8B 81 8B 6B 81 40 8A 5A 8A A2 8B 54 8A 9E 0D 81 40 81 40 81 40 8A 99 8A FC 88 9F 81 40 88 9F 8A D4 88 BB 81 40 8A AB 8A 9B 89 4D 88 DA 8A 8A 81 42 81 76 00 89 C1 81 40 89 D8 89 4B 89 50 81 49 00 8A EB 89 95 8A A2 81 40 8A 6F 89 50 81 49 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row5;table6/R2-1,R2-2,R2-3,R2-4,X1,X2",
+      "status": "confirmed",
+      "source_text_ids": [
+        "R2-1",
+        "R2-2",
+        "R2-3",
+        "R2-4",
+        "X1",
+        "X2"
+      ],
+      "physical_copy": "B",
+      "target_text_bytes": 156,
+      "trailing_zero_bytes": 2,
+      "hangul_lookup_refs": [
+        {
+          "char": "가",
+          "csv_row": 2,
+          "index": 1,
+          "token_hex": "88 9F"
+        },
+        {
+          "char": "계",
+          "csv_row": 29,
+          "index": 28,
+          "token_hex": "88 BA"
+        },
+        {
+          "char": "고",
+          "csv_row": 30,
+          "index": 29,
+          "token_hex": "88 BB"
+        },
+        {
+          "char": "까",
+          "csv_row": 61,
+          "index": 60,
+          "token_hex": "88 DA"
+        },
+        {
+          "char": "는",
+          "csv_row": 107,
+          "index": 106,
+          "token_hex": "89 4B"
+        },
+        {
+          "char": "니",
+          "csv_row": 109,
+          "index": 108,
+          "token_hex": "89 4D"
+        },
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "당",
+          "csv_row": 118,
+          "index": 117,
+          "token_hex": "89 56"
+        },
+        {
+          "char": "략",
+          "csv_row": 170,
+          "index": 169,
+          "token_hex": "89 8B"
+        },
+        {
+          "char": "력",
+          "csv_row": 180,
+          "index": 179,
+          "token_hex": "89 95"
+        },
+        {
+          "char": "리",
+          "csv_row": 195,
+          "index": 194,
+          "token_hex": "89 A4"
+        },
+        {
+          "char": "메",
+          "csv_row": 214,
+          "index": 213,
+          "token_hex": "89 B7"
+        },
+        {
+          "char": "못",
+          "csv_row": 224,
+          "index": 223,
+          "token_hex": "89 C1"
+        },
+        {
+          "char": "바",
+          "csv_row": 235,
+          "index": 234,
+          "token_hex": "89 CC"
+        },
+        {
+          "char": "벗",
+          "csv_row": 247,
+          "index": 246,
+          "token_hex": "89 D8"
+        },
+        {
+          "char": "비",
+          "csv_row": 261,
+          "index": 260,
+          "token_hex": "89 E6"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "신",
+          "csv_row": 300,
+          "index": 299,
+          "token_hex": "8A 50"
+        },
+        {
+          "char": "아",
+          "csv_row": 310,
+          "index": 309,
+          "token_hex": "8A 5A"
+        },
+        {
+          "char": "않",
+          "csv_row": 314,
+          "index": 313,
+          "token_hex": "8A 5E"
+        },
+        {
+          "char": "없",
+          "csv_row": 331,
+          "index": 330,
+          "token_hex": "8A 6F"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "유",
+          "csv_row": 372,
+          "index": 371,
+          "token_hex": "8A 99"
+        },
+        {
+          "char": "으",
+          "csv_row": 374,
+          "index": 373,
+          "token_hex": "8A 9B"
+        },
+        {
+          "char": "은",
+          "csv_row": 376,
+          "index": 375,
+          "token_hex": "8A 9D"
+        },
+        {
+          "char": "을",
+          "csv_row": 377,
+          "index": 376,
+          "token_hex": "8A 9E"
+        },
+        {
+          "char": "의",
+          "csv_row": 380,
+          "index": 379,
+          "token_hex": "8A A1"
+        },
+        {
+          "char": "이",
+          "csv_row": 381,
+          "index": 380,
+          "token_hex": "8A A2"
+        },
+        {
+          "char": "있",
+          "csv_row": 390,
+          "index": 389,
+          "token_hex": "8A AB"
+        },
+        {
+          "char": "제",
+          "csv_row": 406,
+          "index": 405,
+          "token_hex": "8A BB"
+        },
+        {
+          "char": "준",
+          "csv_row": 421,
+          "index": 420,
+          "token_hex": "8A CA"
+        },
+        {
+          "char": "지",
+          "csv_row": 431,
+          "index": 430,
+          "token_hex": "8A D4"
+        },
+        {
+          "char": "체",
+          "csv_row": 454,
+          "index": 453,
+          "token_hex": "8A EB"
+        },
+        {
+          "char": "코",
+          "csv_row": 471,
+          "index": 470,
+          "token_hex": "8A FC"
+        },
+        {
+          "char": "템",
+          "csv_row": 492,
+          "index": 491,
+          "token_hex": "8B 54"
+        },
+        {
+          "char": "통",
+          "csv_row": 495,
+          "index": 494,
+          "token_hex": "8B 57"
+        },
+        {
+          "char": "프",
+          "csv_row": 515,
+          "index": 514,
+          "token_hex": "8B 6B"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "한",
+          "csv_row": 524,
+          "index": 523,
+          "token_hex": "8B 74"
+        },
+        {
+          "char": "헬",
+          "csv_row": 536,
+          "index": 535,
+          "token_hex": "8B 81"
+        }
+      ]
+    },
+    {
+      "id": "b-story-r4-r5-a-1",
+      "offset": "0x0036B2",
+      "old_hex": "83 81 83 4B 83 58 81 75 82 DC 82 F1 82 DC 82 C6 83 8F 83 69 82 C9 82 CD 82 DC 82 C1 82 BD 82 C8 81 42 0D 81 40 81 40 81 40 82 B1 82 EA 82 CD 82 A8 82 DC 82 A6 82 CC 83 70 83 8F 81 5B 82 F0 95 95 82 B6 8D 9E 82 DF 82 E9 0D 81 40 81 40 81 40 83 76 83 8D 83 65 83 4E 83 67 82 BE 81 42 81 40 83 52 83 73 81 5B 82 B5 82 BD 82 E7 93 F1 93 78 82 C6 0D 81 40 81 40 81 40 82 CD 82 B8 82 B7 82 B1 82 C6 82 CD 82 C5 82 AB 82 F1 81 42 0D 81 40 81 40 81 40 82 B1 82 EA 82 C5 82 A8 82 DC 82 A6 82 E0 82 A8 82 B5 82 DC 82 A2 82 BE 81 49 81 76 00 83 94 83 40 83 8A 83 41 81 75 97 44 8E 71 81 49 81 40 82 A0 82 AB 82 E7 82 DF 82 C4 82 CD 82 BE 82 DF 81 49 0D 81 40 81 40 81 40 8E 84 82 AA 95 4B 82 B8 8F 95 82 AF 82 C4 82 A0 82 B0 82 DC 82 B7 81 49 0D 81 40 81 40 81 40 90 BB 95 69 82 F0 94 83 82 A2 92 BC 82 B5 82 C8 82 B3 82 A2 81 49 81 76 00",
+      "new_hex": "89 B7 88 9F 8A 4A 81 75 89 DB 88 D5 81 40 8A C4 88 B1 81 40 89 5C 8A 72 81 40 88 AD 89 94 89 71 8A 71 88 C9 81 42 0D 81 40 81 40 81 40 88 CF 88 B0 8A 9D 81 40 88 F8 81 40 8B 98 8A 9E 81 40 89 DF 8A A4 8B 75 0D 81 40 81 40 81 40 88 A5 8A 82 8A A2 89 50 81 42 89 DC 8A BB 89 A2 81 40 8B 72 89 B9 81 40 89 68 81 40 89 D5 0D 81 40 81 40 81 40 89 50 8A 4F 81 40 89 D8 8A 9E 81 40 8A 45 81 40 8A 6F 89 50 81 42 0D 81 40 81 40 81 40 8A A2 88 B0 8A 9B 89 99 81 40 88 F3 89 5E 81 40 88 E6 8A A2 89 50 81 49 81 76 00 89 CC 89 A4 8A 5A 81 75 8A 99 8A FC 81 49 81 40 8B 65 88 D5 8B 72 89 B9 81 40 8A 5C 81 40 89 62 8A 8A 81 49 0D 81 40 81 40 81 40 8A BB 88 9F 81 40 88 E1 81 40 88 C7 8B 79 8A CB 88 B1 8A 8A 81 49 0D 81 40 81 40 81 40 8A BA 8B 6A 8A 9E 81 40 88 C7 89 B2 8B 72 89 F8 8A 8A 81 49 81 76 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row6;table6/R4-1,R4-2,R4-3,R4-4,R4-5,R5-1,R5-2,R5-3",
+      "status": "confirmed",
+      "source_text_ids": [
+        "R4-1",
+        "R4-2",
+        "R4-3",
+        "R4-4",
+        "R4-5",
+        "R5-1",
+        "R5-2",
+        "R5-3"
+      ],
+      "physical_copy": "A",
+      "target_text_bytes": 264,
+      "trailing_zero_bytes": 12,
+      "hangul_lookup_refs": [
+        {
+          "char": "가",
+          "csv_row": 2,
+          "index": 1,
+          "token_hex": "88 9F"
+        },
+        {
+          "char": "갑",
+          "csv_row": 8,
+          "index": 7,
+          "token_hex": "88 A5"
+        },
+        {
+          "char": "걸",
+          "csv_row": 16,
+          "index": 15,
+          "token_hex": "88 AD"
+        },
+        {
+          "char": "것",
+          "csv_row": 19,
+          "index": 18,
+          "token_hex": "88 B0"
+        },
+        {
+          "char": "게",
+          "csv_row": 20,
+          "index": 19,
+          "token_hex": "88 B1"
+        },
+        {
+          "char": "구",
+          "csv_row": 42,
+          "index": 41,
+          "token_hex": "88 C7"
+        },
+        {
+          "char": "군",
+          "csv_row": 44,
+          "index": 43,
+          "token_hex": "88 C9"
+        },
+        {
+          "char": "그",
+          "csv_row": 50,
+          "index": 49,
+          "token_hex": "88 CF"
+        },
+        {
+          "char": "기",
+          "csv_row": 56,
+          "index": 55,
+          "token_hex": "88 D5"
+        },
+        {
+          "char": "꼭",
+          "csv_row": 68,
+          "index": 67,
+          "token_hex": "88 E1"
+        },
+        {
+          "char": "끝",
+          "csv_row": 73,
+          "index": 72,
+          "token_hex": "88 E6"
+        },
+        {
+          "char": "너",
+          "csv_row": 86,
+          "index": 85,
+          "token_hex": "88 F3"
+        },
+        {
+          "char": "네",
+          "csv_row": 91,
+          "index": 90,
+          "token_hex": "88 F8"
+        },
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "덫",
+          "csv_row": 124,
+          "index": 123,
+          "token_hex": "89 5C"
+        },
+        {
+          "char": "도",
+          "csv_row": 126,
+          "index": 125,
+          "token_hex": "89 5E"
+        },
+        {
+          "char": "돼",
+          "csv_row": 130,
+          "index": 129,
+          "token_hex": "89 62"
+        },
+        {
+          "char": "두",
+          "csv_row": 136,
+          "index": 135,
+          "token_hex": "89 68"
+        },
+        {
+          "char": "들",
+          "csv_row": 145,
+          "index": 144,
+          "token_hex": "89 71"
+        },
+        {
+          "char": "려",
+          "csv_row": 179,
+          "index": 178,
+          "token_hex": "89 94"
+        },
+        {
+          "char": "로",
+          "csv_row": 184,
+          "index": 183,
+          "token_hex": "89 99"
+        },
+        {
+          "char": "를",
+          "csv_row": 193,
+          "index": 192,
+          "token_hex": "89 A2"
+        },
+        {
+          "char": "리",
+          "csv_row": 195,
+          "index": 194,
+          "token_hex": "89 A4"
+        },
+        {
+          "char": "매",
+          "csv_row": 209,
+          "index": 208,
+          "token_hex": "89 B2"
+        },
+        {
+          "char": "메",
+          "csv_row": 214,
+          "index": 213,
+          "token_hex": "89 B7"
+        },
+        {
+          "char": "면",
+          "csv_row": 216,
+          "index": 215,
+          "token_hex": "89 B9"
+        },
+        {
+          "char": "바",
+          "csv_row": 235,
+          "index": 234,
+          "token_hex": "89 CC"
+        },
+        {
+          "char": "번",
+          "csv_row": 244,
+          "index": 243,
+          "token_hex": "89 D5"
+        },
+        {
+          "char": "벗",
+          "csv_row": 247,
+          "index": 246,
+          "token_hex": "89 D8"
+        },
+        {
+          "char": "보",
+          "csv_row": 250,
+          "index": 249,
+          "token_hex": "89 DB"
+        },
+        {
+          "char": "복",
+          "csv_row": 251,
+          "index": 250,
+          "token_hex": "89 DC"
+        },
+        {
+          "char": "봉",
+          "csv_row": 254,
+          "index": 253,
+          "token_hex": "89 DF"
+        },
+        {
+          "char": "세",
+          "csv_row": 279,
+          "index": 278,
+          "token_hex": "89 F8"
+        },
+        {
+          "char": "수",
+          "csv_row": 289,
+          "index": 288,
+          "token_hex": "8A 45"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "시",
+          "csv_row": 299,
+          "index": 298,
+          "token_hex": "8A 4F"
+        },
+        {
+          "char": "아",
+          "csv_row": 310,
+          "index": 309,
+          "token_hex": "8A 5A"
+        },
+        {
+          "char": "안",
+          "csv_row": 312,
+          "index": 311,
+          "token_hex": "8A 5C"
+        },
+        {
+          "char": "없",
+          "csv_row": 331,
+          "index": 330,
+          "token_hex": "8A 6F"
+        },
+        {
+          "char": "었",
+          "csv_row": 333,
+          "index": 332,
+          "token_hex": "8A 71"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        },
+        {
+          "char": "옷",
+          "csv_row": 349,
+          "index": 348,
+          "token_hex": "8A 82"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "유",
+          "csv_row": 372,
+          "index": 371,
+          "token_hex": "8A 99"
+        },
+        {
+          "char": "으",
+          "csv_row": 374,
+          "index": 373,
+          "token_hex": "8A 9B"
+        },
+        {
+          "char": "은",
+          "csv_row": 376,
+          "index": 375,
+          "token_hex": "8A 9D"
+        },
+        {
+          "char": "을",
+          "csv_row": 377,
+          "index": 376,
+          "token_hex": "8A 9E"
+        },
+        {
+          "char": "이",
+          "csv_row": 381,
+          "index": 380,
+          "token_hex": "8A A2"
+        },
+        {
+          "char": "인",
+          "csv_row": 383,
+          "index": 382,
+          "token_hex": "8A A4"
+        },
+        {
+          "char": "정",
+          "csv_row": 405,
+          "index": 404,
+          "token_hex": "8A BA"
+        },
+        {
+          "char": "제",
+          "csv_row": 406,
+          "index": 405,
+          "token_hex": "8A BB"
+        },
+        {
+          "char": "좋",
+          "csv_row": 415,
+          "index": 414,
+          "token_hex": "8A C4"
+        },
+        {
+          "char": "줄",
+          "csv_row": 422,
+          "index": 421,
+          "token_hex": "8A CB"
+        },
+        {
+          "char": "코",
+          "csv_row": 471,
+          "index": 470,
+          "token_hex": "8A FC"
+        },
+        {
+          "char": "포",
+          "csv_row": 509,
+          "index": 508,
+          "token_hex": "8B 65"
+        },
+        {
+          "char": "품",
+          "csv_row": 514,
+          "index": 513,
+          "token_hex": "8B 6A"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "할",
+          "csv_row": 525,
+          "index": 524,
+          "token_hex": "8B 75"
+        },
+        {
+          "char": "해",
+          "csv_row": 529,
+          "index": 528,
+          "token_hex": "8B 79"
+        },
+        {
+          "char": "힘",
+          "csv_row": 559,
+          "index": 558,
+          "token_hex": "8B 98"
+        }
+      ]
+    },
+    {
+      "id": "b-story-r4-r5-b-1",
+      "offset": "0x00C4E9",
+      "old_hex": "83 81 83 4B 83 58 81 75 82 DC 82 F1 82 DC 82 C6 83 8F 83 69 82 C9 82 CD 82 DC 82 C1 82 BD 82 C8 81 42 0D 81 40 81 40 81 40 82 B1 82 EA 82 CD 82 A8 82 DC 82 A6 82 CC 83 70 83 8F 81 5B 82 F0 95 95 82 B6 8D 9E 82 DF 82 E9 0D 81 40 81 40 81 40 83 76 83 8D 83 65 83 4E 83 67 82 BE 81 42 81 40 83 52 83 73 81 5B 82 B5 82 BD 82 E7 93 F1 93 78 82 C6 0D 81 40 81 40 81 40 82 CD 82 B8 82 B7 82 B1 82 C6 82 CD 82 C5 82 AB 82 F1 81 42 0D 81 40 81 40 81 40 82 B1 82 EA 82 C5 82 A8 82 DC 82 A6 82 E0 82 A8 82 B5 82 DC 82 A2 82 BE 81 49 81 76 00 83 94 83 40 83 8A 83 41 81 75 97 44 8E 71 81 49 81 40 82 A0 82 AB 82 E7 82 DF 82 C4 82 CD 82 BE 82 DF 81 49 0D 81 40 81 40 81 40 8E 84 82 AA 95 4B 82 B8 8F 95 82 AF 82 C4 82 A0 82 B0 82 DC 82 B7 81 49 0D 81 40 81 40 81 40 90 BB 95 69 82 F0 94 83 82 A2 92 BC 82 B5 82 C8 82 B3 82 A2 81 49 81 76 00",
+      "new_hex": "89 B7 88 9F 8A 4A 81 75 89 DB 88 D5 81 40 8A C4 88 B1 81 40 89 5C 8A 72 81 40 88 AD 89 94 89 71 8A 71 88 C9 81 42 0D 81 40 81 40 81 40 88 CF 88 B0 8A 9D 81 40 88 F8 81 40 8B 98 8A 9E 81 40 89 DF 8A A4 8B 75 0D 81 40 81 40 81 40 88 A5 8A 82 8A A2 89 50 81 42 89 DC 8A BB 89 A2 81 40 8B 72 89 B9 81 40 89 68 81 40 89 D5 0D 81 40 81 40 81 40 89 50 8A 4F 81 40 89 D8 8A 9E 81 40 8A 45 81 40 8A 6F 89 50 81 42 0D 81 40 81 40 81 40 8A A2 88 B0 8A 9B 89 99 81 40 88 F3 89 5E 81 40 88 E6 8A A2 89 50 81 49 81 76 00 89 CC 89 A4 8A 5A 81 75 8A 99 8A FC 81 49 81 40 8B 65 88 D5 8B 72 89 B9 81 40 8A 5C 81 40 89 62 8A 8A 81 49 0D 81 40 81 40 81 40 8A BB 88 9F 81 40 88 E1 81 40 88 C7 8B 79 8A CB 88 B1 8A 8A 81 49 0D 81 40 81 40 81 40 8A BA 8B 6A 8A 9E 81 40 88 C7 89 B2 8B 72 89 F8 8A 8A 81 49 81 76 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table5/row7;table6/R4-1,R4-2,R4-3,R4-4,R4-5,R5-1,R5-2,R5-3",
+      "status": "confirmed",
+      "source_text_ids": [
+        "R4-1",
+        "R4-2",
+        "R4-3",
+        "R4-4",
+        "R4-5",
+        "R5-1",
+        "R5-2",
+        "R5-3"
+      ],
+      "physical_copy": "B",
+      "target_text_bytes": 264,
+      "trailing_zero_bytes": 12,
+      "hangul_lookup_refs": [
+        {
+          "char": "가",
+          "csv_row": 2,
+          "index": 1,
+          "token_hex": "88 9F"
+        },
+        {
+          "char": "갑",
+          "csv_row": 8,
+          "index": 7,
+          "token_hex": "88 A5"
+        },
+        {
+          "char": "걸",
+          "csv_row": 16,
+          "index": 15,
+          "token_hex": "88 AD"
+        },
+        {
+          "char": "것",
+          "csv_row": 19,
+          "index": 18,
+          "token_hex": "88 B0"
+        },
+        {
+          "char": "게",
+          "csv_row": 20,
+          "index": 19,
+          "token_hex": "88 B1"
+        },
+        {
+          "char": "구",
+          "csv_row": 42,
+          "index": 41,
+          "token_hex": "88 C7"
+        },
+        {
+          "char": "군",
+          "csv_row": 44,
+          "index": 43,
+          "token_hex": "88 C9"
+        },
+        {
+          "char": "그",
+          "csv_row": 50,
+          "index": 49,
+          "token_hex": "88 CF"
+        },
+        {
+          "char": "기",
+          "csv_row": 56,
+          "index": 55,
+          "token_hex": "88 D5"
+        },
+        {
+          "char": "꼭",
+          "csv_row": 68,
+          "index": 67,
+          "token_hex": "88 E1"
+        },
+        {
+          "char": "끝",
+          "csv_row": 73,
+          "index": 72,
+          "token_hex": "88 E6"
+        },
+        {
+          "char": "너",
+          "csv_row": 86,
+          "index": 85,
+          "token_hex": "88 F3"
+        },
+        {
+          "char": "네",
+          "csv_row": 91,
+          "index": 90,
+          "token_hex": "88 F8"
+        },
+        {
+          "char": "다",
+          "csv_row": 112,
+          "index": 111,
+          "token_hex": "89 50"
+        },
+        {
+          "char": "덫",
+          "csv_row": 124,
+          "index": 123,
+          "token_hex": "89 5C"
+        },
+        {
+          "char": "도",
+          "csv_row": 126,
+          "index": 125,
+          "token_hex": "89 5E"
+        },
+        {
+          "char": "돼",
+          "csv_row": 130,
+          "index": 129,
+          "token_hex": "89 62"
+        },
+        {
+          "char": "두",
+          "csv_row": 136,
+          "index": 135,
+          "token_hex": "89 68"
+        },
+        {
+          "char": "들",
+          "csv_row": 145,
+          "index": 144,
+          "token_hex": "89 71"
+        },
+        {
+          "char": "려",
+          "csv_row": 179,
+          "index": 178,
+          "token_hex": "89 94"
+        },
+        {
+          "char": "로",
+          "csv_row": 184,
+          "index": 183,
+          "token_hex": "89 99"
+        },
+        {
+          "char": "를",
+          "csv_row": 193,
+          "index": 192,
+          "token_hex": "89 A2"
+        },
+        {
+          "char": "리",
+          "csv_row": 195,
+          "index": 194,
+          "token_hex": "89 A4"
+        },
+        {
+          "char": "매",
+          "csv_row": 209,
+          "index": 208,
+          "token_hex": "89 B2"
+        },
+        {
+          "char": "메",
+          "csv_row": 214,
+          "index": 213,
+          "token_hex": "89 B7"
+        },
+        {
+          "char": "면",
+          "csv_row": 216,
+          "index": 215,
+          "token_hex": "89 B9"
+        },
+        {
+          "char": "바",
+          "csv_row": 235,
+          "index": 234,
+          "token_hex": "89 CC"
+        },
+        {
+          "char": "번",
+          "csv_row": 244,
+          "index": 243,
+          "token_hex": "89 D5"
+        },
+        {
+          "char": "벗",
+          "csv_row": 247,
+          "index": 246,
+          "token_hex": "89 D8"
+        },
+        {
+          "char": "보",
+          "csv_row": 250,
+          "index": 249,
+          "token_hex": "89 DB"
+        },
+        {
+          "char": "복",
+          "csv_row": 251,
+          "index": 250,
+          "token_hex": "89 DC"
+        },
+        {
+          "char": "봉",
+          "csv_row": 254,
+          "index": 253,
+          "token_hex": "89 DF"
+        },
+        {
+          "char": "세",
+          "csv_row": 279,
+          "index": 278,
+          "token_hex": "89 F8"
+        },
+        {
+          "char": "수",
+          "csv_row": 289,
+          "index": 288,
+          "token_hex": "8A 45"
+        },
+        {
+          "char": "스",
+          "csv_row": 294,
+          "index": 293,
+          "token_hex": "8A 4A"
+        },
+        {
+          "char": "시",
+          "csv_row": 299,
+          "index": 298,
+          "token_hex": "8A 4F"
+        },
+        {
+          "char": "아",
+          "csv_row": 310,
+          "index": 309,
+          "token_hex": "8A 5A"
+        },
+        {
+          "char": "안",
+          "csv_row": 312,
+          "index": 311,
+          "token_hex": "8A 5C"
+        },
+        {
+          "char": "없",
+          "csv_row": 331,
+          "index": 330,
+          "token_hex": "8A 6F"
+        },
+        {
+          "char": "었",
+          "csv_row": 333,
+          "index": 332,
+          "token_hex": "8A 71"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        },
+        {
+          "char": "옷",
+          "csv_row": 349,
+          "index": 348,
+          "token_hex": "8A 82"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "유",
+          "csv_row": 372,
+          "index": 371,
+          "token_hex": "8A 99"
+        },
+        {
+          "char": "으",
+          "csv_row": 374,
+          "index": 373,
+          "token_hex": "8A 9B"
+        },
+        {
+          "char": "은",
+          "csv_row": 376,
+          "index": 375,
+          "token_hex": "8A 9D"
+        },
+        {
+          "char": "을",
+          "csv_row": 377,
+          "index": 376,
+          "token_hex": "8A 9E"
+        },
+        {
+          "char": "이",
+          "csv_row": 381,
+          "index": 380,
+          "token_hex": "8A A2"
+        },
+        {
+          "char": "인",
+          "csv_row": 383,
+          "index": 382,
+          "token_hex": "8A A4"
+        },
+        {
+          "char": "정",
+          "csv_row": 405,
+          "index": 404,
+          "token_hex": "8A BA"
+        },
+        {
+          "char": "제",
+          "csv_row": 406,
+          "index": 405,
+          "token_hex": "8A BB"
+        },
+        {
+          "char": "좋",
+          "csv_row": 415,
+          "index": 414,
+          "token_hex": "8A C4"
+        },
+        {
+          "char": "줄",
+          "csv_row": 422,
+          "index": 421,
+          "token_hex": "8A CB"
+        },
+        {
+          "char": "코",
+          "csv_row": 471,
+          "index": 470,
+          "token_hex": "8A FC"
+        },
+        {
+          "char": "포",
+          "csv_row": 509,
+          "index": 508,
+          "token_hex": "8B 65"
+        },
+        {
+          "char": "품",
+          "csv_row": 514,
+          "index": 513,
+          "token_hex": "8B 6A"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "할",
+          "csv_row": 525,
+          "index": 524,
+          "token_hex": "8B 75"
+        },
+        {
+          "char": "해",
+          "csv_row": 529,
+          "index": 528,
+          "token_hex": "8B 79"
+        },
+        {
+          "char": "힘",
+          "csv_row": 559,
+          "index": 558,
+          "token_hex": "8B 98"
+        }
+      ]
+    },
+    {
+      "id": "b-pointer-r3",
+      "offset": "0x002E40",
+      "old_hex": "11 13 C8",
+      "new_hex": "11 0B C8",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row3;table2/row4-6",
+      "status": "confirmed",
+      "ram_target": "C80B",
+      "derivation": "Sequential packing with recorded target lengths."
+    },
+    {
+      "id": "b-pointer-r5-a",
+      "offset": "0x0036A7",
+      "old_hex": "11 23 CB",
+      "new_hex": "11 1B CB",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row8;table2/row4-6",
+      "status": "confirmed",
+      "ram_target": "CB1B",
+      "derivation": "Sequential packing with recorded target lengths."
+    },
+    {
+      "id": "b-pointer-r5-b",
+      "offset": "0x00C4DE",
+      "old_hex": "11 2A CB",
+      "new_hex": "11 22 CB",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table7/row10;table2/row4-6",
+      "status": "confirmed",
+      "ram_target": "CB22",
+      "derivation": "Sequential packing with recorded target lengths."
+    },
+    {
+      "id": "b-dynamic-store-w2-drive",
+      "offset": "0x000A6A",
+      "old_hex": "32 A4 06",
+      "new_hex": "32 A2 06",
+      "evidence_ref": "Valis2_DiskB_FINAL_PATCH_RECORD_COMPACT_R_POINTERS_DYNAMIC_STORES_UPDATED_2026-08-12.docx#table4/row5",
+      "status": "confirmed",
+      "rule": "런타임 동적 슬롯. 주소 이동 시 store 피연산자를 새 저바이트 RAM 주소로 자동 갱신."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+﻿disk,component,block_id,character,codepoint,bytes_hex,encoding_basis,current_map_row,logical_byte_start,raw_offsets_hex
+C,system_text_current_kanji_map,C1-1,＊,U+FF0A,81 96,CP932/PC-88 source character,,0,0x00A80 | 0x00A81
+C,system_text_current_kanji_map,C1-1,Ｄ,U+FF24,82 63,CP932/PC-88 source character,,2,0x00A82 | 0x00A83
+C,system_text_current_kanji_map,C1-1,Ｉ,U+FF29,82 68,CP932/PC-88 source character,,4,0x00A84 | 0x00A85
+C,system_text_current_kanji_map,C1-1,Ｓ,U+FF33,82 72,CP932/PC-88 source character,,6,0x00A86 | 0x00A87
+C,system_text_current_kanji_map,C1-1,Ｋ,U+FF2B,82 6A,CP932/PC-88 source character,,8,0x00A88 | 0x00A89
+C,system_text_current_kanji_map,C1-1,　,U+3000,81 40,PC-88 fullwidth-space token,,10,0x00A8A | 0x00A8B
+C,system_text_current_kanji_map,C1-1,Ｅ,U+FF25,82 64,CP932/PC-88 source character,,12,0x00A8C | 0x00A8D
+C,system_text_current_kanji_map,C1-1,Ｒ,U+FF32,82 71,CP932/PC-88 source character,,14,0x00A8E | 0x00A8F
+C,system_text_current_kanji_map,C1-1,Ｒ,U+FF32,82 71,CP932/PC-88 source character,,16,0x00A90 | 0x00A91
+C,system_text_current_kanji_map,C1-1,Ｏ,U+FF2F,82 6E,CP932/PC-88 source character,,18,0x00A92 | 0x00A93
+C,system_text_current_kanji_map,C1-1,Ｒ,U+FF32,82 71,CP932/PC-88 source character,,20,0x00A94 | 0x00A95
+C,system_text_current_kanji_map,C1-1,＊,U+FF0A,81 96,CP932/PC-88 source character,,22,0x00A96 | 0x00A97
+C,system_text_current_kanji_map,C1-1,[0D],,0D,direct control,,,
+C,system_text_current_kanji_map,C1-1,[0D],,0D,direct control,,,
+C,system_text_current_kanji_map,C1-1,Ｄ,U+FF24,82 63,CP932/PC-88 source character,,26,0x00A9A | 0x00A9B
+C,system_text_current_kanji_map,C1-1,Ｉ,U+FF29,82 68,CP932/PC-88 source character,,28,0x00A9C | 0x00A9D
+C,system_text_current_kanji_map,C1-1,Ｓ,U+FF33,82 72,CP932/PC-88 source character,,30,0x00A9E | 0x00A9F
+C,system_text_current_kanji_map,C1-1,Ｋ,U+FF2B,82 6A,CP932/PC-88 source character,,32,0x00AA0 | 0x00AA1
+C,system_text_current_kanji_map,C1-1,　,U+3000,81 40,PC-88 fullwidth-space token,,34,0x00AA2 | 0x00AA3
+C,system_text_current_kanji_map,C1-1,Ａ,U+FF21,82 60,CP932/PC-88 source character,,36,0x00AA4 | 0x00AA5
+C,system_text_current_kanji_map,C1-1,를,U+B97C,89 A2,hangul.csv current token,192,38,0x00AA6 | 0x00AA7
+C,system_text_current_kanji_map,C1-1,　,U+3000,81 40,PC-88 fullwidth-space token,,40,0x00AA8 | 0x00AA9
+C,system_text_current_kanji_map,C1-1,확,U+D655,8B 8C,hangul.csv current token,546,42,0x00AAA | 0x00AAB
+C,system_text_current_kanji_map,C1-1,인,U+C778,8A A4,hangul.csv current token,382,44,0x00AAC | 0x00AAD
+C,system_text_current_kanji_map,C1-1,하,U+D558,8B 72,hangul.csv current token,521,46,0x00AAE | 0x00AAF
+C,system_text_current_kanji_map,C1-1,고,U+ACE0,88 BB,hangul.csv current token,29,48,0x00AB0 | 0x00AB1
+C,system_text_current_kanji_map,C1-1,、,U+3001,81 41,CP932/PC-88 source character,,50,0x00AB2 | 0x00AB3
+C,system_text_current_kanji_map,C1-1,[00],,00,direct terminator,,,
+C,system_text_current_kanji_map,C1-2,Ｄ,U+FF24,82 63,CP932/PC-88 source character,,0,0x00AB5 | 0x00AB6
+C,system_text_current_kanji_map,C1-2,Ｉ,U+FF29,82 68,CP932/PC-88 source character,,2,0x00AB7 | 0x00AB8
+C,system_text_current_kanji_map,C1-2,Ｓ,U+FF33,82 72,CP932/PC-88 source character,,4,0x00AB9 | 0x00ABA
+C,system_text_current_kanji_map,C1-2,Ｋ,U+FF2B,82 6A,CP932/PC-88 source character,,6,0x00ABB | 0x00ABC
+C,system_text_current_kanji_map,C1-2,　,U+3000,81 40,PC-88 fullwidth-space token,,8,0x00ABD | 0x00ABE
+C,system_text_current_kanji_map,C1-2,Ａ,U+FF21,82 60,CP932/PC-88 source character,,10,0x00ABF | 0x00AC0
+C,system_text_current_kanji_map,C1-2,를,U+B97C,89 A2,hangul.csv current token,192,12,0x00AC1 | 0x00AC2
+C,system_text_current_kanji_map,C1-2,　,U+3000,81 40,PC-88 fullwidth-space token,,14,0x00AC3 | 0x00AC4
+C,system_text_current_kanji_map,C1-2,Ｄ,U+FF24,82 63,CP932/PC-88 source character,,16,0x00AC5 | 0x00AC6
+C,system_text_current_kanji_map,C1-2,Ｒ,U+FF32,82 71,CP932/PC-88 source character,,18,0x00AC7 | 0x00AC8
+C,system_text_current_kanji_map,C1-2,Ｉ,U+FF29,82 68,CP932/PC-88 source character,,20,0x00AC9 | 0x00ACA
+C,system_text_current_kanji_map,C1-2,Ｖ,U+FF36,82 75,CP932/PC-88 source character,,22,0x00ACB | 0x00ACC
+C,system_text_current_kanji_map,C1-2,Ｅ,U+FF25,82 64,CP932/PC-88 source character,,24,0x00ACD | 0x00ACE
+C,system_text_current_kanji_map,C1-2,　,U+3000,81 40,PC-88 fullwidth-space token,,26,0x00ACF | 0x00AD0
+C,system_text_current_kanji_map,C1-2,１,U+FF11,82 50,CP932/PC-88 source character,,28,0x00AD1 | 0x00AD2
+C,system_text_current_kanji_map,C1-2,[0D],,0D,direct control,,,
+C,system_text_current_kanji_map,C1-2,에,U+C5D0,8A 72,hangul.csv current token,333,31,0x00AD4 | 0x00AD5
+C,system_text_current_kanji_map,C1-2,　,U+3000,81 40,PC-88 fullwidth-space token,,33,0x00AD6 | 0x00AD7
+C,system_text_current_kanji_map,C1-2,넣,U+B123,88 F7,hangul.csv current token,89,35,0x00AD8 | 0x00AD9
+C,system_text_current_kanji_map,C1-2,고,U+ACE0,88 BB,hangul.csv current token,29,37,0x00ADA | 0x00ADB
+C,system_text_current_kanji_map,C1-2,[00],,00,direct terminator,,,
+C,system_text_current_kanji_map,C1-3,Ｒ,U+FF32,82 71,CP932/PC-88 source character,,0,0x00ADF | 0x00AE0
+C,system_text_current_kanji_map,C1-3,Ｅ,U+FF25,82 64,CP932/PC-88 source character,,2,0x00AE1 | 0x00AE2
+C,system_text_current_kanji_map,C1-3,Ｔ,U+FF34,82 73,CP932/PC-88 source character,,4,0x00AE3 | 0x00AE4
+C,system_text_current_kanji_map,C1-3,Ｕ,U+FF35,82 74,CP932/PC-88 source character,,6,0x00AE5 | 0x00AE6
+C,system_text_current_kanji_map,C1-3,Ｒ,U+FF32,82 71,CP932/PC-88 source character,,8,0x00AE7 | 0x00AE8
+C,system_text_current_kanji_map,C1-3,Ｎ,U+FF2E,82 6D,CP932/PC-88 source character,,10,0x00AE9 | 0x00AEA
+C,system_text_current_kanji_map,C1-3,　,U+3000,81 40,PC-88 fullwidth-space token,,12,0x00AEB | 0x00AEC
+C,system_text_current_kanji_map,C1-3,Ｋ,U+FF2B,82 6A,CP932/PC-88 source character,,14,0x00AED | 0x00AEE
+C,system_text_current_kanji_map,C1-3,Ｅ,U+FF25,82 64,CP932/PC-88 source character,,16,0x00AEF | 0x00AF0
+C,system_text_current_kanji_map,C1-3,Ｙ,U+FF39,82 78,CP932/PC-88 source character,,18,0x00AF1 | 0x00AF2
+C,system_text_current_kanji_map,C1-3,를,U+B97C,89 A2,hangul.csv current token,192,20,0x00AF3 | 0x00AF4
+C,system_text_current_kanji_map,C1-3,[0D],,0D,direct control,,,
+C,system_text_current_kanji_map,C1-3,눌,U+B20C,89 49,hangul.csv current token,104,23,0x00AF6 | 0x00AF7
+C,system_text_current_kanji_map,C1-3,러,U+B7EC,89 8C,hangul.csv current token,170,25,0x00AF8 | 0x00AF9
+C,system_text_current_kanji_map,C1-3,주,U+C8FC,8A C8,hangul.csv current token,418,27,0x00AFA | 0x00AFB
+C,system_text_current_kanji_map,C1-3,세,U+C138,89 F8,hangul.csv current token,278,29,0x00AFC | 0x00AFD
+C,system_text_current_kanji_map,C1-3,요,U+C694,8A 8A,hangul.csv current token,356,31,0x00AFE | 0x00AFF
+C,system_text_current_kanji_map,C1-3,。,U+3002,81 42,CP932/PC-88 source character,,33,0x00B00 | 0x00B01
+C,system_text_current_kanji_map,C1-3,[00],,00,direct terminator,,,
+C,system_text_current_kanji_map,C2-1,이,U+C774,8A A2,hangul.csv current token,380,0,0x0144A | 0x0144B
+C,system_text_current_kanji_map,C2-1,　,U+3000,81 40,PC-88 fullwidth-space token,,2,0x0144C | 0x0144D
+C,system_text_current_kanji_map,C2-1,디,U+B514,89 72,hangul.csv current token,145,4,0x0144E | 0x0144F
+C,system_text_current_kanji_map,C2-1,스,U+C2A4,8A 4A,hangul.csv current token,293,6,0x01450 | 0x01451
+C,system_text_current_kanji_map,C2-1,크,U+D06C,8B 42,hangul.csv current token,473,8,0x01452 | 0x01453
+C,system_text_current_kanji_map,C2-1,는,U+B294,89 4B,hangul.csv current token,106,10,0x01454 | 0x01455
+C,system_text_current_kanji_map,C2-1,　,U+3000,81 40,PC-88 fullwidth-space token,,12,0x01456 | 0x01457
+C,system_text_current_kanji_map,C2-1,부,U+BD80,89 E1,hangul.csv current token,255,14,0x01458 | 0x01459
+C,system_text_current_kanji_map,C2-1,팅,U+D305,8B 5C,hangul.csv current token,499,16,0x0145A | 0x0145B
+C,system_text_current_kanji_map,C2-1,되,U+B418,89 64,hangul.csv current token,131,18,0x0145C | 0x0145D
+C,system_text_current_kanji_map,C2-1,지,U+C9C0,8A D4,hangul.csv current token,430,20,0x0145E | 0x0145F
+C,system_text_current_kanji_map,C2-1,　,U+3000,81 40,PC-88 fullwidth-space token,,22,0x01460 | 0x01461
+C,system_text_current_kanji_map,C2-1,않,U+C54A,8A 5E,hangul.csv current token,313,24,0x01462 | 0x01463
+C,system_text_current_kanji_map,C2-1,습,U+C2B5,8A 4D,hangul.csv current token,296,26,0x01464 | 0x01465
+C,system_text_current_kanji_map,C2-1,니,U+B2C8,89 4D,hangul.csv current token,108,28,0x01466 | 0x01467
+C,system_text_current_kanji_map,C2-1,다,U+B2E4,89 50,hangul.csv current token,111,30,0x01468 | 0x01469
+C,system_text_current_kanji_map,C2-1,[00],,00,direct terminator,,,
+C,system_text_current_kanji_map,C2-2,저,U+C800,8A B5,hangul.csv current token,399,0,0x0146B | 0x0146C
+C,system_text_current_kanji_map,C2-2,장,U+C7A5,8A B3,hangul.csv current token,397,2,0x0146D | 0x0146E
+C,system_text_current_kanji_map,C2-2,데,U+B370,89 5D,hangul.csv current token,124,4,0x0146F | 0x01470
+C,system_text_current_kanji_map,C2-2,이,U+C774,8A A2,hangul.csv current token,380,6,0x01471 | 0x01472
+C,system_text_current_kanji_map,C2-2,타,U+D0C0,8B 48,hangul.csv current token,479,8,0x01473 | 0x01474
+C,system_text_current_kanji_map,C2-2,　,U+3000,81 40,PC-88 fullwidth-space token,,10,0x01475 | 0x01476
+C,system_text_current_kanji_map,C2-2,수,U+C218,8A 45,hangul.csv current token,288,12,0x01477 | 0x01478
+C,system_text_current_kanji_map,C2-2,정,U+C815,8A BA,hangul.csv current token,404,14,0x01479 | 0x0147A
+C,system_text_current_kanji_map,C2-2,[0D],,0D,direct control,,,
+C,system_text_current_kanji_map,C2-2,Ｉ,U+FF29,82 68,CP932/PC-88 source character,,17,0x0147C | 0x0147D
+C,system_text_current_kanji_map,C2-2,：,U+FF1A,81 46,CP932/PC-88 source character,,19,0x0147E | 0x0147F
+C,system_text_current_kanji_map,C2-2,무,U+BB34,89 C2,hangul.csv current token,224,21,0x01480 | 0x01481
+C,system_text_current_kanji_map,C2-2,적,U+C801,8A B6,hangul.csv current token,400,23,0x01482 | 0x01483
+C,system_text_current_kanji_map,C2-2,[0D],,0D,direct control,,,
+C,system_text_current_kanji_map,C2-2,Ｖ,U+FF36,82 75,CP932/PC-88 source character,,26,0x01485 | 0x01486
+C,system_text_current_kanji_map,C2-2,：,U+FF1A,81 46,CP932/PC-88 source character,,28,0x01487 | 0x01488
+C,system_text_current_kanji_map,C2-2,비,U+BE44,89 E6,hangul.csv current token,260,30,0x01489 | 0x0148A
+C,system_text_current_kanji_map,C2-2,주,U+C8FC,8A C8,hangul.csv current token,418,32,0x0148B | 0x0148C
+C,system_text_current_kanji_map,C2-2,얼,U+C5BC,8A 6D,hangul.csv current token,328,34,0x0148D | 0x0148E
+C,system_text_current_kanji_map,C2-2,　,U+3000,81 40,PC-88 fullwidth-space token,,36,0x0148F | 0x01490
+C,system_text_current_kanji_map,C2-2,스,U+C2A4,8A 4A,hangul.csv current token,293,38,0x01491 | 0x01492
+C,system_text_current_kanji_map,C2-2,킵,U+D0B5,8B 47,hangul.csv current token,478,40,0x01493 | 0x01494
+C,system_text_current_kanji_map,C2-2,[0D],,0D,direct control,,,
+C,system_text_current_kanji_map,C2-2,Ｇ,U+FF27,82 66,CP932/PC-88 source character,,43,0x01496 | 0x01497
+C,system_text_current_kanji_map,C2-2,：,U+FF1A,81 46,CP932/PC-88 source character,,45,0x01498 | 0x01499
+C,system_text_current_kanji_map,C2-2,게,U+AC8C,88 B1,hangul.csv current token,19,47,0x0149A | 0x0149B
+C,system_text_current_kanji_map,C2-2,임,U+C784,8A A8,hangul.csv current token,386,49,0x0149C | 0x0149D
+C,system_text_current_kanji_map,C2-2,　,U+3000,81 40,PC-88 fullwidth-space token,,51,0x0149E | 0x0149F
+C,system_text_current_kanji_map,C2-2,스,U+C2A4,8A 4A,hangul.csv current token,293,53,0x014A0 | 0x014A1
+C,system_text_current_kanji_map,C2-2,킵,U+D0B5,8B 47,hangul.csv current token,478,55,0x014A2 | 0x014A3
+C,system_text_current_kanji_map,C2-2,[00],,00,direct terminator,,,
+C,system_text_current_kanji_map,C2-3,리,U+B9AC,89 A4,hangul.csv current token,194,0,0x014B7 | 0x014B8
+C,system_text_current_kanji_map,C2-3,셋,U+C14B,89 FA,hangul.csv current token,280,2,0x014B9 | 0x014BA
+C,system_text_current_kanji_map,C2-3,　,U+3000,81 40,PC-88 fullwidth-space token,,4,0x014BB | 0x014BC
+C,system_text_current_kanji_map,C2-3,후,U+D6C4,8B 91,hangul.csv current token,551,6,0x014BD | 0x014BE
+C,system_text_current_kanji_map,C2-3,　,U+3000,81 40,PC-88 fullwidth-space token,,8,0x014BF | 0x014C0
+C,system_text_current_kanji_map,C2-3,불,U+BD88,89 E3,hangul.csv current token,257,10,0x014C1 | 0x014C2
+C,system_text_current_kanji_map,C2-3,러,U+B7EC,89 8C,hangul.csv current token,170,12,0x014C3 | 0x014C4
+C,system_text_current_kanji_map,C2-3,오,U+C624,8A 7D,hangul.csv current token,344,14,0x014C5 | 0x014C6
+C,system_text_current_kanji_map,C2-3,기,U+AE30,88 D5,hangul.csv current token,55,16,0x014C7 | 0x014C8
+C,system_text_current_kanji_map,C2-3,를,U+B97C,89 A2,hangul.csv current token,192,18,0x014C9 | 0x014CA
+C,system_text_current_kanji_map,C2-3,　,U+3000,81 40,PC-88 fullwidth-space token,,20,0x014CB | 0x014CC
+C,system_text_current_kanji_map,C2-3,하,U+D558,8B 72,hangul.csv current token,521,22,0x014CD | 0x014CE
+C,system_text_current_kanji_map,C2-3,세,U+C138,89 F8,hangul.csv current token,278,24,0x014CF | 0x014D0
+C,system_text_current_kanji_map,C2-3,요,U+C694,8A 8A,hangul.csv current token,356,26,0x014D1 | 0x014D2
+C,system_text_current_kanji_map,C2-3,[00],,00,direct terminator,,,

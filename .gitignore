@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+
+# Locally generated game images, ROMs, and IPS patches.
+/output/*
+!/output/.gitkeep
+/import/*
+!/import/.gitkeep
+*.d88
+*.D88
+*.rom
+*.ROM
+*.ips
+
+# 개별 분석 문서는 로컬 보관하고 통합 분석만 공개한다.
+/analysis/

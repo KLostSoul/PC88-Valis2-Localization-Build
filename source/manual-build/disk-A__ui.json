@@ -1,0 +1,233 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "A",
+  "component": "C300_menu_text",
+  "component_id": "a_ui",
+  "baseline": {
+    "size_bytes": 415840,
+    "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
+  },
+  "source_docs": [
+    "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx"
+  ],
+  "lookup_reference": {
+    "file": "source/kanji/glyph-assignment-reference.csv",
+    "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+    "use": "Hangul character-to-token lookup only; no serialized output bytes"
+  },
+  "rows": [
+    {
+      "id": "1-02",
+      "offset": "0x16C5",
+      "old_hex": "83 41 83 69 83 8D 83 4F 81 40 83 82 83 6A 83 5E 81 5B",
+      "new_hex": "8A 5A 88 EA 89 99 88 CF 81 40 89 BC 89 4D 8B 4F 81 40",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-3",
+      "status": "confirmed",
+      "ram_range": "C305~C316",
+      "source_translation": "아날로그␠모니터␠",
+      "layout_note": "18 / OK, ␠패딩 1칸"
+    },
+    {
+      "id": "1-03",
+      "offset": "0x16D8",
+      "old_hex": "83 66 83 57 83 5E 83 8B 81 40 83 82 83 6A 83 5E 81 5B",
+      "new_hex": "89 72 8A D4 8B 50 81 40 89 BC 89 4D 8B 4F 81 40 81 40",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-4",
+      "status": "confirmed",
+      "ram_range": "C318~C329",
+      "source_translation": "디지털␠모니터␠␠",
+      "layout_note": "18 / OK, ␠패딩 2칸"
+    },
+    {
+      "id": "1-06",
+      "offset": "0x1715",
+      "old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DE 81 40 81 40",
+      "new_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A A6 8A 9F 81 40 81 40",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-7",
+      "status": "confirmed",
+      "ram_range": "C355~C36C",
+      "source_translation": "ＰＣＭ데이터를␠읽음␠␠[0D]",
+      "layout_note": "24-byte text span; fullwidth PCM follows the direct target-byte field; two fullwidth-space pads; [0D] marker is outside this span."
+    },
+    {
+      "id": "1-07",
+      "offset": "0x172E",
+      "old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DC 82 C8 82 A2",
+      "new_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A 5C 81 40 8A A6 8A 9F",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-8",
+      "status": "confirmed",
+      "ram_range": "C36E~C385",
+      "source_translation": "ＰＣＭ데이터를␠안␠읽음[00]",
+      "layout_note": "24-byte byte-fit text span; no padding; [00] marker is outside this span."
+    },
+    {
+      "id": "3-02",
+      "offset": "0x01CAA",
+      "old_hex": "93 C7 82 DD 8D 9E 82 DD 92 86",
+      "new_hex": "89 99 89 73 81 40 8A CC 81 40",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-23; Valis2_Editor_v2.12/data/manifests/a_ui.json (SHA-256 870b094bfc00ce5d1619f37960385c01f905fed89abfe60cf013a08a6063c41a; structure only: raw start, 10-byte span, RAM C8CA-C8D3, terminator C8D4)",
+      "status": "confirmed",
+      "ram_range": "C8CA~C8D3",
+      "source_translation": "로딩 중",
+      "layout_note": "10-byte span. Re-encoded direct Korean text with a 2-byte interword space and one 2-byte trailing pad, matching the direct worktable target-byte cell and “패딩 1칸” note. The Korean literal cell writes a leading ␠ instead; the spacing-position conflict is recorded in resolved_source_conflicts. [00] at C8D4 is outside the patch span and remains unchanged."
+    }
+  ],
+  "resolved_source_conflicts": [
+    {
+      "id": "3-02",
+      "direct_conflict": "Translation cell is “␠로딩␠중”; direct target-byte cell is four text glyph slots with a trailing fullwidth-space pad, and the direct layout note says one pad slot.",
+      "resolution": "Use the direct target-byte cell’s exact 10-byte slot arrangement, regenerate the three Hangul syllables through glyph-assignment-reference.csv, preserve one interword space, and leave one trailing pad. No Editor text or payload bytes used."
+    }
+  ],
+  "complete": true,
+  "reviewed_noop_rows": [
+    {
+      "id": "1-01",
+      "raw_ranges": [
+        "0x016B6+14"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target in direct worktable; absent from final selected_item_ids, which lists only rows confirmed actually displayed.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-2; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-04",
+      "raw_ranges": [
+        "0x016EB+20"
+      ],
+      "status": "preserve_original",
+      "reason": "Direct Korean draft exists, but it is not in final selected_item_ids; do not include a translation that was not confirmed as displayed.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-5; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-05",
+      "raw_ranges": [
+        "0x01700+20"
+      ],
+      "status": "preserve_original",
+      "reason": "Direct Korean draft exists, but it is not in final selected_item_ids; do not include a translation that was not confirmed as displayed.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-6; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-08",
+      "raw_ranges": [
+        "0x01747+14"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-9; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-09",
+      "raw_ranges": [
+        "0x01756+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-10; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-10",
+      "raw_ranges": [
+        "0x01763+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-11; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-11",
+      "raw_ranges": [
+        "0x01770+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-12; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-12",
+      "raw_ranges": [
+        "0x0177D+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-13; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-13",
+      "raw_ranges": [
+        "0x0178A+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-14; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-14",
+      "raw_ranges": [
+        "0x01797+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-15; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-15",
+      "raw_ranges": [
+        "0x017A4+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-16; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-16",
+      "raw_ranges": [
+        "0x017B1+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-17; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "1-17",
+      "raw_ranges": [
+        "0x017BE+2",
+        "0x017D0+12"
+      ],
+      "status": "preserve_original",
+      "reason": "No Korean target and absent from final selected_item_ids. Raw string is split by D88 sector header 0x017C0–0x017CF; both payload fragments remain unchanged.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-18; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "3-01",
+      "raw_ranges": [
+        "0x01C96+20"
+      ],
+      "status": "preserve_original",
+      "reason": "Numeric loading table has no Korean target and absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-22; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    },
+    {
+      "id": "3-03",
+      "raw_ranges": [
+        "0x01CB4+3"
+      ],
+      "status": "preserve_original",
+      "reason": "Three zero bytes are a terminator/padding boundary, not translated text; absent from final selected_item_ids.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-row-24; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    }
+  ],
+  "delegated_rows": [
+    {
+      "ids": [
+        "2-01",
+        "2-02",
+        "2-03"
+      ],
+      "component_id": "a_shared_errors",
+      "reason": "These are part of the accepted 8 selected UI rows but are built by the separate shared-errors component.",
+      "evidence_ref": "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx#table-2-rows-19-21; source/patches/disk-A__ui__saved-reference-state.json#target_state.selected_item_ids"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "F",
+  "component_id": "f_disk_error",
+  "component": "Disk F shared error and disk/drive prompts",
+  "complete": true,
+  "baseline": {
+    "sha256": "8569ee720c0df24293066fc3589c1a204edc102ef57abc3a6529c16ec8a4041b",
+    "size_bytes": 415840
+  },
+  "source_docs": [
+    {
+      "path": "work-materials/Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx",
+      "sha256": "ae8f71f4eae96e3dc1f2bc66cf6da0b4f65e83e5d74923141b0601225a37c898"
+    },
+    {
+      "path": "source/kanji/glyph-assignment-reference.csv",
+      "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+      "rows": 558,
+      "role": "exact Hangul token lookup only"
+    }
+  ],
+  "encoding_rules": {
+    "translations": "Direct DOCX Table 6 strings and control fields.",
+    "spaces": "␠ and displayed ASCII space map to PC-88 fullwidth space 81 40.",
+    "hangul": "Exact current 558-row token CSV lookup; non-Hangul glyphs CP932.",
+    "F1": "85 target bytes, no tail padding.",
+    "F2": "75 target bytes plus six 00 bytes at 0x000ADB-0x000AE0.",
+    "runtime_verified_for_current_lookup": false
+  },
+  "verified_layout_sites": [
+    {
+      "offset": "0x000A9A",
+      "old_hex": "82 60",
+      "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table8/row2",
+      "reason": "Dynamic DISK A glyph stays at documented position."
+    },
+    {
+      "offset": "0x000AAC",
+      "old_hex": "81 40",
+      "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table8/row6",
+      "reason": "Fullwidth drive number ２ moves to the documented target position."
+    }
+  ],
+  "rows": [
+    {
+      "id": "f-f1-translated-block",
+      "offset": "0x000A3B",
+      "old_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 82 F0 8A 6D 94 46 82 B5 82 C4 81 41 0D 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+      "new_hex": "81 96 82 63 82 68 82 72 82 6A 81 40 82 64 82 71 82 71 82 6E 82 71 81 96 0D 0D 82 63 82 68 82 72 82 6A 89 A2 81 40 8B 8C 8A A4 8B 72 88 BB 81 41 0D 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 89 A2 0D 89 49 89 8C 8A C8 89 F8 8A 8A 81 42 00",
+      "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/rows2-5;table7/row2",
+      "status": "confirmed",
+      "target_segments": [
+        {
+          "id": "F1-1",
+          "source_text": "＊ＤＩＳＫ␠ＥＲＲＯＲ＊",
+          "target_text": "＊ＤＩＳＫ␠ＥＲＲＯＲ＊",
+          "control": "[0D][0D]",
+          "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/row2"
+        },
+        {
+          "id": "F1-2",
+          "source_text": "ＤＩＳＫを確認して、",
+          "target_text": "ＤＩＳＫ를 확인하고、",
+          "control": "[0D]",
+          "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/row3"
+        },
+        {
+          "id": "F1-3",
+          "source_text": "ＲＥＴＵＲＮ␠ＫＥＹを",
+          "target_text": "ＲＥＴＵＲＮ␠ＫＥＹ를",
+          "control": "[0D]",
+          "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/row4"
+        },
+        {
+          "id": "F1-4",
+          "source_text": "押して下さい。",
+          "target_text": "눌러주세요。",
+          "control": "[00]",
+          "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/row5"
+        }
+      ],
+      "target_text_bytes": 85,
+      "trailing_zero_bytes": 0,
+      "hangul_lookup_refs": [
+        {
+          "char": "고",
+          "csv_row": 30,
+          "index": 29,
+          "token_hex": "88 BB"
+        },
+        {
+          "char": "눌",
+          "csv_row": 105,
+          "index": 104,
+          "token_hex": "89 49"
+        },
+        {
+          "char": "러",
+          "csv_row": 171,
+          "index": 170,
+          "token_hex": "89 8C"
+        },
+        {
+          "char": "를",
+          "csv_row": 193,
+          "index": 192,
+          "token_hex": "89 A2"
+        },
+        {
+          "char": "세",
+          "csv_row": 279,
+          "index": 278,
+          "token_hex": "89 F8"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "인",
+          "csv_row": 383,
+          "index": 382,
+          "token_hex": "8A A4"
+        },
+        {
+          "char": "주",
+          "csv_row": 419,
+          "index": 418,
+          "token_hex": "8A C8"
+        },
+        {
+          "char": "하",
+          "csv_row": 522,
+          "index": 521,
+          "token_hex": "8B 72"
+        },
+        {
+          "char": "확",
+          "csv_row": 547,
+          "index": 546,
+          "token_hex": "8B 8C"
+        }
+      ]
+    },
+    {
+      "id": "f-f2-translated-block",
+      "offset": "0x000A90",
+      "old_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 51 0D 82 C9 93 FC 82 EA 82 C4 81 40 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+      "new_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 89 A2 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 51 0D 8A 72 81 40 88 F7 88 BB 81 40 82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 49 89 8C 8A C8 89 F8 8A 8A 00 00 00 00 00 00 00",
+      "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/rows6-8;table7/row3",
+      "status": "confirmed",
+      "target_segments": [
+        {
+          "id": "F2-1",
+          "source_text": "ＤＩＳＫ␠Ａ␠を␠ＤＲＩＶＥ␠２",
+          "target_text": "ＤＩＳＫ␠Ａ를␠ＤＲＩＶＥ␠２",
+          "control": "[0D]",
+          "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/row6"
+        },
+        {
+          "id": "F2-2",
+          "source_text": "に入れて␠ＲＥＴＵＲＮ␠ＫＥＹを",
+          "target_text": "에␠넣고␠ＲＥＴＵＲＮ␠ＫＥＹを",
+          "control": "[0D]",
+          "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/row7"
+        },
+        {
+          "id": "F2-3",
+          "source_text": "押して下さい。",
+          "target_text": "눌러주세요",
+          "control": "[00]",
+          "evidence_ref": "Valis2_DiskF_ERROR_TEXT_TOKEN_ANALYSIS_TRANSLATION_WORKTABLE_FINAL_PATCH_UPDATED_2026-08-11.docx#table6/row8"
+        }
+      ],
+      "target_text_bytes": 75,
+      "trailing_zero_bytes": 6,
+      "hangul_lookup_refs": [
+        {
+          "char": "고",
+          "csv_row": 30,
+          "index": 29,
+          "token_hex": "88 BB"
+        },
+        {
+          "char": "넣",
+          "csv_row": 90,
+          "index": 89,
+          "token_hex": "88 F7"
+        },
+        {
+          "char": "눌",
+          "csv_row": 105,
+          "index": 104,
+          "token_hex": "89 49"
+        },
+        {
+          "char": "러",
+          "csv_row": 171,
+          "index": 170,
+          "token_hex": "89 8C"
+        },
+        {
+          "char": "를",
+          "csv_row": 193,
+          "index": 192,
+          "token_hex": "89 A2"
+        },
+        {
+          "char": "세",
+          "csv_row": 279,
+          "index": 278,
+          "token_hex": "89 F8"
+        },
+        {
+          "char": "에",
+          "csv_row": 334,
+          "index": 333,
+          "token_hex": "8A 72"
+        },
+        {
+          "char": "요",
+          "csv_row": 357,
+          "index": 356,
+          "token_hex": "8A 8A"
+        },
+        {
+          "char": "주",
+          "csv_row": 419,
+          "index": 418,
+          "token_hex": "8A C8"
+        }
+      ]
+    }
+  ]
+}

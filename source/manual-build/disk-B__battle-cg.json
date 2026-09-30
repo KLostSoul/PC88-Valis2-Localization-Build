@@ -1,0 +1,3041 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "B",
+  "component_id": "b_battle_cg",
+  "component": "Disk B compressed 640x200 battle-frame/HUD 5C/5D/5E resource",
+  "complete": true,
+  "baseline": {
+    "sha256": "6537b681f8c24aa92be608f99dc61ef8da9afa1b6569450dba1dd5d7d00e3919",
+    "size_bytes": 415840
+  },
+  "source_docs": [
+    {
+      "path": "docs/integrated-source-analysis.md#3.7",
+      "role": "Disk B battle CG dimensions, resource header, data-field spans, and reserved capacity."
+    }
+  ],
+  "target_provenance": {
+    "method": "The build reads the checked-in 5C/5D/5E plane PNGs and rebuilds the compressed 640x200 battle resource. The Japanese source Disk B supplies expected old bytes and the resource header template.",
+    "serialized_target_bytes_used": false,
+    "encoder": "tools/graphics_assets.py"
+  },
+  "resource_layout": {
+    "logical_start_ram": "0x5000",
+    "reserved_capacity_bytes": "0x380E",
+    "target_header_hex": "50 30 DF 31 80 BB 88 37 50 C8 07 FF",
+    "target_main_stream_bytes": "0x31DF",
+    "target_resource_bytes": "0x3788",
+    "target_last_raw": "0x0102E7",
+    "dimensions": "640x200",
+    "planes": "5C/5D/5E",
+    "raw_data_spans": [
+      {
+        "logical_disk_sector": "L0A/S1",
+        "raw_start": "0x00CA90",
+        "raw_end": "0x00CE8F",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row2"
+      },
+      {
+        "logical_disk_sector": "L0A/S2",
+        "raw_start": "0x00CEA0",
+        "raw_end": "0x00D29F",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row3"
+      },
+      {
+        "logical_disk_sector": "L0A/S3",
+        "raw_start": "0x00D2B0",
+        "raw_end": "0x00D6AF",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row4"
+      },
+      {
+        "logical_disk_sector": "L0A/S4",
+        "raw_start": "0x00D6C0",
+        "raw_end": "0x00DABF",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row5"
+      },
+      {
+        "logical_disk_sector": "L0A/S5",
+        "raw_start": "0x00DAD0",
+        "raw_end": "0x00DECF",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row6"
+      },
+      {
+        "logical_disk_sector": "L0B/S1",
+        "raw_start": "0x00DEE0",
+        "raw_end": "0x00E2DF",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row7"
+      },
+      {
+        "logical_disk_sector": "L0B/S2",
+        "raw_start": "0x00E2F0",
+        "raw_end": "0x00E6EF",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row8"
+      },
+      {
+        "logical_disk_sector": "L0B/S3",
+        "raw_start": "0x00E700",
+        "raw_end": "0x00EAFF",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row9"
+      },
+      {
+        "logical_disk_sector": "L0B/S4",
+        "raw_start": "0x00EB10",
+        "raw_end": "0x00EF0F",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row10"
+      },
+      {
+        "logical_disk_sector": "L0B/S5",
+        "raw_start": "0x00EF20",
+        "raw_end": "0x00F31F",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row11"
+      },
+      {
+        "logical_disk_sector": "L0C/S1",
+        "raw_start": "0x00F330",
+        "raw_end": "0x00F72F",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row12"
+      },
+      {
+        "logical_disk_sector": "L0C/S2",
+        "raw_start": "0x00F740",
+        "raw_end": "0x00FB3F",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row13"
+      },
+      {
+        "logical_disk_sector": "L0C/S3",
+        "raw_start": "0x00FB50",
+        "raw_end": "0x00FF4F",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row14"
+      },
+      {
+        "logical_disk_sector": "L0C/S4",
+        "raw_start": "0x00FF60",
+        "raw_end": "0x01035F",
+        "bytes": 1024,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row15"
+      },
+      {
+        "logical_disk_sector": "L0C/S5",
+        "raw_start": "0x010370",
+        "raw_end": "0x01037D",
+        "bytes": 14,
+        "evidence_ref": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx#table8/row16"
+      }
+    ],
+    "preserved_raw_ranges": [
+      {
+        "raw_start": "0x00CA90",
+        "raw_end": "0x00CA91",
+        "bytes": 2,
+        "logical_start": "0x0",
+        "logical_end": "0x1",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CA94",
+        "raw_end": "0x00CA95",
+        "bytes": 2,
+        "logical_start": "0x4",
+        "logical_end": "0x5",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CA98",
+        "raw_end": "0x00CB27",
+        "bytes": 144,
+        "logical_start": "0x8",
+        "logical_end": "0x97",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CB29",
+        "raw_end": "0x00CBC8",
+        "bytes": 160,
+        "logical_start": "0x99",
+        "logical_end": "0x138",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CBCA",
+        "raw_end": "0x00CCF1",
+        "bytes": 296,
+        "logical_start": "0x13a",
+        "logical_end": "0x261",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CD1D",
+        "raw_end": "0x00CD1E",
+        "bytes": 2,
+        "logical_start": "0x28d",
+        "logical_end": "0x28e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CD24",
+        "raw_end": "0x00CD24",
+        "bytes": 1,
+        "logical_start": "0x294",
+        "logical_end": "0x294",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CDC4",
+        "raw_end": "0x00CDC4",
+        "bytes": 1,
+        "logical_start": "0x334",
+        "logical_end": "0x334",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CE66",
+        "raw_end": "0x00CE66",
+        "bytes": 1,
+        "logical_start": "0x3d6",
+        "logical_end": "0x3d6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CECA",
+        "raw_end": "0x00CECA",
+        "bytes": 1,
+        "logical_start": "0x42a",
+        "logical_end": "0x42a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CED2",
+        "raw_end": "0x00CED2",
+        "bytes": 1,
+        "logical_start": "0x432",
+        "logical_end": "0x432",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CEDD",
+        "raw_end": "0x00CEDD",
+        "bytes": 1,
+        "logical_start": "0x43d",
+        "logical_end": "0x43d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CEE1",
+        "raw_end": "0x00CEE1",
+        "bytes": 1,
+        "logical_start": "0x441",
+        "logical_end": "0x441",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CF78",
+        "raw_end": "0x00CF7A",
+        "bytes": 3,
+        "logical_start": "0x4d8",
+        "logical_end": "0x4da",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CFC5",
+        "raw_end": "0x00CFC5",
+        "bytes": 1,
+        "logical_start": "0x525",
+        "logical_end": "0x525",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00CFFE",
+        "raw_end": "0x00CFFE",
+        "bytes": 1,
+        "logical_start": "0x55e",
+        "logical_end": "0x55e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D02B",
+        "raw_end": "0x00D02B",
+        "bytes": 1,
+        "logical_start": "0x58b",
+        "logical_end": "0x58b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D02F",
+        "raw_end": "0x00D02F",
+        "bytes": 1,
+        "logical_start": "0x58f",
+        "logical_end": "0x58f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D06A",
+        "raw_end": "0x00D06A",
+        "bytes": 1,
+        "logical_start": "0x5ca",
+        "logical_end": "0x5ca",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D071",
+        "raw_end": "0x00D071",
+        "bytes": 1,
+        "logical_start": "0x5d1",
+        "logical_end": "0x5d1",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D075",
+        "raw_end": "0x00D075",
+        "bytes": 1,
+        "logical_start": "0x5d5",
+        "logical_end": "0x5d5",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D097",
+        "raw_end": "0x00D097",
+        "bytes": 1,
+        "logical_start": "0x5f7",
+        "logical_end": "0x5f7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D09C",
+        "raw_end": "0x00D09C",
+        "bytes": 1,
+        "logical_start": "0x5fc",
+        "logical_end": "0x5fc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D0A3",
+        "raw_end": "0x00D0A3",
+        "bytes": 1,
+        "logical_start": "0x603",
+        "logical_end": "0x603",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D0CC",
+        "raw_end": "0x00D0CC",
+        "bytes": 1,
+        "logical_start": "0x62c",
+        "logical_end": "0x62c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D0F1",
+        "raw_end": "0x00D0F1",
+        "bytes": 1,
+        "logical_start": "0x651",
+        "logical_end": "0x651",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D0F4",
+        "raw_end": "0x00D0F4",
+        "bytes": 1,
+        "logical_start": "0x654",
+        "logical_end": "0x654",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D0F6",
+        "raw_end": "0x00D0F6",
+        "bytes": 1,
+        "logical_start": "0x656",
+        "logical_end": "0x656",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D0F8",
+        "raw_end": "0x00D0F8",
+        "bytes": 1,
+        "logical_start": "0x658",
+        "logical_end": "0x658",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D110",
+        "raw_end": "0x00D110",
+        "bytes": 1,
+        "logical_start": "0x670",
+        "logical_end": "0x670",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D112",
+        "raw_end": "0x00D112",
+        "bytes": 1,
+        "logical_start": "0x672",
+        "logical_end": "0x672",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D114",
+        "raw_end": "0x00D114",
+        "bytes": 1,
+        "logical_start": "0x674",
+        "logical_end": "0x674",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D116",
+        "raw_end": "0x00D116",
+        "bytes": 1,
+        "logical_start": "0x676",
+        "logical_end": "0x676",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D118",
+        "raw_end": "0x00D118",
+        "bytes": 1,
+        "logical_start": "0x678",
+        "logical_end": "0x678",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D11F",
+        "raw_end": "0x00D11F",
+        "bytes": 1,
+        "logical_start": "0x67f",
+        "logical_end": "0x67f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D121",
+        "raw_end": "0x00D121",
+        "bytes": 1,
+        "logical_start": "0x681",
+        "logical_end": "0x681",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D131",
+        "raw_end": "0x00D13A",
+        "bytes": 10,
+        "logical_start": "0x691",
+        "logical_end": "0x69a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D144",
+        "raw_end": "0x00D144",
+        "bytes": 1,
+        "logical_start": "0x6a4",
+        "logical_end": "0x6a4",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D146",
+        "raw_end": "0x00D146",
+        "bytes": 1,
+        "logical_start": "0x6a6",
+        "logical_end": "0x6a6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D14D",
+        "raw_end": "0x00D14D",
+        "bytes": 1,
+        "logical_start": "0x6ad",
+        "logical_end": "0x6ad",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D15C",
+        "raw_end": "0x00D15C",
+        "bytes": 1,
+        "logical_start": "0x6bc",
+        "logical_end": "0x6bc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D19F",
+        "raw_end": "0x00D19F",
+        "bytes": 1,
+        "logical_start": "0x6ff",
+        "logical_end": "0x6ff",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D1A7",
+        "raw_end": "0x00D1A7",
+        "bytes": 1,
+        "logical_start": "0x707",
+        "logical_end": "0x707",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D220",
+        "raw_end": "0x00D220",
+        "bytes": 1,
+        "logical_start": "0x780",
+        "logical_end": "0x780",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D252",
+        "raw_end": "0x00D252",
+        "bytes": 1,
+        "logical_start": "0x7b2",
+        "logical_end": "0x7b2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D25C",
+        "raw_end": "0x00D25C",
+        "bytes": 1,
+        "logical_start": "0x7bc",
+        "logical_end": "0x7bc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D2D3",
+        "raw_end": "0x00D2D3",
+        "bytes": 1,
+        "logical_start": "0x823",
+        "logical_end": "0x823",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D313",
+        "raw_end": "0x00D313",
+        "bytes": 1,
+        "logical_start": "0x863",
+        "logical_end": "0x863",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D3A3",
+        "raw_end": "0x00D3A3",
+        "bytes": 1,
+        "logical_start": "0x8f3",
+        "logical_end": "0x8f3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D3BD",
+        "raw_end": "0x00D3BD",
+        "bytes": 1,
+        "logical_start": "0x90d",
+        "logical_end": "0x90d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D424",
+        "raw_end": "0x00D424",
+        "bytes": 1,
+        "logical_start": "0x974",
+        "logical_end": "0x974",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D42A",
+        "raw_end": "0x00D42A",
+        "bytes": 1,
+        "logical_start": "0x97a",
+        "logical_end": "0x97a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D450",
+        "raw_end": "0x00D450",
+        "bytes": 1,
+        "logical_start": "0x9a0",
+        "logical_end": "0x9a0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D4D9",
+        "raw_end": "0x00D4D9",
+        "bytes": 1,
+        "logical_start": "0xa29",
+        "logical_end": "0xa29",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D55A",
+        "raw_end": "0x00D55A",
+        "bytes": 1,
+        "logical_start": "0xaaa",
+        "logical_end": "0xaaa",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D5CE",
+        "raw_end": "0x00D5CE",
+        "bytes": 1,
+        "logical_start": "0xb1e",
+        "logical_end": "0xb1e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D62C",
+        "raw_end": "0x00D62C",
+        "bytes": 1,
+        "logical_start": "0xb7c",
+        "logical_end": "0xb7c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D63D",
+        "raw_end": "0x00D63D",
+        "bytes": 1,
+        "logical_start": "0xb8d",
+        "logical_end": "0xb8d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D646",
+        "raw_end": "0x00D646",
+        "bytes": 1,
+        "logical_start": "0xb96",
+        "logical_end": "0xb96",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D670",
+        "raw_end": "0x00D670",
+        "bytes": 1,
+        "logical_start": "0xbc0",
+        "logical_end": "0xbc0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D6A1",
+        "raw_end": "0x00D6A1",
+        "bytes": 1,
+        "logical_start": "0xbf1",
+        "logical_end": "0xbf1",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D6F2",
+        "raw_end": "0x00D6F2",
+        "bytes": 1,
+        "logical_start": "0xc32",
+        "logical_end": "0xc32",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D76C",
+        "raw_end": "0x00D76C",
+        "bytes": 1,
+        "logical_start": "0xcac",
+        "logical_end": "0xcac",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D770",
+        "raw_end": "0x00D770",
+        "bytes": 1,
+        "logical_start": "0xcb0",
+        "logical_end": "0xcb0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D7B6",
+        "raw_end": "0x00D7B6",
+        "bytes": 1,
+        "logical_start": "0xcf6",
+        "logical_end": "0xcf6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D829",
+        "raw_end": "0x00D829",
+        "bytes": 1,
+        "logical_start": "0xd69",
+        "logical_end": "0xd69",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D939",
+        "raw_end": "0x00D939",
+        "bytes": 1,
+        "logical_start": "0xe79",
+        "logical_end": "0xe79",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D9B0",
+        "raw_end": "0x00D9B0",
+        "bytes": 1,
+        "logical_start": "0xef0",
+        "logical_end": "0xef0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D9E4",
+        "raw_end": "0x00D9E4",
+        "bytes": 1,
+        "logical_start": "0xf24",
+        "logical_end": "0xf24",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00D9EC",
+        "raw_end": "0x00D9EC",
+        "bytes": 1,
+        "logical_start": "0xf2c",
+        "logical_end": "0xf2c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DA06",
+        "raw_end": "0x00DA06",
+        "bytes": 1,
+        "logical_start": "0xf46",
+        "logical_end": "0xf46",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DB24",
+        "raw_end": "0x00DB24",
+        "bytes": 1,
+        "logical_start": "0x1054",
+        "logical_end": "0x1054",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DB98",
+        "raw_end": "0x00DB98",
+        "bytes": 1,
+        "logical_start": "0x10c8",
+        "logical_end": "0x10c8",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DC0B",
+        "raw_end": "0x00DC0B",
+        "bytes": 1,
+        "logical_start": "0x113b",
+        "logical_end": "0x113b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DC93",
+        "raw_end": "0x00DC93",
+        "bytes": 1,
+        "logical_start": "0x11c3",
+        "logical_end": "0x11c3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DCBD",
+        "raw_end": "0x00DCBD",
+        "bytes": 1,
+        "logical_start": "0x11ed",
+        "logical_end": "0x11ed",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DCCC",
+        "raw_end": "0x00DCCC",
+        "bytes": 1,
+        "logical_start": "0x11fc",
+        "logical_end": "0x11fc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DD08",
+        "raw_end": "0x00DD08",
+        "bytes": 1,
+        "logical_start": "0x1238",
+        "logical_end": "0x1238",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DD7C",
+        "raw_end": "0x00DD7C",
+        "bytes": 1,
+        "logical_start": "0x12ac",
+        "logical_end": "0x12ac",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DDE9",
+        "raw_end": "0x00DDE9",
+        "bytes": 1,
+        "logical_start": "0x1319",
+        "logical_end": "0x1319",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DE2D",
+        "raw_end": "0x00DE2D",
+        "bytes": 1,
+        "logical_start": "0x135d",
+        "logical_end": "0x135d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DE31",
+        "raw_end": "0x00DE31",
+        "bytes": 1,
+        "logical_start": "0x1361",
+        "logical_end": "0x1361",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DE43",
+        "raw_end": "0x00DE43",
+        "bytes": 1,
+        "logical_start": "0x1373",
+        "logical_end": "0x1373",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DE6F",
+        "raw_end": "0x00DE6F",
+        "bytes": 1,
+        "logical_start": "0x139f",
+        "logical_end": "0x139f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DE73",
+        "raw_end": "0x00DE73",
+        "bytes": 1,
+        "logical_start": "0x13a3",
+        "logical_end": "0x13a3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DEBB",
+        "raw_end": "0x00DEBB",
+        "bytes": 1,
+        "logical_start": "0x13eb",
+        "logical_end": "0x13eb",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DF1E",
+        "raw_end": "0x00DF1E",
+        "bytes": 1,
+        "logical_start": "0x143e",
+        "logical_end": "0x143e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DF21",
+        "raw_end": "0x00DF22",
+        "bytes": 2,
+        "logical_start": "0x1441",
+        "logical_end": "0x1442",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00DF5D",
+        "raw_end": "0x00DF5D",
+        "bytes": 1,
+        "logical_start": "0x147d",
+        "logical_end": "0x147d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E003",
+        "raw_end": "0x00E003",
+        "bytes": 1,
+        "logical_start": "0x1523",
+        "logical_end": "0x1523",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E03C",
+        "raw_end": "0x00E03C",
+        "bytes": 1,
+        "logical_start": "0x155c",
+        "logical_end": "0x155c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E073",
+        "raw_end": "0x00E073",
+        "bytes": 1,
+        "logical_start": "0x1593",
+        "logical_end": "0x1593",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E097",
+        "raw_end": "0x00E097",
+        "bytes": 1,
+        "logical_start": "0x15b7",
+        "logical_end": "0x15b7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E103",
+        "raw_end": "0x00E103",
+        "bytes": 1,
+        "logical_start": "0x1623",
+        "logical_end": "0x1623",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E13B",
+        "raw_end": "0x00E13B",
+        "bytes": 1,
+        "logical_start": "0x165b",
+        "logical_end": "0x165b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E142",
+        "raw_end": "0x00E142",
+        "bytes": 1,
+        "logical_start": "0x1662",
+        "logical_end": "0x1662",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E147",
+        "raw_end": "0x00E147",
+        "bytes": 1,
+        "logical_start": "0x1667",
+        "logical_end": "0x1667",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E14F",
+        "raw_end": "0x00E14F",
+        "bytes": 1,
+        "logical_start": "0x166f",
+        "logical_end": "0x166f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E320",
+        "raw_end": "0x00E320",
+        "bytes": 1,
+        "logical_start": "0x1830",
+        "logical_end": "0x1830",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E353",
+        "raw_end": "0x00E354",
+        "bytes": 2,
+        "logical_start": "0x1863",
+        "logical_end": "0x1864",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E38A",
+        "raw_end": "0x00E38A",
+        "bytes": 1,
+        "logical_start": "0x189a",
+        "logical_end": "0x189a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E396",
+        "raw_end": "0x00E396",
+        "bytes": 1,
+        "logical_start": "0x18a6",
+        "logical_end": "0x18a6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E39A",
+        "raw_end": "0x00E39A",
+        "bytes": 1,
+        "logical_start": "0x18aa",
+        "logical_end": "0x18aa",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E3D8",
+        "raw_end": "0x00E3D8",
+        "bytes": 1,
+        "logical_start": "0x18e8",
+        "logical_end": "0x18e8",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E41D",
+        "raw_end": "0x00E41D",
+        "bytes": 1,
+        "logical_start": "0x192d",
+        "logical_end": "0x192d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E431",
+        "raw_end": "0x00E431",
+        "bytes": 1,
+        "logical_start": "0x1941",
+        "logical_end": "0x1941",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E4CE",
+        "raw_end": "0x00E4CE",
+        "bytes": 1,
+        "logical_start": "0x19de",
+        "logical_end": "0x19de",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E52A",
+        "raw_end": "0x00E52A",
+        "bytes": 1,
+        "logical_start": "0x1a3a",
+        "logical_end": "0x1a3a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E530",
+        "raw_end": "0x00E530",
+        "bytes": 1,
+        "logical_start": "0x1a40",
+        "logical_end": "0x1a40",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E5C6",
+        "raw_end": "0x00E5C6",
+        "bytes": 1,
+        "logical_start": "0x1ad6",
+        "logical_end": "0x1ad6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E5CB",
+        "raw_end": "0x00E5CB",
+        "bytes": 1,
+        "logical_start": "0x1adb",
+        "logical_end": "0x1adb",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E5F2",
+        "raw_end": "0x00E5F2",
+        "bytes": 1,
+        "logical_start": "0x1b02",
+        "logical_end": "0x1b02",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E610",
+        "raw_end": "0x00E610",
+        "bytes": 1,
+        "logical_start": "0x1b20",
+        "logical_end": "0x1b20",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E658",
+        "raw_end": "0x00E658",
+        "bytes": 1,
+        "logical_start": "0x1b68",
+        "logical_end": "0x1b68",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E67F",
+        "raw_end": "0x00E67F",
+        "bytes": 1,
+        "logical_start": "0x1b8f",
+        "logical_end": "0x1b8f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E6C6",
+        "raw_end": "0x00E6C6",
+        "bytes": 1,
+        "logical_start": "0x1bd6",
+        "logical_end": "0x1bd6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E72A",
+        "raw_end": "0x00E72A",
+        "bytes": 1,
+        "logical_start": "0x1c2a",
+        "logical_end": "0x1c2a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E734",
+        "raw_end": "0x00E734",
+        "bytes": 1,
+        "logical_start": "0x1c34",
+        "logical_end": "0x1c34",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E73E",
+        "raw_end": "0x00E73E",
+        "bytes": 1,
+        "logical_start": "0x1c3e",
+        "logical_end": "0x1c3e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E771",
+        "raw_end": "0x00E771",
+        "bytes": 1,
+        "logical_start": "0x1c71",
+        "logical_end": "0x1c71",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E7D3",
+        "raw_end": "0x00E7D3",
+        "bytes": 1,
+        "logical_start": "0x1cd3",
+        "logical_end": "0x1cd3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E7F4",
+        "raw_end": "0x00E7F5",
+        "bytes": 2,
+        "logical_start": "0x1cf4",
+        "logical_end": "0x1cf5",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E7FE",
+        "raw_end": "0x00E7FE",
+        "bytes": 1,
+        "logical_start": "0x1cfe",
+        "logical_end": "0x1cfe",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E82B",
+        "raw_end": "0x00E82B",
+        "bytes": 1,
+        "logical_start": "0x1d2b",
+        "logical_end": "0x1d2b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E846",
+        "raw_end": "0x00E846",
+        "bytes": 1,
+        "logical_start": "0x1d46",
+        "logical_end": "0x1d46",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E856",
+        "raw_end": "0x00E857",
+        "bytes": 2,
+        "logical_start": "0x1d56",
+        "logical_end": "0x1d57",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E859",
+        "raw_end": "0x00E859",
+        "bytes": 1,
+        "logical_start": "0x1d59",
+        "logical_end": "0x1d59",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E85B",
+        "raw_end": "0x00E85C",
+        "bytes": 2,
+        "logical_start": "0x1d5b",
+        "logical_end": "0x1d5c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E865",
+        "raw_end": "0x00E867",
+        "bytes": 3,
+        "logical_start": "0x1d65",
+        "logical_end": "0x1d67",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E871",
+        "raw_end": "0x00E873",
+        "bytes": 3,
+        "logical_start": "0x1d71",
+        "logical_end": "0x1d73",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E88C",
+        "raw_end": "0x00E88C",
+        "bytes": 1,
+        "logical_start": "0x1d8c",
+        "logical_end": "0x1d8c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E8AF",
+        "raw_end": "0x00E8B1",
+        "bytes": 3,
+        "logical_start": "0x1daf",
+        "logical_end": "0x1db1",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E8CE",
+        "raw_end": "0x00E8CE",
+        "bytes": 1,
+        "logical_start": "0x1dce",
+        "logical_end": "0x1dce",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E91A",
+        "raw_end": "0x00E91A",
+        "bytes": 1,
+        "logical_start": "0x1e1a",
+        "logical_end": "0x1e1a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E930",
+        "raw_end": "0x00E930",
+        "bytes": 1,
+        "logical_start": "0x1e30",
+        "logical_end": "0x1e30",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E960",
+        "raw_end": "0x00E960",
+        "bytes": 1,
+        "logical_start": "0x1e60",
+        "logical_end": "0x1e60",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E98D",
+        "raw_end": "0x00E98E",
+        "bytes": 2,
+        "logical_start": "0x1e8d",
+        "logical_end": "0x1e8e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E9C4",
+        "raw_end": "0x00E9C4",
+        "bytes": 1,
+        "logical_start": "0x1ec4",
+        "logical_end": "0x1ec4",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E9DB",
+        "raw_end": "0x00E9DB",
+        "bytes": 1,
+        "logical_start": "0x1edb",
+        "logical_end": "0x1edb",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00E9E6",
+        "raw_end": "0x00E9E6",
+        "bytes": 1,
+        "logical_start": "0x1ee6",
+        "logical_end": "0x1ee6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EA76",
+        "raw_end": "0x00EA76",
+        "bytes": 1,
+        "logical_start": "0x1f76",
+        "logical_end": "0x1f76",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EAA6",
+        "raw_end": "0x00EAA6",
+        "bytes": 1,
+        "logical_start": "0x1fa6",
+        "logical_end": "0x1fa6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EADA",
+        "raw_end": "0x00EADB",
+        "bytes": 2,
+        "logical_start": "0x1fda",
+        "logical_end": "0x1fdb",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EB7B",
+        "raw_end": "0x00EB7C",
+        "bytes": 2,
+        "logical_start": "0x206b",
+        "logical_end": "0x206c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EBA8",
+        "raw_end": "0x00EBA8",
+        "bytes": 1,
+        "logical_start": "0x2098",
+        "logical_end": "0x2098",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EBBE",
+        "raw_end": "0x00EBBE",
+        "bytes": 1,
+        "logical_start": "0x20ae",
+        "logical_end": "0x20ae",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EBE2",
+        "raw_end": "0x00EBE2",
+        "bytes": 1,
+        "logical_start": "0x20d2",
+        "logical_end": "0x20d2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EC03",
+        "raw_end": "0x00EC03",
+        "bytes": 1,
+        "logical_start": "0x20f3",
+        "logical_end": "0x20f3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EC17",
+        "raw_end": "0x00EC17",
+        "bytes": 1,
+        "logical_start": "0x2107",
+        "logical_end": "0x2107",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EC55",
+        "raw_end": "0x00EC55",
+        "bytes": 1,
+        "logical_start": "0x2145",
+        "logical_end": "0x2145",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EC88",
+        "raw_end": "0x00EC88",
+        "bytes": 1,
+        "logical_start": "0x2178",
+        "logical_end": "0x2178",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EC98",
+        "raw_end": "0x00EC99",
+        "bytes": 2,
+        "logical_start": "0x2188",
+        "logical_end": "0x2189",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EC9D",
+        "raw_end": "0x00EC9D",
+        "bytes": 1,
+        "logical_start": "0x218d",
+        "logical_end": "0x218d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00ED03",
+        "raw_end": "0x00ED03",
+        "bytes": 1,
+        "logical_start": "0x21f3",
+        "logical_end": "0x21f3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00ED11",
+        "raw_end": "0x00ED11",
+        "bytes": 1,
+        "logical_start": "0x2201",
+        "logical_end": "0x2201",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00ED1F",
+        "raw_end": "0x00ED20",
+        "bytes": 2,
+        "logical_start": "0x220f",
+        "logical_end": "0x2210",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00ED32",
+        "raw_end": "0x00ED32",
+        "bytes": 1,
+        "logical_start": "0x2222",
+        "logical_end": "0x2222",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00ED58",
+        "raw_end": "0x00ED58",
+        "bytes": 1,
+        "logical_start": "0x2248",
+        "logical_end": "0x2248",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00ED72",
+        "raw_end": "0x00ED72",
+        "bytes": 1,
+        "logical_start": "0x2262",
+        "logical_end": "0x2262",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00ED77",
+        "raw_end": "0x00ED77",
+        "bytes": 1,
+        "logical_start": "0x2267",
+        "logical_end": "0x2267",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00ED81",
+        "raw_end": "0x00ED81",
+        "bytes": 1,
+        "logical_start": "0x2271",
+        "logical_end": "0x2271",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EDC4",
+        "raw_end": "0x00EDC4",
+        "bytes": 1,
+        "logical_start": "0x22b4",
+        "logical_end": "0x22b4",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EDCB",
+        "raw_end": "0x00EDCB",
+        "bytes": 1,
+        "logical_start": "0x22bb",
+        "logical_end": "0x22bb",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EDDC",
+        "raw_end": "0x00EDDC",
+        "bytes": 1,
+        "logical_start": "0x22cc",
+        "logical_end": "0x22cc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EE0C",
+        "raw_end": "0x00EE0C",
+        "bytes": 1,
+        "logical_start": "0x22fc",
+        "logical_end": "0x22fc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EE13",
+        "raw_end": "0x00EE13",
+        "bytes": 1,
+        "logical_start": "0x2303",
+        "logical_end": "0x2303",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EE29",
+        "raw_end": "0x00EE29",
+        "bytes": 1,
+        "logical_start": "0x2319",
+        "logical_end": "0x2319",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EE61",
+        "raw_end": "0x00EE61",
+        "bytes": 1,
+        "logical_start": "0x2351",
+        "logical_end": "0x2351",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EE72",
+        "raw_end": "0x00EE72",
+        "bytes": 1,
+        "logical_start": "0x2362",
+        "logical_end": "0x2362",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EF3E",
+        "raw_end": "0x00EF3E",
+        "bytes": 1,
+        "logical_start": "0x241e",
+        "logical_end": "0x241e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EF54",
+        "raw_end": "0x00EF54",
+        "bytes": 1,
+        "logical_start": "0x2434",
+        "logical_end": "0x2434",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EF65",
+        "raw_end": "0x00EF66",
+        "bytes": 2,
+        "logical_start": "0x2445",
+        "logical_end": "0x2446",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EF6E",
+        "raw_end": "0x00EF6E",
+        "bytes": 1,
+        "logical_start": "0x244e",
+        "logical_end": "0x244e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EF87",
+        "raw_end": "0x00EF87",
+        "bytes": 1,
+        "logical_start": "0x2467",
+        "logical_end": "0x2467",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EFAB",
+        "raw_end": "0x00EFAB",
+        "bytes": 1,
+        "logical_start": "0x248b",
+        "logical_end": "0x248b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EFB2",
+        "raw_end": "0x00EFB2",
+        "bytes": 1,
+        "logical_start": "0x2492",
+        "logical_end": "0x2492",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EFC2",
+        "raw_end": "0x00EFC2",
+        "bytes": 1,
+        "logical_start": "0x24a2",
+        "logical_end": "0x24a2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00EFF1",
+        "raw_end": "0x00EFF1",
+        "bytes": 1,
+        "logical_start": "0x24d1",
+        "logical_end": "0x24d1",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F0A3",
+        "raw_end": "0x00F0A3",
+        "bytes": 1,
+        "logical_start": "0x2583",
+        "logical_end": "0x2583",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F0C2",
+        "raw_end": "0x00F0C2",
+        "bytes": 1,
+        "logical_start": "0x25a2",
+        "logical_end": "0x25a2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F0DB",
+        "raw_end": "0x00F0DB",
+        "bytes": 1,
+        "logical_start": "0x25bb",
+        "logical_end": "0x25bb",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F0ED",
+        "raw_end": "0x00F0ED",
+        "bytes": 1,
+        "logical_start": "0x25cd",
+        "logical_end": "0x25cd",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F102",
+        "raw_end": "0x00F102",
+        "bytes": 1,
+        "logical_start": "0x25e2",
+        "logical_end": "0x25e2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F142",
+        "raw_end": "0x00F142",
+        "bytes": 1,
+        "logical_start": "0x2622",
+        "logical_end": "0x2622",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F149",
+        "raw_end": "0x00F149",
+        "bytes": 1,
+        "logical_start": "0x2629",
+        "logical_end": "0x2629",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F176",
+        "raw_end": "0x00F179",
+        "bytes": 4,
+        "logical_start": "0x2656",
+        "logical_end": "0x2659",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F17F",
+        "raw_end": "0x00F17F",
+        "bytes": 1,
+        "logical_start": "0x265f",
+        "logical_end": "0x265f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F195",
+        "raw_end": "0x00F195",
+        "bytes": 1,
+        "logical_start": "0x2675",
+        "logical_end": "0x2675",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F1C5",
+        "raw_end": "0x00F1C6",
+        "bytes": 2,
+        "logical_start": "0x26a5",
+        "logical_end": "0x26a6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F1CB",
+        "raw_end": "0x00F1CB",
+        "bytes": 1,
+        "logical_start": "0x26ab",
+        "logical_end": "0x26ab",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F1ED",
+        "raw_end": "0x00F1ED",
+        "bytes": 1,
+        "logical_start": "0x26cd",
+        "logical_end": "0x26cd",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F219",
+        "raw_end": "0x00F219",
+        "bytes": 1,
+        "logical_start": "0x26f9",
+        "logical_end": "0x26f9",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F262",
+        "raw_end": "0x00F262",
+        "bytes": 1,
+        "logical_start": "0x2742",
+        "logical_end": "0x2742",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F316",
+        "raw_end": "0x00F316",
+        "bytes": 1,
+        "logical_start": "0x27f6",
+        "logical_end": "0x27f6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F333",
+        "raw_end": "0x00F333",
+        "bytes": 1,
+        "logical_start": "0x2803",
+        "logical_end": "0x2803",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F392",
+        "raw_end": "0x00F392",
+        "bytes": 1,
+        "logical_start": "0x2862",
+        "logical_end": "0x2862",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F39F",
+        "raw_end": "0x00F39F",
+        "bytes": 1,
+        "logical_start": "0x286f",
+        "logical_end": "0x286f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F3F0",
+        "raw_end": "0x00F3F0",
+        "bytes": 1,
+        "logical_start": "0x28c0",
+        "logical_end": "0x28c0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F3F7",
+        "raw_end": "0x00F3F7",
+        "bytes": 1,
+        "logical_start": "0x28c7",
+        "logical_end": "0x28c7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F3FC",
+        "raw_end": "0x00F3FD",
+        "bytes": 2,
+        "logical_start": "0x28cc",
+        "logical_end": "0x28cd",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F418",
+        "raw_end": "0x00F418",
+        "bytes": 1,
+        "logical_start": "0x28e8",
+        "logical_end": "0x28e8",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F43C",
+        "raw_end": "0x00F43C",
+        "bytes": 1,
+        "logical_start": "0x290c",
+        "logical_end": "0x290c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F48F",
+        "raw_end": "0x00F490",
+        "bytes": 2,
+        "logical_start": "0x295f",
+        "logical_end": "0x2960",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F49A",
+        "raw_end": "0x00F49B",
+        "bytes": 2,
+        "logical_start": "0x296a",
+        "logical_end": "0x296b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F4B4",
+        "raw_end": "0x00F4B4",
+        "bytes": 1,
+        "logical_start": "0x2984",
+        "logical_end": "0x2984",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F4BB",
+        "raw_end": "0x00F4BC",
+        "bytes": 2,
+        "logical_start": "0x298b",
+        "logical_end": "0x298c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F4D6",
+        "raw_end": "0x00F4D6",
+        "bytes": 1,
+        "logical_start": "0x29a6",
+        "logical_end": "0x29a6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F4DE",
+        "raw_end": "0x00F4DE",
+        "bytes": 1,
+        "logical_start": "0x29ae",
+        "logical_end": "0x29ae",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F4FE",
+        "raw_end": "0x00F4FE",
+        "bytes": 1,
+        "logical_start": "0x29ce",
+        "logical_end": "0x29ce",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F512",
+        "raw_end": "0x00F512",
+        "bytes": 1,
+        "logical_start": "0x29e2",
+        "logical_end": "0x29e2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F542",
+        "raw_end": "0x00F542",
+        "bytes": 1,
+        "logical_start": "0x2a12",
+        "logical_end": "0x2a12",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F574",
+        "raw_end": "0x00F574",
+        "bytes": 1,
+        "logical_start": "0x2a44",
+        "logical_end": "0x2a44",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F5A8",
+        "raw_end": "0x00F5A8",
+        "bytes": 1,
+        "logical_start": "0x2a78",
+        "logical_end": "0x2a78",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F5D2",
+        "raw_end": "0x00F5D6",
+        "bytes": 5,
+        "logical_start": "0x2aa2",
+        "logical_end": "0x2aa6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F5E9",
+        "raw_end": "0x00F5E9",
+        "bytes": 1,
+        "logical_start": "0x2ab9",
+        "logical_end": "0x2ab9",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F5FE",
+        "raw_end": "0x00F5FF",
+        "bytes": 2,
+        "logical_start": "0x2ace",
+        "logical_end": "0x2acf",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F667",
+        "raw_end": "0x00F667",
+        "bytes": 1,
+        "logical_start": "0x2b37",
+        "logical_end": "0x2b37",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F678",
+        "raw_end": "0x00F678",
+        "bytes": 1,
+        "logical_start": "0x2b48",
+        "logical_end": "0x2b48",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F6A2",
+        "raw_end": "0x00F6A2",
+        "bytes": 1,
+        "logical_start": "0x2b72",
+        "logical_end": "0x2b72",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F6B8",
+        "raw_end": "0x00F6B8",
+        "bytes": 1,
+        "logical_start": "0x2b88",
+        "logical_end": "0x2b88",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F6BA",
+        "raw_end": "0x00F6BA",
+        "bytes": 1,
+        "logical_start": "0x2b8a",
+        "logical_end": "0x2b8a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F6E4",
+        "raw_end": "0x00F6E4",
+        "bytes": 1,
+        "logical_start": "0x2bb4",
+        "logical_end": "0x2bb4",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F6F0",
+        "raw_end": "0x00F6F0",
+        "bytes": 1,
+        "logical_start": "0x2bc0",
+        "logical_end": "0x2bc0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F722",
+        "raw_end": "0x00F722",
+        "bytes": 1,
+        "logical_start": "0x2bf2",
+        "logical_end": "0x2bf2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F803",
+        "raw_end": "0x00F803",
+        "bytes": 1,
+        "logical_start": "0x2cc3",
+        "logical_end": "0x2cc3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F8C0",
+        "raw_end": "0x00F8C0",
+        "bytes": 1,
+        "logical_start": "0x2d80",
+        "logical_end": "0x2d80",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00F913",
+        "raw_end": "0x00F913",
+        "bytes": 1,
+        "logical_start": "0x2dd3",
+        "logical_end": "0x2dd3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FA4C",
+        "raw_end": "0x00FA4C",
+        "bytes": 1,
+        "logical_start": "0x2f0c",
+        "logical_end": "0x2f0c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FA4E",
+        "raw_end": "0x00FA4E",
+        "bytes": 1,
+        "logical_start": "0x2f0e",
+        "logical_end": "0x2f0e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FA50",
+        "raw_end": "0x00FA50",
+        "bytes": 1,
+        "logical_start": "0x2f10",
+        "logical_end": "0x2f10",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FA8C",
+        "raw_end": "0x00FA8C",
+        "bytes": 1,
+        "logical_start": "0x2f4c",
+        "logical_end": "0x2f4c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FAF0",
+        "raw_end": "0x00FAF0",
+        "bytes": 1,
+        "logical_start": "0x2fb0",
+        "logical_end": "0x2fb0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FB5B",
+        "raw_end": "0x00FB5B",
+        "bytes": 1,
+        "logical_start": "0x300b",
+        "logical_end": "0x300b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FB5D",
+        "raw_end": "0x00FB5D",
+        "bytes": 1,
+        "logical_start": "0x300d",
+        "logical_end": "0x300d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FB62",
+        "raw_end": "0x00FB62",
+        "bytes": 1,
+        "logical_start": "0x3012",
+        "logical_end": "0x3012",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FC1C",
+        "raw_end": "0x00FC1D",
+        "bytes": 2,
+        "logical_start": "0x30cc",
+        "logical_end": "0x30cd",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FC3E",
+        "raw_end": "0x00FC3E",
+        "bytes": 1,
+        "logical_start": "0x30ee",
+        "logical_end": "0x30ee",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FC78",
+        "raw_end": "0x00FC78",
+        "bytes": 1,
+        "logical_start": "0x3128",
+        "logical_end": "0x3128",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FD2A",
+        "raw_end": "0x00FD2A",
+        "bytes": 1,
+        "logical_start": "0x31da",
+        "logical_end": "0x31da",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDAE",
+        "raw_end": "0x00FDAE",
+        "bytes": 1,
+        "logical_start": "0x325e",
+        "logical_end": "0x325e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDB3",
+        "raw_end": "0x00FDB3",
+        "bytes": 1,
+        "logical_start": "0x3263",
+        "logical_end": "0x3263",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDB5",
+        "raw_end": "0x00FDB5",
+        "bytes": 1,
+        "logical_start": "0x3265",
+        "logical_end": "0x3265",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDB9",
+        "raw_end": "0x00FDBC",
+        "bytes": 4,
+        "logical_start": "0x3269",
+        "logical_end": "0x326c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDBE",
+        "raw_end": "0x00FDBF",
+        "bytes": 2,
+        "logical_start": "0x326e",
+        "logical_end": "0x326f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDC3",
+        "raw_end": "0x00FDC5",
+        "bytes": 3,
+        "logical_start": "0x3273",
+        "logical_end": "0x3275",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDC8",
+        "raw_end": "0x00FDC9",
+        "bytes": 2,
+        "logical_start": "0x3278",
+        "logical_end": "0x3279",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDCD",
+        "raw_end": "0x00FDCD",
+        "bytes": 1,
+        "logical_start": "0x327d",
+        "logical_end": "0x327d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDCF",
+        "raw_end": "0x00FDCF",
+        "bytes": 1,
+        "logical_start": "0x327f",
+        "logical_end": "0x327f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDD4",
+        "raw_end": "0x00FDD4",
+        "bytes": 1,
+        "logical_start": "0x3284",
+        "logical_end": "0x3284",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDE4",
+        "raw_end": "0x00FDE4",
+        "bytes": 1,
+        "logical_start": "0x3294",
+        "logical_end": "0x3294",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDE7",
+        "raw_end": "0x00FDE7",
+        "bytes": 1,
+        "logical_start": "0x3297",
+        "logical_end": "0x3297",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDE9",
+        "raw_end": "0x00FDEA",
+        "bytes": 2,
+        "logical_start": "0x3299",
+        "logical_end": "0x329a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDED",
+        "raw_end": "0x00FDED",
+        "bytes": 1,
+        "logical_start": "0x329d",
+        "logical_end": "0x329d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDEF",
+        "raw_end": "0x00FDF0",
+        "bytes": 2,
+        "logical_start": "0x329f",
+        "logical_end": "0x32a0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FDF4",
+        "raw_end": "0x00FDF5",
+        "bytes": 2,
+        "logical_start": "0x32a4",
+        "logical_end": "0x32a5",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE06",
+        "raw_end": "0x00FE06",
+        "bytes": 1,
+        "logical_start": "0x32b6",
+        "logical_end": "0x32b6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE0F",
+        "raw_end": "0x00FE0F",
+        "bytes": 1,
+        "logical_start": "0x32bf",
+        "logical_end": "0x32bf",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE14",
+        "raw_end": "0x00FE14",
+        "bytes": 1,
+        "logical_start": "0x32c4",
+        "logical_end": "0x32c4",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE1C",
+        "raw_end": "0x00FE1C",
+        "bytes": 1,
+        "logical_start": "0x32cc",
+        "logical_end": "0x32cc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE2B",
+        "raw_end": "0x00FE2B",
+        "bytes": 1,
+        "logical_start": "0x32db",
+        "logical_end": "0x32db",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE37",
+        "raw_end": "0x00FE37",
+        "bytes": 1,
+        "logical_start": "0x32e7",
+        "logical_end": "0x32e7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE39",
+        "raw_end": "0x00FE3A",
+        "bytes": 2,
+        "logical_start": "0x32e9",
+        "logical_end": "0x32ea",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE45",
+        "raw_end": "0x00FE45",
+        "bytes": 1,
+        "logical_start": "0x32f5",
+        "logical_end": "0x32f5",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE48",
+        "raw_end": "0x00FE48",
+        "bytes": 1,
+        "logical_start": "0x32f8",
+        "logical_end": "0x32f8",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE56",
+        "raw_end": "0x00FE56",
+        "bytes": 1,
+        "logical_start": "0x3306",
+        "logical_end": "0x3306",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE6F",
+        "raw_end": "0x00FE6F",
+        "bytes": 1,
+        "logical_start": "0x331f",
+        "logical_end": "0x331f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE73",
+        "raw_end": "0x00FE73",
+        "bytes": 1,
+        "logical_start": "0x3323",
+        "logical_end": "0x3323",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE75",
+        "raw_end": "0x00FE75",
+        "bytes": 1,
+        "logical_start": "0x3325",
+        "logical_end": "0x3325",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE7A",
+        "raw_end": "0x00FE7A",
+        "bytes": 1,
+        "logical_start": "0x332a",
+        "logical_end": "0x332a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FE88",
+        "raw_end": "0x00FE88",
+        "bytes": 1,
+        "logical_start": "0x3338",
+        "logical_end": "0x3338",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FEAE",
+        "raw_end": "0x00FEAE",
+        "bytes": 1,
+        "logical_start": "0x335e",
+        "logical_end": "0x335e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FEB2",
+        "raw_end": "0x00FEB2",
+        "bytes": 1,
+        "logical_start": "0x3362",
+        "logical_end": "0x3362",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FEC9",
+        "raw_end": "0x00FEC9",
+        "bytes": 1,
+        "logical_start": "0x3379",
+        "logical_end": "0x3379",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FEDA",
+        "raw_end": "0x00FEDA",
+        "bytes": 1,
+        "logical_start": "0x338a",
+        "logical_end": "0x338a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FEDE",
+        "raw_end": "0x00FEDF",
+        "bytes": 2,
+        "logical_start": "0x338e",
+        "logical_end": "0x338f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FEF6",
+        "raw_end": "0x00FEF6",
+        "bytes": 1,
+        "logical_start": "0x33a6",
+        "logical_end": "0x33a6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FEF8",
+        "raw_end": "0x00FEF8",
+        "bytes": 1,
+        "logical_start": "0x33a8",
+        "logical_end": "0x33a8",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF06",
+        "raw_end": "0x00FF06",
+        "bytes": 1,
+        "logical_start": "0x33b6",
+        "logical_end": "0x33b6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF08",
+        "raw_end": "0x00FF08",
+        "bytes": 1,
+        "logical_start": "0x33b8",
+        "logical_end": "0x33b8",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF17",
+        "raw_end": "0x00FF17",
+        "bytes": 1,
+        "logical_start": "0x33c7",
+        "logical_end": "0x33c7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF1C",
+        "raw_end": "0x00FF1C",
+        "bytes": 1,
+        "logical_start": "0x33cc",
+        "logical_end": "0x33cc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF20",
+        "raw_end": "0x00FF20",
+        "bytes": 1,
+        "logical_start": "0x33d0",
+        "logical_end": "0x33d0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF33",
+        "raw_end": "0x00FF33",
+        "bytes": 1,
+        "logical_start": "0x33e3",
+        "logical_end": "0x33e3",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF36",
+        "raw_end": "0x00FF36",
+        "bytes": 1,
+        "logical_start": "0x33e6",
+        "logical_end": "0x33e6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF38",
+        "raw_end": "0x00FF38",
+        "bytes": 1,
+        "logical_start": "0x33e8",
+        "logical_end": "0x33e8",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF69",
+        "raw_end": "0x00FF69",
+        "bytes": 1,
+        "logical_start": "0x3409",
+        "logical_end": "0x3409",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF74",
+        "raw_end": "0x00FF74",
+        "bytes": 1,
+        "logical_start": "0x3414",
+        "logical_end": "0x3414",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF77",
+        "raw_end": "0x00FF77",
+        "bytes": 1,
+        "logical_start": "0x3417",
+        "logical_end": "0x3417",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF80",
+        "raw_end": "0x00FF80",
+        "bytes": 1,
+        "logical_start": "0x3420",
+        "logical_end": "0x3420",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF82",
+        "raw_end": "0x00FF82",
+        "bytes": 1,
+        "logical_start": "0x3422",
+        "logical_end": "0x3422",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FF9F",
+        "raw_end": "0x00FF9F",
+        "bytes": 1,
+        "logical_start": "0x343f",
+        "logical_end": "0x343f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFA6",
+        "raw_end": "0x00FFA6",
+        "bytes": 1,
+        "logical_start": "0x3446",
+        "logical_end": "0x3446",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFA8",
+        "raw_end": "0x00FFAB",
+        "bytes": 4,
+        "logical_start": "0x3448",
+        "logical_end": "0x344b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFB4",
+        "raw_end": "0x00FFB4",
+        "bytes": 1,
+        "logical_start": "0x3454",
+        "logical_end": "0x3454",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFC1",
+        "raw_end": "0x00FFC1",
+        "bytes": 1,
+        "logical_start": "0x3461",
+        "logical_end": "0x3461",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFC4",
+        "raw_end": "0x00FFC4",
+        "bytes": 1,
+        "logical_start": "0x3464",
+        "logical_end": "0x3464",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFCB",
+        "raw_end": "0x00FFCB",
+        "bytes": 1,
+        "logical_start": "0x346b",
+        "logical_end": "0x346b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFE2",
+        "raw_end": "0x00FFE2",
+        "bytes": 1,
+        "logical_start": "0x3482",
+        "logical_end": "0x3482",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFFA",
+        "raw_end": "0x00FFFA",
+        "bytes": 1,
+        "logical_start": "0x349a",
+        "logical_end": "0x349a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x00FFFD",
+        "raw_end": "0x00FFFD",
+        "bytes": 1,
+        "logical_start": "0x349d",
+        "logical_end": "0x349d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010005",
+        "raw_end": "0x010005",
+        "bytes": 1,
+        "logical_start": "0x34a5",
+        "logical_end": "0x34a5",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010007",
+        "raw_end": "0x010007",
+        "bytes": 1,
+        "logical_start": "0x34a7",
+        "logical_end": "0x34a7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010009",
+        "raw_end": "0x010009",
+        "bytes": 1,
+        "logical_start": "0x34a9",
+        "logical_end": "0x34a9",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010027",
+        "raw_end": "0x010027",
+        "bytes": 1,
+        "logical_start": "0x34c7",
+        "logical_end": "0x34c7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010029",
+        "raw_end": "0x010029",
+        "bytes": 1,
+        "logical_start": "0x34c9",
+        "logical_end": "0x34c9",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01002C",
+        "raw_end": "0x01002C",
+        "bytes": 1,
+        "logical_start": "0x34cc",
+        "logical_end": "0x34cc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010037",
+        "raw_end": "0x010037",
+        "bytes": 1,
+        "logical_start": "0x34d7",
+        "logical_end": "0x34d7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010049",
+        "raw_end": "0x010049",
+        "bytes": 1,
+        "logical_start": "0x34e9",
+        "logical_end": "0x34e9",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01005F",
+        "raw_end": "0x010060",
+        "bytes": 2,
+        "logical_start": "0x34ff",
+        "logical_end": "0x3500",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010062",
+        "raw_end": "0x010062",
+        "bytes": 1,
+        "logical_start": "0x3502",
+        "logical_end": "0x3502",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010065",
+        "raw_end": "0x010065",
+        "bytes": 1,
+        "logical_start": "0x3505",
+        "logical_end": "0x3505",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010067",
+        "raw_end": "0x010067",
+        "bytes": 1,
+        "logical_start": "0x3507",
+        "logical_end": "0x3507",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01006F",
+        "raw_end": "0x01006F",
+        "bytes": 1,
+        "logical_start": "0x350f",
+        "logical_end": "0x350f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01009B",
+        "raw_end": "0x01009B",
+        "bytes": 1,
+        "logical_start": "0x353b",
+        "logical_end": "0x353b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0100AE",
+        "raw_end": "0x0100AE",
+        "bytes": 1,
+        "logical_start": "0x354e",
+        "logical_end": "0x354e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0100B0",
+        "raw_end": "0x0100B0",
+        "bytes": 1,
+        "logical_start": "0x3550",
+        "logical_end": "0x3550",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0100C1",
+        "raw_end": "0x0100C1",
+        "bytes": 1,
+        "logical_start": "0x3561",
+        "logical_end": "0x3561",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0100E0",
+        "raw_end": "0x0100E0",
+        "bytes": 1,
+        "logical_start": "0x3580",
+        "logical_end": "0x3580",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010102",
+        "raw_end": "0x010102",
+        "bytes": 1,
+        "logical_start": "0x35a2",
+        "logical_end": "0x35a2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010110",
+        "raw_end": "0x010110",
+        "bytes": 1,
+        "logical_start": "0x35b0",
+        "logical_end": "0x35b0",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010122",
+        "raw_end": "0x010122",
+        "bytes": 1,
+        "logical_start": "0x35c2",
+        "logical_end": "0x35c2",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010127",
+        "raw_end": "0x010127",
+        "bytes": 1,
+        "logical_start": "0x35c7",
+        "logical_end": "0x35c7",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010141",
+        "raw_end": "0x010141",
+        "bytes": 1,
+        "logical_start": "0x35e1",
+        "logical_end": "0x35e1",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010154",
+        "raw_end": "0x010154",
+        "bytes": 1,
+        "logical_start": "0x35f4",
+        "logical_end": "0x35f4",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010162",
+        "raw_end": "0x010162",
+        "bytes": 1,
+        "logical_start": "0x3602",
+        "logical_end": "0x3602",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010171",
+        "raw_end": "0x010171",
+        "bytes": 1,
+        "logical_start": "0x3611",
+        "logical_end": "0x3611",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01017E",
+        "raw_end": "0x01017E",
+        "bytes": 1,
+        "logical_start": "0x361e",
+        "logical_end": "0x361e",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01018C",
+        "raw_end": "0x01018C",
+        "bytes": 1,
+        "logical_start": "0x362c",
+        "logical_end": "0x362c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010198",
+        "raw_end": "0x010198",
+        "bytes": 1,
+        "logical_start": "0x3638",
+        "logical_end": "0x3638",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0101A8",
+        "raw_end": "0x0101A8",
+        "bytes": 1,
+        "logical_start": "0x3648",
+        "logical_end": "0x3648",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0101B2",
+        "raw_end": "0x0101B2",
+        "bytes": 1,
+        "logical_start": "0x3652",
+        "logical_end": "0x3652",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0101BD",
+        "raw_end": "0x0101BD",
+        "bytes": 1,
+        "logical_start": "0x365d",
+        "logical_end": "0x365d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0101C7",
+        "raw_end": "0x0101C7",
+        "bytes": 1,
+        "logical_start": "0x3667",
+        "logical_end": "0x3667",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0101D3",
+        "raw_end": "0x0101D3",
+        "bytes": 1,
+        "logical_start": "0x3673",
+        "logical_end": "0x3673",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01021D",
+        "raw_end": "0x01021D",
+        "bytes": 1,
+        "logical_start": "0x36bd",
+        "logical_end": "0x36bd",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01022C",
+        "raw_end": "0x01022C",
+        "bytes": 1,
+        "logical_start": "0x36cc",
+        "logical_end": "0x36cc",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01022E",
+        "raw_end": "0x01022E",
+        "bytes": 1,
+        "logical_start": "0x36ce",
+        "logical_end": "0x36ce",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010236",
+        "raw_end": "0x010236",
+        "bytes": 1,
+        "logical_start": "0x36d6",
+        "logical_end": "0x36d6",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010238",
+        "raw_end": "0x010239",
+        "bytes": 2,
+        "logical_start": "0x36d8",
+        "logical_end": "0x36d9",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01023B",
+        "raw_end": "0x01023B",
+        "bytes": 1,
+        "logical_start": "0x36db",
+        "logical_end": "0x36db",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01024F",
+        "raw_end": "0x01024F",
+        "bytes": 1,
+        "logical_start": "0x36ef",
+        "logical_end": "0x36ef",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010251",
+        "raw_end": "0x010251",
+        "bytes": 1,
+        "logical_start": "0x36f1",
+        "logical_end": "0x36f1",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01025A",
+        "raw_end": "0x01025A",
+        "bytes": 1,
+        "logical_start": "0x36fa",
+        "logical_end": "0x36fa",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010264",
+        "raw_end": "0x010264",
+        "bytes": 1,
+        "logical_start": "0x3704",
+        "logical_end": "0x3704",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010267",
+        "raw_end": "0x010267",
+        "bytes": 1,
+        "logical_start": "0x3707",
+        "logical_end": "0x3707",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01027F",
+        "raw_end": "0x010280",
+        "bytes": 2,
+        "logical_start": "0x371f",
+        "logical_end": "0x3720",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010282",
+        "raw_end": "0x010282",
+        "bytes": 1,
+        "logical_start": "0x3722",
+        "logical_end": "0x3722",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01028F",
+        "raw_end": "0x01028F",
+        "bytes": 1,
+        "logical_start": "0x372f",
+        "logical_end": "0x372f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010293",
+        "raw_end": "0x010293",
+        "bytes": 1,
+        "logical_start": "0x3733",
+        "logical_end": "0x3733",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x01029A",
+        "raw_end": "0x01029A",
+        "bytes": 1,
+        "logical_start": "0x373a",
+        "logical_end": "0x373a",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102A9",
+        "raw_end": "0x0102A9",
+        "bytes": 1,
+        "logical_start": "0x3749",
+        "logical_end": "0x3749",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102AB",
+        "raw_end": "0x0102AB",
+        "bytes": 1,
+        "logical_start": "0x374b",
+        "logical_end": "0x374b",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102B7",
+        "raw_end": "0x0102B9",
+        "bytes": 3,
+        "logical_start": "0x3757",
+        "logical_end": "0x3759",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102BB",
+        "raw_end": "0x0102BC",
+        "bytes": 2,
+        "logical_start": "0x375b",
+        "logical_end": "0x375c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102BE",
+        "raw_end": "0x0102BF",
+        "bytes": 2,
+        "logical_start": "0x375e",
+        "logical_end": "0x375f",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102CC",
+        "raw_end": "0x0102CC",
+        "bytes": 1,
+        "logical_start": "0x376c",
+        "logical_end": "0x376c",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102D0",
+        "raw_end": "0x0102D0",
+        "bytes": 1,
+        "logical_start": "0x3770",
+        "logical_end": "0x3770",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102D4",
+        "raw_end": "0x0102D4",
+        "bytes": 1,
+        "logical_start": "0x3774",
+        "logical_end": "0x3774",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102D6",
+        "raw_end": "0x0102D6",
+        "bytes": 1,
+        "logical_start": "0x3776",
+        "logical_end": "0x3776",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x0102E8",
+        "raw_end": "0x01035F",
+        "bytes": 120,
+        "logical_start": "0x3788",
+        "logical_end": "0x37ff",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      },
+      {
+        "raw_start": "0x010370",
+        "raw_end": "0x01037D",
+        "bytes": 14,
+        "logical_start": "0x3800",
+        "logical_end": "0x380d",
+        "reason": "No standalone IPS record writes this byte; preserve hash-pinned source byte."
+      }
+    ],
+    "sector_header_size_bytes": 16,
+    "runtime_verified": false,
+    "encoded_target_sha256": "4688757e867070c61a16cb17ec3eaefc4414f0ffb1beb18d00ec64bfbbfc5b48"
+  },
+  "rows": [],
+  "build_mode": "png-graphics",
+  "asset_inputs": {
+    "battle_planes": {
+      "5C": "source/graphics/disk-B__battle-cg/01.png",
+      "5D": "source/graphics/disk-B__battle-cg/02.png",
+      "5E": "source/graphics/disk-B__battle-cg/03.png"
+    }
+  }
+}

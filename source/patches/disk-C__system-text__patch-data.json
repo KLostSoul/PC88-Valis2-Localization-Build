@@ -1,0 +1,1573 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "C",
+  "component": "system_text_current_kanji_map",
+  "source_docs": [
+    {
+      "path": "Valis2_DiskC_FINAL_PATCH_RECORD_COMPACT_2026-08-11.docx",
+      "sha256": "c5ab3d52e10c75f810d20f3296fe0bb332ac49c9c6f1c9c698c7358235fa5a80"
+    },
+    {
+      "path": "source/kanji/glyph-assignment-reference.csv",
+      "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff"
+    },
+    {
+      "role": "Japanese original disk",
+      "sha256": "396f79df59d3263b801126943d03f0c63b232a52a6256a0994254d83031fabda"
+    }
+  ],
+  "rows": [
+    {
+      "id": "C-00AA6",
+      "offset": "0x00AA6",
+      "old_hex": "81",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; 를 map-row-192",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AA7",
+      "offset": "0x00AA7",
+      "old_hex": "40",
+      "new_hex": "A2",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AA8",
+      "offset": "0x00AA8",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AA9",
+      "offset": "0x00AA9",
+      "old_hex": "F0",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AAA",
+      "offset": "0x00AAA",
+      "old_hex": "8A",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; 확 map-row-546",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AAB",
+      "offset": "0x00AAB",
+      "old_hex": "6D",
+      "new_hex": "8C",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AAC",
+      "offset": "0x00AAC",
+      "old_hex": "94",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; 인 map-row-382",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AAD",
+      "offset": "0x00AAD",
+      "old_hex": "46",
+      "new_hex": "A4",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AAE",
+      "offset": "0x00AAE",
+      "old_hex": "82",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; 하 map-row-521",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AAF",
+      "offset": "0x00AAF",
+      "old_hex": "B5",
+      "new_hex": "72",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AB0",
+      "offset": "0x00AB0",
+      "old_hex": "82",
+      "new_hex": "88",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; 고 map-row-29",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AB1",
+      "offset": "0x00AB1",
+      "old_hex": "C4",
+      "new_hex": "BB",
+      "evidence": "Direct final table block(s) C1-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AC1",
+      "offset": "0x00AC1",
+      "old_hex": "81",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; 를 map-row-192",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AC2",
+      "offset": "0x00AC2",
+      "old_hex": "40",
+      "new_hex": "A2",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AC3",
+      "offset": "0x00AC3",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AC4",
+      "offset": "0x00AC4",
+      "old_hex": "F0",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AC5",
+      "offset": "0x00AC5",
+      "old_hex": "81",
+      "new_hex": "82",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; Ｄ CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AC6",
+      "offset": "0x00AC6",
+      "old_hex": "40",
+      "new_hex": "63",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AC8",
+      "offset": "0x00AC8",
+      "old_hex": "63",
+      "new_hex": "71",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00ACA",
+      "offset": "0x00ACA",
+      "old_hex": "71",
+      "new_hex": "68",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00ACC",
+      "offset": "0x00ACC",
+      "old_hex": "68",
+      "new_hex": "75",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00ACE",
+      "offset": "0x00ACE",
+      "old_hex": "75",
+      "new_hex": "64",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00ACF",
+      "offset": "0x00ACF",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD0",
+      "offset": "0x00AD0",
+      "old_hex": "64",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD1",
+      "offset": "0x00AD1",
+      "old_hex": "81",
+      "new_hex": "82",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; １ CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD2",
+      "offset": "0x00AD2",
+      "old_hex": "40",
+      "new_hex": "50",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD3",
+      "offset": "0x00AD3",
+      "old_hex": "82",
+      "new_hex": "0D",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD4",
+      "offset": "0x00AD4",
+      "old_hex": "50",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; 에 map-row-333",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD5",
+      "offset": "0x00AD5",
+      "old_hex": "0D",
+      "new_hex": "72",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD6",
+      "offset": "0x00AD6",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD7",
+      "offset": "0x00AD7",
+      "old_hex": "C9",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD8",
+      "offset": "0x00AD8",
+      "old_hex": "93",
+      "new_hex": "88",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; 넣 map-row-89",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AD9",
+      "offset": "0x00AD9",
+      "old_hex": "FC",
+      "new_hex": "F7",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00ADA",
+      "offset": "0x00ADA",
+      "old_hex": "82",
+      "new_hex": "88",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; 고 map-row-29",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00ADB",
+      "offset": "0x00ADB",
+      "old_hex": "EA",
+      "new_hex": "BB",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00ADC",
+      "offset": "0x00ADC",
+      "old_hex": "82",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00ADD",
+      "offset": "0x00ADD",
+      "old_hex": "C4",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C1-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AF3",
+      "offset": "0x00AF3",
+      "old_hex": "82",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; 를 map-row-192",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AF4",
+      "offset": "0x00AF4",
+      "old_hex": "F0",
+      "new_hex": "A2",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AF7",
+      "offset": "0x00AF7",
+      "old_hex": "9F",
+      "new_hex": "49",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AF8",
+      "offset": "0x00AF8",
+      "old_hex": "82",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; 러 map-row-170",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AF9",
+      "offset": "0x00AF9",
+      "old_hex": "B5",
+      "new_hex": "8C",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AFA",
+      "offset": "0x00AFA",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; 주 map-row-418",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AFB",
+      "offset": "0x00AFB",
+      "old_hex": "C4",
+      "new_hex": "C8",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AFD",
+      "offset": "0x00AFD",
+      "old_hex": "BA",
+      "new_hex": "F8",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AFE",
+      "offset": "0x00AFE",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; 요 map-row-356",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00AFF",
+      "offset": "0x00AFF",
+      "old_hex": "B3",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00B00",
+      "offset": "0x00B00",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; 。 CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00B01",
+      "offset": "0x00B01",
+      "old_hex": "A2",
+      "new_hex": "42",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00B02",
+      "offset": "0x00B02",
+      "old_hex": "81",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-00B03",
+      "offset": "0x00B03",
+      "old_hex": "42",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C1-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0144A",
+      "offset": "0x0144A",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 이 map-row-380",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0144B",
+      "offset": "0x0144B",
+      "old_hex": "B1",
+      "new_hex": "A2",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0144C",
+      "offset": "0x0144C",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0144D",
+      "offset": "0x0144D",
+      "old_hex": "CC",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0144E",
+      "offset": "0x0144E",
+      "old_hex": "83",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 디 map-row-145",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0144F",
+      "offset": "0x0144F",
+      "old_hex": "66",
+      "new_hex": "72",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01450",
+      "offset": "0x01450",
+      "old_hex": "83",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 스 map-row-293",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01451",
+      "offset": "0x01451",
+      "old_hex": "42",
+      "new_hex": "4A",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01452",
+      "offset": "0x01452",
+      "old_hex": "83",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 크 map-row-473",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01453",
+      "offset": "0x01453",
+      "old_hex": "58",
+      "new_hex": "42",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01454",
+      "offset": "0x01454",
+      "old_hex": "83",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 는 map-row-106",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01455",
+      "offset": "0x01455",
+      "old_hex": "4E",
+      "new_hex": "4B",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01456",
+      "offset": "0x01456",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01457",
+      "offset": "0x01457",
+      "old_hex": "C5",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01458",
+      "offset": "0x01458",
+      "old_hex": "82",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 부 map-row-255",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01459",
+      "offset": "0x01459",
+      "old_hex": "CD",
+      "new_hex": "E1",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0145A",
+      "offset": "0x0145A",
+      "old_hex": "97",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 팅 map-row-499",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0145B",
+      "offset": "0x0145B",
+      "old_hex": "A7",
+      "new_hex": "5C",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0145C",
+      "offset": "0x0145C",
+      "old_hex": "82",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 되 map-row-131",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0145D",
+      "offset": "0x0145D",
+      "old_hex": "BF",
+      "new_hex": "64",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0145E",
+      "offset": "0x0145E",
+      "old_hex": "8F",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 지 map-row-430",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0145F",
+      "offset": "0x0145F",
+      "old_hex": "E3",
+      "new_hex": "D4",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01460",
+      "offset": "0x01460",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01461",
+      "offset": "0x01461",
+      "old_hex": "AA",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01462",
+      "offset": "0x01462",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 않 map-row-313",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01463",
+      "offset": "0x01463",
+      "old_hex": "E8",
+      "new_hex": "5E",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01464",
+      "offset": "0x01464",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 습 map-row-296",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01465",
+      "offset": "0x01465",
+      "old_hex": "DC",
+      "new_hex": "4D",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01466",
+      "offset": "0x01466",
+      "old_hex": "82",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 니 map-row-108",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01467",
+      "offset": "0x01467",
+      "old_hex": "B9",
+      "new_hex": "4D",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01468",
+      "offset": "0x01468",
+      "old_hex": "82",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; 다 map-row-111",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01469",
+      "offset": "0x01469",
+      "old_hex": "F1",
+      "new_hex": "50",
+      "evidence": "Direct final table block(s) C2-1; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0146B",
+      "offset": "0x0146B",
+      "old_hex": "83",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 저 map-row-399",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0146C",
+      "offset": "0x0146C",
+      "old_hex": "5A",
+      "new_hex": "B5",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0146D",
+      "offset": "0x0146D",
+      "old_hex": "81",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 장 map-row-397",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0146E",
+      "offset": "0x0146E",
+      "old_hex": "5B",
+      "new_hex": "B3",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0146F",
+      "offset": "0x0146F",
+      "old_hex": "83",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 데 map-row-124",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01470",
+      "offset": "0x01470",
+      "old_hex": "75",
+      "new_hex": "5D",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01471",
+      "offset": "0x01471",
+      "old_hex": "83",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 이 map-row-380",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01472",
+      "offset": "0x01472",
+      "old_hex": "66",
+      "new_hex": "A2",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01473",
+      "offset": "0x01473",
+      "old_hex": "81",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 타 map-row-479",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01474",
+      "offset": "0x01474",
+      "old_hex": "5B",
+      "new_hex": "48",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01475",
+      "offset": "0x01475",
+      "old_hex": "83",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01476",
+      "offset": "0x01476",
+      "old_hex": "5E",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01477",
+      "offset": "0x01477",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 수 map-row-288",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01478",
+      "offset": "0x01478",
+      "old_hex": "CC",
+      "new_hex": "45",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01479",
+      "offset": "0x01479",
+      "old_hex": "8F",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 정 map-row-404",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0147A",
+      "offset": "0x0147A",
+      "old_hex": "91",
+      "new_hex": "BA",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0147B",
+      "offset": "0x0147B",
+      "old_hex": "82",
+      "new_hex": "0D",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0147C",
+      "offset": "0x0147C",
+      "old_hex": "AB",
+      "new_hex": "82",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; Ｉ CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0147D",
+      "offset": "0x0147D",
+      "old_hex": "8A",
+      "new_hex": "68",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0147E",
+      "offset": "0x0147E",
+      "old_hex": "B7",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ： CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0147F",
+      "offset": "0x0147F",
+      "old_hex": "82",
+      "new_hex": "46",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01480",
+      "offset": "0x01480",
+      "old_hex": "A6",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 무 map-row-224",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01481",
+      "offset": "0x01481",
+      "old_hex": "0D",
+      "new_hex": "C2",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01482",
+      "offset": "0x01482",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 적 map-row-400",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01483",
+      "offset": "0x01483",
+      "old_hex": "68",
+      "new_hex": "B6",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01484",
+      "offset": "0x01484",
+      "old_hex": "81",
+      "new_hex": "0D",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01485",
+      "offset": "0x01485",
+      "old_hex": "46",
+      "new_hex": "82",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; Ｖ CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01486",
+      "offset": "0x01486",
+      "old_hex": "96",
+      "new_hex": "75",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01487",
+      "offset": "0x01487",
+      "old_hex": "B3",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ： CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01488",
+      "offset": "0x01488",
+      "old_hex": "93",
+      "new_hex": "46",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01489",
+      "offset": "0x01489",
+      "old_hex": "47",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 비 map-row-260",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0148A",
+      "offset": "0x0148A",
+      "old_hex": "0D",
+      "new_hex": "E6",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0148B",
+      "offset": "0x0148B",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 주 map-row-418",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0148C",
+      "offset": "0x0148C",
+      "old_hex": "75",
+      "new_hex": "C8",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0148D",
+      "offset": "0x0148D",
+      "old_hex": "81",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 얼 map-row-328",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0148E",
+      "offset": "0x0148E",
+      "old_hex": "46",
+      "new_hex": "6D",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0148F",
+      "offset": "0x0148F",
+      "old_hex": "83",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01490",
+      "offset": "0x01490",
+      "old_hex": "94",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01491",
+      "offset": "0x01491",
+      "old_hex": "83",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 스 map-row-293",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01492",
+      "offset": "0x01492",
+      "old_hex": "42",
+      "new_hex": "4A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01493",
+      "offset": "0x01493",
+      "old_hex": "83",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 킵 map-row-478",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01494",
+      "offset": "0x01494",
+      "old_hex": "57",
+      "new_hex": "47",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01495",
+      "offset": "0x01495",
+      "old_hex": "83",
+      "new_hex": "0D",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01496",
+      "offset": "0x01496",
+      "old_hex": "85",
+      "new_hex": "82",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; Ｇ CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01497",
+      "offset": "0x01497",
+      "old_hex": "83",
+      "new_hex": "66",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01498",
+      "offset": "0x01498",
+      "old_hex": "41",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ： CP932/PC-88 source character",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-01499",
+      "offset": "0x01499",
+      "old_hex": "83",
+      "new_hex": "46",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0149A",
+      "offset": "0x0149A",
+      "old_hex": "8B",
+      "new_hex": "88",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 게 map-row-19",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0149B",
+      "offset": "0x0149B",
+      "old_hex": "83",
+      "new_hex": "B1",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0149C",
+      "offset": "0x0149C",
+      "old_hex": "58",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 임 map-row-386",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0149D",
+      "offset": "0x0149D",
+      "old_hex": "83",
+      "new_hex": "A8",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0149E",
+      "offset": "0x0149E",
+      "old_hex": "4C",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-0149F",
+      "offset": "0x0149F",
+      "old_hex": "83",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A0",
+      "offset": "0x014A0",
+      "old_hex": "62",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 스 map-row-293",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A1",
+      "offset": "0x014A1",
+      "old_hex": "83",
+      "new_hex": "4A",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A2",
+      "offset": "0x014A2",
+      "old_hex": "76",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; 킵 map-row-478",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A3",
+      "offset": "0x014A3",
+      "old_hex": "0D",
+      "new_hex": "47",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A4",
+      "offset": "0x014A4",
+      "old_hex": "82",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A5",
+      "offset": "0x014A5",
+      "old_hex": "66",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A6",
+      "offset": "0x014A6",
+      "old_hex": "81",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A7",
+      "offset": "0x014A7",
+      "old_hex": "46",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A8",
+      "offset": "0x014A8",
+      "old_hex": "83",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014A9",
+      "offset": "0x014A9",
+      "old_hex": "51",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014AA",
+      "offset": "0x014AA",
+      "old_hex": "81",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014AB",
+      "offset": "0x014AB",
+      "old_hex": "5B",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014AC",
+      "offset": "0x014AC",
+      "old_hex": "83",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014AD",
+      "offset": "0x014AD",
+      "old_hex": "80",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014AE",
+      "offset": "0x014AE",
+      "old_hex": "83",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014AF",
+      "offset": "0x014AF",
+      "old_hex": "58",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B0",
+      "offset": "0x014B0",
+      "old_hex": "83",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B1",
+      "offset": "0x014B1",
+      "old_hex": "4C",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B2",
+      "offset": "0x014B2",
+      "old_hex": "83",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B3",
+      "offset": "0x014B3",
+      "old_hex": "62",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B4",
+      "offset": "0x014B4",
+      "old_hex": "83",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B5",
+      "offset": "0x014B5",
+      "old_hex": "76",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-2; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B7",
+      "offset": "0x014B7",
+      "old_hex": "83",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 리 map-row-194",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B8",
+      "offset": "0x014B8",
+      "old_hex": "8A",
+      "new_hex": "A4",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014B9",
+      "offset": "0x014B9",
+      "old_hex": "83",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 셋 map-row-280",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014BA",
+      "offset": "0x014BA",
+      "old_hex": "5A",
+      "new_hex": "FA",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014BB",
+      "offset": "0x014BB",
+      "old_hex": "83",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014BC",
+      "offset": "0x014BC",
+      "old_hex": "62",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014BD",
+      "offset": "0x014BD",
+      "old_hex": "83",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 후 map-row-551",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014BE",
+      "offset": "0x014BE",
+      "old_hex": "67",
+      "new_hex": "91",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014BF",
+      "offset": "0x014BF",
+      "old_hex": "82",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C0",
+      "offset": "0x014C0",
+      "old_hex": "B5",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C1",
+      "offset": "0x014C1",
+      "old_hex": "82",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 불 map-row-257",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C2",
+      "offset": "0x014C2",
+      "old_hex": "C4",
+      "new_hex": "E3",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C3",
+      "offset": "0x014C3",
+      "old_hex": "83",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 러 map-row-170",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C4",
+      "offset": "0x014C4",
+      "old_hex": "8D",
+      "new_hex": "8C",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C5",
+      "offset": "0x014C5",
+      "old_hex": "81",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 오 map-row-344",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C6",
+      "offset": "0x014C6",
+      "old_hex": "5B",
+      "new_hex": "7D",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C7",
+      "offset": "0x014C7",
+      "old_hex": "83",
+      "new_hex": "88",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 기 map-row-55",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C8",
+      "offset": "0x014C8",
+      "old_hex": "68",
+      "new_hex": "D5",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014C9",
+      "offset": "0x014C9",
+      "old_hex": "83",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 를 map-row-192",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014CA",
+      "offset": "0x014CA",
+      "old_hex": "58",
+      "new_hex": "A2",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014CB",
+      "offset": "0x014CB",
+      "old_hex": "83",
+      "new_hex": "81",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 　 PC-88 fullwidth-space token",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014CC",
+      "offset": "0x014CC",
+      "old_hex": "5E",
+      "new_hex": "40",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014CD",
+      "offset": "0x014CD",
+      "old_hex": "81",
+      "new_hex": "8B",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 하 map-row-521",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014CE",
+      "offset": "0x014CE",
+      "old_hex": "5B",
+      "new_hex": "72",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014CF",
+      "offset": "0x014CF",
+      "old_hex": "83",
+      "new_hex": "89",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 세 map-row-278",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D0",
+      "offset": "0x014D0",
+      "old_hex": "67",
+      "new_hex": "F8",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D1",
+      "offset": "0x014D1",
+      "old_hex": "82",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; 요 map-row-356",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D2",
+      "offset": "0x014D2",
+      "old_hex": "B5",
+      "new_hex": "8A",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D3",
+      "offset": "0x014D3",
+      "old_hex": "82",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D4",
+      "offset": "0x014D4",
+      "old_hex": "C4",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D5",
+      "offset": "0x014D5",
+      "old_hex": "89",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D6",
+      "offset": "0x014D6",
+      "old_hex": "BA",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D7",
+      "offset": "0x014D7",
+      "old_hex": "82",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D8",
+      "offset": "0x014D8",
+      "old_hex": "B3",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014D9",
+      "offset": "0x014D9",
+      "old_hex": "82",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    },
+    {
+      "id": "C-014DA",
+      "offset": "0x014DA",
+      "old_hex": "A2",
+      "new_hex": "00",
+      "evidence": "Direct final table block(s) C2-3; expected old byte read from Japanese original disk at documented raw range; ",
+      "status": "confirmed"
+    }
+  ]
+}

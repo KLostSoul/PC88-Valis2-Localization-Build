@@ -1,0 +1,324 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "A",
+  "component": "directly_supported_prologue_title_and_ui_rows",
+  "source_docs": [
+    "Prologue/Valis2_opening_runtime_analysis_0001-0552_2026-08-14.docx",
+    "Prologue/Valis2_DiskA_opening_0100_subtitle_HLBC_hook_D900_manifest_2026-06-08.json",
+    "Prologue/Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx",
+    "Prologue/Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx"
+  ],
+  "baseline": {
+    "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
+  },
+  "map_reference": {
+    "file": "source/kanji/glyph-assignment-reference.csv",
+    "sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+    "role": "character token reference"
+  },
+  "rows": [
+    {
+      "id": "TEST9 DD6C one-shot activation hook",
+      "source": "row-tables/disk-A__prologue__test9-raw-changes.csv",
+      "offset": "0x8F0C",
+      "old_hex": "2A 4F A4",
+      "new_hex": "C3 0B D9",
+      "source_record": {
+        "source_record": "TEST9 DD6C one-shot activation hook",
+        "raw_offset_hex": "0x08F0C",
+        "length_bytes": "3",
+        "ram_address": "DD6C~DD6E",
+        "old_hex": "2A 4F A4",
+        "new_hex": "C3 0B D9",
+        "status": "latest_user_runtime_verified",
+        "source_file": "Prologue/Valis2_opening_runtime_analysis_0001-0552_2026-08-14.docx",
+        "evidence": "Direct text: original DD6C bytes 2A 4F A4; final TEST9 changes only first 3 bytes to C3 0B D9; direct raw offset 0x8F0C~0x8F0E; TEST9 user QUASI88 success and SHA-256 c3746a8a25a3ac63ec76a91f1d444600d29288794b71d012ffbf51018f2c4184.",
+        "note": "TEST9 summary also lists changed spans vs TEST7, but does not provide original→new raw bytes for the other spans. See README; those spans are not encoded as patches here."
+      }
+    },
+    {
+      "id": "TEST9-RAM-D90B",
+      "source": "row-tables/disk-A__prologue__test9-ram-payloads.csv",
+      "offset": "0x8A9B",
+      "old_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "new_hex": "F5 21 C8 D8 22 46 08 21 FE D8 22 93 C6 3E C9 32 6E C1 3E 2A 32 6C DD 21 4F A4 22 6D DD F1 2A 4F A4 22 91 DD C9",
+      "source_record": {
+        "ram_start": "D90B",
+        "ram_end": "D92F",
+        "length_bytes": "37",
+        "new_hex": "F5 21 C8 D8 22 46 08 21 FE D8 22 93 C6 3E C9 32 6E C1 3E 2A 32 6C DD 21 4F A4 22 6D DD F1 2A 4F A4 22 91 DD C9",
+        "raw_offset_hex": "0x08A9B",
+        "old_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+        "status": "latest_user_runtime_verified_with_explicit_2026-06-08_RAM_to_raw_mapping",
+        "evidence_file": "Prologue/Valis2_opening_runtime_analysis_0001-0552_2026-08-14.docx",
+        "evidence_detail": "One-shot RAM activator; raw placement follows direct 6/8 mapping D900~D945 → 0x08A90~0x08AD5; base raw bytes are 00×70."
+      }
+    },
+    {
+      "id": "TEST9-RAM-D930",
+      "source": "row-tables/disk-A__prologue__test9-ram-payloads.csv",
+      "offset": "0x8AC0",
+      "old_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "new_hex": "21 F2 09 22 46 08 21 20 A4 22 93 C6 3E C8 32 6E C1 C9",
+      "source_record": {
+        "ram_start": "D930",
+        "ram_end": "D941",
+        "length_bytes": "18",
+        "new_hex": "21 F2 09 22 46 08 21 20 A4 22 93 C6 3E C8 32 6E C1 C9",
+        "raw_offset_hex": "0x08AC0",
+        "old_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+        "status": "latest_user_runtime_verified_with_explicit_2026-06-08_RAM_to_raw_mapping",
+        "evidence_file": "Prologue/Valis2_opening_runtime_analysis_0001-0552_2026-08-14.docx",
+        "evidence_detail": "Restore RAM 0846..0847, C693..C694 and C16E after third corrected token. Raw placement follows direct 6/8 mapping D900~D945 → 0x08A90~0x08AD5; base raw bytes are 00×70."
+      }
+    },
+    {
+      "id": "Disk A title バリス center-out row correction",
+      "source": "row-tables/disk-A__title__d473-raw-change.csv",
+      "offset": "0x85F3",
+      "old_hex": "CD 19 87",
+      "new_hex": "00 00 00",
+      "source_record": {
+        "source_record": "Disk A title バリス center-out row correction",
+        "ram_range": "D473~D475",
+        "raw_offset_hex": "0x085F3",
+        "length_bytes": "3",
+        "old_hex": "CD 19 87",
+        "new_hex": "00 00 00",
+        "status": "user_runtime_verified_on_title_test_d88",
+        "source_file": "Valis2_Title_Battle_CG_Payload_Analysis_2026-08-31_UPDATED_VALIS_ANIMATION_RUNTIME_SUCCESS.docx",
+        "evidence": "Direct analysis explicitly records D473~D475 CD 19 87 (CALL 8719) → 00 00 00 at D88 raw 0x85F3~0x85F5; QUASI88 title test reports normal center-out generation, central rows, left shift, and title progress.",
+        "base_sha256": "",
+        "note": "The direct title patch record gives no original-input D88 SHA-256; gate by the exact old bytes and the correct Disk A source."
+      }
+    },
+    {
+      "id": "1-02",
+      "source": "row-tables/disk-A__ui__row-comparison__2026-07-27.csv",
+      "offset": "0x16C5",
+      "old_hex": "83 41 83 69 83 8D 83 4F 81 40 83 82 83 6A 83 5E 81 5B",
+      "new_hex": "8A 5A 88 EA 89 99 88 CF 81 40 89 BC 89 4D 8B 4F 81 40",
+      "source_record": {
+        "source_sequence": "1-02",
+        "category": "C300 메뉴",
+        "use": "모니터 선택 1행",
+        "source_original": "アナログ　モニター[0D]",
+        "source_translation": "아날로그␠모니터␠",
+        "ram_range": "C305~C316",
+        "raw_offset_start": "0x16C5",
+        "raw_offset_end_inclusive": "0x16D6",
+        "source_old_hex": "83 41 83 69 83 8D 83 4F 81 40 83 82 83 6A 83 5E 81 5B",
+        "validated_japanese_original_hex": "83 41 83 69 83 8D 83 4F 81 40 83 82 83 6A 83 5E 81 5B",
+        "source_target_hex_as_printed": "89 60 82 D0 88 C5 82 BD 81 40 88 DF 82 E4 89 D1 81 40",
+        "current_map_target_hex": "8A 5A 88 EA 89 99 88 CF 81 40 89 BC 89 4D 8B 4F 81 40",
+        "current_map_references": "아=row309:8A 5A; 날=row76:88 EA; 로=row183:89 99; 그=row49:88 CF; 모=row218:89 BC; 니=row108:89 4D; 터=row486:8B 4F",
+        "baseline_disk_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8",
+        "map_csv_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+        "source_file": "Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+        "validation": "source old bytes match pinned Japanese-original Disk A; non-Hangul bytes retained from direct target hex"
+      }
+    },
+    {
+      "id": "1-03",
+      "source": "row-tables/disk-A__ui__row-comparison__2026-07-27.csv",
+      "offset": "0x16D8",
+      "old_hex": "83 66 83 57 83 5E 83 8B 81 40 83 82 83 6A 83 5E 81 5B",
+      "new_hex": "89 72 8A D4 8B 50 81 40 89 BC 89 4D 8B 4F 81 40 81 40",
+      "source_record": {
+        "source_sequence": "1-03",
+        "category": "C300 메뉴",
+        "use": "모니터 선택 2행",
+        "source_original": "デジタル　モニター[00]",
+        "source_translation": "디지털␠모니터␠␠",
+        "ram_range": "C318~C329",
+        "raw_offset_start": "0x16D8",
+        "raw_offset_end_inclusive": "0x16E9",
+        "source_old_hex": "83 66 83 57 83 5E 83 8B 81 40 83 82 83 6A 83 5E 81 5B",
+        "validated_japanese_original_hex": "83 66 83 57 83 5E 83 8B 81 40 83 82 83 6A 83 5E 81 5B",
+        "source_target_hex_as_printed": "88 AB 89 B3 89 D2 81 40 88 DF 82 E4 89 D1 81 40 81 40",
+        "current_map_target_hex": "89 72 8A D4 8B 50 81 40 89 BC 89 4D 8B 4F 81 40 81 40",
+        "current_map_references": "디=row145:89 72; 지=row430:8A D4; 털=row487:8B 50; 모=row218:89 BC; 니=row108:89 4D; 터=row486:8B 4F",
+        "baseline_disk_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8",
+        "map_csv_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+        "source_file": "Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+        "validation": "source old bytes match pinned Japanese-original Disk A; non-Hangul bytes retained from direct target hex"
+      }
+    },
+    {
+      "id": "1-04",
+      "source": "row-tables/disk-A__ui__row-comparison__2026-07-27.csv",
+      "offset": "0x16EB",
+      "old_hex": "83 43 83 6A 83 56 83 83 83 8B 81 45 83 58 83 5E 81 5B 83 67",
+      "new_hex": "8A E7 8A 9F 8B 72 88 D5 81 40 81 40 81 40 81 40 81 40 81 40",
+      "source_record": {
+        "source_sequence": "1-04",
+        "category": "C300 메뉴",
+        "use": "시작 메뉴 1행",
+        "source_original": "イニシャル・スタート[0D]",
+        "source_translation": "처음하기[0D]",
+        "ram_range": "C32B~C33E",
+        "raw_offset_start": "0x16EB",
+        "raw_offset_end_inclusive": "0x16FE",
+        "source_old_hex": "83 43 83 6A 83 56 83 83 83 8B 81 45 83 58 83 5E 81 5B 83 67",
+        "validated_japanese_original_hex": "83 43 83 6A 83 56 83 83 83 8B 81 45 83 58 83 5E 81 5B 83 67",
+        "source_target_hex_as_printed": "89 BA 89 8B 89 E2 82 C1 81 40 81 40 81 40 81 40 81 40 81 40",
+        "current_map_target_hex": "8A E7 8A 9F 8B 72 88 D5 81 40 81 40 81 40 81 40 81 40 81 40",
+        "current_map_references": "처=row449:8A E7; 음=row377:8A 9F; 하=row521:8B 72; 기=row55:88 D5",
+        "baseline_disk_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8",
+        "map_csv_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+        "source_file": "Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+        "validation": "source old bytes match pinned Japanese-original Disk A; non-Hangul bytes retained from direct target hex"
+      }
+    },
+    {
+      "id": "1-05",
+      "source": "row-tables/disk-A__ui__row-comparison__2026-07-27.csv",
+      "offset": "0x1700",
+      "old_hex": "83 8D 81 5B 83 68 81 40 81 40 81 45 83 58 83 5E 81 5B 83 67",
+      "new_hex": "89 E3 89 8C 8A 7D 88 D5 81 40 81 40 81 40 81 40 81 40 81 40",
+      "source_record": {
+        "source_sequence": "1-05",
+        "category": "C300 메뉴",
+        "use": "시작 메뉴 2행",
+        "source_original": "ロード　　・スタート[00]",
+        "source_translation": "불러오기[00]",
+        "ram_range": "C340~C353",
+        "raw_offset_start": "0x1700",
+        "raw_offset_end_inclusive": "0x1713",
+        "source_old_hex": "83 8D 81 5B 83 68 81 40 81 40 81 45 83 58 83 5E 81 5B 83 67",
+        "validated_japanese_original_hex": "83 8D 81 5B 83 68 81 40 81 40 81 45 83 58 83 5E 81 5B 83 67",
+        "source_target_hex_as_printed": "88 FC 88 BB 89 E2 82 C1 81 40 81 40 81 40 81 40 81 40 81 40",
+        "current_map_target_hex": "89 E3 89 8C 8A 7D 88 D5 81 40 81 40 81 40 81 40 81 40 81 40",
+        "current_map_references": "불=row257:89 E3; 러=row170:89 8C; 오=row344:8A 7D; 기=row55:88 D5",
+        "baseline_disk_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8",
+        "map_csv_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+        "source_file": "Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+        "validation": "source old bytes match pinned Japanese-original Disk A; non-Hangul bytes retained from direct target hex"
+      }
+    },
+    {
+      "id": "1-06",
+      "source": "row-tables/disk-A__ui__row-comparison__2026-07-27.csv",
+      "offset": "0x1715",
+      "old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DE 81 40 81 40",
+      "new_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A A6 8A 9F 81 40 81 40",
+      "source_record": {
+        "source_sequence": "1-06",
+        "category": "C300 메뉴",
+        "use": "PCM 선택 1행",
+        "source_original": "ＰＣＭ　データを読む[0D]",
+        "source_translation": "PCM데이터를␠읽음␠␠[0D]",
+        "ram_range": "C355~C36C",
+        "raw_offset_start": "0x1715",
+        "raw_offset_end_inclusive": "0x172C",
+        "source_old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DE 81 40 81 40",
+        "validated_japanese_original_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DE 81 40 81 40",
+        "source_target_hex_as_printed": "82 6F 82 62 82 6C 82 F0 89 8D 89 D1 88 CA 81 40 89 90 89 8B 81 40 81 40",
+        "current_map_target_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A A6 8A 9F 81 40 81 40",
+        "current_map_references": "데=row124:89 5D; 이=row380:8A A2; 터=row486:8B 4F; 를=row192:89 A2; 읽=row384:8A A6; 음=row377:8A 9F",
+        "baseline_disk_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8",
+        "map_csv_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+        "source_file": "Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+        "validation": "source old bytes match pinned Japanese-original Disk A; non-Hangul bytes retained from direct target hex"
+      }
+    },
+    {
+      "id": "1-07",
+      "source": "row-tables/disk-A__ui__row-comparison__2026-07-27.csv",
+      "offset": "0x172E",
+      "old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DC 82 C8 82 A2",
+      "new_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A 5C 81 40 8A A6 8A 9F",
+      "source_record": {
+        "source_sequence": "1-07",
+        "category": "C300 메뉴",
+        "use": "PCM 선택 2행",
+        "source_original": "ＰＣＭ　データを読まない[00]",
+        "source_translation": "ＰＣＭ데이터를␠안␠읽음[00]",
+        "ram_range": "C36E~C385",
+        "raw_offset_start": "0x172E",
+        "raw_offset_end_inclusive": "0x1745",
+        "source_old_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DC 82 C8 82 A2",
+        "validated_japanese_original_hex": "82 6F 82 62 82 6C 81 40 83 66 81 5B 83 5E 82 F0 93 C7 82 DC 82 C8 82 A2",
+        "source_target_hex_as_printed": "82 6F 82 62 82 6C 82 F0 89 8D 89 D1 88 CA 81 40 89 62 81 40 89 90 89 8B",
+        "current_map_target_hex": "82 6F 82 62 82 6C 89 5D 8A A2 8B 4F 89 A2 81 40 8A 5C 81 40 8A A6 8A 9F",
+        "current_map_references": "데=row124:89 5D; 이=row380:8A A2; 터=row486:8B 4F; 를=row192:89 A2; 안=row311:8A 5C; 읽=row384:8A A6; 음=row377:8A 9F",
+        "baseline_disk_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8",
+        "map_csv_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+        "source_file": "Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+        "validation": "source old bytes match pinned Japanese-original Disk A; non-Hangul bytes retained from direct target hex"
+      }
+    },
+    {
+      "id": "2-02",
+      "source": "row-tables/disk-A__ui__row-comparison__2026-07-27.csv",
+      "offset": "0x3AE4",
+      "old_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 82 C9 93 FC 82 EA 82 C4 00",
+      "new_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 89 A2 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 8A 72 81 40 88 F7 88 BB 00",
+      "source_record": {
+        "source_sequence": "2-02",
+        "category": "저주소 안내",
+        "use": "디스크 교체 안내",
+        "source_original": "ＤＩＳＫ　Ａ　を　ＤＲＩＶＥ　１[0D]に入れて[00]",
+        "source_translation": "ＤＩＳＫ␠Ａ␠를␠ＤＲＩＶＥ␠１[0D]에␠넣고[00]",
+        "ram_range": "0693~06BD(+00)",
+        "raw_offset_start": "0x3AE4",
+        "raw_offset_end_inclusive": "0x3B0D",
+        "source_old_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 82 C9 93 FC 82 EA 82 C4 00",
+        "validated_japanese_original_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 82 F0 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 82 C9 93 FC 82 EA 82 C4 00",
+        "source_target_hex_as_printed": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 88 CA 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 89 70 81 40 82 D8 82 B1 00",
+        "current_map_target_hex": "82 63 82 68 82 72 82 6A 81 40 82 60 81 40 89 A2 81 40 82 63 82 71 82 68 82 75 82 64 81 40 82 50 0D 8A 72 81 40 88 F7 88 BB 00",
+        "current_map_references": "를=row192:89 A2; 에=row333:8A 72; 넣=row89:88 F7; 고=row29:88 BB",
+        "baseline_disk_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8",
+        "map_csv_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+        "source_file": "Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+        "validation": "source old bytes match pinned Japanese-original Disk A; non-Hangul bytes retained from direct target hex"
+      }
+    },
+    {
+      "id": "2-03",
+      "source": "row-tables/disk-A__ui__row-comparison__2026-07-27.csv",
+      "offset": "0x3B0E",
+      "old_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+      "new_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 89 A2 0D 89 49 89 8C 81 40 8A C8 89 F8 8A 8A 81 42 00",
+      "source_record": {
+        "source_sequence": "2-03",
+        "category": "저주소 안내",
+        "use": "키 입력 안내",
+        "source_original": "ＲＥＴＵＲＮ　ＫＥＹを[0D]押して下さい。[00]",
+        "source_translation": "ＲＥＴＵＲＮ␠ＫＥＹ를[0D]눌러␠주세요。[00]",
+        "ram_range": "06BE~06E3(+00)",
+        "raw_offset_start": "0x3B0E",
+        "raw_offset_end_inclusive": "0x3B33",
+        "source_old_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+        "validated_japanese_original_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 82 F0 0D 89 9F 82 B5 82 C4 89 BA 82 B3 82 A2 81 42 00",
+        "source_target_hex_as_printed": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 88 CA 0D 82 E1 88 BB 81 40 89 AA 89 4E 89 80 81 42 00",
+        "current_map_target_hex": "82 71 82 64 82 73 82 74 82 71 82 6D 81 40 82 6A 82 64 82 78 89 A2 0D 89 49 89 8C 81 40 8A C8 89 F8 8A 8A 81 42 00",
+        "current_map_references": "를=row192:89 A2; 눌=row104:89 49; 러=row170:89 8C; 주=row418:8A C8; 세=row278:89 F8; 요=row356:8A 8A",
+        "baseline_disk_sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8",
+        "map_csv_sha256": "124f75195c9def000faf440f2a1bf1708277a0188e1737166246cf7c1b19d7ff",
+        "source_file": "Valis2_DiskA_UI_text_translation_source_KANJI0361_REENCODED_2026-07-27.docx",
+        "validation": "source old bytes match pinned Japanese-original Disk A; non-Hangul bytes retained from direct target hex"
+      }
+    }
+  ],
+  "validation": "Every listed old byte range matched the pinned Japanese-original Disk A hash; UI rows use the direct 7/27 translation and current Hangul map cross-reference.",
+  "unmapped_test9_ram_payloads": [
+    "D8C8~D8FC",
+    "D8FD",
+    "D8FE~D90A"
+  ],
+  "gaps": [
+    {
+      "source_sequence": "2-01",
+      "reason": "Direct target text has 26 visible glyph slots, while the direct target hex and fixed source block have 25 glyph slots."
+    },
+    {
+      "source_sequence": "3-02",
+      "reason": "Direct target text begins with a space, while direct target hex begins with a Hangul token; the space token must be 81 40."
+    },
+    {
+      "source_sequences": "1-01, 1-08..1-17, 3-01, 3-03",
+      "reason": "The direct worktable leaves the Korean target bytes blank or calls for boundary review."
+    }
+  ]
+}

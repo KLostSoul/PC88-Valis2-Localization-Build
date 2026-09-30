@@ -1,0 +1,43 @@
+{
+  "schema": "valis2.manual_build_source_baseline.v1",
+  "description": "Japanese source disk and original KANJI1.ROM identities, plus the Korean KANJI1.ROM identity generated from the final 558-row hangul.csv glyph table.",
+  "kanji1_source": {
+    "size_bytes": 131072,
+    "sha256": "7608040cffb1951e5cc567abb63f75b5746777a1ba96196c1b75606b793bb4bb"
+  },
+  "kanji1": {
+    "file": "KANJI1.ROM",
+    "size_bytes": 131072,
+    "sha256": "e5646601d83fc2685340a183fa50d3c4fca8daf449acefc35544ef790e775aab"
+  },
+  "disks": {
+    "A": {
+      "size_bytes": 415840,
+      "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
+    },
+    "B": {
+      "size_bytes": 415840,
+      "sha256": "6537b681f8c24aa92be608f99dc61ef8da9afa1b6569450dba1dd5d7d00e3919"
+    },
+    "C": {
+      "size_bytes": 415840,
+      "sha256": "396f79df59d3263b801126943d03f0c63b232a52a6256a0994254d83031fabda"
+    },
+    "D": {
+      "size_bytes": 416688,
+      "sha256": "bd453f4576705a224a6b1775d2e7d0d2d499efd49075ff0b2b4b0b419549dd6d"
+    },
+    "E": {
+      "size_bytes": 416688,
+      "sha256": "905c9b0dbc402bb6134b63a67f3615ab0adf79a191ff87cdf365903138cefede"
+    },
+    "F": {
+      "size_bytes": 415840,
+      "sha256": "8569ee720c0df24293066fc3589c1a204edc102ef57abc3a6529c16ec8a4041b"
+    },
+    "G": {
+      "size_bytes": 415840,
+      "sha256": "d933a387f6afe847345482070cd1e23ca4158f6d49144a99ef9ebbdb864c56f7"
+    }
+  }
+}

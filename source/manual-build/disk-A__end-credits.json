@@ -1,0 +1,338 @@
+{
+  "schema": "valis2.manual_patch_set.v1",
+  "disk": "A",
+  "component": "end_credits_repacked_stream",
+  "complete": true,
+  "baseline": {
+    "size_bytes": 415840,
+    "sha256": "4e1e3f5a21b66bb9c57ab20f6522c95c8074dc9120f92d395eacdb673d9a3bd8"
+  },
+  "source_docs": [
+    "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx",
+    "analysis/itemized/11_Valis2Project15_분석.md"
+  ],
+  "layout": {
+    "stream_ram_start": "0xC9C8",
+    "stream_ram_end_inclusive": "0xD2EF",
+    "translated_stream_bytes": 2265,
+    "terminator_ram": "0xD2A0",
+    "zero_fill_ram_start": "0xD2A1",
+    "zero_fill_bytes": 79,
+    "payload_sha256": "885838b93a77382f42c728b77f8e8b631d86d8c1c80eaefbcdff261e820e3bf1",
+    "segments": [
+      {
+        "source_row": "01",
+        "ram_range": "C9C8~CACC",
+        "section": "출연",
+        "translated_text": "[00][00]␠␠␠␠␠■출연■[0D][0D]␠␠␠아소␠␠␠유코[01 02 02]␠␠␠다이몬␠␠메가스[01 02 02]␠␠크리스토발␠바리아[01 02 02]␠␠크리스토발␠바르나[01 02 02]␠␠␠조르다노␠하이젠[01 02 02]␠␠␠기욤␠␠␠가이아스[01 02 02]␠␠␠바르프␠데␠다리스[01 02 02]␠␠␠안게로␠␠자르가[01 02 02]␠␠␠키리시마␠레이코[00]",
+        "payload_start": 0,
+        "payload_end_exclusive": 247,
+        "payload_bytes": 247,
+        "control_notes": "이름 사이 01 02 02 반복 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-2"
+      },
+      {
+        "source_row": "02",
+        "ram_range": "CACD~CAED",
+        "section": "타이틀",
+        "translated_text": "[0D][0D]␠★ＶＡＬＩＳⅡ␠ＳＴＡＦＦ★[00]",
+        "payload_start": 247,
+        "payload_end_exclusive": 280,
+        "payload_bytes": 33,
+        "control_notes": "앞 0D 0D / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-3"
+      },
+      {
+        "source_row": "03",
+        "ram_range": "CAEE~CB27",
+        "section": "게임 디자인",
+        "translated_text": "␠␠␠＜게임␠디자인＞[0D][0D][0D]␠␠ＶＡＬＩＳⅡ␠ＳＴＡＦＦ[00]",
+        "payload_start": 280,
+        "payload_end_exclusive": 334,
+        "payload_bytes": 54,
+        "control_notes": "내부 0D×3 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-4"
+      },
+      {
+        "source_row": "04",
+        "ram_range": "CB28~CB5D",
+        "section": "시나리오/원안",
+        "translated_text": "␠␠＜시나리오／게임원안＞[0D][0D][0D]␠␠␠아카호리␠히로시[00]",
+        "payload_start": 334,
+        "payload_end_exclusive": 386,
+        "payload_bytes": 52,
+        "control_notes": "내부 0D×3 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-5"
+      },
+      {
+        "source_row": "05",
+        "ram_range": "CB5E~CB91",
+        "section": "게임 프로그램",
+        "translated_text": "␠␠␠＜게임프로그램＞[0D][0D][0D]␠␠␠타나아미␠타다시[00]",
+        "payload_start": 386,
+        "payload_end_exclusive": 434,
+        "payload_bytes": 48,
+        "control_notes": "내부 0D×3 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-6"
+      },
+      {
+        "source_row": "06",
+        "ram_range": "CB92~CBC7",
+        "section": "비주얼 프로그램",
+        "translated_text": "␠␠＜비주얼␠프로그램＞[0D][0D][0D]␠␠␠카지␠␠␠야스유키[00]",
+        "payload_start": 434,
+        "payload_end_exclusive": 486,
+        "payload_bytes": 52,
+        "control_notes": "내부 0D×3 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-7"
+      },
+      {
+        "source_row": "07",
+        "ram_range": "CBC8~CBFB",
+        "section": "PC-98 프로그램",
+        "translated_text": "␠␠＜ＰＣ９８프로그램＞[0D][0D][0D]␠␠␠야마모토␠마사야스[00]",
+        "payload_start": 486,
+        "payload_end_exclusive": 538,
+        "payload_bytes": 52,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-8"
+      },
+      {
+        "source_row": "08",
+        "ram_range": "CBFC~CC49",
+        "section": "MSX2 프로그램",
+        "translated_text": "␠␠␠＜ＭＳＸ２프로그램＞[0D][0D][0D]␠␠␠카지␠␠␠야스유키[0D]␠␠␠요시다␠␠히로시[00]",
+        "payload_start": 538,
+        "payload_end_exclusive": 615,
+        "payload_bytes": 77,
+        "control_notes": "중간 0D / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-9"
+      },
+      {
+        "source_row": "09",
+        "ram_range": "CC4A~CC7F",
+        "section": "X68000 프로그램",
+        "translated_text": "␠＜Ｘ６８０００프로그램＞[0D][0D][0D]␠␠␠야마모토␠마사야스[00]",
+        "payload_start": 615,
+        "payload_end_exclusive": 669,
+        "payload_bytes": 54,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-10"
+      },
+      {
+        "source_row": "10",
+        "ram_range": "CC80~CCB4",
+        "section": "배경 그래픽",
+        "translated_text": "␠␠␠＜배경␠그래픽＞[0D][0D][0D]␠␠␠키쿠치␠␠에이지[00]",
+        "payload_start": 669,
+        "payload_end_exclusive": 717,
+        "payload_bytes": 48,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-11"
+      },
+      {
+        "source_row": "11",
+        "ram_range": "CCB5~CD1D",
+        "section": "캐릭터 그래픽",
+        "translated_text": "␠␠＜캐릭터␠그래픽＞[0D][0D][0D]␠␠␠코노␠␠␠슈이치[01 02 02]␠␠␠␠␠ｔｈａｎｋｓ[0D]␠␠␠스와␠␠␠이사오[00]",
+        "payload_start": 717,
+        "payload_end_exclusive": 813,
+        "payload_bytes": 96,
+        "control_notes": "중간 01 02 02 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-12"
+      },
+      {
+        "source_row": "12",
+        "ram_range": "CD1E~CD5C",
+        "section": "콘티/캐릭터 디자인",
+        "translated_text": "＜그림␠콘티／캐릭터␠디자인＞[0D][0D][0D]␠␠␠토코로␠␠토모카즈[00]",
+        "payload_start": 813,
+        "payload_end_exclusive": 871,
+        "payload_bytes": 58,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-13"
+      },
+      {
+        "source_row": "13",
+        "ram_range": "CD5D~CDD9",
+        "section": "비주얼 디자인",
+        "translated_text": "␠␠＜비주얼␠디자인＞[0D][0D]␠␠␠토코로␠␠토모카즈[0D]␠␠␠하시모토␠리츠로[01 02 02]␠␠␠오타␠␠␠히로마사[0D]␠␠␠이와타␠␠타카키[00]",
+        "payload_start": 871,
+        "payload_end_exclusive": 993,
+        "payload_bytes": 122,
+        "control_notes": "중간 01 02 02 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-14"
+      },
+      {
+        "source_row": "14",
+        "ram_range": "CDDA~CE11",
+        "section": "음악 표제",
+        "translated_text": "[0D]␠␠ＡＬＬ␠ＭＵＳＩＣ␠ｂｙ[0D]␠␠␠␠␠★␠유음인␠★[00]",
+        "payload_start": 993,
+        "payload_end_exclusive": 1048,
+        "payload_bytes": 55,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-15"
+      },
+      {
+        "source_row": "15",
+        "ram_range": "CE12~CE72",
+        "section": "작곡/편곡",
+        "translated_text": "␠␠␠␠＜작곡／편곡＞[0D][0D]␠␠␠오가와␠␠시노부[0D]␠␠␠사토␠␠␠텐페이[0D]␠␠␠카지하라␠마사히로[00]",
+        "payload_start": 1048,
+        "payload_end_exclusive": 1143,
+        "payload_bytes": 95,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-16"
+      },
+      {
+        "source_row": "16",
+        "ram_range": "CE73~CEA5",
+        "section": "효과음",
+        "translated_text": "␠␠␠␠␠＜효과음＞[0D][0D][0D]␠␠␠카지하라␠마사히로[00]",
+        "payload_start": 1143,
+        "payload_end_exclusive": 1191,
+        "payload_bytes": 48,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-17"
+      },
+      {
+        "source_row": "17",
+        "ram_range": "CEA6~CEDA",
+        "section": "매니퓰레이트",
+        "translated_text": "␠␠␠␠＜음원␠조정＞[0D][0D][0D]␠␠␠야마모토␠마사야스[00]",
+        "payload_start": 1191,
+        "payload_end_exclusive": 1241,
+        "payload_bytes": 50,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-18"
+      },
+      {
+        "source_row": "18",
+        "ram_range": "CEDB~CF37",
+        "section": "성우",
+        "translated_text": "␠␠␠␠␠＜성우＞[0D][0D][0D]☆유코・・・・시마모토␠스미[01 03 02]☆레이코・・・한타니␠␠키미에[00]",
+        "payload_start": 1241,
+        "payload_end_exclusive": 1324,
+        "payload_bytes": 83,
+        "control_notes": "중간 01 03 02 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-19"
+      },
+      {
+        "source_row": "19",
+        "ram_range": "CF38~D08A",
+        "section": "ASSIST",
+        "translated_text": "[02 0E]␠␠␠␠＜ＡＳＳＩＳＴ＞[0D][0D]␠␠␠오노␠␠␠요이치[0D]␠␠␠나카하라␠준지[01 02 02]␠␠␠타카이␠␠마사히코[0D]␠␠␠시바야마␠유이나[01 02 02]␠␠␠혼마␠␠␠히로시[0D]␠␠␠카쿠무␠␠히토시[01 02 02]␠␠␠카마타␠␠야스히코[0D]␠␠␠히노␠␠␠아키히로[01 02 02]␠␠␠사에구사␠히로유키[0D]␠␠␠이와타␠␠타카키[01 02 02]␠␠␠마나코␠␠토모야스[01 02 02]␠␠␠ｔｈａｎｋｓ[0D]␠␠␠오다기리␠타로[00]",
+        "payload_start": 1324,
+        "payload_end_exclusive": 1665,
+        "payload_bytes": 341,
+        "control_notes": "앞 02 0E / 이름 사이 01 02 02 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-20"
+      },
+      {
+        "source_row": "20",
+        "ram_range": "D08B~D0C5",
+        "section": "패키지 일러스트",
+        "translated_text": "[02 16]␠␠␠＜패키지␠일러스트＞[0D][0D][0D]␠␠␠토코로␠␠토모카즈[00]",
+        "payload_start": 1665,
+        "payload_end_exclusive": 1721,
+        "payload_bytes": 56,
+        "control_notes": "앞 02 16 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-21"
+      },
+      {
+        "source_row": "21",
+        "ram_range": "D0C6~D0F8",
+        "section": "로고 디자인",
+        "translated_text": "␠␠␠␠＜로고␠디자인＞[0D][0D][0D]␠␠␠토리사와␠야스시[00]",
+        "payload_start": 1721,
+        "payload_end_exclusive": 1771,
+        "payload_bytes": 50,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-22"
+      },
+      {
+        "source_row": "22",
+        "ram_range": "D0F9~D221",
+        "section": "PROMOTION",
+        "translated_text": "[02 0E]␠␠␠＜프로모션＞[0D][0D]␠␠␠후쿠시마␠지로[0D]␠␠␠후쿠시마␠카즈유키[01 02 02]␠␠␠후쿠시마␠유지[0D]␠␠␠시부야␠␠요시타카[01 02 02]␠␠␠키노시타␠타카미[0D]␠␠␠코노␠␠␠요시아키[01 02 02]␠␠␠세키노␠␠마유미[0D]␠␠␠미우라␠␠토모코[01 02 02]␠␠␠코하마␠␠유키코[0D]␠␠␠나카가와␠유키코[0D][01 02 02]␠␠␠카자미␠␠시로[00]",
+        "payload_start": 1771,
+        "payload_end_exclusive": 2057,
+        "payload_bytes": 286,
+        "control_notes": "앞 02 0E / 내부 01 02 02 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-23"
+      },
+      {
+        "source_row": "23",
+        "ram_range": "D222~D258",
+        "section": "협력",
+        "translated_text": "␠␠␠␠␠␠협␠␠력[0D][0D][0D]␠␠신일본␠레이저␠소프트（주）[00]",
+        "payload_start": 2057,
+        "payload_end_exclusive": 2113,
+        "payload_bytes": 56,
+        "control_notes": "내부 0D×3 / 끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-24"
+      },
+      {
+        "source_row": "24",
+        "ram_range": "D259~D28F",
+        "section": "special thanks",
+        "translated_text": "␠ｓｐｅｃｉａｌ␠ｔｈａｎｋｓ[0D][0D][0D]␠␠␠후쿠시마␠타카시[00]",
+        "payload_start": 2113,
+        "payload_end_exclusive": 2169,
+        "payload_bytes": 56,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-25"
+      },
+      {
+        "source_row": "25",
+        "ram_range": "D290~D2CB",
+        "section": "제작/저작",
+        "translated_text": "␠␠␠␠␠제작・저작␠[0D][0D][0D]（주）일본␠텔레네트␠␠１９８９．[00]",
+        "payload_start": 2169,
+        "payload_end_exclusive": 2229,
+        "payload_bytes": 60,
+        "control_notes": "끝 00",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-26"
+      },
+      {
+        "source_row": "26",
+        "ram_range": "D2CC~D2EF",
+        "section": "종료",
+        "translated_text": "[0D][0D]␠␠␠␠ＴＨＥ␠ＥＮＤ[01 04 01]␠[01 04 01]␠[00][FF]",
+        "payload_start": 2229,
+        "payload_end_exclusive": 2265,
+        "payload_bytes": 36,
+        "control_notes": "후반 01 04 01 / ␠ / 01 04 01 / ␠ / 00 / D2EF=FF",
+        "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-row-27"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "A-CREDITS-09B98",
+      "offset": "0x09B98",
+      "old_hex": "00 00 81 40 81 40 81 40 81 40 81 40 81 A1 8F 6F 89 89 81 A1 0D 0D 81 40 81 40 81 40 81 40 81 40 96 83 90 B6 81 40 97 44 8E 71 01 02 02 81 40 81 40 81 40 83 5F 83 43 83 82 83 93 81 45 83 81 83 4B 83 58 01 02 02 81 40 81 40 83 4E 83 8A 83 58 83 67 83 6F 83 8B 81 45 83 94 83 40 83 8A 83 41 01 02 02 81 40 81 40 83 4E 83 8A 83 58 83 67 83 6F 83 8B 81 45 83 94 83 40 83 8B 83 69 01 02 02 81 40 81 40 83 57 83 87 83 8B 83 5F 81 5B 83 6D 81 45 83 6E 83 43 83 5B 83 93 01 02 02 81 40 81 40 81 40 83 4D 83 87 81 5B 83 80 81 45 83 4B 83 43 83 41 83 58 01 02 02 81 40 81 40 81 40 83 6F 83 8B 81 5B 83 74 81 45 83 66 81 45 83 5F 83 8A 83 58 01 02 02 81 40 81 40 81 40 83 41 83 93 83 51 83 8D 81 45 83 55 83 8B 81 5B 83 4B 01 02 02 81 40 81 40 81 40 81 40 8B CB 93 87 81 40 81 40 97 ED 8E 71 00 0D 0D 81 40 81 9A 82 75 82 60 82 6B 82 68 82 72 87 55 81 40 82 72 82 73 82 60 82 65 82 65 81 9A 00 81 40 81 40 81 40 81 83 83 51 81 5B 83 80 81 40 83 66 83 55 83 43 83 93 81 84 0D 0D 0D 81 40 81 40 82 75 82 60 82 6B 82 68 82 72 87 55 81 40 82 72 82 73 82 60 82 65 82 65 00 81 40 81 40 81 83 83 56 83 69 83 8A 83 49 81 5E 83 51 81 5B 83 80 8C B4 88 C4 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 90 D4 96 78 81 40 81 40 81 40 8D 5F 00 81 40 81 40 81 40 81 83 83 51 81 5B 83 80 83 76 83 8D 83 4F 83 89 83 80 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 93 63 96 BC 96 D4 81 40 81 40 90 B3 00 81 40 81 40 81 83 83 72 83 57 83 85 83 41 83 8B 83 76 83 8D 83 4F 83 89 83 80 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 9E B5 81 40 81 40 81 40 91 D7 8D 73 00 81 40 81 40 81 83 82 6F 82 62 82 58 82 57 83 76 83 8D 83 4F 83 89 83 80 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 8E 52 96 7B 81 40 81 40 89 EB 8D 4E 00 81 40 81 40",
+      "new_hex": "00 00 81 40 81 40 81 40 81 40 81 40 81 A1 8A F0 8A 76 81 A1 0D 0D 81 40 81 40 81 40 8A 5A 8A 40 81 40 81 40 81 40 8A 99 8A FC 01 02 02 81 40 81 40 81 40 89 50 8A A2 89 BE 81 40 81 40 89 B7 88 9F 8A 4A 01 02 02 81 40 81 40 8B 42 89 A4 8A 4A 8B 56 89 D0 81 40 89 CC 89 A4 8A 5A 01 02 02 81 40 81 40 8B 42 89 A4 8A 4A 8B 56 89 D0 81 40 89 CC 89 A0 88 E8 01 02 02 81 40 81 40 81 40 8A BF 89 A0 89 50 89 40 81 40 8B 72 8A A2 8A BC 01 02 02 81 40 81 40 81 40 88 D5 8A 8C 81 40 81 40 81 40 88 9F 8A A2 8A 5A 8A 4A 01 02 02 81 40 81 40 81 40 89 CC 89 A0 8B 6B 81 40 89 5D 81 40 89 50 89 A4 8A 4A 01 02 02 81 40 81 40 81 40 8A 5C 88 B1 89 99 81 40 81 40 8A AD 89 A0 88 9F 01 02 02 81 40 81 40 81 40 8B 46 89 A4 8A 4F 89 AA 81 40 89 93 8A A2 8A FC 00 0D 0D 81 40 81 9A 82 75 82 60 82 6B 82 68 82 72 87 55 81 40 82 72 82 73 82 60 82 65 82 65 81 9A 00 81 40 81 40 81 40 81 83 88 B1 8A A8 81 40 89 72 8A AD 8A A4 81 84 0D 0D 0D 81 40 81 40 82 75 82 60 82 6B 82 68 82 72 87 55 81 40 82 72 82 73 82 60 82 65 82 65 00 81 40 81 40 81 83 8A 4F 88 E8 89 A4 8A 7D 81 5E 88 B1 8A A8 8A 94 8A 5C 81 84 0D 0D 0D 81 40 81 40 81 40 8A 5A 8A F7 8B 87 89 A4 81 40 8B 97 89 99 8A 4F 00 81 40 81 40 81 40 81 83 88 B1 8A A8 8B 6B 89 99 88 CF 89 89 81 84 0D 0D 0D 81 40 81 40 81 40 8B 48 88 E8 8A 5A 89 C9 81 40 8B 48 89 50 8A 4F 00 81 40 81 40 81 83 89 E6 8A C8 8A 6D 81 40 8B 6B 89 99 88 CF 89 89 81 84 0D 0D 0D 81 40 81 40 81 40 8A F7 8A D4 81 40 81 40 81 40 8A 66 8A 4A 8A 99 8B 46 00 81 40 81 40 81 83 82 6F 82 62 82 58 82 57 8B 6B 89 99 88 CF 89 89 81 84 0D 0D 0D 81 40 81 40 81 40 8A 66 89 AA 89 BC 8B 56 81 40 89 AA 89 EB 8A 66 8A 4A 00 81 40 81 40 81 40 81 83 82 6C 82 72 82 77 82 51 8B 6B 89 99 88 CF 89 89 81 84 0D 0D 0D 81",
+      "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-rows-2-9; Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-5; analysis/itemized/11_Valis2Project15_분석.md#section-4; raw CHRN (3, 1, 4, 3)",
+      "status": "confirmed"
+    },
+    {
+      "id": "A-CREDITS-09DE0",
+      "offset": "0x09DE0",
+      "old_hex": "81 40 81 83 82 6C 82 72 82 77 82 51 83 76 83 8D 83 4F 83 89 83 80 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 9E B5 81 40 81 40 81 40 91 D7 8D 73 0D 81 40 81 40 81 40 81 40 81 40 8B 67 93 63 81 40 81 40 81 40 8D 5F 0D 00 81 40 81 83 82 77 82 55 82 57 82 4F 82 4F 82 4F 83 76 83 8D 83 4F 83 89 83 80 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 8E 52 96 7B 81 40 81 40 89 EB 8D 4E 00 81 40 81 40 81 40 81 83 94 77 8C 69 83 4F 83 89 83 74 83 42 83 62 83 4E 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 8B 65 92 72 81 40 81 40 89 68 93 F1 0D 00 81 40 81 83 83 4C 83 83 83 89 83 4E 83 5E 81 5B 83 4F 83 89 83 74 83 42 83 62 83 4E 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 89 CD 96 EC 81 40 81 40 8F 47 88 EA 01 02 02 81 40 81 40 81 40 81 40 81 40 82 94 82 88 82 81 82 8E 82 8B 82 93 0D 81 40 81 40 81 40 81 40 81 40 90 7B 89 48 81 40 82 A2 82 B3 82 A8 0D 00 81 83 8A 47 83 52 83 93 83 65 81 5E 83 4C 83 83 83 89 83 4E 83 5E 81 5B 83 66 83 55 83 43 83 93 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 82 C6 82 B1 82 EB 81 40 82 C6 82 E0 82 A9 82 B8 0D 00 81 40 81 40 81 83 83 72 83 57 83 85 83 41 83 8B 83 66 83 55 83 43 83 93 81 84 0D 0D 81 40 81 40 81 40 81 40 81 40 8F 8A 81 40 81 40 81 40 92 71 88 EA 81 40 0D 81 40 81 40 81 40 81 40 81 40 8B B4 96 7B 81 40 81 40 97 A7 98 59 01 02 02 81 40 81 40 81 40 81 40 81 40 91 BE 93 63 81 40 81 40 91 E5 89 EB 0D 81 40 81 40 81 40 81 40 81 40 8A E2 93 63 81 40 81 40 97 B2 8E F7 0D 00 0D 81 40 81 40 82 60 82 6B 82 6B 81 40 82 6C 82 74 82 72 82 68 82 62 81 40 82 82 82 99 0D 81 40 81 40 81 40 81 40 81 40 81 9A 81 40 97 56 89 B9 90 6C 81 40 81 9A 0D 00 81 40 81 40 81 40 81 40 81 83 8D EC 8B C8 81 5E 83 41 83 8C 83 93 83 57 81 84 0D 0D 81 40 81 40 81 40 81 40 81 40 8F AC 90 EC 81 40 81 40 8E 6A 90 B6 0D 81 40 81 40 81 40 81 40 81 40 8D B2 93 A1 81 40 81 40 93 56 95 BD 0D 81 40 81 40 81 40 81 40 81 40 8A 81 8C B4 81 40 81 40 90 B3 97 54 00 81 40 81 40 81 40 81 40 81 40 81 83 83 47 83 74 83 46 83 4E 83 67 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 8A 81 8C B4 81 40 81 40 90 B3 97 54 0D 00 81 40 81 40 81 40 81 40 81 83 83 7D 83 6A 83 73 83 85 83 8C 81 5B 83 67 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 8E 52 96 7B 81 40 81 40 89 EB 8D 4E 0D 00 81 40 81 40 81 40 81 40 81 40 81 83 90 BA 82 CC 8F 6F 89 89 81 84 0D 0D 0D 81 99 97 44 8E 71 81 45 81 45 81 45 81 45 81 45 81 45 81 45 93 87 96 7B 81 40 81 40 90 7B 94 FC 01 03 02 81 99 97 ED 8E 71 81 45 81 45 81 45 81 45 81 45 81 45 81 45 94 BD 92 4A 81 40 82 AB 82 DD 82 A6 00 02 0E 81 40 81 40 81 40 81 40 81 83 82 60 82 72 82 72 82 68 82 72 82 73 81 84 0D 0D 81 40 81 40 81 40 81 40 81 40 8F AC 96 EC 81 40 81 40 97 6D 88 EA 0D 81 40 81 40 81 40 81 40 81 40 92 86 8C B4 81 40 81 40 8F 87 8E 75 01 02 02 81 40 81 40 81 40 81 40 81 40 8D 82 88 E4 81 40 81 40 90 AD 95 46 0D 81 40 81 40 81 40 81 40 81 40 8E C4 8E 52 81 40 81 40 88 DB 89 C4 01 02 02 81 40 81 40 81 40 81 40 81 40 96 7B 8A D4 81 40 81 40 8D 4F 8E 6D 0D 81 40 81 40 81 40 81 40 81 40 8A 65 96 B1 81 40 81 40 90 6D 8E 75 01 02 02 81 40 81 40 81 40 81 40 81 40 8A 97 93 63 81 40 81 40 91 D7 95 46 0D 81 40 81 40 81",
+      "new_hex": "40 81 40 81 40 8A F7 8A D4 81 40 81 40 81 40 8A 66 8A 4A 8A 99 8B 46 0D 81 40 81 40 81 40 8A 8A 8A 4F 89 50 81 40 81 40 8B 97 89 99 8A 4F 00 81 40 81 83 82 77 82 55 82 57 82 4F 82 4F 82 4F 8B 6B 89 99 88 CF 89 89 81 84 0D 0D 0D 81 40 81 40 81 40 8A 66 89 AA 89 BC 8B 56 81 40 89 AA 89 EB 8A 66 8A 4A 00 81 40 81 40 81 40 81 83 89 D3 88 B8 81 40 88 CF 89 88 8B 70 81 84 0D 0D 0D 81 40 81 40 81 40 8B 46 8B 41 8A F4 81 40 81 40 8A 72 8A A2 8A D4 00 81 40 81 40 81 83 8A FA 89 A5 8B 4F 81 40 88 CF 89 88 8B 70 81 84 0D 0D 0D 81 40 81 40 81 40 8A FC 89 40 81 40 81 40 81 40 8A 49 8A A2 8A F4 01 02 02 81 40 81 40 81 40 81 40 81 40 82 94 82 88 82 81 82 8E 82 8B 82 93 0D 81 40 81 40 81 40 8A 4A 8A 83 81 40 81 40 81 40 8A A2 89 EB 8A 7D 00 81 83 88 CF 89 A8 81 40 8B 40 8B 5B 81 5E 8A FA 89 A5 8B 4F 81 40 89 72 8A AD 8A A4 81 84 0D 0D 0D 81 40 81 40 81 40 8B 56 8A FC 89 99 81 40 81 40 8B 56 89 BC 8A F7 8A CF 00 81 40 81 40 81 83 89 E6 8A C8 8A 6D 81 40 89 72 8A AD 8A A4 81 84 0D 0D 81 40 81 40 81 40 8B 56 8A FC 89 99 81 40 81 40 8B 56 89 BC 8A F7 8A CF 0D 81 40 81 40 81 40 8B 72 8A 4F 89 BC 8B 56 81 40 89 A4 8A F2 89 99 01 02 02 81 40 81 40 81 40 8A 7D 8B 48 81 40 81 40 81 40 8B 97 89 99 89 AA 89 EB 0D 81 40 81 40 81 40 8A A2 8A 83 8B 48 81 40 81 40 8B 48 8A F7 8B 46 00 0D 81 40 81 40 82 60 82 6B 82 6B 81 40 82 6C 82 74 82 72 82 68 82 62 81 40 82 82 82 99 0D 81 40 81 40 81 40 81 40 81 40 81 9A 81 40 8A 99 8A 9F 8A A4 81 40 81 9A 00 81 40 81 40 81 40 81 40 81 83 8A AE 88 BC 81 5E 8B 63 88 BC 81 84 0D 0D 81 40 81 40 81 40 8A 7D 88 9F 8A 83 81 40 81 40 8A 4F 89 40 89 E1 0D 81 40 81 40 81 40 89 EB 8B 56 81 40 81 40 81 40 8B 52 8B 62 8A A2 0D 81 40 81 40 81 40 8A F7 8A D4 8B 72 89 81 81 40 89 AA 89 EB 8B 97 89 99 00 81 40 81 40 81 40 81 40 81 40 81 83 8B 90 88 C2 8A 9F 81 84 0D 0D 0D 81 40 81 40 81 40 8A F7 8A D4 8B 72 89 81 81 40 89 AA 89 EB 8B 97 89 99 00 81 40 81 40 81 40 81 40 81 83 8A 9F 8A 94 81 40 8A BF 8A BA 81 84 0D 0D 0D 81 40 81 40 81 40 8A 66 89 AA 89 BC 8B 56 81 40 89 AA 89 EB 8A 66 8A 4A 00 81 40 81 40 81 40 81 40 81 40 81 83 89 F7 8A 8E 81 84 0D 0D 0D 81 99 8A 99 8A FC 81 45 81 45 81 45 81 45 8A 4F 89 AA 89 BC 8B 56 81 40 8A 4A 89 C9 01 03 02 81 99 89 93 8A A2 8A FC 81 45 81 45 81 45 8B 74 8B 48 89 4D 81 40 81 40 8B 46 89 C9 8A 72 00 02 0E 81 40 81 40 81 40 81 40 81 83 82 60 82 72 82 72 82 68 82 72 82 73 81 84 0D 0D 81 40 81 40 81 40 8A 7D 89 40 81 40 81 40 81 40 8A 8A 8A A2 8A F4 0D 81 40 81 40 81 40 88 E8 8A F7 8B 72 89 81 81 40 8A CA 8A D4 01 02 02 81 40 81 40 81 40 8B 48 8A F7 8A A2 81 40 81 40 89 AA 89 EB 8B 97 8A FC 0D 81 40 81 40 81 40 8A 4F 89 CC 8A 66 89 AA 81 40 8A 99 8A A2 88 E8 01 02 02 81 40 81 40 81 40 8B 89 89 AA 81 40 81 40 81 40 8B 97 89 99 8A 4F 0D 81 40 81 40 81 40 8A F7 8B 41 89 C2 81 40 81 40 8B 97 8B 56 8A 4F 01 02 02 81 40 81 40 81 40 8A F7 89 AA 8B 48 81 40 81 40 8A 66 8A 4A 8B 97 8A FC 0D 81 40 81 40 81 40 8B 97 89 40 81 40 81 40 81 40 8A 5A 8B 46 8B 97 89 99 01 02 02 81 40 81 40 81 40 89 EB 8A 72 88 C7 89 EB 81 40 8B 97 89 99 8A 99 8B 46 0D 81 40 81 40 81 40 8A A2 8A 83 8B 48 81 40 81 40 8B 48 8A",
+      "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-rows-9-20; Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-5; analysis/itemized/11_Valis2Project15_분석.md#section-4; raw CHRN (3, 1, 5, 3)",
+      "status": "confirmed"
+    },
+    {
+      "id": "A-CREDITS-0A1F0",
+      "offset": "0x0A1F0",
+      "old_hex": "40 81 40 81 40 93 FA 96 EC 81 40 81 40 8F BA 8D 47 01 02 02 81 40 81 40 81 40 81 40 81 40 8E 4F 8E 7D 81 40 81 40 8D 5F 8D 73 0D 81 40 81 40 81 40 81 40 81 40 8A E2 93 63 81 40 81 40 97 B2 8E F7 01 02 02 81 40 81 40 81 40 81 40 81 40 90 5E 8D BB 81 40 81 40 92 71 8D 4E 01 02 02 81 40 81 40 81 40 81 40 81 40 82 94 82 88 82 81 82 8E 82 8B 82 93 0D 81 40 81 40 81 40 81 40 81 40 8F AC 93 63 8B CB 81 40 91 BE 98 59 00 02 16 81 40 81 40 81 40 81 83 83 70 83 62 83 50 81 5B 83 57 83 43 83 89 83 58 83 67 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 82 C6 82 B1 82 EB 81 40 82 C6 82 E0 82 A9 82 B8 0D 00 81 40 81 40 81 40 81 40 81 83 83 8D 83 53 83 66 83 55 83 43 83 93 81 84 0D 0D 0D 81 40 81 40 81 40 81 40 81 40 93 D1 91 F2 81 40 81 40 88 C0 8E 7B 0D 00 02 0E 81 40 81 40 81 40 81 83 82 6F 82 71 82 6E 82 6C 82 6E 82 73 82 68 82 6E 82 6D 81 84 0D 0D 81 40 81 40 81 40 81 40 81 40 95 9F 93 87 81 40 81 40 8E 9F 98 59 0D 81 40 81 40 81 40 81 40 81 40 95 9F 93 87 81 40 81 40 98 61 8D 73 01 02 02 81 40 81 40 81 40 81 40 81 40 95 9F 93 87 81 40 81 40 97 59 93 F1 0D 81 40 81 40 81 40 81 40 81 40 8F 61 92 4A 81 40 81 40 91 50 97 B2 01 02 02 81 40 81 40 81 40 81 40 81 40 96 D8 89 BA 81 40 81 40 8D 46 8E C0 0D 81 40 81 40 81 40 81 40 81 40 8D A9 96 EC 81 40 81 40 8B 60 96 BE 01 02 02 81 40 81 40 81 40 81 40 81 40 8A D6 96 EC 81 40 90 5E 97 52 94 FC 0D 81 40 81 40 81 40 81 40 81 40 8E 4F 89 59 81 40 81 40 92 71 8E 71 01 02 02 81 40 81 40 81 40 81 40 81 40 8F AC 95 6C 81 40 82 E4 82 AB 8E 71 0D 81 40 81 40 81 40 81 40 81 40 92 86 90 EC 81 40 81 40 8D 4B 8E 71 0D 01 02 02 81 40 81 40 81 40 81 40 81 40 95 97 8C A9 81 40 81 40 8E 75 98 59 0D 00 81 40 81 40 81 40 81 40 81 40 81 40 8B A6 81 40 81 40 97 CD 0D 0D 0D 81 40 81 40 90 56 93 FA 96 7B 83 8C 81 5B 83 55 81 5B 83 5C 83 74 83 67 81 69 8A 94 81 6A 0D 00 81 40 82 93 82 90 82 85 82 83 82 89 82 81 82 8C 81 40 82 94 82 88 82 81 82 8E 82 8B 82 93 0D 0D 0D 81 40 81 40 81 40 81 40 95 9F 93 87 81 40 81 40 81 40 8D 46 0D 00 81 40 81 40 81 40 81 40 81 40 90 A7 8D EC 81 45 92 98 8D EC 81 40 0D 0D 0D 81 69 8A 94 81 6A 93 FA 96 7B 83 65 83 8C 83 6C 83 62 83 67 81 40 81 40 82 50 82 58 82 57 82 58 81 44 00 0D 0D 81 40 81 40 81 40 81 40 82 73 82 67 82 64 81 40 82 64 82 6D 82 63 01 04 01 81 40 01 04 01 81 40 00 FF",
+      "new_hex": "F7 8B 46 01 02 02 81 40 81 40 81 40 89 AA 88 E8 8A FC 81 40 81 40 8B 56 89 BC 8A 66 8A 4A 01 02 02 81 40 81 40 81 40 82 94 82 88 82 81 82 8E 82 8B 82 93 0D 81 40 81 40 81 40 8A 7D 89 50 88 D5 89 A4 81 40 8B 48 89 99 00 02 16 81 40 81 40 81 40 81 83 8B 5F 8B 46 8A D4 81 40 8A A5 89 8C 8A 4A 8B 59 81 84 0D 0D 0D 81 40 81 40 81 40 8B 56 8A FC 89 99 81 40 81 40 8B 56 89 BC 8A F7 8A CF 00 81 40 81 40 81 40 81 40 81 83 89 99 88 BB 81 40 89 72 8A AD 8A A4 81 84 0D 0D 0D 81 40 81 40 81 40 8B 56 89 A4 89 EB 8A 83 81 40 8A 66 8A 4A 8A 4F 00 02 0E 81 40 81 40 81 40 81 83 8B 6B 89 99 89 BC 89 FB 81 84 0D 0D 81 40 81 40 81 40 8B 91 8B 41 8A 4F 89 AA 81 40 8A D4 89 99 0D 81 40 81 40 81 40 8B 91 8B 41 8A 4F 89 AA 81 40 8A F7 8A CF 8A 99 8B 46 01 02 02 81 40 81 40 81 40 8B 91 8B 41 8A 4F 89 AA 81 40 8A 99 8A D4 0D 81 40 81 40 81 40 8A 4F 89 E1 8A 66 81 40 81 40 8A 8A 8A 4F 8B 48 8A F7 01 02 02 81 40 81 40 81 40 8B 46 89 40 8A 4F 8B 48 81 40 8B 48 8A F7 89 C9 0D 81 40 81 40 81 40 8A FC 89 40 81 40 81 40 81 40 8A 8A 8A 4F 8A 5A 8B 46 01 02 02 81 40 81 40 81 40 89 F8 8B 46 89 40 81 40 81 40 89 AA 8A 99 89 C9 0D 81 40 81 40 81 40 89 C9 8A 8E 89 81 81 40 81 40 8B 56 89 BC 8A FC 01 02 02 81 40 81 40 81 40 8A FC 8B 72 89 AA 81 40 81 40 8A 99 8B 46 8A FC 0D 81 40 81 40 81 40 88 E8 8A F7 88 9F 8A 83 81 40 8A 99 8B 46 8A FC 0D 01 02 02 81 40 81 40 81 40 8A F7 8A AD 89 C9 81 40 81 40 8A 4F 89 99 00 81 40 81 40 81 40 81 40 81 40 81 40 8B 84 81 40 81 40 89 95 0D 0D 0D 81 40 81 40 8A 50 8A A5 89 DD 81 40 89 93 8A A2 8A B5 81 40 8A 40 8B 6B 8B 59 81 69 8A C8 81 6A 00 81 40 82 93 82 90 82 85 82 83 82 89 82 81 82 8C 81 40 82 94 82 88 82 81 82 8E 82 8B 82 93 0D 0D 0D 81 40 81 40 81 40 8B 91 8B 41 8A 4F 89 AA 81 40 8B 48 8A F7 8A 4F 00 81 40 81 40 81 40 81 40 81 40 8A BB 8A AE 81 45 8A B5 8A AE 81 40 0D 0D 0D 81 69 8A C8 81 6A 8A A5 89 DD 81 40 8B 53 89 93 88 F8 8B 59 81 40 81 40 82 50 82 58 82 57 82 58 81 44 00 0D 0D 81 40 81 40 81 40 81 40 82 73 82 67 82 64 81 40 82 64 82 6D 82 63 01 04 01 81 40 01 04 01 81 40 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "evidence_ref": "Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-7-rows-20-27; Ending Credits/Valis2_EndCredits_Analysis_Translation_Worksheet_ControlCodes_2026-08-08.docx#table-5; analysis/itemized/11_Valis2Project15_분석.md#section-4; raw CHRN (4, 0, 1, 3); final 79-byte zero fill per section 4",
+      "status": "confirmed"
+    }
+  ],
+  "component_id": "a_end_credits"
+}
