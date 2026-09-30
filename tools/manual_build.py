@@ -506,7 +506,7 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument(
         "--original-dir", type=Path, default=IMPORT_DIR,
-        help="Directory containing Japanese source D88 A–G (default: import/)",
+        help="Directory containing Japanese source D88 A-G (default: import/)",
     )
     parser.add_argument(
         "--kanji-original-rom", type=Path,
